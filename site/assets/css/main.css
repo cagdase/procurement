@@ -1,0 +1,5220 @@
+@charset "UTF-8";
+@import url("form.elements.css");
+strong {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #242526;
+  text-align: left;
+  background-color: #fff;
+}
+
+.marB50 {
+  margin-bottom: 50px !important;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.containerAll {
+  float: left;
+  width: 100%;
+}
+
+button {
+  float: left;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+button i {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+button.primaryBtn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button.primaryBtn:hover {
+  background-color: #1c5ca0;
+}
+
+button.secondaryBtn {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+button.secondaryBtn:hover {
+  background-color: #222;
+}
+
+button.thirdBtn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button.thirdBtn:hover {
+  background-color: #218838;
+}
+
+.sideMenu {
+  background: #fff;
+  height: 100vh;
+  padding: 0;
+  vertical-align: top;
+  width: 250px;
+  -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  z-index: 10;
+  font-family: "Roboto", sans-serif;
+}
+
+.sideMenu .navbar {
+  background: #fff;
+  border-radius: 0;
+  border: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  width: 250px;
+}
+
+.sideMenu .navbar .mainMenu {
+  float: left;
+  padding: 0;
+  padding-bottom: 50px;
+  width: 250px;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav {
+  float: none;
+  position: relative;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuTitle {
+  float: left;
+  width: 100%;
+  color: #41434d;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem {
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem .menuCategory {
+  font-weight: 600;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #222;
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem a .menuIcon {
+  color: #242526;
+  float: left;
+  width: 30px;
+  text-align: left;
+  z-index: 9;
+  font-size: 15px;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem a:before {
+  content: "\f078";
+  font-family: "fontAwesome";
+  position: absolute;
+  top: 11px;
+  right: 2px;
+  font-size: 16px;
+  color: #c7c7c7;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem .subMenu {
+  float: left;
+  width: 100%;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-left: 30px;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li i {
+  color: #c8c9ce;
+  float: left;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  top: 10px;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li a {
+  padding: 5px 30px;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li a:before {
+  display: none;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li:hover {
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li:hover i {
+  color: #007bff;
+  margin-left: 10px;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li:hover a {
+  color: #007bff;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li.active {
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li.active i {
+  color: #007bff;
+  margin-left: 10px;
+}
+
+.sideMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li.active a {
+  color: #007bff;
+}
+
+.sideMenu.smallMenu {
+  width: 60px;
+  overflow: hidden;
+}
+
+.sideMenu.smallMenu .navbar .mainMenu .navbarNav .menuItem {
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.sideMenu.smallMenu .navbar .mainMenu .navbarNav .menuItem .subMenu {
+  padding-left: 0;
+}
+
+.sideMenu.smallMenu .navbar .mainMenu .navbarNav .menuItem a .menuIcon {
+  margin-left: -9px;
+  font-size: 15px;
+}
+
+.sideMenu.smallMenu .navbar .mainMenu .navbarNav .menuItem .menuCategory {
+  width: 190px;
+}
+
+.sideMenu.smallMenu .navbar .mainMenu .navbarNav .menuItem .menuCategory span {
+  opacity: 0;
+}
+
+.sideMenu.smallMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li a {
+  opacity: 0;
+}
+
+.sideMenu.smallMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li i {
+  left: -5px;
+}
+
+.sideMenu.smallMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li.active {
+  background-color: white;
+}
+
+.sideMenu.smallMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li.active i {
+  margin-left: 0;
+}
+
+.sideMenu.smallMenu .navbar .mainMenu .navbarNav .menuItem .subMenu li.active a {
+  width: 220px;
+}
+
+.sideMenu.smallMenu .navbar .mainMenu .navbarNav .menuTitle {
+  padding-left: 13px;
+}
+
+.sideMenu.smallMenu:hover {
+  width: 250px;
+}
+
+.sideMenu.smallMenu:hover .navbar .mainMenu .navbarNav .menuItem .subMenu li i {
+  left: 0px;
+}
+
+.sideMenu.smallMenu:hover .navbar .mainMenu .navbarNav .menuItem .subMenu {
+  padding-left: 30px;
+}
+
+.sideMenu.smallMenu:hover .navbar .mainMenu .navbarNav .menuItem a .menuIcon {
+  margin-left: 0;
+  font-size: 15px;
+}
+
+.sideMenu.smallMenu:hover .navbar .mainMenu .navbarNav .menuItem .menuCategory span {
+  opacity: 1;
+}
+
+.sideMenu.smallMenu:hover .navbar .mainMenu .navbarNav .menuItem .subMenu li.active a {
+  width: auto;
+}
+
+.sideMenu.smallMenu:hover .navbar .mainMenu .navbarNav .menuItem .subMenu li a {
+  opacity: 1;
+}
+
+.rightPanel {
+  float: left;
+  width: calc(100% - 250px);
+  background: #f1f2f7;
+  margin-left: 250px;
+  margin-top: 55px;
+}
+
+.rightPanel .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #fff;
+  border-bottom: 1px solid #e8e9ed;
+  padding: 0;
+  height: 55px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 11;
+}
+
+.rightPanel .header .headLeft {
+  float: left;
+  width: 250px;
+  padding-left: 30px;
+}
+
+.rightPanel .header .headLeft .logo {
+  float: left;
+  max-width: 100px;
+}
+
+.rightPanel .header .headLeft .logo img {
+  display: block;
+  width: 100%;
+}
+
+.rightPanel .header .headLeft .mobileMenuBtn {
+  font-size: 22px;
+  color: #242526;
+  display: none;
+}
+
+.rightPanel .header .headLeft .mobileMenuBtn .navIcon {
+  width: 22px;
+  height: 16px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  float: left;
+}
+
+.rightPanel .header .headLeft .mobileMenuBtn .navIcon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #242526;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.rightPanel .header .headLeft .mobileMenuBtn .navIcon span:nth-child(1) {
+  top: 0;
+}
+
+.rightPanel .header .headLeft .mobileMenuBtn .navIcon span:nth-child(2) {
+  top: 7px;
+}
+
+.rightPanel .header .headLeft .mobileMenuBtn .navIcon span:nth-child(3) {
+  top: 7px;
+}
+
+.rightPanel .header .headLeft .mobileMenuBtn .navIcon span:nth-child(4) {
+  top: 14px;
+}
+
+.rightPanel .header .headLeft .mobileMenuBtn .navIcon.open span:nth-child(1) {
+  top: 7px;
+  width: 0%;
+  left: 50%;
+}
+
+.rightPanel .header .headLeft .mobileMenuBtn .navIcon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.rightPanel .header .headLeft .mobileMenuBtn .navIcon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.rightPanel .header .headLeft .mobileMenuBtn .navIcon.open span:nth-child(4) {
+  top: 7px;
+  width: 0%;
+  left: 50%;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 55px;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav {
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow-y: scroll;
+  height: 100%;
+  padding: 30px 0;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuTitle {
+  float: left;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem {
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem .menuCategory {
+  font-weight: 600;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #fff;
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem a .menuIcon {
+  color: #fff;
+  float: left;
+  width: 30px;
+  text-align: left;
+  z-index: 9;
+  font-size: 15px;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem a:before {
+  content: "\f078";
+  font-family: "fontAwesome";
+  position: absolute;
+  top: 11px;
+  right: 2px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem .subMenu {
+  float: left;
+  width: 100%;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-left: 30px;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem .subMenu li {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem .subMenu li i {
+  color: #fff;
+  float: left;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  top: 10px;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem .subMenu li a {
+  padding: 5px 30px;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem .subMenu li a:before {
+  display: none;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem .subMenu li:hover {
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem .subMenu li:hover i {
+  color: #007bff;
+  margin-left: 10px;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem .subMenu li:hover a {
+  color: #007bff;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem .subMenu li.active {
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem .subMenu li.active i {
+  color: #007bff;
+  margin-left: 10px;
+}
+
+.rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem .subMenu li.active a {
+  color: #007bff;
+}
+
+.rightPanel .header .headRight {
+  float: left;
+  width: calc(100% - 250px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding-right: 30px;
+}
+
+.rightPanel .header .headRight .headMenuWrap {
+  float: left;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rightPanel .header .headRight .headMenuWrap .sideBarToggle {
+  float: left;
+  background-color: #fff;
+}
+
+.rightPanel .header .headRight .headMenuWrap .sideBarToggle a {
+  float: left;
+  font-size: 24px;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  color: #242526;
+  width: 55px;
+  height: 55px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu {
+  float: left;
+  position: relative;
+  border-left: 1px solid #ddd;
+  width: 55px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMbtn {
+  float: left;
+  font-size: 24px;
+  font-weight: 600;
+  color: #242526;
+  width: 100%;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMbtn .navIcon {
+  width: 22px;
+  height: 16px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  float: left;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMbtn .navIcon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #242526;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMbtn .navIcon span:nth-child(1) {
+  top: 0;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMbtn .navIcon span:nth-child(2) {
+  top: 7px;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMbtn .navIcon span:nth-child(3) {
+  top: 7px;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMbtn .navIcon span:nth-child(4) {
+  top: 14px;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMbtn .navIcon.open span:nth-child(1) {
+  top: 7px;
+  width: 0%;
+  left: 50%;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMbtn .navIcon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMbtn .navIcon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMbtn .navIcon.open span:nth-child(4) {
+  top: 7px;
+  width: 0%;
+  left: 50%;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMList {
+  position: absolute;
+  left: -1px;
+  top: 54px;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 150px;
+  display: none;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMList li {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMList li a {
+  display: block;
+  font-size: 12px;
+  padding: 15px 20px;
+  color: #64666d;
+  font-weight: 500;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMList li a i {
+  margin-right: 5px;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMList li a:hover {
+  background-color: #f3f3f3;
+  color: #007bff;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMList li a:hover i {
+  color: #007bff;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMList li:nth-last-child(1) {
+  border-bottom: 0;
+}
+
+.rightPanel .header .headRight .headMenuWrap .headDDmenu .hddMList.smOpen {
+  display: inline-block;
+}
+
+.rightPanel .header .headRight .headMenuWrap .stickyCounter {
+  float: left;
+  padding: 0 30px 0 50px;
+  background-color: #cc0000;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.rightPanel .header .headRight .headMenuWrap .stickyCounter i {
+  position: absolute;
+  left: 17px;
+  top: 14px;
+  color: #fff;
+  font-size: 26px;
+}
+
+.rightPanel .header .headRight .headMenuWrap .stickyCounter .scText {
+  float: left;
+  font-size: 16px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.rightPanel .header .headRight .headMenuWrap .stickyCounter .scNumber {
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 16px;
+  white-space: nowrap;
+  width: 110px;
+}
+
+.rightPanel .header .headRight .accountWrap {
+  float: left;
+}
+
+.rightPanel .header .headRight .accountWrap #dateTime {
+  float: left;
+  font-size: 14px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+}
+
+.rightPanel .header .headRight .accountWrap #dateTime span {
+  padding: 0 5px;
+}
+
+.rightPanel .header .headRight .accountWrap .account {
+  float: left;
+  width: auto;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 1px solid #ececec;
+  padding: 0 20px;
+}
+
+.rightPanel .header .headRight .accountWrap .account img {
+  float: left;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.rightPanel .header .headRight .accountWrap .account span {
+  float: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: #242526;
+}
+
+.rightPanel .header .headRight .accountWrap .selectLanguage {
+  float: left;
+  width: auto;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+}
+
+.rightPanel .header .headRight .accountWrap .selectLanguage select {
+  float: left;
+  width: 100%;
+  outline: 0;
+  font-size: 14px;
+}
+
+.rightPanel.bidderSide {
+  width: 100%;
+  margin-left: 0;
+}
+
+.rightPanel.bidderSide .header .headRight .headMenuWrap .headDDmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rightPanel.bidderSide .header .headRight .headMenuWrap .sideBarToggle {
+  display: none;
+}
+
+.rightPanel .notificationWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #057afe;
+  padding: 0;
+  height: 55px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 55px;
+  z-index: 12;
+}
+
+.rightPanel .notificationWrap .nCloseBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 28px;
+  width: 35px;
+  height: 55px;
+  background-color: #065bbb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.rightPanel .notificationWrap .nCloseBtn:hover {
+  background-color: #09386d;
+}
+
+.rightPanel .notificationWrap .nText {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  width: calc(100% - 35px);
+  float: left;
+  text-align: center;
+}
+
+.rightPanel .middleHead {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 30px 0 30px;
+  margin-bottom: 20px;
+  height: 65px;
+}
+
+.rightPanel .middleHead .headline {
+  float: left;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.rightPanel .middleHead .mhRight {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rightPanel .middleHead .projectTypeFilter {
+  float: right;
+}
+
+.rightPanel .middleHead .projectTypeFilter select {
+  height: 35px;
+  width: 170px;
+  text-indent: 10px;
+  border: 1px solid #ececec;
+  outline: 0;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.rightPanel .middleHead .projectTypeFilter select option {
+  padding: 10px;
+}
+
+.rightPanel .middleHead .dbSearch {
+  float: right;
+  padding: 0 10px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+.rightPanel .middleHead .dbSearch input {
+  float: left;
+  padding: 8px 10px;
+  outline: 0;
+  float: left;
+  width: 250px;
+  background-color: #fff;
+  border: none;
+  font-size: 14px;
+  height: 35px;
+}
+
+.rightPanel .middleHead .dbSearch a {
+  float: left;
+  width: 35px;
+  height: 35px;
+  background-color: #007bff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 0;
+  color: #fff;
+  font-size: 13px;
+}
+
+.rightPanel .middleHead .breadcrumb {
+  float: right;
+  font-size: 12px;
+  padding: 0 10px;
+  margin-left: auto;
+}
+
+.rightPanel .middleHead .breadcrumb ul {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.rightPanel .middleHead .breadcrumb ul li a {
+  padding-right: 20px;
+  color: #64666d;
+  position: relative;
+}
+
+.rightPanel .middleHead .breadcrumb ul li a:hover {
+  text-decoration: underline;
+}
+
+.rightPanel .middleHead .breadcrumb ul li a:after {
+  content: "\f105";
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-family: "fontAwesome";
+}
+
+.rightPanel .middleHead .breadcrumb ul li:nth-last-child(1) a:after {
+  display: none;
+}
+
+.rightPanel .content {
+  float: left;
+  width: 100%;
+  padding: 0 30px 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  min-height: calc(100vh - 120px);
+}
+
+.rightPanel .content .dashboardContent {
+  margin-left: -10px;
+  margin-right: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
+}
+
+.rightPanel .content .dashboardCard {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px 20px 10px;
+}
+
+.rightPanel .content .dashboardCard .dcContent {
+  float: left;
+  width: 100%;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  height: 280px;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcHead {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 10px;
+  padding: 15px 15px 15px 25px;
+  max-height: 70px;
+  overflow: hidden;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcHead .dcHeadLeft {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% - 60px);
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcHead .dcHeadLeft i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcHead .dcHeadLeft a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #242526;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcHead .dcHeadLeft a:hover {
+  text-decoration: underline;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcHead .status {
+  font-size: 14px;
+  float: right;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  border-left: 1px solid #e6e6e6;
+  padding-left: 10px;
+  margin-left: 10px;
+  width: 60px;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcHead .status i {
+  font-size: 16px;
+  color: #28a745;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBody {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBody span {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #64666d;
+  font-size: 14px;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBody span:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBottom {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #ddd;
+  padding: 10px 0px 10px 25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBottom .dcProjectType {
+  font-size: 12px;
+  color: #242526;
+  font-weight: 500;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcDetail {
+  padding: 0 10px;
+  border-left: 1px solid #ddd;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcDetail:hover i {
+  color: #242526;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcEdit {
+  padding: 0 15px;
+  border-left: 1px solid #ddd;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcEdit:hover i {
+  color: #242526;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBottom:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 45px;
+  width: 10px;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBottom.type1:before {
+  background-color: #007bff;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBottom.type2:before {
+  background-color: #6c757d;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBottom.type3:before {
+  background-color: #28a745;
+}
+
+.rightPanel .content .dashboardCard:hover .dcContent {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.rightPanel .content .rpCard {
+  float: left;
+  width: 100%;
+  padding: 50px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.rightPanel .content .rpCard .rpCardContent {
+  float: left;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  clear: both;
+}
+
+.rightPanel .content .rpCard .dutchBidderResultText {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.rightPanel .content .rpCard .dutchBidderResultText i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.rightPanel .content .rpCard .dutchBidderResultText span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.rightPanel .content .rpCard .dutchBidderResultText .bidWon i {
+  color: #28a745;
+}
+
+.rightPanel .content .rpCard .dutchBidderResultText .bidWon span {
+  color: #28a745;
+}
+
+.rightPanel .content .rpCard .dutchBidderResultText .bidLost i {
+  color: #cc0000;
+}
+
+.rightPanel .content .rpCard .dutchBidderResultText .bidLost span {
+  color: #cc0000;
+}
+
+.rightPanel .content .rpCard .dutchBidderResultText .bidNone i {
+  color: #242526;
+}
+
+.rightPanel .content .rpCard .dutchBidderResultText .bidNone span {
+  color: #242526;
+}
+
+.rightPanel .content .rpCard.noClearFix .rpCardContent {
+  clear: none;
+  max-width: 50%;
+}
+
+.rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(1) {
+  padding-right: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(2) {
+  padding-left: 20px;
+}
+
+.rightPanel .content .rpCard .rpCardHead {
+  float: left;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+
+.rightPanel .content .rpCard .rpCardHead span {
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 25px;
+  height: 25px;
+  background-color: #007bff;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rightPanel .content .rpCard .rpCardSubHead {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.rightPanel .content .rpCard .rpCardSubHead span {
+  float: left;
+  width: 100%;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.rightPanel .content .rpCard .rpCardSubHead .rpCardSubHeadSelect {
+  float: right;
+}
+
+.rightPanel .content .rpCard .rpCardSubHead .rpCardSubHeadSelect .form-group {
+  width: 80px;
+}
+
+.rightPanel .content .rpCard.wideContent .rpCardContent {
+  max-width: 1000px;
+}
+
+.rightPanel .content .rpCard.fullContent .rpCardContent {
+  max-width: 100%;
+}
+
+.rightPanel .content .bidPriceSearch {
+  float: left;
+  width: 100%;
+}
+
+.rightPanel .content .bidPriceSearch .rpCardHead {
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+.rightPanel .content .bidWatch {
+  float: left;
+  width: 100%;
+}
+
+.rightPanel .content .bidWatch .rpCardSubHead {
+  font-size: 18px;
+}
+
+.rightPanel .content .formShort {
+  width: 120px;
+}
+
+.rightPanel .content .formMiddle {
+  width: 250px;
+}
+
+.rightPanel .content .formLong {
+  width: 500px;
+}
+
+.rightPanel .content .formInput {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.rightPanel .content .formTextArea {
+  float: left;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.rightPanel .content .formTextArea .taHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.rightPanel .content .formTextArea textarea {
+  float: left;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 22px;
+  height: 100px;
+  outline: 0;
+  border: 1px solid #e6e6e6;
+  resize: none;
+}
+
+.rightPanel .content .currencyUnit {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.rightPanel .content .currencyUnit .form-group {
+  margin: 0 20px 0 0;
+}
+
+.rightPanel .content .currencyUnit .checkbox {
+  height: 24px;
+}
+
+.rightPanel .content .datepickerWrap {
+  float: left;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.rightPanel .content .datepickerWrap .dpHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.rightPanel .content .datepickerWrap.bidStartDateTime {
+  width: 50%;
+}
+
+.rightPanel .content .datepickerWrap.bidStartDateTime .c-datepicker-data-input {
+  width: calc(100% - 15px);
+}
+
+.rightPanel .content .uploadFile {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.rightPanel .content .uploadFile input {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.rightPanel .content .bidTypeSelect {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.rightPanel .content .bidTypeSelect .rbHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rightPanel .content .bidTypeSelect .radio {
+  float: left;
+  margin-right: 10px;
+}
+
+.rightPanel .content .bidderSearchResults {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.rightPanel .content .bidderSearchResults ul {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.rightPanel .content .bidderSearchResults ul li {
+  float: left;
+  width: 100%;
+}
+
+.rightPanel .content .bidderSearchResults ul li a {
+  display: block;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #242526;
+}
+
+.rightPanel .content .bidderSearchResults ul li a:hover {
+  background-color: #ececec;
+}
+
+.rightPanel .content .suppliersSearch {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.rightPanel .content .suppliersSearch .form-group {
+  width: calc(100% - 160px);
+  height: 40px;
+}
+
+.rightPanel .content .suppliersSearch .form-group input {
+  height: 31px;
+}
+
+.rightPanel .content .suppliersSearch button {
+  width: 160px;
+  margin: 0;
+}
+
+.rightPanel .content .productBox {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.rightPanel .content .productBox table {
+  float: left;
+  width: 100%;
+}
+
+.rightPanel .content .productBox table .tableHead td {
+  height: 40px;
+}
+
+.rightPanel .content .productBox table td {
+  border-bottom: 1px solid #ececec;
+  font-size: 14px;
+  padding: 10px 20px 10px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.rightPanel .content .productBox table td .productTableChekbox {
+  font-size: 14px;
+  height: 15px;
+  width: 15px;
+}
+
+.rightPanel .content .productBox table td:nth-child(1) {
+  width: 20%;
+}
+
+.rightPanel .content .productBox table td:nth-child(2) {
+  width: 35%;
+}
+
+.rightPanel .content .productBox table td:nth-child(3) {
+  width: 20%;
+}
+
+.rightPanel .content .productBox table td:nth-child(4) {
+  width: 20%;
+}
+
+.rightPanel .content .productBox table td.deleteBtn {
+  width: 5%;
+  padding-right: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+}
+
+.rightPanel .content .productBox table td input {
+  float: left;
+  width: 100%;
+  outline: 0;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+.rightPanel .content .productBox table td .checkbox .helper {
+  top: -8px;
+}
+
+.rightPanel .content .productBox table td .addGroupWrap {
+  position: relative;
+  float: left;
+  width: auto;
+  margin-left: 10px;
+}
+
+.rightPanel .content .productBox table td .addGroupWrap .addNewGroup {
+  font-size: 14px;
+  border: 1px solid #007bff;
+  padding: 3px 10px;
+  z-index: 1;
+}
+
+.rightPanel .content .productBox table td .addGroupWrap .addNewGroup:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.rightPanel .content .productBox table td .addGroupWrap ul {
+  position: fixed;
+  left: calc(50% - 200px);
+  top: calc(50% - 200px);
+  padding: 50px 30px 30px;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: 1px solid #ececec;
+  display: none;
+  z-index: 2;
+}
+
+.rightPanel .content .productBox table td .addGroupWrap ul li {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.rightPanel .content .productBox table td .addGroupWrap ul li a {
+  display: block;
+  padding: 10px;
+}
+
+.rightPanel .content .productBox table td .addGroupWrap ul li a:hover {
+  background-color: #ececec;
+}
+
+.rightPanel .content .productBox table td .addGroupWrap ul li:nth-last-child(1) {
+  border-bottom: 0;
+}
+
+.rightPanel .content .productBox table td .addGroupWrap ul.openGroupList {
+  display: block;
+}
+
+.rightPanel .content .productBox table td .addGroupWrap ul .addNewGroupCloseBtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.rightPanel .content .createProductGroup {
+  float: left;
+}
+
+.rightPanel .content .createProductGroup input {
+  float: left;
+  padding: 10px;
+  outline: 0;
+  height: 40px;
+  font-size: 14px;
+}
+
+.rightPanel .content .bottomBtns {
+  float: left;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.rightPanel .content .bottomBtns button {
+  margin-bottom: 0;
+  height: 50px;
+  padding: 0 30px;
+  font-size: 16px;
+}
+
+.rightPanel .content .stepsGuideWrap {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.rightPanel .content .stepsGuideWrap ul {
+  float: left;
+  width: 100%;
+}
+
+.rightPanel .content .stepsGuideWrap ul li {
+  float: left;
+  width: 25%;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.rightPanel .content .stepsGuideWrap ul li .stLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rightPanel .content .stepsGuideWrap ul li .stepNumber {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid #007bff;
+}
+
+.rightPanel .content .stepsGuideWrap ul li .stepNumber span {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  background-color: #007bff;
+  font-weight: 600;
+}
+
+.rightPanel .content .stepsGuideWrap ul li .stepText {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #64666d;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.rightPanel .content .stepsGuideWrap ul li .stepText span {
+  padding: 15px 15px 15px 0;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+}
+
+.rightPanel .content .stepsGuideWrap ul li .stepText span i {
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  background-color: #007bff;
+  margin-left: -15px;
+  margin-right: 5px;
+}
+
+.rightPanel .content .stepsGuideWrap ul li:nth-child(2) .stepText span i {
+  font-size: 16px;
+  padding-left: 7px;
+}
+
+.rightPanel .content .stepsGuideWrap ul li:nth-child(3) .stepText span i {
+  font-size: 16px;
+  padding-left: 4px;
+}
+
+.rightPanel .content .stepsGuideWrap.steps5 ul li {
+  width: 20%;
+}
+
+.rightPanel .content .bidType {
+  float: left;
+  width: 100%;
+  display: none;
+}
+
+.rightPanel .content .bidType .btHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.rightPanel .content .bidType .btSubHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.rightPanel .content .bidType .btSubLine {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.rightPanel .content .bidType .bidManagement {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 35px;
+  font-size: 14px;
+}
+
+.rightPanel .content .bidType .bidManagement .radio {
+  float: left;
+  margin-right: 10px;
+}
+
+.rightPanel .content .bidType .bidManagement .btSubHead {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.rightPanel .content .bidType .timeOptions {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.rightPanel .content .bidType .timeOptions .formInput {
+  width: 33.3%;
+  padding-right: 20px;
+}
+
+.rightPanel .content .bidType .timeOptions .formInput:nth-last-child(1) {
+  padding-right: 0;
+}
+
+.rightPanel .content .bidType .timeOptions .btSubHead {
+  margin-bottom: 20px;
+}
+
+.rightPanel .content .bidType .bidChangeOptions {
+  float: left;
+  width: 100%;
+}
+
+.rightPanel .content .bidType .bidChangeOptions .formInput {
+  width: 50%;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+
+.rightPanel .content .bidType .bidChangeOptions .formInput:nth-child(2) {
+  padding-right: 0;
+}
+
+.rightPanel .content .bidType .bidChangeOptions .btSubHead {
+  margin-bottom: 40px;
+}
+
+.rightPanel .content .bidType .competitionInfo {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.rightPanel .content .bidType .competitionInfo .formInput {
+  width: 33.3%;
+  padding-right: 20px;
+}
+
+.rightPanel .content .bidType .competitionInfo .formInput:nth-last-child(1) {
+  padding-right: 0;
+}
+
+.rightPanel .content .bidType .competitionInfo .btSubHead {
+  margin-bottom: 50px;
+}
+
+.rightPanel .content .bidType .dutchBottomInputs {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.rightPanel .content .bidType .dutchBottomInputs .formInput {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.rightPanel .content .bidType .dutchBottomInputs .formInput:nth-last-child(1) {
+  padding-right: 0;
+}
+
+.rightPanel .content .bidType.open {
+  display: block;
+}
+
+.rightPanel .content .btDutch .btHead {
+  margin-bottom: 40px;
+}
+
+.rightPanel .content .savingInfo {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rightPanel .content .savingInfo span {
+  float: left;
+  font-size: 15px;
+}
+
+.rightPanel .content .savingInfo span:nth-child(1) {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.rightPanel .content .savingInfo .tooltip .tooltipBtn {
+  background-color: #fff;
+  color: #242526;
+  font-size: 24px;
+  padding: 0;
+}
+
+.rightPanel .content .savingInfo .tooltip .tooltipBtn .tooltipText {
+  left: -77px !important;
+  top: 35px !important;
+}
+
+.rightPanel .content .rpChart {
+  float: left;
+  width: 100%;
+}
+
+.rightPanel .content .rpChart canvas {
+  width: 100%;
+  height: 440px;
+}
+
+.rightPanel .content .reportDL {
+  float: left;
+  width: 100%;
+}
+
+.rightPanel .content .reportDL button {
+  margin-bottom: 0;
+}
+
+.rightPanel .content .comparisonHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.rightPanel .content .comparisonSelect {
+  float: left;
+  width: 60%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.rightPanel .content .comparisonSelect .chosen-container {
+  width: calc(100% - 35px) !important;
+  min-height: 35px;
+}
+
+.rightPanel .content .comparisonSelect .comparisonSelectBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 15px;
+  width: 35px;
+  height: 35px;
+  background-color: #007bff;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rightPanel .content .comparisonPrice {
+  width: 40%;
+  float: left;
+  padding-left: 20px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.rightPanel .content .groupWinfo {
+  float: left;
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: red;
+}
+
+.rightPanel .content .comparisonColProducts {
+  float: left;
+  width: 300px;
+  background-color: #f3f3f3;
+}
+
+.rightPanel .content .comparisonTableSlider {
+  float: left;
+  width: calc(100% - 300px);
+  margin-bottom: 20px;
+  padding-left: 5px;
+}
+
+.rightPanel .content .comparisonTableSlider .productSlider {
+  float: left;
+  width: 100%;
+}
+
+.rightPanel .content .comparisonTableSlider .productSlider .productList {
+  float: left;
+  width: 100%;
+}
+
+.rightPanel .content .comparisonTableSlider .productSlider .owlComparison .owl-nav {
+  position: absolute;
+  top: -35px;
+  right: 0;
+}
+
+.rightPanel .content .comparisonTableSlider .productSlider .owlComparison .owl-nav .owl-next, .rightPanel .content .comparisonTableSlider .productSlider .owlComparison .owl-nav .owl-prev {
+  float: left;
+  height: 35px;
+  width: 35px;
+  background-color: #007bff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.rightPanel .content .comparisonTableSlider .productSlider .owlComparison .owl-nav .owl-next:hover, .rightPanel .content .comparisonTableSlider .productSlider .owlComparison .owl-nav .owl-prev:hover {
+  background-color: #2378d4;
+}
+
+.rightPanel .content .comparisonTableSlider .productSlider .owlComparison .owl-stage-outer .owl-stage .owl-item:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.rightPanel .content .dbwBidderCardWrap {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.rightPanel .content .dbwBidderCardWrap .dbwBidderCard {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.rightPanel .content .dbwBidderCardWrap .dbwBidderCard .dbwCardContent {
+  float: left;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.rightPanel .content .dbwBidderCardWrap .dbwBidderCard .dbwCardContent .dbwCardHead {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  height: 43px;
+  overflow: hidden;
+}
+
+.rightPanel .content .dbwBidderCardWrap .dbwBidderCard .dbwCardContent .dbwCardBtns {
+  float: left;
+  width: 100%;
+}
+
+.rightPanel .content .dbwBidderCardWrap .dbwBidderCard .dbwCardContent .dbwCardBtns button {
+  margin-right: 0;
+}
+
+.rightPanel .content .dbwBidderCardWrap .dbwBidderCard .dbwCardContent .dbwCardBtns button:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.rightPanel .content .dbwBidderCardWrap .dbwBidderCard .dbwCardContent.online {
+  border: 3px solid yellow;
+}
+
+.rightPanel .content .dbwBidderCardWrap .dbwBidderCard .dbwCardContent.offline {
+  border: 3px solid red;
+}
+
+.rightPanel .content .subPages {
+  float: left;
+  width: 100%;
+}
+
+.rightPanel .content .subPages .actionBtns {
+  float: left;
+  width: 100%;
+}
+
+.rightPanel .content .subPages .searchAuth {
+  margin-bottom: 30px;
+}
+
+.rightPanel .content .formWrap {
+  width: 100%;
+  float: left;
+}
+
+.rightPanel .content .formWrap .formInput {
+  width: 50%;
+  margin-bottom: 60px;
+}
+
+.rightPanel .content .formWrap .formInput:nth-child(odd) {
+  padding-right: 20px;
+}
+
+.rightPanel .content .formWrap .formInput:nth-child(even) {
+  padding-left: 20px;
+}
+
+.rightPanel .content .formWrap .formInput.w100 {
+  width: 100%;
+}
+
+.rightPanel .content .selectWrap {
+  margin-top: 20px;
+}
+
+.rightPanel .content .selectWrap select {
+  width: 100%;
+}
+
+.rightPanel.bigRightPanel {
+  width: calc(100% - 60px);
+  margin-left: 60px;
+}
+
+.rightPanel .newBidBtn {
+  float: left;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.rightPanel .dutchBidResultsMobile {
+  display: none;
+}
+
+.rightPanel .competitionOrder {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  clear: both;
+  padding: 5px;
+  color: #fff;
+}
+
+.rightPanel .competitionOrder span {
+  float: left;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.rightPanel .competitionOrder span.compColSuccess {
+  color: #28a745;
+}
+
+.rightPanel .competitionOrder span.compColError {
+  color: #cc0000;
+}
+
+.categoryGropusInfo {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.categoryGropusInfo .cgiHead {
+  float: left;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.categoryGropusInfo .cgiList {
+  float: left;
+  font-size: 13px;
+}
+
+.categoryGropusInfo .cgiList li {
+  float: left;
+  padding-right: 20px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.categoryGropusInfo .cgiList li span {
+  float: left;
+}
+
+.categoryGropusInfo .cgiList li span:nth-child(1) {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.categoryGropusInfo .cgiList li .group1 {
+  background-color: #CC0000;
+}
+
+.categoryGropusInfo .cgiList li .group2 {
+  background-color: #99FF00;
+}
+
+.categoryGropusInfo .cgiList li .group3 {
+  background-color: #CA278C;
+}
+
+.categoryGropusInfo .cgiList li .group4 {
+  background-color: #CCCCFF;
+}
+
+.categoryGropusInfo .cgiList li .group5 {
+  background-color: #003366;
+}
+
+.categoryGropusInfo .cgiList li .group6 {
+  background-color: #0099CC;
+}
+
+.categoryGropusInfo .cgiList li .group7 {
+  background-color: #C87533;
+}
+
+.categoryGropusInfo .cgiList li .group8 {
+  background-color: #663399;
+}
+
+.categoryGropusInfo .cgiList li .group9 {
+  background-color: #FF0080;
+}
+
+.categoryGropusInfo .cgiList li .group10 {
+  background-color: #CCCCCC;
+}
+
+.categoryColor {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  height: 50px;
+  width: 10px !important;
+}
+
+.categoryColor.group1 {
+  background-color: #CC0000;
+}
+
+.categoryColor.group2 {
+  background-color: #99FF00;
+}
+
+.categoryColor.group3 {
+  background-color: #CA278C;
+}
+
+.categoryColor.group4 {
+  background-color: #CCCCFF;
+}
+
+.categoryColor.group5 {
+  background-color: #003366;
+}
+
+.categoryColor.group6 {
+  background-color: #0099CC;
+}
+
+.categoryColor.group7 {
+  background-color: #C87533;
+}
+
+.categoryColor.group8 {
+  background-color: #663399;
+}
+
+.categoryColor.group9 {
+  background-color: #FF0080;
+}
+
+.categoryColor.group10 {
+  background-color: #CCCCCC;
+}
+
+.tcoInputError {
+  border: 1px solid #ff0101 !important;
+}
+
+.addTCObtn {
+  margin: 10px 0;
+  float: right;
+  margin-right: 54px;
+}
+
+.rpList {
+  float: left;
+  width: 100%;
+}
+
+.rpList ul {
+  float: left;
+  width: 100%;
+  font-size: 13px;
+}
+
+.rpList ul li {
+  float: left;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rpList ul li span {
+  float: left;
+}
+
+.rpList ul li:hover {
+  background-color: #e8e8e8;
+}
+
+.rpList ul.rpListHead {
+  border: none;
+  border-top: 2px solid #f3f3f3;
+}
+
+.rpList ul.rpListHead li {
+  font-weight: 600;
+  border-bottom: 2px solid #eee;
+  font-size: 14px;
+}
+
+.rpList ul.rpListHead .tableSort {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.rpList.documents li span:nth-child(1) {
+  width: 70%;
+}
+
+.rpList.documents li span:nth-child(2) {
+  width: 30%;
+}
+
+.rpList.documentsBidder li span:nth-child(1) {
+  width: 80%;
+}
+
+.rpList.documentsBidder li span:nth-child(2) {
+  width: 20%;
+  text-align: center;
+}
+
+.rpList.documentsBidder li span:nth-child(2) a {
+  padding: 0 10px;
+}
+
+.rpList.documentsBidder li span:nth-child(2) a i {
+  font-size: 16px;
+}
+
+.rpList.documentsBidder li span:nth-child(2) a:hover i {
+  color: #1c5ca0;
+}
+
+.rpList.suppliers li span:nth-child(1) {
+  width: 28%;
+}
+
+.rpList.suppliers li span:nth-child(2) {
+  width: 28%;
+}
+
+.rpList.suppliers li span:nth-child(3) {
+  width: 39%;
+}
+
+.rpList.suppliers li span:nth-child(4) {
+  width: 5%;
+}
+
+.rpList.suppliers li span:nth-child(4) a {
+  font-size: 18px;
+}
+
+.rpList.newProduct li span:nth-child(1) {
+  width: 28%;
+}
+
+.rpList.newProduct li span:nth-child(2) {
+  width: 28%;
+}
+
+.rpList.newProduct li span:nth-child(3) {
+  width: 39%;
+}
+
+.rpList.newProduct li span:nth-child(4) {
+  width: 5%;
+}
+
+.rpList.newProduct li span:nth-child(4) a {
+  font-size: 18px;
+}
+
+.rpList.preBid li span:nth-child(1) {
+  width: 25%;
+}
+
+.rpList.preBid li span:nth-child(2) {
+  width: 25%;
+}
+
+.rpList.preBid li span:nth-child(3) {
+  width: 30%;
+}
+
+.rpList.preBid li span:nth-child(4) {
+  width: 15%;
+}
+
+.rpList.preBid li span:nth-child(4) input {
+  outline: 0;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  float: left;
+  width: 100%;
+}
+
+.rpList.preBid li span:nth-child(5) {
+  width: 5%;
+  text-align: right;
+}
+
+.rpList.preBid li span:nth-child(5) a {
+  font-size: 18px;
+}
+
+.rpList.bwSummary li span:nth-child(1) {
+  width: 5%;
+  text-align: left;
+}
+
+.rpList.bwSummary li span:nth-child(2) {
+  width: 35%;
+}
+
+.rpList.bwSummary li span:nth-child(2).online i {
+  color: #28a745;
+}
+
+.rpList.bwSummary li span:nth-child(2).offline i {
+  color: #cc0000;
+}
+
+.rpList.bwSummary li span:nth-child(3) {
+  width: 15%;
+}
+
+.rpList.bwSummary li span:nth-child(4) {
+  width: 15%;
+}
+
+.rpList.bwSummary li span:nth-child(5) {
+  width: 15%;
+}
+
+.rpList.bwSummary li span:nth-child(6) {
+  width: 15%;
+}
+
+.rpList.bwSummary2 li span:nth-child(1) {
+  width: 40%;
+}
+
+.rpList.bwSummary2 li span:nth-child(1).online i {
+  color: #28a745;
+}
+
+.rpList.bwSummary2 li span:nth-child(1).offline i {
+  color: #cc0000;
+}
+
+.rpList.bwSummary2 li span:nth-child(3) {
+  width: 30%;
+}
+
+.rpList.bwSummary2 li span:nth-child(4) {
+  width: 30%;
+}
+
+.rpList.bwHeadInfo li span:nth-child(1) {
+  width: 30%;
+}
+
+.rpList.bwHeadInfo li span:nth-child(2) {
+  width: 70%;
+}
+
+.rpList.bwHeadInfoLong li span:nth-child(1) {
+  width: 40%;
+}
+
+.rpList.bwHeadInfoLong li span:nth-child(2) {
+  width: 60%;
+}
+
+.rpList.comparisonCol {
+  float: left;
+  width: 100%;
+}
+
+.rpList.comparisonCol li span:nth-child(1) {
+  width: 50%;
+}
+
+.rpList.comparisonCol li span:nth-child(2) {
+  width: 50%;
+}
+
+.rpList.comparisonCol li.totalPrice {
+  border-top: 1px solid #ddd;
+}
+
+.rpList.comparisonCol li.totalPrice span {
+  width: 100%;
+  font-weight: 600;
+}
+
+.rpList.comparisonCol li.ccBottomBtns {
+  padding: 0;
+  height: 50px;
+}
+
+.rpList.comparisonCol li.ccBottomBtns span {
+  width: 50%;
+}
+
+.rpList.comparisonCol li.ccBottomBtns span button {
+  margin-bottom: 0;
+  width: 100%;
+  font-size: 13px;
+  padding: 0 10px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+  color: #242526;
+}
+
+.rpList.comparisonCol li.ccBottomBtns span button:hover {
+  background-color: #ddd;
+}
+
+.rpList.comparisonCol li.ccBottomBtns:hover {
+  background-color: #fff;
+}
+
+.rpList.comparisonCol li.groupTotalBidder {
+  background-color: #fff;
+}
+
+.rpList.comparisonCol li.groupTotalBidder span {
+  width: 100%;
+  font-weight: 500;
+}
+
+.rpList.comparisonCol .rpListHead li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5px 15px;
+  height: 50px;
+}
+
+.rpList.comparisonCol .rpListHead li span {
+  color: #cc0700;
+}
+
+.rpList.comparisonCol .rpListHead li:nth-child(1) span {
+  width: 100%;
+}
+
+.rpList.comparisonCol .rpListHead li .rpListSubHead {
+  width: 100%;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.rpList.comparisonCol .rpListHead li .rpListSubHead span {
+  width: 50%;
+  color: #242526;
+}
+
+.rpList.productList li {
+  height: 50px;
+  overflow: hidden;
+  padding: 0 15px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.rpList.productList li span:nth-child(2) {
+  width: 10%;
+}
+
+.rpList.productList li span:nth-child(3) {
+  width: 90%;
+  line-height: 16px;
+}
+
+.rpList.productList li span:nth-child(3) i {
+  font-size: 12px;
+  font-style: italic;
+  width: 100%;
+  float: left;
+  color: red;
+}
+
+.rpList.productList li.plColBottom {
+  font-weight: 600;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-top: 1px solid #ddd;
+}
+
+.rpList.productList li.groupTotal {
+  background-color: #fff;
+}
+
+.rpList.productList li.groupTotal span:nth-child(2) {
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+}
+
+.rpList.productList .rpListHead span {
+  width: 100%;
+}
+
+.rpList.dutchProducts li span:nth-child(1) {
+  width: 60%;
+}
+
+.rpList.dutchProducts li span:nth-child(2) {
+  width: 20%;
+  text-align: center;
+}
+
+.rpList.dutchProducts li span:nth-child(3) {
+  width: 20%;
+  text-align: center;
+}
+
+.rpList.dutchBidderList li {
+  height: 50px;
+}
+
+.rpList.dutchBidderList li span {
+  padding: 0 5px;
+}
+
+.rpList.dutchBidderList li span:nth-child(1) {
+  width: 70%;
+  padding: 0;
+}
+
+.rpList.dutchBidderList li span:nth-child(2) {
+  width: 15%;
+  text-align: center;
+}
+
+.rpList.dutchBidderList li span:nth-child(3) {
+  width: 15%;
+  text-align: center;
+}
+
+.rpList.dutchBidderList li span button {
+  margin: 0;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent !important;
+  color: #242526 !important;
+}
+
+.rpList.dutchBidderList li span button i {
+  margin-left: 0;
+}
+
+.rpList.dutchBidderList li span button:hover i {
+  color: #007bff;
+}
+
+.rpList.dutchBidderList li span .close {
+  font-size: 18px;
+  color: #cc0000;
+}
+
+.rpList.dutchBidderList li .status {
+  position: relative;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rpList.dutchBidderList li .status.online:before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -15px;
+  width: 10px;
+  height: 50px;
+  background-color: #28a745;
+}
+
+.rpList.dutchBidderList li .status.offline:before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -15px;
+  width: 10px;
+  height: 50px;
+  background-color: #cc0000;
+}
+
+.rpList.dutchBidderList .rpListHead li span:nth-child(1) {
+  text-align: left;
+}
+
+.rpList.dutchBidderList .rpListHead li span:nth-child(2) {
+  text-align: center;
+}
+
+.rpList.dutchBidderList .rpListHead li span:nth-child(3) {
+  text-align: center;
+}
+
+.rpList.dutchActiveNextBid {
+  padding: 30px 30px 15px 30px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+  margin-bottom: 30px;
+}
+
+.rpList.dutchActiveNextBid li {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.rpList.dutchActiveNextBid li span:nth-child(1) {
+  width: 50%;
+  font-size: 15px;
+}
+
+.rpList.dutchActiveNextBid li span:nth-child(2) {
+  width: 50%;
+  font-size: 15px;
+}
+
+.rpList.dutchActiveNextBid li:hover {
+  background-color: transparent;
+}
+
+.rpList.dutchActiveNextBid ul:nth-last-child(1) li {
+  border-bottom: 0;
+}
+
+.rpList.dutchActiveNextBid:nth-child(1) {
+  width: 60%;
+  background-color: #eae1e1;
+  padding-right: 30px;
+  border-radius: 15px;
+}
+
+.rpList.dutchActiveNextBid:nth-child(1) li span {
+  font-weight: 600;
+}
+
+.rpList.dutchActiveNextBid:nth-child(1) .rpListHead {
+  border-top: 1px solid #cecece;
+}
+
+.rpList.dutchActiveNextBid:nth-child(1) .rpListHead li {
+  border-bottom: 1px solid #cecece;
+}
+
+.rpList.dutchActiveNextBid:nth-child(1) .rpListHead li span {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.rpList.dutchActiveNextBid:nth-child(1) .rpCardSubHead {
+  color: #cc0000;
+  font-size: 18px;
+}
+
+.rpList.dutchActiveNextBid:nth-child(1) .rpCardSubHead i {
+  margin-right: 5px;
+}
+
+.rpList.dutchActiveNextBid:nth-child(2) {
+  width: 40%;
+  background-color: #fff;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.rpList.dutchActiveNextBid:nth-child(2) li span {
+  font-weight: 600;
+}
+
+.rpList.dutchActiveNextBid:nth-child(2) li span:nth-child(1) {
+  width: 50%;
+  font-size: 13px;
+}
+
+.rpList.dutchActiveNextBid:nth-child(2) li span:nth-child(2) {
+  width: 50%;
+  font-size: 13px;
+}
+
+.rpList.dutchActiveNextBid:nth-child(2) .rpListHead {
+  border-top: 1px solid #cecece;
+}
+
+.rpList.dutchActiveNextBid:nth-child(2) .rpListHead li {
+  border-bottom: 1px solid #cecece;
+}
+
+.rpList.dutchActiveNextBid:nth-child(2) .rpListHead li span {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.rpList.dutchActiveNextBid:nth-child(2) .rpCardSubHead {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.rpList.dutchActiveNextBid:nth-child(2) .rpCardSubHead i {
+  margin-right: 5px;
+}
+
+.rpList.dutchBidResults li span:nth-child(1) {
+  width: 25%;
+}
+
+.rpList.dutchBidResults li span:nth-child(2) {
+  width: 25%;
+}
+
+.rpList.dutchBidResults li span:nth-child(3) {
+  width: 25%;
+}
+
+.rpList.dutchBidResults li span:nth-child(4) {
+  width: 25%;
+}
+
+.rpList.bsBidForm li {
+  height: 55px;
+}
+
+.rpList.bsBidForm li span {
+  padding: 0 10px;
+}
+
+.rpList.bsBidForm li span input, .rpList.bsBidForm li span select {
+  background-color: #fff;
+  outline: 0;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  float: left;
+  width: 100%;
+  height: 30px;
+}
+
+.rpList.bsBidForm li span:nth-child(1) {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rpList.bsBidForm li span:nth-child(1) span {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+
+.rpList.bsBidForm li span:nth-child(1) .group {
+  color: #cc0000;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: italic;
+  display: none;
+}
+
+.rpList.bsBidForm li span:nth-child(2) {
+  width: 10%;
+  text-align: center;
+}
+
+.rpList.bsBidForm li span:nth-child(3) {
+  width: 10%;
+  text-align: center;
+}
+
+.rpList.bsBidForm li span:nth-child(4) {
+  width: 15%;
+}
+
+.rpList.bsBidForm li span:nth-child(5) {
+  width: 15%;
+}
+
+.rpList.bsBidForm li span:nth-child(6) {
+  width: 15%;
+}
+
+.rpList.bsBidForm li span:nth-child(7) {
+  display: none;
+}
+
+.rpList.bsBidForm li.groupTotal {
+  border-top: 1px dotted rgba(204, 0, 0, 0.3);
+  margin-bottom: 40px;
+  background-color: #ececec;
+  position: relative;
+}
+
+.rpList.bsBidForm li.groupTotal:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+}
+
+.rpList.bsBidForm li.groupTotal.color1:before {
+  background-color: #007bff;
+}
+
+.rpList.bsBidForm li.groupTotal.color2:before {
+  background-color: #28a745;
+}
+
+.rpList.bsBidForm li.groupTotal.color3:before {
+  background-color: #6c757d;
+}
+
+.rpList.bsBidForm li.groupTotal.color4:before {
+  background-color: #CC0000;
+}
+
+.rpList.bsBidForm li.groupTotal.color5:before {
+  background-color: #99FF00;
+}
+
+.rpList.bsBidForm li.groupTotal.color6:before {
+  background-color: #CA278C;
+}
+
+.rpList.bsBidForm li.groupTotal.color7:before {
+  background-color: #CCCCFF;
+}
+
+.rpList.bsBidForm li.groupTotal.color8:before {
+  background-color: #003366;
+}
+
+.rpList.bsBidForm li.groupTotal.color9:before {
+  background-color: #0099CC;
+}
+
+.rpList.bsBidForm li.groupTotal.color10:before {
+  background-color: #C87533;
+}
+
+.rpList.bsBidForm li.groupTotal span {
+  font-weight: 600;
+}
+
+.rpList.bsBidForm li.groupTotal span:nth-child(1) {
+  width: 30%;
+  text-align: left;
+}
+
+.rpList.bsBidForm li.groupTotal span:nth-child(2) {
+  width: 55%;
+  text-align: right;
+}
+
+.rpList.bsBidForm li.groupTotal span:nth-child(3) {
+  width: 15%;
+  text-align: left;
+}
+
+.rpList.bsBidForm li.groupTotal span:nth-child(4) {
+  display: none;
+}
+
+.rpList.bsBidForm li.total {
+  border-bottom: 1px dotted rgba(204, 0, 0, 0.3);
+  border-top: 1px dotted rgba(204, 0, 0, 0.3);
+}
+
+.rpList.bsBidForm li.total span {
+  font-weight: 600;
+}
+
+.rpList.bsBidForm li.total span:nth-child(1) {
+  width: 85%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.rpList.bsBidForm li.total span:nth-child(2) {
+  width: 15%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.rpList.bsBidForm li.fullLineGroup span {
+  width: 100% !important;
+  font-weight: 600 !important;
+}
+
+.rpList.bsBidForm li .compColSuccess {
+  color: #28a745;
+}
+
+.rpList.bsBidForm li .compColError {
+  color: #cc0000;
+}
+
+.rpList.bsBidForm li.inGroup {
+  position: relative;
+}
+
+.rpList.bsBidForm li.inGroup:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+}
+
+.rpList.bsBidForm li.inGroup.color1:before {
+  background-color: #007bff;
+}
+
+.rpList.bsBidForm li.inGroup.color2:before {
+  background-color: #28a745;
+}
+
+.rpList.bsBidForm li.inGroup.color3:before {
+  background-color: #6c757d;
+}
+
+.rpList.bsBidForm li.inGroup.color4:before {
+  background-color: #CC0000;
+}
+
+.rpList.bsBidForm li.inGroup.color5:before {
+  background-color: #99FF00;
+}
+
+.rpList.bsBidForm li.inGroup.color6:before {
+  background-color: #CA278C;
+}
+
+.rpList.bsBidForm li.inGroup.color7:before {
+  background-color: #CCCCFF;
+}
+
+.rpList.bsBidForm li.inGroup.color8:before {
+  background-color: #003366;
+}
+
+.rpList.bsBidForm li.inGroup.color9:before {
+  background-color: #0099CC;
+}
+
+.rpList.bsBidForm li.inGroup.color10:before {
+  background-color: #C87533;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li span:nth-child(1) {
+  width: 40%;
+  text-align: center;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li span:nth-child(1) span {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li span:nth-child(2) {
+  width: 10%;
+  text-align: center;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li span:nth-child(3) {
+  width: 10%;
+  text-align: center;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li span:nth-child(4) {
+  width: 10%;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li span:nth-child(5) {
+  width: 10%;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li span:nth-child(6) {
+  width: 10%;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li span:nth-child(7) {
+  width: 10%;
+  text-align: center;
+  font-weight: 600;
+  display: block;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li.groupTotal {
+  border-top: 1px dotted rgba(204, 0, 0, 0.3);
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li.groupTotal span {
+  font-weight: 600;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li.groupTotal span:nth-child(1) {
+  width: 40%;
+  text-align: left;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li.groupTotal span:nth-child(2) {
+  width: 40%;
+  text-align: right;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li.groupTotal span:nth-child(3) {
+  width: 10%;
+  text-align: left;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li.groupTotal span:nth-child(4) {
+  width: 10%;
+  text-align: center;
+  display: block;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li.total {
+  border-bottom: 1px dotted rgba(204, 0, 0, 0.3);
+  border-top: 1px dotted rgba(204, 0, 0, 0.3);
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li.total span {
+  font-weight: 600;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li.total span:nth-child(1) {
+  width: 80%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.rpList.bsBidForm.bsBidFormCompetition li.total span:nth-child(2) {
+  width: 20%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+
+.rpList.bsBidForm .bsBidFormBtns {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.rpList.bsBidForm .bsBidFormBtns button {
+  margin: 0;
+}
+
+.rpList.bsBidForm .bsBidFormBtns button:nth-child(1) {
+  margin-right: 20px;
+}
+
+.rpList.bsBidForm.bsBidFormModal li span:nth-child(1) {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rpList.bsBidForm.bsBidFormModal li span:nth-child(1) span {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+
+.rpList.bsBidForm.bsBidFormModal li span:nth-child(1) .group {
+  color: #cc0000;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.rpList.bsBidForm.bsBidFormModal li span:nth-child(2) {
+  width: 20%;
+  text-align: center;
+}
+
+.rpList.bsBidForm.bsBidFormModal li span:nth-child(3) {
+  width: 20%;
+  text-align: center;
+}
+
+.rpList.bsBidForm.bsBidFormModal li span:nth-child(4) {
+  width: 20%;
+}
+
+.rpList.bsBidForm.bsBidFormModal li:nth-child(odd) {
+  background: #ececec !important;
+}
+
+.rpList.bsBidForm.bsBidFormModal li:nth-child(odd):hover {
+  background-color: #ddd !important;
+}
+
+.rpList.bsBidForm.bsBidFormModal li:hover {
+  background-color: #ddd !important;
+}
+
+.rpList.bsBidForm.bsBidFormModal li.groupTotal {
+  border-top: 1px dotted rgba(204, 0, 0, 0.3);
+  padding-bottom: 40px;
+}
+
+.rpList.bsBidForm.bsBidFormModal li.groupTotal span {
+  font-weight: 600;
+}
+
+.rpList.bsBidForm.bsBidFormModal li.groupTotal span:nth-child(1) {
+  width: 80%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.rpList.bsBidForm.bsBidFormModal li.groupTotal span:nth-child(2) {
+  width: 20%;
+  text-align: left;
+}
+
+.rpList.bsBidForm.bsBidFormModal li.total {
+  border-bottom: 1px dotted rgba(204, 0, 0, 0.3);
+  border-top: 1px dotted rgba(204, 0, 0, 0.3);
+}
+
+.rpList.bsBidForm.bsBidFormModal li.total span {
+  font-weight: 600;
+}
+
+.rpList.bsBidForm.bsBidFormModal li.total span:nth-child(1) {
+  width: 80%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.rpList.bsBidForm.bsBidFormModal li.total span:nth-child(2) {
+  width: 20%;
+  text-align: left;
+}
+
+.rpList.bsBidForm.bsBidFormModal .rpListHead li:nth-child(odd) {
+  background: #fff !important;
+}
+
+.rpList.userList li span {
+  padding-right: 20px;
+}
+
+.rpList.userList li span:nth-child(1) {
+  width: 17.5%;
+}
+
+.rpList.userList li span:nth-child(2) {
+  width: 17.5%;
+}
+
+.rpList.userList li span:nth-child(3) {
+  width: 25%;
+}
+
+.rpList.userList li span:nth-child(4) {
+  width: 20%;
+}
+
+.rpList.userList li span:nth-child(5) {
+  width: 10%;
+  text-align: center;
+}
+
+.rpList.userList li span:nth-child(5) a {
+  font-size: 18px;
+}
+
+.rpList.userList li span:nth-child(6) {
+  width: 10%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rpList.userList li span:nth-child(6) .checkbox label {
+  padding-left: 0;
+}
+
+.rpList.userList li span:nth-child(6) .checkbox .helper {
+  top: -7px;
+}
+
+.rpList.userList .filterHead {
+  border-top: 0;
+}
+
+.rpList.userList .filterHead input {
+  outline: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.rpList.pagesList li span {
+  padding-right: 20px;
+  text-align: center;
+}
+
+.rpList.pagesList li span:nth-child(1) {
+  width: 5%;
+}
+
+.rpList.pagesList li span:nth-child(2) {
+  width: 10%;
+}
+
+.rpList.pagesList li span:nth-child(3) {
+  width: 15%;
+}
+
+.rpList.pagesList li span:nth-child(4) {
+  width: 15%;
+}
+
+.rpList.pagesList li span:nth-child(5) {
+  width: 55%;
+  text-align: left;
+}
+
+.rpList.authList li span {
+  padding-right: 20px;
+  text-align: left;
+}
+
+.rpList.authList li span:nth-child(1) {
+  width: 5%;
+}
+
+.rpList.authList li span:nth-child(2) {
+  width: 95%;
+}
+
+.rpList.authListNew li span {
+  padding: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.rpList.authListNew li span:nth-child(1) {
+  width: 16%;
+  word-break: break-all;
+}
+
+.rpList.authListNew li span:nth-child(2) {
+  width: 12%;
+}
+
+.rpList.authListNew li span:nth-child(3) {
+  width: 12%;
+}
+
+.rpList.authListNew li span:nth-child(4) {
+  width: 12%;
+}
+
+.rpList.authListNew li span:nth-child(5) {
+  width: 12%;
+}
+
+.rpList.authListNew li span:nth-child(6) {
+  width: 12%;
+}
+
+.rpList.authListNew li span:nth-child(7) {
+  width: 12%;
+}
+
+.rpList.authListNew li span:nth-child(8) {
+  width: 12%;
+}
+
+.rpList.authListNew li span .checkbox .helper {
+  top: -7px;
+}
+
+.rpList.companyList li span {
+  padding-right: 20px;
+}
+
+.rpList.companyList li span:nth-child(1) {
+  width: 8%;
+}
+
+.rpList.companyList li span:nth-child(2) {
+  width: 27%;
+}
+
+.rpList.companyList li span:nth-child(3) {
+  width: 20%;
+}
+
+.rpList.companyList li span:nth-child(4) {
+  width: 15%;
+}
+
+.rpList.companyList li span:nth-child(5) {
+  width: 10%;
+  text-align: center;
+}
+
+.rpList.companyList li span:nth-child(6) {
+  width: 10%;
+  text-align: center;
+}
+
+.rpList.companyList li span:nth-child(6) a {
+  font-size: 18px;
+}
+
+.rpList.companyList li span:nth-child(7) {
+  width: 10%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rpList.companyList li span:nth-child(7) .checkbox label {
+  padding-left: 0;
+}
+
+.rpList.companyList li span:nth-child(7) .checkbox .helper {
+  top: -7px;
+}
+
+.rpList.companyList .filterHead {
+  border-top: 0;
+}
+
+.rpList.companyList .filterHead input {
+  outline: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.rpList.allBids {
+  padding-bottom: 0;
+}
+
+.rpList.allBids ul {
+  display: none;
+}
+
+.rpList.allBids li span:nth-child(1) {
+  width: 30%;
+  text-align: left;
+}
+
+.rpList.allBids li span:nth-child(2) {
+  width: 40%;
+  text-align: left;
+}
+
+.rpList.allBids li span:nth-child(3) {
+  width: 20%;
+  text-align: left;
+}
+
+.rpList.allBids li span:nth-child(4) {
+  width: 10%;
+  text-align: center;
+}
+
+.rpList.allBids li span:nth-child(4) a {
+  font-size: 22px;
+  color: #242526;
+}
+
+.rpList.allBids .rpCardSubHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0 !important;
+}
+
+.rpList.allBids .rpCardSubHead .allBidsHeadline {
+  float: left;
+  margin-right: 10px;
+}
+
+.rpList.allBids .rpCardSubHead.margin {
+  margin-bottom: 10px !important;
+}
+
+.rpList.tcoModalList li {
+  background: transparent !important;
+  position: relative;
+  padding-left: 0;
+}
+
+.rpList.tcoModalList li span {
+  padding-right: 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.rpList.tcoModalList li span:nth-child(1) {
+  width: 20%;
+}
+
+.rpList.tcoModalList li span:nth-child(2) {
+  width: 20%;
+}
+
+.rpList.tcoModalList li span:nth-child(3) {
+  width: 15%;
+}
+
+.rpList.tcoModalList li span:nth-child(4) {
+  width: 15%;
+}
+
+.rpList.tcoModalList li span:nth-child(5) {
+  width: 15%;
+}
+
+.rpList.tcoModalList li span:nth-child(6) {
+  width: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding-right: 0;
+}
+
+.rpList.tcoModalList li span select, .rpList.tcoModalList li span input {
+  width: 100%;
+  outline: 0;
+  border: 1px solid #ececec;
+  height: 45px;
+  padding: 0 10px;
+}
+
+.rpList.tcoModalList li:hover {
+  background-color: transparent !important;
+}
+
+.rpList.tcoModalList .rpListHead li {
+  height: 50px;
+  padding-left: 0;
+}
+
+.rpList.tcoModalList.tcoModalResults table {
+  width: 100%;
+  border-top: 1px solid #ddd;
+}
+
+.rpList.tcoModalList.tcoModalResults table .tcoResultsHead {
+  height: 50px;
+}
+
+.rpList.tcoModalList.tcoModalResults table tr {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.rpList.tcoModalList.tcoModalResults table tr td {
+  padding: 10px;
+  font-size: 13px;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+.rpList.tcoModalList.tcoModalResults table tr td.categoryColorTd {
+  position: relative;
+  padding-left: 20px;
+}
+
+.rpList.tcoModalList.tcoModalResults table tr td.categoryColorTd .categoryColor {
+  height: 100% !important;
+}
+
+.rpList.tcoModalList.tcoModalResults table tr td.tcoActionBtns a {
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.rpList.tcoModalList .tcoActionBtns {
+  position: relative;
+}
+
+.rpList.tcoModalList .tcoActionBtns .deleteModal {
+  position: absolute;
+  background-color: #242526;
+  padding: 30px 20px 20px;
+  width: 220px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 2;
+  top: -50px;
+  right: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+.rpList.tcoModalList .tcoActionBtns .deleteModal .dmCloseBtn {
+  position: absolute;
+  right: -4px;
+  top: 1px;
+  color: #fff;
+  font-size: 22px;
+}
+
+.rpList.tcoModalList .tcoActionBtns .deleteModal .dmText {
+  float: left;
+  width: 100%;
+  color: #fff;
+  padding: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.rpList.tcoModalList .tcoActionBtns .deleteModal .dmBtns {
+  float: left;
+  width: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.rpList.tcoModalList .tcoActionBtns .deleteModal .dmBtns a {
+  float: left;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 6px 15px !important;
+}
+
+.rpList.tcoModalList .tcoActionBtns .deleteModal .dmBtns a.dmCancel {
+  background-color: #007bff;
+}
+
+.rpList.tcoModalList .tcoActionBtns .deleteModal .dmBtns a.dmDelete {
+  background-color: #cc0000;
+}
+
+.rpList.tcoModalList .tcoActionBtns .deleteModal .dmBtns a:hover {
+  text-decoration: underline;
+}
+
+.toggleBtnWrap {
+  float: left;
+  color: #242526;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.toggleBtnWrap .toogleText {
+  float: left;
+  font-size: 14px;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.toggleBtnWrap .toggleBtn {
+  float: left;
+  width: 50px !important;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #64666d;
+  padding: 5px;
+  position: relative;
+}
+
+.toggleBtnWrap .toggleBtn span {
+  float: left;
+  width: 20px !important;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.toggleBtnWrap .toggleBtn.open {
+  background-color: #007bff;
+}
+
+.toggleBtnWrap .toggleBtn.open span {
+  left: 25px;
+}
+
+.pagination {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination a {
+  color: #222;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination a.nav {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pagination .current a {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.highlight {
+  background-color: #ffc107;
+}
+
+#backToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #242526;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+}
+
+.noteLines {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.noteLines .noteHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.noteLines:nth-last-child(1) {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.modalWrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 13;
+  display: none;
+}
+
+.modalWrap .mdContent {
+  width: 600px;
+  padding: 45px;
+  background-color: #fff;
+  float: left;
+  position: relative;
+  max-height: 650px;
+  overflow-y: auto;
+}
+
+.modalWrap .mdContent .mdCloseBtn {
+  position: absolute;
+  right: 7px;
+  top: 1px;
+  color: #242526;
+  font-size: 32px;
+}
+
+.modalWrap .mdContent .mdHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 500;
+}
+
+.modalWrap .mdContent .mdHead span:nth-child(1) {
+  font-size: 18px;
+}
+
+.modalWrap .mdContent .mdHead span:nth-child(2) {
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+.modalWrap .mdContent .mdHead span:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+
+.modalWrap .mdContent .mdMiddle {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.modalWrap .mdContent .mdMiddle .rpList ul li:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.modalWrap .mdContent .mdMiddle .rpList ul li:nth-child(odd):hover {
+  background-color: #e8e8e8;
+}
+
+.modalWrap .mdContent .mdMiddle p {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.modalWrap .mdContent .mdMiddle p:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.modalWrap .mdContent .mdMiddle .documentList {
+  float: left;
+  width: 100%;
+}
+
+.modalWrap .mdContent .mdMiddle .documentList button {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.modalWrap .mdContent .mdMiddle .documentList button:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.modalWrap .mdContent .mdMiddle .note {
+  float: left;
+  width: 100%;
+}
+
+.modalWrap .mdContent .mdMiddle .note .noteSubject {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.modalWrap .mdContent .mdMiddle .note .formTextArea {
+  float: left;
+  width: 100%;
+}
+
+.modalWrap .mdContent .mdMiddle .note .formTextArea textarea {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  height: 100px;
+  outline: 0;
+  border: 1px solid #e6e6e6;
+  resize: none;
+}
+
+.modalWrap .mdContent .mdMiddle .bidCon {
+  float: left;
+  width: 100%;
+  color: #cc0000;
+  padding: 20px 0;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.modalWrap .mdContent .mdBottom {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modalWrap .mdContent .mdBottom button {
+  margin: 0;
+}
+
+.modalWrap .mdContent .mdBottom button:nth-last-child(1) {
+  margin-left: 15px;
+}
+
+.modalWrap.modalLong .mdContent {
+  width: 800px;
+}
+
+.modalWrap.tcoModal .mdContent {
+  width: 1000px;
+}
+
+.modalWrap .modalTableMobile {
+  display: none;
+}
+
+.modalWrap.allBidsModal .rpListHead {
+  margin-bottom: 0;
+}
+
+.modalWrap.allBidsModal .rpListHead li {
+  font-weight: 600;
+  border-bottom: 2px solid #eee;
+}
+
+.modalWrap.allBidsModal ul {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.modalWrap.allBidsModal ul li {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.modalWrap.allBidsModal ul li span {
+  float: left;
+  text-align: left;
+  padding: 15px 0;
+}
+
+.modalWrap.allBidsModal ul li span:nth-child(1) {
+  width: 25%;
+}
+
+.modalWrap.allBidsModal ul li span:nth-child(2) {
+  width: 30%;
+}
+
+.modalWrap.allBidsModal ul li span:nth-child(3) {
+  width: 30%;
+}
+
+.modalWrap.allBidsModal ul li span:nth-child(4) {
+  width: 15%;
+}
+
+.modalWrap.allBidsModal button {
+  margin-bottom: 0;
+}
+
+.modalWrap.allBidsModal .mdMiddle {
+  margin-bottom: 0;
+}
+
+.tooltip {
+  position: relative;
+  margin-left: 10px;
+  float: left;
+}
+
+.tooltip .tooltipBtn {
+  float: left;
+  background-color: #007bff;
+  padding: 2px 10px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.tooltip .tooltipBtn .tooltipText {
+  position: absolute;
+  width: 180px !important;
+  background-color: #242526 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  border-radius: 6px !important;
+  padding: 10px !important;
+  z-index: 1 !important;
+  left: -70px !important;
+  top: 31px !important;
+  display: none !important;
+}
+
+.tooltip .tooltipBtn .tooltipText:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #242526 transparent;
+}
+
+.tooltip .tooltipBtn:hover .tooltipText {
+  display: block !important;
+}
+
+#bidResult {
+  display: none;
+  margin-bottom: 20px;
+}
+
+#bidInfo {
+  display: none;
+}
+
+#bidStatus {
+  display: none;
+}
+
+@media (max-width: 1375px) {
+  .rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(1) {
+    padding: 0;
+    margin-bottom: 40px;
+    border-right: 0;
+  }
+  .rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(2) {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1366px) {
+  .rightPanel .content .dashboardCard .dcContent .dcBody span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .rightPanel .content .dashboardCard {
+    width: 50%;
+  }
+  .rightPanel .middleHead {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: auto;
+  }
+  .rightPanel .middleHead .headline {
+    margin-bottom: 10px;
+  }
+  .rightPanel .middleHead .mhRight {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1135px) {
+  .rightPanel .header .headRight .accountWrap #dateTime {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .sideMenu, .rightPanel .header .headRight .headMenuWrap .sideBarToggle, .rightPanel.bidderSide .header .headRight .headMenuWrap .headDDmenu {
+    display: none;
+  }
+  .rightPanel .header .headLeft .mobileMenuBtn {
+    display: block;
+  }
+  .rightPanel .header .headLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .rightPanel {
+    width: 100%;
+    margin-left: 0;
+  }
+  .rightPanel .content .rpCard .rpCardContent {
+    max-width: 100%;
+  }
+  .rightPanel .content .bidWatch .rpCardHead {
+    font-size: 16px;
+  }
+  .rightPanel .middleHead .breadcrumb {
+    padding: 0;
+  }
+  .rightPanel .middleHead {
+    padding: 30px;
+    margin-bottom: 0;
+  }
+  .rightPanel .content .rpCard {
+    padding: 20px;
+  }
+  .rpList {
+    overflow-x: scroll;
+    padding-bottom: 50px;
+  }
+  #comparisonTable {
+    display: none;
+  }
+  .rpList ul {
+    width: 1000px;
+  }
+  .rpList.dutchActiveNextBid:nth-child(1), .rpList.dutchActiveNextBid:nth-child(2) {
+    width: 50%;
+  }
+  .rpList.dutchActiveNextBid {
+    margin-bottom: 20px;
+  }
+  .dutchActiveNextBid ul, .dutchProducts ul {
+    width: 100%;
+  }
+  .dutchBidderList ul {
+    width: 100%;
+  }
+  .allBids ul {
+    width: 100%;
+  }
+  .documents ul {
+    width: 100%;
+  }
+  .rpList.documents li span:nth-child(2) {
+    font-size: 12px;
+  }
+  .documentsBidder ul {
+    width: 100%;
+  }
+  .rpList.documentsBidder li span:nth-child(1) {
+    width: calc(100% - 100px);
+  }
+  .rpList.documentsBidder li span:nth-child(2) {
+    width: 100px;
+  }
+  .bwHeadInfo ul {
+    width: 600px;
+  }
+  .rpList ul li {
+    padding: 15px 0;
+  }
+  .modalWrap .mdContent .mdMiddle .rpList ul li:nth-child(odd) {
+    background-color: #fff;
+  }
+  .modalWrap .mdContent .mdMiddle .rpList ul li {
+    border-bottom: 1px solid #ddd;
+  }
+  .modalTableDesktop ul {
+    width: 100%;
+  }
+  .rightPanel .header .headRight .headMenuWrap .stickyCounter {
+    position: absolute;
+    top: 55px;
+    right: 0;
+  }
+  .rightPanel .header .headRight .headMenuWrap .stickyCounter .scText, .rightPanel .header .headRight .headMenuWrap .stickyCounter .scNumber {
+    font-size: 14px;
+  }
+  .rightPanel .header .headRight {
+    padding-right: 0;
+  }
+  .rightPanel .header .headRight .accountWrap .selectLanguage select {
+    padding: 0;
+  }
+  .rightPanel .header .headRight .accountWrap .selectLanguage {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .rightPanel .header .headLeft .mobileMenuWrap {
+    z-index: 14;
+  }
+  .rightPanel .content .stepsGuideWrap {
+    padding: 0;
+  }
+  .dutchBidResults ul {
+    width: 100%;
+  }
+  .rightPanel.bigRightPanel {
+    width: 100%;
+    margin-left: 0;
+  }
+  .rightPanel .content .dashboardContent {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .rpList.dutchBidderList li .status.online:before {
+    left: 0;
+  }
+  .rpList.dutchBidderList li span:nth-child(1) {
+    width: 70%;
+    padding-left: 15px;
+  }
+  .rpList.dutchBidderList li span:nth-child(2), .rpList.dutchBidderList li span:nth-child(3) {
+    width: 15%;
+  }
+  .rpList.dutchBidderList .rpListHead li span:nth-child(3) {
+    display: none;
+  }
+  .rpList.dutchBidderList .rpListHead li span:nth-child(2) {
+    width: 30%;
+  }
+  .rightPanel .header .headRight {
+    width: 0;
+  }
+  .rightPanel .content .reportDL button {
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .rightPanel .content .reportDL button:nth-child(1) {
+    margin-right: 10px;
+  }
+  .rightPanel .content .reportDL button:nth-child(2) {
+    width: 50%;
+  }
+  .rightPanel .middleHead .dbSearch {
+    display: none;
+  }
+  .rightPanel .header .headRight .accountWrap {
+    display: none;
+  }
+  .rightPanel .middleHead .mhRight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .rightPanel .middleHead .projectTypeFilter {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .rightPanel .middleHead .projectTypeFilter select {
+    width: 100%;
+  }
+  .rightPanel .middleHead .breadcrumb {
+    margin-left: 0;
+    width: 100%;
+    float: left;
+  }
+  .rightPanel .middleHead .breadcrumb ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .rightPanel .middleHead .headline {
+    font-size: 16px;
+  }
+  .rightPanel .middleHead {
+    padding: 20px;
+  }
+  .rightPanel .content {
+    padding: 0;
+  }
+  .rightPanel .content .dashboardCard {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .rightPanel .content .dashboardCard .dcContent .dcHead {
+    padding: 10px;
+  }
+  .rightPanel .content .dashboardCard .dcContent .dcBody {
+    padding: 20px;
+  }
+  .rightPanel .content .dashboardCard .dcContent .dcBottom {
+    padding: 10px 0px 10px 20px;
+  }
+  .rightPanel .content .dashboardCard .dcContent .dcBottom .dcProjectType {
+    font-size: 11px;
+  }
+  .rightPanel .header .headLeft {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .rightPanel .header .headLeft .mobileMenuWrap .navbarNav .menuItem a:before {
+    display: none;
+  }
+  .rightPanel .header .headLeft .mobileMenuBtn {
+    display: block;
+  }
+  .rightPanel .content .dashboardContent {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .rightPanel .content .productBox table {
+    width: 1000px;
+  }
+  .rightPanel .content .stepsGuideWrap {
+    display: none;
+  }
+  .rightPanel .content .bottomBtns {
+    padding: 0 20px;
+  }
+  .rightPanel .content .createProductGroup input {
+    border: 1px solid #ddd;
+    width: 100%;
+  }
+  .modalWrap .mdContent {
+    height: 100vh;
+    max-height: 100%;
+    padding: 50px 20px 20px;
+  }
+  .rightPanel .content .bidType .timeOptions .formInput, .rightPanel .content .bidType .bidChangeOptions .formInput {
+    width: 100%;
+  }
+  .rightPanel .content .bidType .competitionInfo .formInput {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .rightPanel .content .bidType .competitionInfo .formInput:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+  .rpList.bsBidForm .bsBidFormBtns button {
+    width: 50%;
+    padding: 0 10px;
+    text-align: left;
+    font-size: 13px;
+  }
+  .rightPanel .content .rpCard.noClearFix .rpCardContent, .rightPanel .content .rpCard.noClearFix .rpCardContent {
+    width: 100%;
+    max-width: 100%;
+  }
+  .rightPanel .notificationWrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .rpList.dutchActiveNextBid:nth-child(1) {
+    width: 100%;
+  }
+  .rpList.dutchActiveNextBid:nth-child(2) {
+    width: 100%;
+    padding-left: 0;
+  }
+  .modalWrap .modalTableDesktop {
+    display: none;
+  }
+  .modalWrap .modalTableMobile {
+    display: block;
+  }
+  .modalWrap .modalTableMobile ul {
+    width: 100%;
+  }
+  .modalWrap .modalTableMobile ul li span {
+    width: 50% !important;
+    text-align: left !important;
+  }
+  .rightPanel .header .headRight .headMenuWrap .stickyCounter {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    top: auto;
+  }
+  .rightPanel .content .formWrap .formInput {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .rightPanel .content .formWrap .formInput:nth-child(even) {
+    padding-left: 0;
+  }
+  .rightPanel .content .formWrap .formInput:nth-child(odd) {
+    padding-right: 0;
+  }
+  .rightPanel .content .formWrap .formInput:nth-last-child(-n+2) {
+    margin-bottom: 50px;
+  }
+  .ms-container {
+    width: 100% !important;
+  }
+  .rightPanel {
+    padding-bottom: 100px;
+  }
+  .rightPanel .content .productBox table td .addGroupWrap ul {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 55px;
+    right: 0;
+    bottom: 0;
+  }
+  .rightPanel .content .bwSummary {
+    position: relative;
+  }
+  .rightPanel .content .bwSummary:after {
+    content: '\f054';
+    font-family: 'fontAwesome';
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    width: 50px;
+    height: 68%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    color: #242526;
+    font-size: 26px;
+  }
+  .rightPanel .content .bwSummary:before {
+    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    font-size: 11px;
+    color: #64666d;
+    font-style: italic;
+  }
+  .rightPanel .content .bwSummary:hover:after {
+    opacity: 0;
+  }
+  .rightPanel .content .suppliers {
+    position: relative;
+  }
+  .rightPanel .content .suppliers:after {
+    content: '\f054';
+    font-family: 'fontAwesome';
+    position: absolute;
+    top: 32px;
+    right: 0px;
+    width: 50px;
+    height: calc(100% - 82px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    color: #242526;
+    font-size: 26px;
+  }
+  .rightPanel .content .suppliers:before {
+    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    font-size: 11px;
+    color: #64666d;
+    font-style: italic;
+  }
+  .rightPanel .content .suppliers:hover:after {
+    opacity: 0;
+  }
+  .rightPanel .content .productBox {
+    overflow-x: scroll;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .rightPanel .content .productBox:after {
+    content: '\f054';
+    font-family: 'fontAwesome';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 50px;
+    height: calc(100% - 41px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    color: #242526;
+    font-size: 26px;
+  }
+  .rightPanel .content .productBox:before {
+    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    font-size: 11px;
+    color: #64666d;
+    font-style: italic;
+  }
+  .rightPanel .content .productBox:hover:after {
+    opacity: 0;
+  }
+  .rightPanel .content .bsBidForm {
+    overflow-x: scroll;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .rightPanel .content .bsBidForm:after {
+    content: '\f054';
+    font-family: 'fontAwesome';
+    position: absolute;
+    top: 47px;
+    right: 0px;
+    width: 50px;
+    height: calc(100% - 137px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    color: #242526;
+    font-size: 26px;
+  }
+  .rightPanel .content .bsBidForm:before {
+    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    font-size: 11px;
+    color: #64666d;
+    font-style: italic;
+  }
+  .rightPanel .content .bsBidForm:hover:after {
+    opacity: 0;
+  }
+  .mdContent .bsBidForm {
+    overflow-x: scroll;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .mdContent .bsBidForm ul {
+    width: 600px;
+  }
+  .mdContent .bsBidForm:after {
+    content: '\f054';
+    font-family: 'fontAwesome';
+    position: absolute;
+    top: 57px;
+    right: 0px;
+    width: 50px;
+    height: calc(100% - 87px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    color: #242526;
+    font-size: 26px;
+  }
+  .mdContent .bsBidForm:before {
+    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    font-size: 11px;
+    color: #64666d;
+    font-style: italic;
+  }
+  .mdContent .bsBidForm:hover:after {
+    opacity: 0;
+  }
+  .companyList {
+    overflow-x: scroll;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .companyList ul {
+    width: 1000px;
+  }
+  .companyList:after {
+    content: '\f054';
+    font-family: 'fontAwesome';
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    width: 50px;
+    height: calc(100% - 33px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    color: #242526;
+    font-size: 26px;
+  }
+  .companyList:before {
+    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    font-size: 11px;
+    color: #64666d;
+    font-style: italic;
+  }
+  .companyList:hover:after {
+    opacity: 0;
+  }
+  .allBids {
+    overflow-x: scroll;
+    position: relative;
+    padding-bottom: 30px;
+  }
+  .allBids ul {
+    width: 100%;
+  }
+  .userList {
+    overflow-x: scroll;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .userList ul {
+    width: 1000px;
+  }
+  .userList:after {
+    content: '\f054';
+    font-family: 'fontAwesome';
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    width: 50px;
+    height: calc(100% - 33px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    color: #242526;
+    font-size: 26px;
+  }
+  .userList:before {
+    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    font-size: 11px;
+    color: #64666d;
+    font-style: italic;
+  }
+  .userList:hover:after {
+    opacity: 0;
+  }
+  .dutchBidResultsDesktop {
+    display: none;
+  }
+  .dutchBidResults {
+    padding-bottom: 0 !important;
+  }
+  .rightPanel .dutchBidResultsMobile {
+    display: block;
+    width: 100% !important;
+  }
+  .rightPanel .dutchBidResultsMobile li {
+    display: block !important;
+    border-bottom: 0 !important;
+  }
+  .rightPanel .dutchBidResultsMobile li span {
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 10px;
+  }
+  .rightPanel .dutchBidResultsMobile li span:nth-child(odd) {
+    width: 40% !important;
+  }
+  .rightPanel .dutchBidResultsMobile li span:nth-child(even) {
+    width: 60% !important;
+  }
+}
