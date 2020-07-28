@@ -659,15 +659,15 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 	&.preBid{
 		li{
 			span{					
-				&:nth-child(1){width:25%;}
-				&:nth-child(2){width:25%;}
-				&:nth-child(3){width:25%;}
-				&:nth-child(4){width:15%;
+				&:nth-child(1){width:35%;}
+				&:nth-child(2){width:35%; display:flex; align-items:center; justify-content:center;
+					.infoModalBtn{font-size:22px; color:$colorSuccess;}
+				}
+				&:nth-child(3){width:20%;
 					input{outline:0; padding:5px 10px; border:1px solid #ddd; font-size:14px; float:left; width:100%;}
 				}
-				&:nth-child(5){width:10%; text-align:right; display:flex; align-items:center; justify-content:space-evenly;
+				&:nth-child(4){width:10%; text-align:center;
 					a{font-size:18px;}
-					.infoModalBtn{font-size:22px; color:$colorSuccess;}
 				}
 			}
 		}

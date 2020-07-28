@@ -2719,22 +2719,32 @@ button.thirdBtn:hover {
 }
 
 .rpList.preBid li span:nth-child(1) {
-  width: 25%;
+  width: 35%;
 }
 
 .rpList.preBid li span:nth-child(2) {
-  width: 25%;
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rpList.preBid li span:nth-child(2) .infoModalBtn {
+  font-size: 22px;
+  color: #28a745;
 }
 
 .rpList.preBid li span:nth-child(3) {
-  width: 25%;
+  width: 20%;
 }
 
-.rpList.preBid li span:nth-child(4) {
-  width: 15%;
-}
-
-.rpList.preBid li span:nth-child(4) input {
+.rpList.preBid li span:nth-child(3) input {
   outline: 0;
   padding: 5px 10px;
   border: 1px solid #ddd;
@@ -2743,27 +2753,13 @@ button.thirdBtn:hover {
   width: 100%;
 }
 
-.rpList.preBid li span:nth-child(5) {
+.rpList.preBid li span:nth-child(4) {
   width: 10%;
-  text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  text-align: center;
 }
 
-.rpList.preBid li span:nth-child(5) a {
+.rpList.preBid li span:nth-child(4) a {
   font-size: 18px;
-}
-
-.rpList.preBid li span:nth-child(5) .infoModalBtn {
-  font-size: 22px;
-  color: #28a745;
 }
 
 .rpList.bidderModalTable li span:nth-child(1) {
