@@ -661,13 +661,23 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			span{					
 				&:nth-child(1){width:25%;}
 				&:nth-child(2){width:25%;}
-				&:nth-child(3){width:30%;}
+				&:nth-child(3){width:25%;}
 				&:nth-child(4){width:15%;
 					input{outline:0; padding:5px 10px; border:1px solid #ddd; font-size:14px; float:left; width:100%;}
 				}
-				&:nth-child(5){width:5%; text-align:right;
+				&:nth-child(5){width:10%; text-align:right; display:flex; align-items:center; justify-content:space-evenly;
 					a{font-size:18px;}
+					.infoModalBtn{font-size:22px; color:$colorSuccess;}
 				}
+			}
+		}
+	}
+	&.bidderModalTable{
+		li{
+			span{					
+				&:nth-child(1){width:35%;}
+				&:nth-child(2){width:35%;}
+				&:nth-child(3){width:30%;}
 			}
 		}
 	}
@@ -722,7 +732,6 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			}
 		}
 	}
-	
 	&.comparisonCol{float:left; width:100%;
 		li{
 			span{
@@ -1180,7 +1189,6 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			}
 		}
 	}
-	
 }
 .toggleBtnWrap{float:left; color:$color1; display: flex; align-items: center; justify-content: space-between;
 	.toogleText{float:left; font-size:14px; padding-left:10px; font-weight:600;}
@@ -1220,11 +1228,6 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			}
 		}
 		.mdMiddle{float:left; width:100%; font-size:14px; margin-bottom:20px;
-			.rpList ul li{
-				&:nth-child(odd){background-color:#f1f1f1;
-					&:hover{background-color:#e8e8e8;}
-				}
-			}
 			p{float:left; width:100%; margin-bottom:20px; font-size:13px; line-height:20px;
 				&:nth-last-child(1){margin-bottom:0;}
 			}

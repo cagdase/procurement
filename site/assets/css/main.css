@@ -2727,7 +2727,7 @@ button.thirdBtn:hover {
 }
 
 .rpList.preBid li span:nth-child(3) {
-  width: 30%;
+  width: 25%;
 }
 
 .rpList.preBid li span:nth-child(4) {
@@ -2744,12 +2744,38 @@ button.thirdBtn:hover {
 }
 
 .rpList.preBid li span:nth-child(5) {
-  width: 5%;
+  width: 10%;
   text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .rpList.preBid li span:nth-child(5) a {
   font-size: 18px;
+}
+
+.rpList.preBid li span:nth-child(5) .infoModalBtn {
+  font-size: 22px;
+  color: #28a745;
+}
+
+.rpList.bidderModalTable li span:nth-child(1) {
+  width: 35%;
+}
+
+.rpList.bidderModalTable li span:nth-child(2) {
+  width: 35%;
+}
+
+.rpList.bidderModalTable li span:nth-child(3) {
+  width: 30%;
 }
 
 .rpList.bwSummary li span:nth-child(1) {
@@ -4307,14 +4333,6 @@ button.thirdBtn:hover {
   width: 100%;
   font-size: 14px;
   margin-bottom: 20px;
-}
-
-.modalWrap .mdContent .mdMiddle .rpList ul li:nth-child(odd) {
-  background-color: #f1f1f1;
-}
-
-.modalWrap .mdContent .mdMiddle .rpList ul li:nth-child(odd):hover {
-  background-color: #e8e8e8;
 }
 
 .modalWrap .mdContent .mdMiddle p {

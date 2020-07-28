@@ -96,6 +96,14 @@ $(document).ready(function () {
     $('.tcoModal').hide()
   });
 
+  
+  $('.infoModalBtn').click(function () {
+    $('.bidderInfoModal').css({ display: 'flex' })
+  })
+  $('.infoModalCloseBtn').click(function () {
+    $('.bidderInfoModal').hide()
+  });
+
   $('.dmOpenBtn').click(function () {
     $('.deleteModal').hide();
     $(this).next('.deleteModal').show()
