@@ -104,6 +104,33 @@ button.thirdBtn:hover {
   background-color: #218838;
 }
 
+.primaryBtn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.primaryBtn:hover {
+  background-color: #1c5ca0;
+}
+
+.secondaryBtn {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.secondaryBtn:hover {
+  background-color: #222;
+}
+
+.thirdBtn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.thirdBtn:hover {
+  background-color: #218838;
+}
+
 .sideMenu {
   background: #fff;
   height: 100vh;
@@ -4414,6 +4441,123 @@ button.thirdBtn:hover {
   margin-left: 15px;
 }
 
+.modalWrap .mdContent .addLapMiddleWrap {
+  float: left;
+  width: 100%;
+}
+
+.modalWrap .mdContent .addLapMiddleWrap .alBox {
+  float: left;
+  width: 25%;
+  padding-right: 20px;
+}
+
+.modalWrap .mdContent .addLapMiddleWrap .alBox .alBoxContent {
+  float: left;
+  width: 100%;
+  border: 1px solid #ededed;
+  padding: 15px;
+  height: 350px;
+  position: relative;
+  border-top: 5px solid #ededed;
+}
+
+.modalWrap .mdContent .addLapMiddleWrap .alBox .alBoxContent .alBoxHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 13px;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.modalWrap .mdContent .addLapMiddleWrap .alBox .alBoxContent .alBoxText {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.modalWrap .mdContent .addLapMiddleWrap .alBox .alBoxContent .alBoxText ul {
+  float: left;
+  width: 100%;
+}
+
+.modalWrap .mdContent .addLapMiddleWrap .alBox .alBoxContent .alBoxText ul li {
+  float: left;
+  width: 100%;
+  padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+}
+
+.modalWrap .mdContent .addLapMiddleWrap .alBox .alBoxContent .alBoxText ul li i {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.modalWrap .mdContent .addLapMiddleWrap .alBox .alBoxContent .alBoxText ul li i.fa-check {
+  color: #28a745;
+}
+
+.modalWrap .mdContent .addLapMiddleWrap .alBox .alBoxContent .alBoxText ul li i.fa-times {
+  color: #cc0000;
+  margin-right: 4px;
+}
+
+.modalWrap .mdContent .addLapMiddleWrap .alBox .alBoxContent .alBoxRadio {
+  float: left;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ededed;
+}
+
+.modalWrap .mdContent .addLapMiddleWrap .alBox .alBoxContent .alBoxRadio a {
+  border: 0px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+}
+
+.modalWrap .mdContent .addLapMiddleWrap .alBox .alBoxContent:hover {
+  border-top: 5px solid #222;
+}
+
+.modalWrap.addLapModal .mdContent {
+  max-height: none;
+  width: 1200px;
+}
+
 .modalWrap.modalLong .mdContent {
   width: 800px;
 }
@@ -5230,5 +5374,22 @@ button.thirdBtn:hover {
   }
   .rightPanel .dutchBidResultsMobile li span:nth-child(even) {
     width: 60% !important;
+  }
+  .modalWrap .mdContent .addLapMiddleWrap .alBox .alBoxContent {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .modalWrap .mdContent .addLapMiddleWrap .alBox {
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
+  .modalWrap .mdContent .addLapMiddleWrap .alBox:nth-last-child(1) {
+    padding-right: 10px;
+  }
+  .rightPanel .content .reportDL button:nth-child(3) {
+    margin-right: 10px;
+  }
+  .rightPanel .content .reportDL button:nth-child(4) {
+    width: 50%;
   }
 }

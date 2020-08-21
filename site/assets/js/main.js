@@ -55,6 +55,13 @@ $(document).ready(function () {
     $('.allBidsModal').hide()
   });
 
+  $('.addLapModalBtn').click(function () {
+    $('.addLapModal').css({ display: 'flex' })
+  })
+  $('.addLapModalCloseBtn').click(function () {
+    $('.addLapModal').hide()
+  });
+
   $('.hddMbtn').click(function () {
     $('.navIcon').toggleClass('open')
   });

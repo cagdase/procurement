@@ -34,6 +34,16 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 	}
 }
 
+.primaryBtn{background-color: $linkColor; color: #fff;
+	&:hover{background-color:#1c5ca0;}
+}
+.secondaryBtn{background-color: #6c757d; color: #fff;
+	&:hover{background-color:#222;}
+}
+.thirdBtn{background-color: #28a745; color: #fff;
+	&:hover{background-color:#218838;}
+}
+
 .sideMenu{background: #fff; height: 100vh; padding: 0; vertical-align: top; width: 250px; box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08); position: fixed; left: 0; bottom: 0; top: 55px; z-index:10; font-family:$fontStack2;
 	.navbar{background: #fff; border-radius: 0; border: none; display: inline-block; margin: 0; padding: 0; vertical-align: top; width:250px;
 		.mainMenu{float: left; padding: 0; padding-bottom: 50px; width:250px;
@@ -1249,6 +1259,30 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				&:nth-last-child(1){margin-left:15px;}
 			}
 		}
+		.addLapMiddleWrap{float:left; width:100%;
+			.alBox{float:left; width:25%; padding-right:20px; 
+				.alBoxContent{float:left; width:100%; border:1px solid #ededed; padding:15px; height:350px; position: relative; border-top:5px solid #ededed;
+					.alBoxHead{float:left; width:100%; margin-bottom:10px; font-size:13px; border-bottom:1px solid #ececec; padding-bottom:5px; font-weight:600;}
+					.alBoxText{float:left; width:100%; margin-bottom:20px; font-size:12px;
+						ul{float:left; width:100%;
+							li{float:left; width:100%; padding:5px 0; display:flex; align-items:center; justify-content: space-between; border-bottom:1px solid #ececec;
+								i{font-size:20px; margin-left:5px;
+									&.fa-check{color:$colorSuccess;}
+									&.fa-times{color:$colorError; margin-right:4px;}
+								}
+							}
+						}
+					}
+					.alBoxRadio{float:left; width:100%; position: absolute; left: 0; bottom: 0; display: flex; align-items: center; justify-content: center; background-color: #ededed;
+						a{border: 0px; width: 100%; height:40px; text-align:center; display:flex; align-items:center; justify-content:center; font-weight:600;}
+					}
+					&:hover{border-top:5px solid #222;}
+				}
+			}
+		}
+	}
+	&.addLapModal{
+		.mdContent{max-height:none; width:1200px}
 	}
 	&.modalLong{
 		.mdContent{width:800px;}
@@ -1479,4 +1513,9 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			}
 		}
 	}
+	.modalWrap .mdContent .addLapMiddleWrap .alBox .alBoxContent{height:auto; padding-bottom:50px;}
+	.modalWrap .mdContent .addLapMiddleWrap .alBox{width:100%; padding:0 0 20px 0;}
+	.modalWrap .mdContent .addLapMiddleWrap .alBox:nth-last-child(1){padding-right:10px;}
+	.rightPanel .content .reportDL button:nth-child(3){margin-right:10px;}
+	.rightPanel .content .reportDL button:nth-child(4){width:50%;}
 }
