@@ -998,7 +998,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				}
 			}
 		}
-		.bsBidFormBtns{float: left; width: 100%; display: flex; align-items: center; justify-content: flex-end; margin-top:20px;
+		.bsBidFormBtns{float: left; width: 100%; display: flex; align-items: center; justify-content: flex-end; margin-top:20px; margin-bottom:10px;
 			button{margin:0;
 				&:nth-child(1){margin-right:20px;}
 			}
@@ -1219,7 +1219,20 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				&:nth-last-child(1){margin-bottom:0;}
 			}
 			.documentList{float:left; width:100%;
-				button{width:100%; float: left; margin-bottom:10px;
+				table{float:left; width:100%;
+					tr{float:left; width:100%; margin-bottom:10px;
+						td{float:left; display:flex; align-items:center; justify-content:flex-start; min-height:50px;
+							&:nth-child(1){width:60px;
+								input{width:20px; height:20px;}
+							}
+							&:nth-child(2){width:calc(100% - 60px);}
+						}
+						&.tableHead{ border-bottom:1px solid #ddd; margin-bottom: 10px;
+							td{min-height:30px; font-size:16px;}
+						}
+					}
+				}
+				button{width:100%; float: left; margin-bottom:0; margin-right:0; min-height:50px;
 					&:nth-last-child(1){margin-bottom:0;}
 				}
 			}
@@ -1315,6 +1328,9 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 .tcoBtnWrap{float:right;
 	.tcoBtn{margin:0;}
 }
+
+.documentsConfirmTextEnglish{float:left; text-align:right; width:100%; font-size:16px; line-height: 22px;; color:#cc0000;}
+.documentsConfirmTextDutch{float:left; width:100%; font-size:16px; line-height: 22px;; color:#cc0000; margin:20px 0;}
 	
 // Media queries start
 
