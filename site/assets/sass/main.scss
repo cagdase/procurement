@@ -319,7 +319,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				}
 			}
 			.rpCardHead{float:left; width:100%; font-size:22px; font-weight:500; margin-bottom:30px; padding-bottom:10px; border-bottom:1px solid #e6e6e6; position:relative; 
-				span{position: absolute; left: 0; top: -2px; width: 25px; height: 25px; background-color:$linkColor; color: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 12px; font-weight: 600;}
+				span{position: absolute; left: 0; top: calc(50% - 18px); width: 25px; height: 25px; background-color:$linkColor; color: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 12px; font-weight: 600;}
 			}
 			.rpCardSubHead{float:left; width:100%; font-size:14px; font-weight:400; margin-bottom:10px;
 				span{float:left; width:100%; font-size:13px; font-style: italic;}
@@ -335,7 +335,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			}
 		}
 		.bidPriceSearch{float:left; width:100%;
-			.rpCardHead{padding-left:30px; font-size:16px;}
+			.rpCardHead{padding-left:30px; font-size:16px; display: flex; align-items: center; justify-content: space-between;}
 		}
 		.bidWatch{float:left; width:100%;
 			.rpCardSubHead{font-size:18px;}
@@ -385,35 +385,32 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				.tableHead{
 					td{height:40px;}
 				}
-				td{border-bottom: 1px solid #ececec; font-size: 14px; padding:10px 20px 10px 0; text-align: center; vertical-align: middle;
+				td{border-bottom: 1px solid #ececec; font-size: 14px; padding:10px 20px 10px 0; text-align: center; vertical-align: middle; height:60px;
 					.productTableChekbox{font-size:14px; height:15px; width:15px;}
-					&:nth-child(1){width:20%;}
-					&:nth-child(2){width:35%;}
+					&:nth-child(1){width:5%; position:relative;
+						.groupColor{position:absolute; left:-10px; top:0; width:10px; height:60px;}
+						input{margin-left:20px;}
+					}
+					&:nth-child(2){width:40%; text-align:left;}
 					&:nth-child(3){width:20%;}
 					&:nth-child(4){width:20%;}
-					&.deleteBtn{width:5%; padding-right:0; justify-content:center; font-size:20px;}
+					&.lineButtons{width:15%; padding-right:0; font-size:20px;
+						a{margin:0 10px;}
+					}
 					input{float:left; width:100%; outline:0; height: 40px; padding:10px; font-size:14px; border:1px solid #ddd;}
 					.checkbox .helper{top:-8px;}
-					.addGroupWrap{position: relative; float: left; width: auto; margin-left:10px;
-						.addNewGroup{font-size:14px; border:1px solid $linkColor; padding:3px 10px; z-index:1;
-							&:hover{background-color:$linkColor; color:#fff;}
-						}
-						ul{position: fixed; left:calc(50% - 200px); top:calc(50% - 200px); padding:50px 30px 30px; width:100%; max-width:400px; height:400px; background-color: #fff; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); border-radius: 5px; border: 1px solid #ececec; display:none; z-index:2;
-							li{float:left; width:100%; border-bottom:1px solid #ddd;
-								a{display: block; padding:10px;
-									&:hover{background-color:#ececec;}
-								}
-								&:nth-last-child(1){border-bottom:0;}
-							}
-							&.openGroupList{display:block;}
-							.addNewGroupCloseBtn{position: absolute; right:10px; top:10px; font-size: 22px; background-color: #fff; border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);}
-						}
-					}
 				}
 			}
 		}
-		.createProductGroup{float:left;
-			input{float:left; padding:10px; outline:0; height: 40px; font-size:14px;}
+		.groupTagsWrap{float:left; display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap;
+			.groupTag{float:left; padding:10px 15px 10px 20px; border-radius:20px; display: flex; align-items: center; justify-content: center; margin-right:10px; margin-bottom:10px; position:relative;
+				& > span{float:left; font-size:13px; margin-right:20px; text-shadow: 1px 1px #000; font-weight: 600; color:#fff;}
+				& > a{color:#fff; margin-right:10px; line-height: 18px; width:13px;
+					&.edit{font-size:13px;}
+					&.close{font-size:16px; margin-right:0;}
+				}
+				&:nth-last-child(1){margin-right:0;}
+			}
 		}
 		.bottomBtns{float:left; width:100%; margin-bottom:40px;
 			button{margin-bottom:0; height:50px; padding:0 30px; font-size:16px;}
@@ -581,31 +578,10 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				&:nth-child(1){width:15px; height: 15px; margin-right:5px;}
 				&:nth-child(2){}
 			}
-			.group1{background-color:#CC0000}
-			.group2{background-color:#99FF00}
-			.group3{background-color:#CA278C}
-			.group4{background-color:#CCCCFF}
-			.group5{background-color:#003366}
-			.group6{background-color:#0099CC}
-			.group7{background-color:#C87533}
-			.group8{background-color:#663399}
-			.group9{background-color:#FF0080}
-			.group10{background-color:#CCCCCC}
 		}
 	}
 }
-.categoryColor{position: absolute; left: 0px; top: 0; height: 50px; width: 10px!important;
-	&.group1{background-color:#CC0000}
-	&.group2{background-color:#99FF00}
-	&.group3{background-color:#CA278C}
-	&.group4{background-color:#CCCCFF}
-	&.group5{background-color:#003366}
-	&.group6{background-color:#0099CC}
-	&.group7{background-color:#C87533}
-	&.group8{background-color:#663399}
-	&.group9{background-color:#FF0080}
-	&.group10{background-color:#CCCCCC}
-}
+.categoryColor{position: absolute; left: 0px; top: 0; height: 50px; width: 10px!important;}
 .tcoInputError{border:1px solid #ff0101!important;}
 .addTCObtn{margin:10px 0; float:right; margin-right:54px;}
 .rpList{float:left; width:100%;
@@ -1185,21 +1161,22 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				}
 			}
 		}
-		.tcoActionBtns{position:relative;
-			.deleteModal{position: absolute; background-color:$color1; padding:30px 20px 20px; width: 220px; border-radius: 10px; display: flex; align-items: center; justify-content: space-around; z-index: 2; top:-50px; right:10px; flex-direction:column; display:none;
-				.dmCloseBtn{position: absolute; right: -4px; top: 1px; color: #fff; font-size: 22px;}
-				.dmText{float:left; width:100%; color:#fff; padding:0; margin-bottom:15px; font-weight:600; text-align: center;}
-				.dmBtns{float:left; width:100%; padding:0; display:flex; align-items: center; justify-content: space-around;
-					a{float:left; color: #fff; font-weight: 600; border-radius: 3px; padding: 6px 15px!important;
-						&.dmCancel{background-color:$linkColor;}
-						&.dmDelete{background-color:$colorError;}
-						&:hover{text-decoration:underline;}
-					}
-				}
-			}
+		.tcoActionBtns{position:relative;}
+	}
+}
+
+.deleteModal{position: absolute; background-color:$color1; padding:30px 20px 20px; width: 220px; border-radius: 10px; display: flex; align-items: center; justify-content: space-around; z-index: 2; top:-50px; right:10px; flex-direction:column; display:none;
+	.dmCloseBtn{position: absolute; right:5px; top: 1px; color: #fff; font-size: 22px;}
+	.dmText{float:left; width:100%; color:#fff; padding:0; margin-bottom:15px; font-weight:600; text-align: center;}
+	.dmBtns{float:left; width:100%; padding:0; display:flex; align-items: center; justify-content: space-around;
+		a{float:left; color: #fff; font-weight: 600; border-radius: 3px; padding: 6px 15px!important;
+			&.dmCancel{background-color:$linkColor;}
+			&.dmDelete{background-color:$colorError;}
+			&:hover{text-decoration:underline;}
 		}
 	}
 }
+
 .toggleBtnWrap{float:left; color:$color1; display: flex; align-items: center; justify-content: space-between;
 	.toogleText{float:left; font-size:14px; padding-left:10px; font-weight:600;}
 	.toggleBtn{float: left; width: 50px!important; height: 30px; border-radius: 20px; background-color:$color2; padding: 5px; position:relative;
@@ -1324,6 +1301,20 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 #bidInfo{display:none;}
 #bidStatus{display:none;}
 
+.group1 {background-color: #007bff;}
+.group2 {background-color: #28a745;}
+.group3 {background-color: #6c757d;}
+.group4 {background-color: #CC0000;}
+.group5 {background-color: #99DD22;}
+.group6 {background-color: #CA278C;}
+.group7 {background-color: #CCCCFF;}
+.group8 {background-color: #003366;}
+.group9 {background-color: #0099CC;}
+.group10 {background-color: #C87533;}
+
+.tcoBtnWrap{float:right;
+	.tcoBtn{margin:0;}
+}
 	
 // Media queries start
 

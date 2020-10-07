@@ -44,10 +44,11 @@
 			align-items: center;
 			padding: 15px;
 			background: #f2f2f2;
+			flex-direction:column;
 		}
 
 		.wrap-login100 {
-			width: 350px;
+			width: 400px;
 			background: #fff;
 			border-radius: 10px;
 			overflow: hidden;
@@ -57,6 +58,7 @@
 			-webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
 			-o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
 			-ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+			margin-bottom:10px;
 		}
 
 		.login100-form {
@@ -65,7 +67,7 @@
 
 		.login100-form-title {
 			display: block;
-			font-size: 30px;
+			font-size: 20px;
 			color: #333333;
 			line-height: 1.2;
 			text-align: left;
@@ -74,14 +76,14 @@
 		}
 
 		.login100-form-title i {
-			font-size: 30px;
+			font-size: 20px;
 		}
 
 		.wrap-input100 {
 			width: 100%;
 			position: relative;
 			border-bottom: 2px solid #adadad;
-			margin-bottom: 37px;
+			margin-bottom: 30px;
 		}
 
 		.input100 {
@@ -197,6 +199,8 @@
 		}
 
 		.container-login100-form-btn {
+			float:left;
+			width:100%;
 			display: -webkit-box;
 			display: -webkit-flex;
 			display: -moz-box;
@@ -259,6 +263,62 @@
 			left: 0;
 		}
 
+		.logo {
+      float: left;
+      width: 100%;
+      background-color: #c70b0f;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo img{
+      max-width:300px;
+    }
+
+		.notRobotWrap {
+			float: left;
+			width: 100%;
+			height: 70px;
+			margin-bottom:20px;
+		}
+
+		.notRobotWrap img{width:100%;}
+
+		.signInBtns{float:left; width:100%; text-align:center; margin-bottom:20px;}
+
+		.forgotPassBtn {
+			text-align:center;
+			width:100%;
+			float: left;
+			font-size: 14px;
+			color: #242526;
+			margin-top: 15px;
+			font-weight: 400;
+		}
+
+		.smsInput {
+			height:50px;
+			font-size:20px;
+			padding:10px;
+			text-align:center;
+		}
+
+		.timer{
+			border:0;
+			float: left;
+			text-align: center;
+			font-size: 20px;
+			margin-bottom:10px;
+		}
+
+		.passwordRule{
+			float:left;
+			width:100%;
+			font-size:14px;
+			margin-bottom:10px;
+			line-height:18px;
+		}
+
 		@media (max-width: 576px) {
 			.wrap-login100 {
 				padding: 77px 15px 33px 15px;
@@ -268,23 +328,26 @@
 </head>
 
 <body>
+	<div class="logo"><img src="assets/images/thyLogo.png" alt=""></div>
 	<div class="limiter">
 		<div class="container-login100">
-			<div class="wrap-login100">
+
+			<!-- login -->
+			<div class="wrap-login100">			
 				<form class="login100-form validate-form">
 					<span class="login100-form-title"><i class="fas fa-sign-in-alt"></i> Sisteme Giriş</span>
-
 					<div class="wrap-input100">
-						<input class="input100" type="email" name="email" required autocomplete="off">
-						<span class="focus-input100" data-placeholder="E-Posta"></span>
+						<input class="input100" type="email" name="email" placeholder="E-Posta" required autocomplete="off">
 					</div>
-
 					<div class="wrap-input100">
 						<span class="btn-show-pass">
 							<i class="far fa-eye"></i>
 						</span>
-						<input class="input100" type="password" name="pass" required>
-						<span class="focus-input100" data-placeholder="Şifre"></span>
+						<input class="input100" type="password" name="pass" placeholder="Şifre" required>
+					</div>
+					<div class="notRobotWrap"><img src="assets/images/notrobot.png"></div>
+					<div class="signInBtns">
+						<a href="#" class="forgotPassBtn"><i class="fas fa-unlock-alt"></i> Şifremi unuttum?</a>
 					</div>
 
 					<div class="container-login100-form-btn">
@@ -293,9 +356,72 @@
 							<button class="login100-form-btn">GİRİŞ</button>
 						</div>
 					</div>
-
 				</form>
 			</div>
+
+			<!-- sms giris -->
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<div class="wrap-input100">
+						<input class="input100 smsInput" type="text" name="sms" placeholder="SMS kodunu giriniz" required autocomplete="off">
+					</div>
+					<div class="wrap-input100 timer">
+						<span id="timer"></span>
+					</div>
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">ONAYLA</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- şifremi unutum mail giriş -->
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title"><i class="fas fa-lock"></i> Şifremi unuttum</span>
+					<div class="wrap-input100">
+						<input class="input100 smsInput" type="text" name="sms" placeholder="E-Posta adresiniz" required autocomplete="off">
+					</div>
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">GÖNDER</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- mailden gelen linkden şifremi yenile ekranı -->
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title"><i class="fas fa-lock"></i> Yeni şifre</span>
+					<div class="wrap-input100">
+						<span class="btn-show-pass">
+							<i class="far fa-eye"></i>
+						</span>
+						<input class="input100" type="password" name="pass" placeholder="Şifre" required>
+					</div>
+					<div class="wrap-input100">
+						<span class="btn-show-pass">
+							<i class="far fa-eye"></i>
+						</span>
+						<input class="input100" type="password" name="pass" placeholder="Şifre tekrar" required>
+					</div>
+					<div class="passwordRule">
+						Şifreniz en az 8 en fazla 15 karakter, en az bir küçük bir büyük harf ve en az bir harf ve bir rakamdan oluşmalıdır.
+					</div>
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">KAYDET</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+
 		</div>
 	</div>
 
@@ -331,6 +457,23 @@
 				showPass = 0;
 			}
 		});
+
+		//sms counter
+		window.onload = function() {
+			var minute = 2;
+			var sec = 60;
+			setInterval(function() {
+				document.getElementById("timer").innerHTML = minute + ":" + sec;
+				sec--;
+				if (sec == 00) {
+					minute --;
+					sec = 60;
+					if (minute == 0) {
+						minute = 5;
+					}
+				}
+			}, 1000);
+		}
 	</script>
 </body>
 

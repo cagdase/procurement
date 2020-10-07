@@ -1458,7 +1458,7 @@ button.thirdBtn:hover {
 .rightPanel .content .rpCard .rpCardHead span {
   position: absolute;
   left: 0;
-  top: -2px;
+  top: calc(50% - 18px);
   width: 25px;
   height: 25px;
   background-color: #007bff;
@@ -1516,6 +1516,15 @@ button.thirdBtn:hover {
 .rightPanel .content .bidPriceSearch .rpCardHead {
   padding-left: 30px;
   font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .rightPanel .content .bidWatch {
@@ -1737,6 +1746,7 @@ button.thirdBtn:hover {
   padding: 10px 20px 10px 0;
   text-align: center;
   vertical-align: middle;
+  height: 60px;
 }
 
 .rightPanel .content .productBox table td .productTableChekbox {
@@ -1746,11 +1756,25 @@ button.thirdBtn:hover {
 }
 
 .rightPanel .content .productBox table td:nth-child(1) {
-  width: 20%;
+  width: 5%;
+  position: relative;
+}
+
+.rightPanel .content .productBox table td:nth-child(1) .groupColor {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 10px;
+  height: 60px;
+}
+
+.rightPanel .content .productBox table td:nth-child(1) input {
+  margin-left: 20px;
 }
 
 .rightPanel .content .productBox table td:nth-child(2) {
-  width: 35%;
+  width: 40%;
+  text-align: left;
 }
 
 .rightPanel .content .productBox table td:nth-child(3) {
@@ -1761,13 +1785,14 @@ button.thirdBtn:hover {
   width: 20%;
 }
 
-.rightPanel .content .productBox table td.deleteBtn {
-  width: 5%;
+.rightPanel .content .productBox table td.lineButtons {
+  width: 15%;
   padding-right: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-size: 20px;
+}
+
+.rightPanel .content .productBox table td.lineButtons a {
+  margin: 0 10px;
 }
 
 .rightPanel .content .productBox table td input {
@@ -1784,74 +1809,25 @@ button.thirdBtn:hover {
   top: -8px;
 }
 
-.rightPanel .content .productBox table td .addGroupWrap {
-  position: relative;
+.rightPanel .content .groupTagsWrap {
   float: left;
-  width: auto;
-  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.rightPanel .content .productBox table td .addGroupWrap .addNewGroup {
-  font-size: 14px;
-  border: 1px solid #007bff;
-  padding: 3px 10px;
-  z-index: 1;
-}
-
-.rightPanel .content .productBox table td .addGroupWrap .addNewGroup:hover {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.rightPanel .content .productBox table td .addGroupWrap ul {
-  position: fixed;
-  left: calc(50% - 200px);
-  top: calc(50% - 200px);
-  padding: 50px 30px 30px;
-  width: 100%;
-  max-width: 400px;
-  height: 400px;
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  border: 1px solid #ececec;
-  display: none;
-  z-index: 2;
-}
-
-.rightPanel .content .productBox table td .addGroupWrap ul li {
+.rightPanel .content .groupTagsWrap .groupTag {
   float: left;
-  width: 100%;
-  border-bottom: 1px solid #ddd;
-}
-
-.rightPanel .content .productBox table td .addGroupWrap ul li a {
-  display: block;
-  padding: 10px;
-}
-
-.rightPanel .content .productBox table td .addGroupWrap ul li a:hover {
-  background-color: #ececec;
-}
-
-.rightPanel .content .productBox table td .addGroupWrap ul li:nth-last-child(1) {
-  border-bottom: 0;
-}
-
-.rightPanel .content .productBox table td .addGroupWrap ul.openGroupList {
-  display: block;
-}
-
-.rightPanel .content .productBox table td .addGroupWrap ul .addNewGroupCloseBtn {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 22px;
-  background-color: #fff;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  padding: 10px 15px 10px 20px;
+  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1861,20 +1837,38 @@ button.thirdBtn:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
-.rightPanel .content .createProductGroup {
+.rightPanel .content .groupTagsWrap .groupTag > span {
   float: left;
+  font-size: 13px;
+  margin-right: 20px;
+  text-shadow: 1px 1px #000;
+  font-weight: 600;
+  color: #fff;
 }
 
-.rightPanel .content .createProductGroup input {
-  float: left;
-  padding: 10px;
-  outline: 0;
-  height: 40px;
-  font-size: 14px;
+.rightPanel .content .groupTagsWrap .groupTag > a {
+  color: #fff;
+  margin-right: 10px;
+  line-height: 18px;
+  width: 13px;
+}
+
+.rightPanel .content .groupTagsWrap .groupTag > a.edit {
+  font-size: 13px;
+}
+
+.rightPanel .content .groupTagsWrap .groupTag > a.close {
+  font-size: 16px;
+  margin-right: 0;
+}
+
+.rightPanel .content .groupTagsWrap .groupTag:nth-last-child(1) {
+  margin-right: 0;
 }
 
 .rightPanel .content .bottomBtns {
@@ -2530,92 +2524,12 @@ button.thirdBtn:hover {
   margin-right: 5px;
 }
 
-.categoryGropusInfo .cgiList li .group1 {
-  background-color: #CC0000;
-}
-
-.categoryGropusInfo .cgiList li .group2 {
-  background-color: #99FF00;
-}
-
-.categoryGropusInfo .cgiList li .group3 {
-  background-color: #CA278C;
-}
-
-.categoryGropusInfo .cgiList li .group4 {
-  background-color: #CCCCFF;
-}
-
-.categoryGropusInfo .cgiList li .group5 {
-  background-color: #003366;
-}
-
-.categoryGropusInfo .cgiList li .group6 {
-  background-color: #0099CC;
-}
-
-.categoryGropusInfo .cgiList li .group7 {
-  background-color: #C87533;
-}
-
-.categoryGropusInfo .cgiList li .group8 {
-  background-color: #663399;
-}
-
-.categoryGropusInfo .cgiList li .group9 {
-  background-color: #FF0080;
-}
-
-.categoryGropusInfo .cgiList li .group10 {
-  background-color: #CCCCCC;
-}
-
 .categoryColor {
   position: absolute;
   left: 0px;
   top: 0;
   height: 50px;
   width: 10px !important;
-}
-
-.categoryColor.group1 {
-  background-color: #CC0000;
-}
-
-.categoryColor.group2 {
-  background-color: #99FF00;
-}
-
-.categoryColor.group3 {
-  background-color: #CA278C;
-}
-
-.categoryColor.group4 {
-  background-color: #CCCCFF;
-}
-
-.categoryColor.group5 {
-  background-color: #003366;
-}
-
-.categoryColor.group6 {
-  background-color: #0099CC;
-}
-
-.categoryColor.group7 {
-  background-color: #C87533;
-}
-
-.categoryColor.group8 {
-  background-color: #663399;
-}
-
-.categoryColor.group9 {
-  background-color: #FF0080;
-}
-
-.categoryColor.group10 {
-  background-color: #CCCCCC;
 }
 
 .tcoInputError {
@@ -4069,7 +3983,7 @@ button.thirdBtn:hover {
   position: relative;
 }
 
-.rpList.tcoModalList .tcoActionBtns .deleteModal {
+.deleteModal {
   position: absolute;
   background-color: #242526;
   padding: 30px 20px 20px;
@@ -4093,15 +4007,15 @@ button.thirdBtn:hover {
   display: none;
 }
 
-.rpList.tcoModalList .tcoActionBtns .deleteModal .dmCloseBtn {
+.deleteModal .dmCloseBtn {
   position: absolute;
-  right: -4px;
+  right: 5px;
   top: 1px;
   color: #fff;
   font-size: 22px;
 }
 
-.rpList.tcoModalList .tcoActionBtns .deleteModal .dmText {
+.deleteModal .dmText {
   float: left;
   width: 100%;
   color: #fff;
@@ -4111,7 +4025,7 @@ button.thirdBtn:hover {
   text-align: center;
 }
 
-.rpList.tcoModalList .tcoActionBtns .deleteModal .dmBtns {
+.deleteModal .dmBtns {
   float: left;
   width: 100%;
   padding: 0;
@@ -4125,7 +4039,7 @@ button.thirdBtn:hover {
       justify-content: space-around;
 }
 
-.rpList.tcoModalList .tcoActionBtns .deleteModal .dmBtns a {
+.deleteModal .dmBtns a {
   float: left;
   color: #fff;
   font-weight: 600;
@@ -4133,15 +4047,15 @@ button.thirdBtn:hover {
   padding: 6px 15px !important;
 }
 
-.rpList.tcoModalList .tcoActionBtns .deleteModal .dmBtns a.dmCancel {
+.deleteModal .dmBtns a.dmCancel {
   background-color: #007bff;
 }
 
-.rpList.tcoModalList .tcoActionBtns .deleteModal .dmBtns a.dmDelete {
+.deleteModal .dmBtns a.dmDelete {
   background-color: #cc0000;
 }
 
-.rpList.tcoModalList .tcoActionBtns .deleteModal .dmBtns a:hover {
+.deleteModal .dmBtns a:hover {
   text-decoration: underline;
 }
 
@@ -4676,6 +4590,54 @@ button.thirdBtn:hover {
 
 #bidStatus {
   display: none;
+}
+
+.group1 {
+  background-color: #007bff;
+}
+
+.group2 {
+  background-color: #28a745;
+}
+
+.group3 {
+  background-color: #6c757d;
+}
+
+.group4 {
+  background-color: #CC0000;
+}
+
+.group5 {
+  background-color: #99DD22;
+}
+
+.group6 {
+  background-color: #CA278C;
+}
+
+.group7 {
+  background-color: #CCCCFF;
+}
+
+.group8 {
+  background-color: #003366;
+}
+
+.group9 {
+  background-color: #0099CC;
+}
+
+.group10 {
+  background-color: #C87533;
+}
+
+.tcoBtnWrap {
+  float: right;
+}
+
+.tcoBtnWrap .tcoBtn {
+  margin: 0;
 }
 
 @media (max-width: 1375px) {
