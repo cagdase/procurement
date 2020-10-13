@@ -833,13 +833,17 @@ button.thirdBtn:hover {
   display: inline-block;
 }
 
-.rightPanel .header .headRight .headMenuWrap .stickyCounter {
+.rightPanel .header .headRight .headMenuWrap .counterWrap {
   float: left;
-  padding: 0 30px 0 50px;
+  width: 430px;
+}
+
+.rightPanel .header .headRight .headMenuWrap .counterWrap .stickyCounter {
+  float: left;
+  padding: 0 30px 0 10px;
   background-color: #cc0000;
   color: #fff;
   text-align: center;
-  position: relative;
   height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -852,22 +856,21 @@ button.thirdBtn:hover {
           justify-content: flex-start;
 }
 
-.rightPanel .header .headRight .headMenuWrap .stickyCounter i {
-  position: absolute;
-  left: 17px;
-  top: 14px;
+.rightPanel .header .headRight .headMenuWrap .counterWrap .stickyCounter i {
+  float: left;
   color: #fff;
   font-size: 26px;
 }
 
-.rightPanel .header .headRight .headMenuWrap .stickyCounter .scText {
+.rightPanel .header .headRight .headMenuWrap .counterWrap .stickyCounter .scText {
   float: left;
   font-size: 16px;
   margin-right: 10px;
+  margin-left: 10px;
   white-space: nowrap;
 }
 
-.rightPanel .header .headRight .headMenuWrap .stickyCounter .scNumber {
+.rightPanel .header .headRight .headMenuWrap .counterWrap .stickyCounter .scNumber {
   float: left;
   width: 100%;
   font-size: 18px;
@@ -875,6 +878,37 @@ button.thirdBtn:hover {
   line-height: 16px;
   white-space: nowrap;
   width: 110px;
+}
+
+.rightPanel .header .headRight .headMenuWrap .counterWrap .counterBtns {
+  float: left;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10px;
+}
+
+.rightPanel .header .headRight .headMenuWrap .counterWrap .counterBtns button {
+  margin-bottom: 0;
+  margin-right: 10px;
+  height: 25px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.rightPanel .header .headRight .headMenuWrap .counterWrap .counterBtns button:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.rightPanel .header .headRight .headMenuWrap .counterWrap .counterBtns button i {
+  font-size: 10px;
 }
 
 .rightPanel .header .headRight .accountWrap {
@@ -4751,7 +4785,7 @@ button.thirdBtn:hover {
   }
 }
 
-@media (max-width: 1135px) {
+@media (max-width: 1200px) {
   .rightPanel .header .headRight .accountWrap #dateTime {
     display: none;
   }
@@ -5422,5 +5456,8 @@ button.thirdBtn:hover {
   }
   .rightPanel .content .reportDL button:nth-child(4) {
     width: 50%;
+  }
+  .rightPanel .header .headRight .headMenuWrap .counterWrap .counterBtns {
+    display: none;
   }
 }

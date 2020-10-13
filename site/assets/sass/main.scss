@@ -188,10 +188,18 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 						&.smOpen{display:inline-block;}
 					}
 				}
-				.stickyCounter{float: left; padding: 0 30px 0 50px; background-color:$colorError; color: #fff; text-align: center; position: relative; height: 55px; display: flex; align-items: center; justify-content: flex-start; 
-	 				i{position: absolute; left: 17px; top: 14px; color: #fff; font-size: 26px;}
-					.scText{float:left; font-size:16px; margin-right: 10px; white-space:nowrap;}
-					.scNumber{float:left; width: 100%; font-size:18px; font-weight: 600; line-height: 16px; white-space: nowrap; width:110px;}
+				.counterWrap{float:left; width:430px;
+					.stickyCounter{float: left; padding: 0 30px 0 10px; background-color:$colorError; color: #fff; text-align: center; height: 55px; display: flex; align-items: center; justify-content: flex-start; 
+						i{float:left; color: #fff; font-size: 26px;}
+						.scText{float:left; font-size:16px; margin-right: 10px; margin-left: 10px; white-space:nowrap;}
+						.scNumber{float:left; width: 100%; font-size:18px; font-weight: 600; line-height: 16px; white-space: nowrap; width:110px;}
+					}
+					.counterBtns{float:left; height:55px; display:flex; align-items:center; justify-content:center; padding-left:10px;
+						button{margin-bottom:0; margin-right:10px; height: 25px; padding: 0 10px; font-size: 12px;
+							&:nth-last-child(1){margin-right:0;}
+							i {font-size: 10px;}
+						}
+					}
 				}
 			}
 			.accountWrap{float:left;
@@ -1331,7 +1339,9 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 
 .documentsConfirmTextEnglish{float:left; text-align:right; width:100%; font-size:16px; line-height: 22px;; color:#cc0000;}
 .documentsConfirmTextDutch{float:left; width:100%; font-size:16px; line-height: 22px;; color:#cc0000; margin:20px 0;}
-	
+
+
+
 // Media queries start
 
 @media (max-width: 1375px){
@@ -1350,7 +1360,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 	.rightPanel .middleHead .mhRight{justify-content:flex-start; width: 100%;}
 } 
 
-@media (max-width:1135px) {
+@media (max-width:1200px) {
 	.rightPanel .header .headRight .accountWrap #dateTime{display:none;}
 }
 
@@ -1525,4 +1535,5 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 	.modalWrap .mdContent .addLapMiddleWrap .alBox:nth-last-child(1){padding-right:10px;}
 	.rightPanel .content .reportDL button:nth-child(3){margin-right:10px;}
 	.rightPanel .content .reportDL button:nth-child(4){width:50%;}
+	.rightPanel .header .headRight .headMenuWrap .counterWrap .counterBtns{display:none;}
 }
