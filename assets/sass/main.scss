@@ -32,6 +32,9 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 	&.thirdBtn{background-color: #28a745; color: #fff;
 		&:hover{background-color:#218838;}
 	}
+	&.errorBtn{background-color: $colorError; color: #fff;
+		&:hover{background-color:#6b110c;}
+	}
 }
 
 .primaryBtn{background-color: $linkColor; color: #fff;
@@ -42,6 +45,9 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 }
 .thirdBtn{background-color: #28a745; color: #fff;
 	&:hover{background-color:#218838;}
+}
+.errorBtn{background-color: $colorError; color: #fff;
+	&:hover{background-color:#6b110c;}
 }
 
 .sideMenu{background: #fff; height: 100vh; padding: 0; vertical-align: top; width: 250px; box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08); position: fixed; left: 0; bottom: 0; top: 55px; z-index:10; font-family:$fontStack2;
@@ -1340,7 +1346,14 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 .documentsConfirmTextEnglish{float:left; text-align:right; width:100%; font-size:16px; line-height: 22px;; color:#cc0000;}
 .documentsConfirmTextDutch{float:left; width:100%; font-size:16px; line-height: 22px;; color:#cc0000; margin:20px 0;}
 
-
+.subCategoryInfo{float:left; width:100%; margin-bottom:20px;
+	.subCategoryHead{float:left; width:100%; margin-bottom:10px; font-size:14px;}
+	.subCategoryAdd{float:left; width:100%; margin-bottom:10px; border: 1px solid #ececec;
+		select{float:left; width:80px; padding:10px; height:40px; border:0; outline:0;}
+		input{float:left; width:calc(100% - 90px); padding:10px; height:40px; outline:0; font-size:14px; color:#222; border: 0; border-left: 1px solid #ececec; margin-left: 10px;}
+	}
+	.newSubCategoryBtn{float:left; width:100%; font-size:14px;}
+}
 
 // Media queries start
 
