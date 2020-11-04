@@ -16,6 +16,10 @@ a{text-decoration: none; color:$linkColor;}
 ::after, ::before {box-sizing: border-box;}
 body{font-family: $fontStack; font-weight: 400; line-height: 1.5; color:$color1; text-align: left; background-color: #fff;}
 .marB50{margin-bottom:50px!important;}
+.marB0{margin-bottom:0!important;}
+.w50{width:50%!important;}
+.padR10{padding-right:10px!important;}
+.padL10{padding-left:10px!important;}
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 input[type=number] { -moz-appearance: textfield; }
 
@@ -49,6 +53,16 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 .errorBtn{background-color: $colorError; color: #fff;
 	&:hover{background-color:#6b110c;}
 }
+
+.formShort{width:120px;}
+.formMiddle{width:250px;}
+.formLong{width:500px;}
+.formInput{float:left; width:100%; margin-bottom:30px;}
+.formTextArea{float:left; width:100%; margin-bottom:50px;
+	.taHead{float:left; width:100%; margin-bottom:5px; font-size:13px; font-weight:300;}
+	textarea{float:left; width:100%; padding:15px; font-size:16px; line-height:22px; height:100px; outline:0; border:1px solid #e6e6e6; resize:none;}
+}
+
 
 .sideMenu{background: #fff; height: 100vh; padding: 0; vertical-align: top; width: 250px; box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08); position: fixed; left: 0; bottom: 0; top: 55px; z-index:10; font-family:$fontStack2;
 	.navbar{background: #fff; border-radius: 0; border: none; display: inline-block; margin: 0; padding: 0; vertical-align: top; width:250px;
@@ -353,14 +367,6 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		}
 		.bidWatch{float:left; width:100%;
 			.rpCardSubHead{font-size:18px;}
-		}
-		.formShort{width:120px;}
-		.formMiddle{width:250px;}
-		.formLong{width:500px;}
-		.formInput{float:left; width:100%; margin-bottom:30px;}
-		.formTextArea{float:left; width:100%; margin-bottom:50px;
-			.taHead{float:left; width:100%; margin-bottom:5px; font-size:13px; font-weight:300;}
-			textarea{float:left; width:100%; padding:15px; font-size:16px; line-height:22px; height:100px; outline:0; border:1px solid #e6e6e6; resize:none;}
 		}
 		.currencyUnit{float:left; width:100%; display:flex; align-items:flex-end; justify-content: flex-start; margin-bottom:40px; font-size:14px;
 			.form-group{margin:0 20px 0 0;}
@@ -1354,6 +1360,8 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 	}
 	.newSubCategoryBtn{float:left; width:100%; font-size:14px;}
 }
+
+.inviteCompanySendBtn{float: right; height:35px; margin-right:0; margin-bottom:0;}
 
 // Media queries start
 

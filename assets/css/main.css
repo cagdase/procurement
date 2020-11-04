@@ -36,6 +36,22 @@ body {
   margin-bottom: 50px !important;
 }
 
+.marB0 {
+  margin-bottom: 0 !important;
+}
+
+.w50 {
+  width: 50% !important;
+}
+
+.padR10 {
+  padding-right: 10px !important;
+}
+
+.padL10 {
+  padding-left: 10px !important;
+}
+
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -147,6 +163,50 @@ button.errorBtn:hover {
 
 .errorBtn:hover {
   background-color: #6b110c;
+}
+
+.formShort {
+  width: 120px;
+}
+
+.formMiddle {
+  width: 250px;
+}
+
+.formLong {
+  width: 500px;
+}
+
+.formInput {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.formTextArea {
+  float: left;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.formTextArea .taHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.formTextArea textarea {
+  float: left;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 22px;
+  height: 100px;
+  outline: 0;
+  border: 1px solid #e6e6e6;
+  resize: none;
 }
 
 .sideMenu {
@@ -1586,50 +1646,6 @@ button.errorBtn:hover {
 
 .rightPanel .content .bidWatch .rpCardSubHead {
   font-size: 18px;
-}
-
-.rightPanel .content .formShort {
-  width: 120px;
-}
-
-.rightPanel .content .formMiddle {
-  width: 250px;
-}
-
-.rightPanel .content .formLong {
-  width: 500px;
-}
-
-.rightPanel .content .formInput {
-  float: left;
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-.rightPanel .content .formTextArea {
-  float: left;
-  width: 100%;
-  margin-bottom: 50px;
-}
-
-.rightPanel .content .formTextArea .taHead {
-  float: left;
-  width: 100%;
-  margin-bottom: 5px;
-  font-size: 13px;
-  font-weight: 300;
-}
-
-.rightPanel .content .formTextArea textarea {
-  float: left;
-  width: 100%;
-  padding: 15px;
-  font-size: 16px;
-  line-height: 22px;
-  height: 100px;
-  outline: 0;
-  border: 1px solid #e6e6e6;
-  resize: none;
 }
 
 .rightPanel .content .currencyUnit {
@@ -4807,6 +4823,13 @@ button.errorBtn:hover {
   float: left;
   width: 100%;
   font-size: 14px;
+}
+
+.inviteCompanySendBtn {
+  float: right;
+  height: 35px;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1375px) {

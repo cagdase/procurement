@@ -102,7 +102,6 @@ $(document).ready(function () {
   $('.tcoBtnCloseModal').click(function () {
     $('.tcoModal').hide()
   });
-
   
   $('.infoModalBtn').click(function () {
     $('.bidderInfoModal').css({ display: 'flex' })
@@ -117,6 +116,13 @@ $(document).ready(function () {
   });
   $('.dmCloseBtn, .dmCancel').click(function () {
     $('.deleteModal').hide();
+  });
+
+  $('.inviteCompanyBtn').click(function () {
+    $('.inviteCompany').css({ display: 'flex' })
+  })
+  $('.inviteCompanyCloseBtn').click(function () {
+    $('.inviteCompany').hide()
   });
 
   $("#backToTop").click(function () {
