@@ -1,0 +1,1228 @@
+@import url("form.elements.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Poppins-Regular, sans-serif;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login100 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  background: #f2f2f2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrap-login100 {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 50px;
+}
+
+.login100-form {
+  width: 100%;
+}
+
+.login100-form-title {
+  float: left;
+  display: block;
+  font-size: 20px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.login100-form-title i {
+  font-size: 20px;
+}
+
+.wrap-input100 {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input100 {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 35px;
+  background: transparent;
+  padding: 0 5px;
+  border-bottom: 2px solid #adadad;
+}
+
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: -5px;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background: #6a7dfe;
+  background: -webkit-gradient(linear, right top, left top, from(#21d4fd), to(#b721ff));
+  background: linear-gradient(to left, #21d4fd, #b721ff);
+}
+
+.focus-input100::after {
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.2;
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  padding-left: 5px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input100:focus + .focus-input100::after {
+  top: -8px;
+}
+
+.input100:focus + .focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100 + .focus-input100::after {
+  top: -8px;
+}
+
+.has-val.input100 + .focus-input100::before {
+  width: 100%;
+}
+
+.btn-show-pass {
+  font-size: 15px;
+  color: #999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding-right: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.btn-show-pass:hover {
+  color: #6a7dfe;
+  color: linear-gradient(to left, #21d4fd, #b721ff);
+}
+
+.btn-show-pass.active {
+  color: #6a7dfe;
+  color: linear-gradient(to left, #21d4fd, #b721ff);
+}
+
+.container-login100-form-btn {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 13px;
+}
+
+.login100-form-btn i {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.wrap-login100-form-btn {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.login100-form-bgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  background: #a64bf4;
+  background: -webkit-gradient(linear, right top, left top, from(#21d4fd), color-stop(#b721ff), color-stop(#21d4fd), to(#b721ff));
+  background: linear-gradient(to left, #21d4fd, #b721ff, #21d4fd, #b721ff);
+  top: 0;
+  left: -100%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.login100-form-btn {
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  outline: none !important;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.wrap-login100-form-btn:hover .login100-form-bgbtn {
+  left: 0;
+}
+
+.logo {
+  float: left;
+  width: 100%;
+  background-color: #c70b0f;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo img {
+  max-width: 300px;
+}
+
+.notRobotWrap {
+  float: left;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.notRobotWrap img {
+  width: 100%;
+}
+
+.signInBtns {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.forgotPassBtn {
+  text-align: center;
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  color: #242526;
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+.smsInput {
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.timer {
+  border: 0;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.passwordRule {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+
+.smallText {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 30px;
+  line-height: 18px;
+  color: #333;
+}
+
+.smallText span {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  color: #555;
+}
+
+@media (max-width: 576px) {
+  .wrap-login100 {
+    padding: 77px 15px 33px 15px;
+  }
+}
+
+.selectWrap {
+  margin-top: 20px;
+  border-bottom: 0;
+}
+
+.selectWrap select {
+  width: 100%;
+}
+
+.formShort {
+  width: 120px;
+}
+
+.formMiddle {
+  width: 250px;
+}
+
+.formLong {
+  width: 500px;
+}
+
+.formInput {
+  float: left;
+  width: 100%;
+}
+
+.formTextArea {
+  float: left;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.formTextArea .taHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.formTextArea textarea {
+  float: left;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 22px;
+  height: 100px;
+  outline: 0;
+  border: 1px solid #e6e6e6;
+  resize: none;
+}
+
+.modalWrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 13;
+  display: none;
+}
+
+.modalWrap .mdContent {
+  width: 600px;
+  padding: 45px;
+  background-color: #fff;
+  float: left;
+  position: relative;
+  max-height: 650px;
+  overflow-y: auto;
+}
+
+.modalWrap .mdContent .mdCloseBtn {
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  color: #222;
+  font-size: 32px;
+}
+
+.modalWrap .mdContent .mdHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 500;
+}
+
+.modalWrap .mdContent .mdHead span:nth-child(1) {
+  font-size: 18px;
+}
+
+.modalWrap .mdContent .mdHead span:nth-child(2) {
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+.modalWrap .mdContent .mdHead span:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+
+.modalWrap .mdContent .mdMiddle {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.modalWrap .mdContent .mdMiddle p {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.modalWrap .mdContent .mdMiddle p:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.modalWrap .mdContent .mdBottom {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modalWrap .mdContent .mdBottom button {
+  margin: 0;
+}
+
+.modalWrap .mdContent .mdBottom button:nth-last-child(1) {
+  margin-left: 15px;
+}
+
+.conditionsWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conditionsWrap .condition {
+  float: left;
+  margin: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conditionsWrap .condition .checkbox {
+  margin-right: 2px;
+}
+
+.conditionsWrap .condition .checkbox .helper {
+  top: -7px;
+  margin-right: 10px;
+}
+
+.conditionsWrap .condition a {
+  font-size: 12px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.bannerPlanWrap {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  min-height: 100vh;
+  background-color: #fff;
+  padding-top: 50px;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent {
+  width: 100%;
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-height: 840px;
+  overflow: hidden;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .intengoBanner {
+  float: left;
+  width: 100%;
+  max-width: 600px;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .intengoBanner img {
+  max-width: 100%;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap {
+  float: left;
+  width: calc(100% - 600px);
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox {
+  float: left;
+  width: 100%;
+  padding: 30px 40px;
+  background-color: #fff;
+  text-align: left;
+  border-bottom: 1px solid #efefef;
+  font-family: 'Overpass', sans-serif;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .planHead {
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox ul {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox ul li {
+  float: left;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #ececec;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox ul li i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox ul li i.fa-check {
+  color: #f99818;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox ul li i.fa-times {
+  color: #dc3545;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox ul li:hover {
+  background-color: #efefef;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .premiumPrice {
+  float: left;
+  margin-bottom: 10px;
+  background: rgba(230, 230, 230, 0.5);
+  padding-left: 20px;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .premiumPrice .time {
+  float: left;
+  color: #222;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 20px;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .premiumPrice .price {
+  float: left;
+  color: #222;
+  font-size: 22px;
+  background: rgba(230, 230, 230, 0.8);
+  margin-left: 20px;
+  padding: 0 25px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .premiumPrice .price .small {
+  font-size: 14px;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .premiumHead strong {
+  color: #f87935;
+  border-bottom: 3px solid #f87935;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .basicHead strong {
+  color: #0a5d94;
+  border-bottom: 3px solid #0a5d94;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .planBtn {
+  float: left;
+  width: 100%;
+  border-radius: 30px;
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .planBtn i {
+  float: right;
+  font-size: 18px;
+  color: #fff;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .planBtn.premium {
+  background-color: #f87935;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .planBtn.premium:hover {
+  background-color: #d66427;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .planBtn.basic {
+  background-color: #0e76bc;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .planBtn.basic:hover {
+  background-color: #0a5d94;
+}
+
+.bannerPlanWrap .bottomWave {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+header {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2.5%;
+  height: 80px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 9;
+  position: relative;
+}
+
+header .headLeft {
+  float: left;
+}
+
+header .headLeft .logo {
+  max-width: 100px;
+  float: left;
+  background: none;
+  padding: 0;
+}
+
+header .headLeft .logo img {
+  width: 100%;
+}
+
+header .headRight {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .headRight .menuItem {
+  float: left;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .headRight .menuItem a {
+  color: #222;
+  font-size: 14px;
+  padding: 10px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Overpass', sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+header .headRight .menuItem a .menuIco {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+header .headRight .menuItem a .subMenuIco {
+  font-size: 14px;
+  margin-left: 7px;
+}
+
+header .headRight .menuItem a.phone {
+  font-size: 18px;
+}
+
+header .headRight .menuItem a.phone i {
+  margin-right: 5px;
+}
+
+header .headRight .menuItem a.requestDemo {
+  background-color: #11558c;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 30px;
+  letter-spacing: 1px;
+  font-family: 'Overpass', sans-serif;
+}
+
+header .headRight .menuItem a.requestDemo:hover {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  background-color: #0e5bea;
+}
+
+header .headRight .menuItem .subMenu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+header .headRight .menuItem .subMenu li {
+  float: left;
+  width: 100%;
+}
+
+header .headRight .menuItem .subMenu li a {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #222;
+}
+
+header .headRight .menuItem .subMenu li a i {
+  font-size: 12px;
+  margin-right: 5px;
+  color: #222;
+}
+
+header .headRight .menuItem .subMenu li a:hover {
+  background-color: #0a5d94;
+  color: #fff;
+}
+
+header .headRight .menuItem .subMenu li a:hover i {
+  color: #fff;
+}
+
+header .headRight .menuItem:hover .subMenu {
+  display: block;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  background-color: #efefef;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  min-height: 250px;
+}
+
+footer svg {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 100%;
+  z-index: 0;
+}
+
+footer .footerImg1 {
+  position: absolute;
+  right: 90px;
+  bottom: 40px;
+  width: 300px;
+  z-index: 0;
+}
+
+footer .footerImg2 {
+  position: absolute;
+  left: 90px;
+  bottom: 60px;
+  width: 300px;
+  z-index: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+footer .fContent {
+  float: left;
+  width: 100%;
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+
+footer .fContent .fLogo {
+  float: left;
+  width: calc(100% - 400px);
+  padding: 20px;
+}
+
+footer .fContent .fLogo a {
+  float: left;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+footer .fContent .fLogo a img {
+  width: 200px;
+}
+
+footer .fContent .fLogo a.requestDemo {
+  background-color: #0741ad;
+  width: 200px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 30px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+footer .fContent .fLogo a.requestDemo:hover {
+  background-color: #0e5bea;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+footer .fContent .fLogo a.phone {
+  font-size: 18px;
+  color: #222;
+}
+
+footer .fContent .fLogo a.phone i {
+  margin-right: 5px;
+}
+
+footer .fContent .fCol {
+  float: left;
+  width: 200px;
+  padding: 20px;
+}
+
+footer .fContent .fCol .fColHead {
+  float: left;
+  width: 100%;
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+footer .fContent .fCol ul {
+  float: left;
+  width: 100%;
+}
+
+footer .fContent .fCol ul li {
+  float: left;
+  width: 100%;
+}
+
+footer .fContent .fCol ul li a {
+  display: block;
+  color: #222;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+footer .fContent .fCol ul li a:hover {
+  background-color: #ececec;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+.width600 {
+  max-width: 600px;
+}
+
+.width1000 {
+  max-width: 1000px;
+}
+
+.inviteCompanyWrap {
+  min-height: calc(100vh - 100px);
+  padding: 40px 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.inviteCompanyWrap .contentWidth {
+  max-width: 1000px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  padding-bottom: 40px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+}
+
+.inviteCompanyWrap .wizardWrap {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+}
+
+.inviteCompanyWrap .wizardWrap a {
+  float: left;
+  width: 25%;
+  border-right: 1px solid #ececec;
+  background-color: #fff;
+  color: #222;
+  padding: 0 30px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.inviteCompanyWrap .wizardWrap a:nth-last-child(1) {
+  border-right: 0;
+}
+
+.inviteCompanyWrap .wizardWrap a i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.inviteCompanyWrap .wizardWrap a.active {
+  background-color: #167bff;
+  color: #fff;
+  -webkit-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+.inviteCompanyWrap .wizardWrap a.active:after {
+  content: "\f101";
+  font-family: fontAwesome;
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+}
+
+.inviteCompanyWrap .wizardWrap a:nth-last-child(1).active:after {
+  content: "\f00c";
+}
+
+.msgSuccessed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  background-color: #28a745;
+  color: #fff;
+  padding: 15px;
+  display: none;
+  z-index: 14;
+}
+
+.msgSuccessed i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.intengoBannerModal .mdContent {
+  max-width: 1100px;
+  width: 100%;
+  max-height: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.intengoBannerModal .mdContent .mdCloseBtn {
+  z-index: 2;
+}
+
+.intengoBannerModal .mdContent .mdMiddle {
+  margin-bottom: 0;
+}
+
+.intengoBannerModal .mdContent .bannerPlanWrap {
+  padding-top: 0;
+  min-height: 0;
+}
+
+.intengoBannerModal .mdContent .bannerPlanWrap .plansWrap .planBox {
+  padding: 45px 40px;
+}
+
+.intengoBannerModal .mdContent .bannerPlanWrap .plansWrap .planBox .premiumPrice {
+  margin-bottom: 10px;
+}
+
+.intengoBannerModal .mdContent .bannerPlanWrap .plansWrap .planBox:nth-last-of-type(1) {
+  border-bottom: 0;
+}
+
+.smallFormBtn .wrap-login100-form-btn {
+  width: 300px;
+}
