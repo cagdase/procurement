@@ -734,6 +734,7 @@ input[type=number] {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  position: relative;
 }
 
 .bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .planBtn i {
@@ -756,6 +757,29 @@ input[type=number] {
 
 .bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .planBtn.basic:hover {
   background-color: #0a5d94;
+}
+
+.bannerPlanWrap .bannerPlanWrapContent .plansWrap .planBox .planBtn .freeBadge {
+  position: absolute;
+  right: 53px;
+  top: -26px;
+  background-color: #34a745;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transform: rotate(19deg);
+          transform: rotate(19deg);
 }
 
 .bannerPlanWrap .bottomWave {
@@ -1099,8 +1123,22 @@ footer .fContent .fCol ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #fff;
   padding-bottom: 40px;
+}
+
+.inviteCompanyWrap .formWrap {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
 }
@@ -1118,17 +1156,18 @@ footer .fContent .fCol ul li a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ececec;
+  padding: 20px 0;
+  background-color: #fffbfb;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
 .inviteCompanyWrap .wizardWrap a {
   float: left;
   width: 25%;
-  border-right: 1px solid #ececec;
-  background-color: #fff;
-  color: #222;
+  color: #999;
   padding: 0 30px;
-  height: 40px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1140,8 +1179,10 @@ footer .fContent .fCol ul li a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-right: 1px solid #ddd;
 }
 
 .inviteCompanyWrap .wizardWrap a:nth-last-child(1) {
@@ -1150,26 +1191,69 @@ footer .fContent .fCol ul li a:hover {
 
 .inviteCompanyWrap .wizardWrap a i {
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 26px;
+  height: 60px;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ddd;
+  border-radius: 50%;
+  color: #fff;
 }
 
 .inviteCompanyWrap .wizardWrap a.active {
+  color: #222;
+}
+
+.inviteCompanyWrap .wizardWrap a.active i {
   background-color: #167bff;
-  color: #fff;
-  -webkit-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
 }
 
 .inviteCompanyWrap .wizardWrap a.active:after {
   content: "\f101";
   font-family: fontAwesome;
   position: absolute;
-  right: 10px;
-  font-size: 20px;
+  font-size: 60px;
+  right: 64px;
+  top: 6px;
+  color: #167bff;
+}
+
+.inviteCompanyWrap .wizardWrap a.success {
+  color: #222;
+}
+
+.inviteCompanyWrap .wizardWrap a.success i {
+  background-color: #4bb543;
+}
+
+.inviteCompanyWrap .wizardWrap a.success:after {
+  content: "\f00c";
+  font-family: fontAwesome;
+  position: absolute;
+  font-size: 30px;
+  right: 60px;
+  top: 20px;
+  color: #4bb543;
 }
 
 .inviteCompanyWrap .wizardWrap a:nth-last-child(1).active:after {
-  content: "\f00c";
+  display: none;
+}
+
+.inviteCompanyWrap .wizardWrap a.after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .msgSuccessed {
@@ -1223,6 +1307,132 @@ footer .fContent .fCol ul li a:hover {
   border-bottom: 0;
 }
 
+.intengoBannerModal .mdContent .bannerPlanWrap .plansWrap .planBox .defaultPlanNotify {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 20px;
+  background-color: #ffff01;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px 20px;
+  color: #222;
+}
+
+.intengoBannerModal .mdContent .bannerPlanWrap .plansWrap .planBox .defaultPlanNotify i {
+  color: #f99818;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.intengoBannerModal .mdContent .bannerPlanWrap .plansWrap .planBox.basic {
+  padding-top: 20px;
+}
+
 .smallFormBtn .wrap-login100-form-btn {
   width: 300px;
+}
+
+.badge {
+  position: relative;
+  letter-spacing: 0.08em;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transform: rotate(-14deg);
+          transform: rotate(-14deg);
+  text-align: center;
+  -webkit-filter: drop-shadow(0.25em 0.7em 0.95em rgba(0, 0, 0, 0.8));
+          filter: drop-shadow(0.25em 0.7em 0.95em rgba(0, 0, 0, 0.8));
+  /* min-size + (max-size - min-size) * ( (100vw - min-width) / ( max-width - min-width) ) */
+  font-size: calc(11px + -1 * ( (100vw - 420px) / ( 860) ));
+}
+
+@media screen and (max-width: 420px) {
+  .badge {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .badge {
+    font-size: 10px;
+  }
+}
+
+.badge::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  width: 10em;
+  height: 10em;
+  border-radius: 100%;
+  background: #f87935;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+.badge:hover {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transform: rotate(-10deg) scale(1.05);
+          transform: rotate(-10deg) scale(1.05);
+}
+
+.badge:hover::before {
+  opacity: 0.9;
+}
+
+.badge svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  z-index: 0;
+  width: 10em;
+  height: 10em;
+}
+
+.badge span {
+  display: block;
+  background: #f87935;
+  border-radius: 0.4em;
+  padding: 0.4em 1em;
+  z-index: 1;
+  min-width: 11em;
+  border: 1px solid;
+  text-transform: uppercase;
+  border-color: #f87935;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+.badge .text2 {
+  letter-spacing: 10px;
 }

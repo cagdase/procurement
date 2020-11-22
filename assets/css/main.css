@@ -1037,11 +1037,30 @@ button.errorBtn:hover {
   margin-right: 10px;
 }
 
-.rightPanel .header .headRight .accountWrap .account span {
+.rightPanel .header .headRight .accountWrap .account .infos {
   float: left;
   font-size: 14px;
-  font-weight: 600;
   color: #242526;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 600;
+}
+
+.rightPanel .header .headRight .accountWrap .account .infos .name {
+  float: left;
+}
+
+.rightPanel .header .headRight .accountWrap .account .infos .plan {
+  float: left;
+  font-size: 13px;
+  margin-top: -3px;
+  font-style: italic;
+  color: #007bff;
 }
 
 .rightPanel .header .headRight .accountWrap .selectLanguage {

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="msgSuccessed"><i class="fas fa-check"></i> Kayıt işlemi başarılı!</div>
+  <div class="msgSuccessed"><i class="fas fa-check"></i> Kayıt işlemi başarılı. Basic üyeliğiniz tamamlandı.</div>
   <div class="modalWrap intengoBannerModal">
     <div class="mdContent">
       <a class="mdCloseBtn intengoBannerModalCloseBtn" href="javascript:;"><i class="fas fa-times-circle"></i></a>
@@ -35,9 +35,33 @@
                   <span class="time">1 Yıllık Üyelik</span>
                   <span class="price">1.290,<span class="small">00 TL</span></span>
                 </div>
-                <a href="Firma_davet_Paket_secimi_sonrasi.html" class="planBtn premium">HEMEN ÜYE OL <i class="fas fa-angle-double-right"></i></a>
+                <a href="Firma_davet_Paket_secimi_sonrasi.html" class="planBtn premium">
+                  PREMIUM PAKETE GEÇİŞ YAP<i class="fas fa-angle-double-right"></i>
+                  <span class="freeBadge">
+                    <span class="badge">
+                      <svg viewBox="0 0 210 210">
+                          <g stroke="none" fill="none">
+                              <path d="M22,104.5 C22,58.9365081 58.9365081,22 104.5,22 C150.063492,22 187,58.9365081 187,104.5" id="top"></path>
+                              <path d="M22,104.5 C22,150.063492 58.9365081,187 104.5,187 C150.063492,187 187,150.063492 187,104.5" id="bottom"></path>
+                          </g>
+                          <circle cx="105" cy="105" r="62" stroke="currentColor" stroke-width="1" fill="none" />
+                          <text width="200" font-size="20" fill="currentColor">
+                              <textPath startOffset="50%" text-anchor="middle" alignment-baseline="middle" xlink:href="#top">
+                                  31 MART'A KADAR
+                              </textPath>
+                          </text>
+                          <text width="200" font-size="20" fill="currentColor" class="text2">
+                              <textPath startOffset="50%" text-anchor="middle" alignment-baseline="middle" xlink:href="#bottom">
+                                  ÜYELİK
+                              </textPath>
+                          </text>
+                      </svg>
+                      <span>ÜCRETSİZ!</span>
+                    </span>
+                  </span>
+                </a>
               </div>
-              <div class="planBox">
+              <div class="planBox basic">                
                 <div class="planHead basicHead"><strong>Basic</strong> Üyelik</div>
                 <ul>
                   <li><i class="fas fa-check"></i> Kategori Bazlı Bildirimler</li>
@@ -46,7 +70,8 @@
                   <li><i class="fas fa-times"></i> Rehberde Görünür Olma</li>
                   <li><i class="fas fa-times"></i> Genele Açılan İhaleleri Teklif verebilme</li>
                 </ul>
-                <a href="Firma_davet_Paket_secimi_sonrasi.html" class="planBtn basic">DETAYLI BİLGİ <i class="fas fa-angle-double-right"></i></a>
+                <div class="defaultPlanNotify"><i class="fas fa-check"></i> Kayıt işlemi başarılı. Basic üyeliğiniz tamamlandı.</div>
+                <a href="Firma_davet_Paket_secimi_sonrasi.html" class="planBtn basic">BASIC PLAN: GİRİŞ <i class="fas fa-angle-double-right"></i></a>
               </div>
             </div>
           </div>
@@ -60,94 +85,97 @@
 	<div class="container-login100 inviteCompanyWrap">
 		<div class="contentWidth">
       <div class="wizardWrap">
-        <a href="Firma_davet_1_Firma_kayit.html"><i class="fas fa-sign-in-alt"></i> Adım 1: Firma Kayıt</a>
-        <a href="Firma_davet_2_Firma_bilgisi.html"><i class="fas fa-info-circle"></i> Adım 2: Firma Bilgisi</a>
-        <a href="Firma_davet_3_Kategori_secimi.html"><i class="fas fa-book-open"></i> Adım 3: Kategori Seçimi</a>
+        <a href="Firma_davet_1_Firma_kayit.html" class="success"><i class="fas fa-sign-in-alt"></i> Adım 1: Firma Kayıt</a>
+        <a href="Firma_davet_2_Firma_bilgisi.html" class="success"><i class="fas fa-info-circle"></i> Adım 2: Firma Bilgisi</a>
+        <a href="Firma_davet_3_Kategori_secimi.html" class="success"><i class="fas fa-book-open"></i> Adım 3: Kategori Seçimi</a>
         <a href="Firma_davet_4_Firma_yetkilisi.html" class="active"><i class="fas fa-user-circle"></i> Adım 4: Firma Yetkilisi</a>
       </div>
-      <!-- Firma Yetkilisi -->
-			<div class="wrap-login100">
-        <span class="login100-form-title"><i class="fas fa-user-circle"></i> Firma Yetkilisi</span>
-        <div class="wrap-input100">
-          <input class="input100" type="text" placeholder="İsim" required autocomplete="off">
-        </div>
-        <div class="wrap-input100">
-          <input class="input100" type="text" placeholder="Soyisim" required autocomplete="off">
-        </div>
-        <div class="wrap-input100">
-          <input class="input100" type="number" placeholder="Telefon" required autocomplete="off">
-        </div>
-        <div class="wrap-input100">
-          <input class="input100" type="email" placeholder="E-Posta" required autocomplete="off">
-        </div>
-        <div class="wrap-input100">
-          <span class="btn-show-pass">
-            <i class="far fa-eye"></i>
-          </span>
-          <input class="input100" type="password" name="pass" placeholder="Şifre" required>
-        </div>
-        <div class="wrap-input100">
-          <span class="btn-show-pass">
-            <i class="far fa-eye"></i>
-          </span>
-          <input class="input100" type="password" name="pass" placeholder="Şifre tekrar" required>
-        </div>
-        <div class="smallText">
-          Şifreniz en az 8 en fazla 15 karakter, en az bir küçük bir büyük harf ve en az bir harf ve bir rakamdan oluşmalıdır.
-        </div>
-        <div class="wrap-input100 conditionsWrap">
-          <div class="condition">
-            <div class="checkbox ">
-              <label>
-                <input type="checkbox" /><i class="helper"></i>
-              </label>
-            </div>
-            <a href="javascript:;" class="termsOfUseBtn">Kullanım Koşulları</a>
-          </div>
-          <div class="condition">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" /><i class="helper"></i>
-              </label>
-            </div>
-            <a href="javascript:;" class="protectionOfPersonalDataBtn">Kişisel Verilerin Korunması</a>
-          </div>
-        </div>
 
-        <div class="modalWrap termsOfUse">
-          <div class="mdContent">
-            <a class="mdCloseBtn termsOfUseCloseBtn" href="javascript:;"><i class="fas fa-times-circle"></i></a>
-            <div class="mdHead">
-              <span><i class="fas fa-plus-circle"></i> Kullanım Koşulları</span>
+      <div class="formWrap">
+        <!-- Firma Yetkilisi -->
+        <div class="wrap-login100">
+          <span class="login100-form-title"><i class="fas fa-user-circle"></i> Firma Yetkilisi</span>
+          <div class="wrap-input100">
+            <input class="input100" type="text" placeholder="İsim" required autocomplete="off">
+          </div>
+          <div class="wrap-input100">
+            <input class="input100" type="text" placeholder="Soyisim" required autocomplete="off">
+          </div>
+          <div class="wrap-input100">
+            <input class="input100" type="number" placeholder="Telefon" required autocomplete="off">
+          </div>
+          <div class="wrap-input100">
+            <input class="input100" type="email" placeholder="E-Posta" required autocomplete="off">
+          </div>
+          <div class="wrap-input100">
+            <span class="btn-show-pass">
+              <i class="far fa-eye"></i>
+            </span>
+            <input class="input100" type="password" name="pass" placeholder="Şifre" required>
+          </div>
+          <div class="wrap-input100">
+            <span class="btn-show-pass">
+              <i class="far fa-eye"></i>
+            </span>
+            <input class="input100" type="password" name="pass" placeholder="Şifre tekrar" required>
+          </div>
+          <div class="smallText">
+            Şifreniz en az 8 en fazla 15 karakter, en az bir küçük bir büyük harf ve en az bir harf ve bir rakamdan oluşmalıdır.
+          </div>
+          <div class="wrap-input100 conditionsWrap">
+            <div class="condition">
+              <div class="checkbox ">
+                <label>
+                  <input type="checkbox" /><i class="helper"></i>
+                </label>
+              </div>
+              <a href="javascript:;" class="termsOfUseBtn">Kullanım Koşulları</a>
             </div>
-            <div class="mdMiddle marB0">
-              <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
-              <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
-              <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
-              <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
+            <div class="condition">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" /><i class="helper"></i>
+                </label>
+              </div>
+              <a href="javascript:;" class="protectionOfPersonalDataBtn">Kişisel Verilerin Korunması</a>
             </div>
           </div>
-        </div>
 
-        <div class="modalWrap protectionOfPersonalData">
-          <div class="mdContent">
-            <a class="mdCloseBtn protectionOfPersonalDataCloseBtn" href="javascript:;"><i class="fas fa-times-circle"></i></a>
-            <div class="mdHead">
-              <span><i class="fas fa-plus-circle"></i> Kişisel Verilerin Korunması</span>
-            </div>
-            <div class="mdMiddle marB0">
-              <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
-              <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
-              <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
-              <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
+          <div class="modalWrap termsOfUse">
+            <div class="mdContent">
+              <a class="mdCloseBtn termsOfUseCloseBtn" href="javascript:;"><i class="fas fa-times-circle"></i></a>
+              <div class="mdHead">
+                <span><i class="fas fa-plus-circle"></i> Kullanım Koşulları</span>
+              </div>
+              <div class="mdMiddle marB0">
+                <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
+                <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
+                <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
+                <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="container-login100-form-btn">
-          <div class="wrap-login100-form-btn">
-            <div class="login100-form-bgbtn"></div>
-            <a href="javascript:;" class="login100-form-btn intengoBannerModalBtn">KAYDET</a>
+          <div class="modalWrap protectionOfPersonalData">
+            <div class="mdContent">
+              <a class="mdCloseBtn protectionOfPersonalDataCloseBtn" href="javascript:;"><i class="fas fa-times-circle"></i></a>
+              <div class="mdHead">
+                <span><i class="fas fa-plus-circle"></i> Kişisel Verilerin Korunması</span>
+              </div>
+              <div class="mdMiddle marB0">
+                <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
+                <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
+                <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
+                <p>Sed nec faucibus ligula. Sed quis erat nec ante porta placerat id fermentum mi. Integer sodales sem et lorem suscipit tincidunt. Nullam varius egestas lacus sit amet efficitur. Donec vitae libero eget neque auctor consectetur. Fusce nec ultrices ipsum. Etiam in lobortis purus, in aliquam est. Ut vitae quam ac ante vehicula posuere. Vestibulum in maximus enim, volutpat semper nibh. Fusce vel malesuada elit. Fusce vel libero consequat, lacinia est eget, bibendum magna. In volutpat vel enim eget sagittis. Ut vehicula a lacus eu elementum. Praesent scelerisque sem ex, sit amet porta nulla volutpat eu.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+              <div class="login100-form-bgbtn"></div>
+              <a href="javascript:;" class="login100-form-btn intengoBannerModalBtn">KAYDET</a>
+            </div>
           </div>
         </div>
       </div>
