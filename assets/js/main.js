@@ -150,6 +150,10 @@ $(document).ready(function () {
       $('.btDutch').addClass('open')
       $('.btEnglish').removeClass('open')
     }
+  });
+
+  $(".chatBtn").click(function() {
+    $(".chatWrap").toggleClass("chatWrapOpen")
   })
 })
 

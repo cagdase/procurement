@@ -17,6 +17,102 @@
 
 <body>
   <a href="#" id="backToTop"><i class="fas fa-chevron-up"></i></a>
+
+  <div class="chatWrap">
+    <a href="javascript:;" class="chatBtn"><i class="fas fa-comments"></i></a>
+    <div class="chatContent">
+      <div class="chatLeft">
+        <div class="chatTop">
+          <input type="text" placeholder="Ara..">
+          <a href="javascript:;" class="searchBtn"><i class="fas fa-search"></i></a>
+        </div>
+        <ul>
+          <li class="active">
+            <div>
+              <h2>Tüm Tedarikçiler</h2>
+              <h3>
+                15:17
+                <span class="status online"></span>
+                online
+              </h3>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h2>Ak Ofis</h2>
+              <h3>
+                16:35
+                <span class="status offline"></span>
+                offline
+              </h3>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h2>Atılgan Pazarlama</h2>
+              <h3>
+                10:16
+                <span class="status online"></span>
+                online
+              </h3>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h2>Avansas</h2>
+              <h3>
+                18:52
+                <span class="status offline"></span>
+                offline
+              </h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="chatRight">
+        <div class="chatTop">
+          <h2>Tüm Tedarikçiler</h2>
+        </div>
+        <ul id="chat">
+          <li class="me">
+            <div class="entete">
+              <h2>Admin</h2>
+              <h3>10:15, Bugün</h3>
+            </div>
+            <div class="triangle"></div>
+            <div class="message">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            </div>
+          </li>
+          <li class="you">
+            <div class="entete">
+              <h2>Ak Ofis</h2>
+              <h3>10:16, Bugün</h3>
+            </div>
+            <div class="triangle"></div>
+            <div class="message">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            </div>
+          </li>
+          <li class="you">
+            <div class="entete">
+              <h2>Atılgan Pazarlama</h2>
+              <h3>10:17, Bugün</h3>
+            </div>
+            <div class="triangle"></div>
+            <div class="message">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            </div>
+          </li>
+        </ul>
+        <div class="chatBottom">
+          <textarea placeholder="Mesajınızı yazınız"></textarea>
+          <a href="#">GÖNDER <i class="fas fa-paper-plane"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modalWrap addLapModal">
     <div class="mdContent">
       <a class="mdCloseBtn addLapModalCloseBtn" href="#"><i class="fas fa-times-circle"></i></a>
@@ -339,7 +435,9 @@
             </div>
             <a href="#" class="account">
               <img src="assets/images/profilePicture.jpg">
-              <span>Erdal Yenigül</span>
+              <span class="infos">
+                <span class="name">Erdal Yenigül</span>
+              </span>
             </a>
             <div class="selectLanguage">
               <select>
