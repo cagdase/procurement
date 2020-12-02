@@ -154,7 +154,7 @@ $(document).ready(function () {
 
   $(".chatBtn").click(function() {
     $(".chatWrap").toggleClass("chatWrapOpen")
-  })
+  });
 })
 
 

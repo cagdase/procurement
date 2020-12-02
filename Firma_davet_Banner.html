@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Firma Davet / Banner</title>
+	<meta charset=utf-8>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+  
+	<div class="container-login100 inviteCompanyWrap">
+		<div class="contentWidth">
+      <div class="bannerPlanWrap">
+        <div class="bannerPlanWrapContent">
+          <div class="intengoBanner">
+            <img src="assets/images/intengoBanner.jpg" alt="">
+          </div>
+          <div class="plansWrap">
+            <div class="planBox">
+              <div class="planHead premiumHead"><strong>Premium</strong> Üyelik</div>
+              <ul>
+                <li><i class="fas fa-check"></i> Kategori Bazlı Bildirimler</li>
+                <li><i class="fas fa-check"></i> Genele Açılan İhaleleri Görüntüleme</li>
+                <li><i class="fas fa-check"></i> Tüm Alıcı Firmaların İhalelerine Davet Olanağı</li>
+                <li><i class="fas fa-check"></i> Rehberde Görünür Olma</li>
+                <li><i class="fas fa-check"></i> Genele Açılan İhaleleri Teklif verebilme</li>
+              </ul>
+              <div class="premiumPrice">
+                <span class="time">1 Yıllık Üyelik</span>
+                <span class="price">1.290,<span class="small">00 TL</span></span>
+              </div>
+              <a href="Firma_davet_Paket_secimi_sonrasi.html" class="planBtn premium">
+                PREMIUM PAKETE GEÇİŞ YAP<i class="fas fa-angle-double-right"></i>
+                <span class="freeBadge">
+                  <span class="badge">
+                    <svg viewBox="0 0 210 210">
+                        <g stroke="none" fill="none">
+                            <path d="M22,104.5 C22,58.9365081 58.9365081,22 104.5,22 C150.063492,22 187,58.9365081 187,104.5" id="top"></path>
+                            <path d="M22,104.5 C22,150.063492 58.9365081,187 104.5,187 C150.063492,187 187,150.063492 187,104.5" id="bottom"></path>
+                        </g>
+                        <circle cx="105" cy="105" r="62" stroke="currentColor" stroke-width="1" fill="none" />
+                        <text width="200" font-size="20" fill="currentColor">
+                            <textPath startOffset="50%" text-anchor="middle" alignment-baseline="middle" xlink:href="#top">
+                                31 MART'A KADAR
+                            </textPath>
+                        </text>
+                        <text width="200" font-size="20" fill="currentColor" class="text2">
+                            <textPath startOffset="50%" text-anchor="middle" alignment-baseline="middle" xlink:href="#bottom">
+                                ÜYELİK
+                            </textPath>
+                        </text>
+                    </svg>
+                    <span>ÜCRETSİZ!</span>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div class="planBox basic">                
+              <div class="planHead basicHead"><strong>Basic</strong> Üyelik</div>
+              <ul>
+                <li><i class="fas fa-check"></i> Kategori Bazlı Bildirimler</li>
+                <li><i class="fas fa-times"></i> Genele Açılan İhaleleri Görüntüleme</li>
+                <li><i class="fas fa-times"></i> Tüm Alıcı Firmaların İhalelerine Davet Olanağı</li>
+                <li><i class="fas fa-times"></i> Rehberde Görünür Olma</li>
+                <li><i class="fas fa-times"></i> Genele Açılan İhaleleri Teklif verebilme</li>
+              </ul>
+              <div class="defaultPlanNotify"><i class="fas fa-check"></i> Kayıt işlemi başarılı. Basic üyeliğiniz tamamlandı.</div>
+              <a href="Firma_davet_Paket_secimi_sonrasi.html" class="planBtn basic">BASIC PLAN: GİRİŞ <i class="fas fa-angle-double-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/plugins/jquery-2.1.3.min.js"></script>
+	<script src="https://kit.fontawesome.com/65dc611de3.js" crossorigin="anonymous"></script>
+
+	<script>
+    $('.termsOfUseBtn').click(function () {
+      $('.termsOfUse').css({ display: 'flex' });
+    })
+    $('.termsOfUseCloseBtn').click(function () {
+      $('.termsOfUse').hide();
+    });
+
+    $('.protectionOfPersonalDataBtn').click(function () {
+      $('.protectionOfPersonalData').css({ display: 'flex' });
+    })
+    $('.protectionOfPersonalDataCloseBtn').click(function () {
+      $('.protectionOfPersonalData').hide()
+    });
+
+    $('.intengoBannerModalBtn').click(function () {
+      $('.intengoBannerModal').css({ display: 'flex' });
+      $('.msgSuccessed').css({ display: 'block' });
+    })
+    $('.intengoBannerModalCloseBtn').click(function () {
+      $('.intengoBannerModal').hide();
+      $('.msgSuccessed').hide();
+    });
+
+    
+
+    // Show pass
+		var showPass = 0;
+		$('.btn-show-pass').on('click', function () {
+			if (showPass == 0) {
+				$(this).next('input').attr('type', 'text');
+				$(this).find('i').removeClass('zmdi-eye');
+				$(this).find('i').addClass('zmdi-eye-off');
+				showPass = 1;
+			}
+			else {
+				$(this).next('input').attr('type', 'password');
+				$(this).find('i').addClass('zmdi-eye');
+				$(this).find('i').removeClass('zmdi-eye-off');
+				showPass = 0;
+			}
+		});
+	</script>
+</body>
+
+</html>

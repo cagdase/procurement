@@ -1156,7 +1156,6 @@ footer .fContent .fCol ul li a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 20px;
-  padding: 20px 0;
   background-color: #fffbfb;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
@@ -1182,11 +1181,26 @@ footer .fContent .fCol ul li a:hover {
   font-size: 16px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #e8e8e8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0;
 }
 
 .inviteCompanyWrap .wizardWrap a:nth-last-child(1) {
   border-right: 0;
+}
+
+.inviteCompanyWrap .wizardWrap a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: calc(100% + 1px);
+  height: 10px;
+  background-color: #ddd;
 }
 
 .inviteCompanyWrap .wizardWrap a i {
@@ -1206,6 +1220,7 @@ footer .fContent .fCol ul li a:hover {
   background-color: #ddd;
   border-radius: 50%;
   color: #fff;
+  margin-bottom: 10px;
 }
 
 .inviteCompanyWrap .wizardWrap a.active {
@@ -1224,6 +1239,10 @@ footer .fContent .fCol ul li a:hover {
   right: 64px;
   top: 6px;
   color: #167bff;
+}
+
+.inviteCompanyWrap .wizardWrap a.active:before {
+  background-color: #f1a165;
 }
 
 .inviteCompanyWrap .wizardWrap a.success {
@@ -1246,14 +1265,6 @@ footer .fContent .fCol ul li a:hover {
 
 .inviteCompanyWrap .wizardWrap a:nth-last-child(1).active:after {
   display: none;
-}
-
-.inviteCompanyWrap .wizardWrap a.after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .msgSuccessed {
