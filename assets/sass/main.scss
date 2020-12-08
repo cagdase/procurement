@@ -2243,7 +2243,7 @@ footer{float:left; width:100%; background-color:#efefef; padding:30px; display:f
       i{margin-right: 10px; font-size: 26px; height: 60px; width: 60px; display: flex; align-items: center; justify-content: center; background-color: #ddd; border-radius: 50%; color: #fff; margin-bottom:10px;}
       &.active{color: #222; 
         i{background-color: #167bff; }
-        &:after{content: "\f101"; font-family: fontAwesome; position: absolute; font-size: 60px; right: 63px; top: -11px; color: #167bff;}
+        &:after{content: "\f101"; font-family: fontAwesome; position: absolute; font-size: 60px; right: 63px; top: 7px; color: #167bff;}
         &:before{background-color:#f1a165;}
       }
       &.success{color: #222;
@@ -2366,4 +2366,34 @@ $badge-max-size: 10px;
     letter-spacing: 4px;
   }
   .text2{letter-spacing: 10px;}
+}
+
+.resultWrap{float:left; width:100%; padding:40px;
+	.login100-form-title {color:#f99818;}
+	p{float:left; width:100%; margin-bottom:20px; line-height:20px; font-size:14px;
+		&.small{font-style:italic; font-size:12px; line-height:16px;}
+	}
+	table{float:left; width:100%; border:1px solid #ececec; padding:20px; margin-bottom:40px;
+		tr{float:left; width:100%; border-bottom:1px solid #ececec;
+			&.head{background-color:#f1f1f1;
+				td{font-weight:600; }
+			}
+			td{float:left; border:0; padding:15px; font-size:13px; height:50px; display:flex; align-items: center;
+				&:nth-child(1){width:60%;}
+				&:nth-child(2){width:20%; justify-content:center;}
+				&:nth-child(3){width:20%; justify-content:center;}
+				i{font-size:18px;
+					&.fa-check{color:#f99818;}
+					&.fa-times{color:#dc3545;}
+				}
+				&.priceMax{
+					span{
+						&:nth-child(1){font-weight:600; text-decoration: line-through;}
+						&:nth-child(2){}
+					}
+				}
+			}
+			&:nth-last-child(1){border-bottom:0;}
+		}
+	}
 }

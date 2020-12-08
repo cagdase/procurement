@@ -7147,7 +7147,7 @@ footer .fContent .fCol ul li a:hover {
   position: absolute;
   font-size: 60px;
   right: 63px;
-  top: -11px;
+  top: 7px;
   color: #167bff;
 }
 
@@ -7360,4 +7360,103 @@ footer .fContent .fCol ul li a:hover {
 
 .badge .text2 {
   letter-spacing: 10px;
+}
+
+.resultWrap {
+  float: left;
+  width: 100%;
+  padding: 40px;
+}
+
+.resultWrap .login100-form-title {
+  color: #f99818;
+}
+
+.resultWrap p {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.resultWrap p.small {
+  font-style: italic;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.resultWrap table {
+  float: left;
+  width: 100%;
+  border: 1px solid #ececec;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.resultWrap table tr {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+}
+
+.resultWrap table tr.head {
+  background-color: #f1f1f1;
+}
+
+.resultWrap table tr.head td {
+  font-weight: 600;
+}
+
+.resultWrap table tr td {
+  float: left;
+  border: 0;
+  padding: 15px;
+  font-size: 13px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resultWrap table tr td:nth-child(1) {
+  width: 60%;
+}
+
+.resultWrap table tr td:nth-child(2) {
+  width: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resultWrap table tr td:nth-child(3) {
+  width: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resultWrap table tr td i {
+  font-size: 18px;
+}
+
+.resultWrap table tr td i.fa-check {
+  color: #f99818;
+}
+
+.resultWrap table tr td i.fa-times {
+  color: #dc3545;
+}
+
+.resultWrap table tr td.priceMax span:nth-child(1) {
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+.resultWrap table tr:nth-last-child(1) {
+  border-bottom: 0;
 }
