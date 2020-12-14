@@ -4071,6 +4071,65 @@ button.errorBtn:hover {
   position: relative;
 }
 
+.rpList.companyInviteWatch li span {
+  padding-right: 20px;
+}
+
+.rpList.companyInviteWatch li span:nth-child(1) {
+  width: 20%;
+}
+
+.rpList.companyInviteWatch li span:nth-child(2) {
+  width: 15%;
+}
+
+.rpList.companyInviteWatch li span:nth-child(3) {
+  width: 25%;
+  word-break: break-all;
+}
+
+.rpList.companyInviteWatch li span:nth-child(4) {
+  width: 15%;
+}
+
+.rpList.companyInviteWatch li span:nth-child(5) {
+  width: 15%;
+  text-align: center;
+}
+
+.rpList.companyInviteWatch li span:nth-child(5) a {
+  text-decoration: underline;
+}
+
+.rpList.companyInviteWatch li span:nth-child(6) {
+  width: 5%;
+  text-align: center;
+}
+
+.rpList.companyInviteWatch li span:nth-child(6) a {
+  font-size: 18px;
+}
+
+.rpList.companyInviteWatch li span:nth-child(7) {
+  width: 5%;
+  text-align: center;
+}
+
+.rpList.companyInviteWatch li span:nth-child(7) a {
+  font-size: 18px;
+}
+
+.rpList.companyInviteWatch .filterHead {
+  border-top: 0;
+}
+
+.rpList.companyInviteWatch .filterHead input {
+  outline: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
 .deleteModal {
   position: absolute;
   background-color: #242526;
@@ -4223,6 +4282,12 @@ button.errorBtn:hover {
 .pagination a.nav {
   font-size: 18px;
   font-weight: 600;
+}
+
+.pagination a.active {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .pagination .current a {
@@ -7459,4 +7524,23 @@ footer .fContent .fCol ul li a:hover {
 
 .resultWrap table tr:nth-last-child(1) {
   border-bottom: 0;
+}
+
+.comSelect {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.comSelect select {
+  height: 35px;
+  width: 170px;
+  text-indent: 10px;
+  border: 1px solid #ececec;
+  outline: 0;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.comSelect select option {
+  padding: 10px;
 }

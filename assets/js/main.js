@@ -125,6 +125,13 @@ $(document).ready(function () {
     $('.inviteCompany').hide()
   });
 
+  $('.inviteCompanyWatchBtn').click(function () {
+    $('.inviteCompanyWatch').css({ display: 'flex' })
+  })
+  $('.inviteCompanyWatchCloseBtn').click(function () {
+    $('.inviteCompanyWatch').hide()
+  });
+
   $("#backToTop").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 1000);
   });
