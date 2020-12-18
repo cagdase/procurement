@@ -2190,7 +2190,8 @@ $badge-max-size: 9px;
   .text2{letter-spacing: 10px;}
 }
 
-.resultWrap{float:left; width:100%; padding:40px;
+.resultWrap{float:left; width:100%; padding:40px; position:relative;
+	.step{position:absolute; top:0; left:0; background-color:#cc0000; color:#fff; font-size:13px; padding:3px 5px; font-weight: 600;}
 	.result2{margin-bottom:40px;}
 	.textLine {float:left; width: 100%; color:#222; font-size:16px; text-align: center;}
 	.textLine1 {float:left; width: 100%; color:#242658; font-size:22px; text-align: center; font-weight: 600;
@@ -2204,6 +2205,7 @@ $badge-max-size: 9px;
 		a{display:inline-block; max-width:150px; width:100%; padding:10px; color:#fff; background-color:#007bff; font-size:15px; font-weight:600; border-radius:20px; text-align:center;
 			&:hover{background-color:#1c5ca0;}
 		}
+		.checkboxLine{float:left; width:100%; font-size:13px; margin-bottom:10px;}
 	}
 	.intengoPlanSuccess{float:left; width:100%; margin-bottom:40px; margin-top:40px;
 		p{float:left; width:100%; margin-bottom:10px; line-height:20px; font-size:14px; text-align:center;

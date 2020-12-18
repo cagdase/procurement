@@ -6688,6 +6688,18 @@ footer .fContent .fCol ul li a:hover {
   float: left;
   width: 100%;
   padding: 40px;
+  position: relative;
+}
+
+.resultWrap .step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #cc0000;
+  color: #fff;
+  font-size: 13px;
+  padding: 3px 5px;
+  font-weight: 600;
 }
 
 .resultWrap .result2 {
@@ -6760,6 +6772,13 @@ footer .fContent .fCol ul li a:hover {
 
 .resultWrap .loginLine a:hover {
   background-color: #1c5ca0;
+}
+
+.resultWrap .loginLine .checkboxLine {
+  float: left;
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 
 .resultWrap .intengoPlanSuccess {
