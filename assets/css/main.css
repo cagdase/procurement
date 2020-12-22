@@ -6743,6 +6743,15 @@ footer .fContent .fCol ul li a:hover {
   text-align: center;
   float: left;
   font-weight: 600;
+  position: relative;
+}
+
+.resultWrap .bannerWrap .maximumBannerText {
+  position: absolute;
+  left: 105px;
+  top: 46px;
+  font-size: 20px;
+  color: #fff;
 }
 
 .resultWrap .bannerWrap img {
@@ -7045,6 +7054,39 @@ footer .fContent .fCol ul li a:hover {
 
 .inviteCompanyWatch .rpList li span:nth-child(2) {
   width: 60%;
+}
+
+.header {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90px;
+  padding: 0 40px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+}
+
+.header .headLeft {
+  float: left;
+}
+
+.header .headLeft .inviteLogo {
+  float: left;
+  max-width: 150px;
+  width: 100%;
+}
+
+.header .headLeft .inviteLogo img {
+  width: 100%;
 }
 
 @media (max-width: 1375px) {
