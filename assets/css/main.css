@@ -487,7 +487,7 @@ button.errorBtn:hover {
 
 .rightPanel .header .headLeft .logo {
   float: left;
-  max-width: 100px;
+  max-width: 180px;
 }
 
 .rightPanel .header .headLeft .logo img {
@@ -6406,7 +6406,7 @@ footer .fContent .fCol ul li a:hover {
 
 .inviteCompanyWrap .wizardWrap a {
   float: left;
-  width: 25%;
+  width: 20%;
   color: #999;
   padding: 0 30px;
   height: 100px;
@@ -6469,7 +6469,7 @@ footer .fContent .fCol ul li a:hover {
   font-family: fontAwesome;
   position: absolute;
   font-size: 60px;
-  right: 63px;
+  right: 38px;
   top: -11px;
   color: #007bff;
 }
@@ -6487,7 +6487,7 @@ footer .fContent .fCol ul li a:hover {
   font-family: fontAwesome;
   position: absolute;
   font-size: 30px;
-  right: 60px;
+  right: 39px;
   top: 20px;
   color: #28a745;
 }
@@ -7068,7 +7068,7 @@ footer .fContent .fCol ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 90px;
+  height: 60px;
   padding: 0 40px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
@@ -7081,12 +7081,13 @@ footer .fContent .fCol ul li a:hover {
 
 .header .headLeft .inviteLogo {
   float: left;
-  max-width: 150px;
+  max-width: 180px;
   width: 100%;
 }
 
 .header .headLeft .inviteLogo img {
   width: 100%;
+  display: block;
 }
 
 @media (max-width: 1375px) {

@@ -121,7 +121,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 .rightPanel{float:left; width:calc(100% - 250px); background: #f1f2f7; margin-left: 250px; margin-top: 55px;
 	.header{display:flex; align-items:center; justify-content:flex-start; background: #fff; border-bottom: 1px solid #e8e9ed; padding:0; height: 55px; position: fixed; left: 0; right: 0; top: 0; z-index:11;
 		.headLeft{float:left; width:250px; padding-left:30px;
-			.logo{float:left; max-width:100px;
+			.logo{float:left; max-width:180px;
 				img{display:block; width:100%;}
 			}
 			.mobileMenuBtn{font-size:22px; color:$color1; display:none;
@@ -2058,16 +2058,16 @@ footer{float:left; width:100%; background-color:#efefef; padding:30px; display:f
   .contentWidth{max-width:1000px; width:100%; display:flex; align-items: center; justify-content: center; flex-direction:column; padding-bottom:40px;}
   .formWrap{float:left; width:100%; display:flex; align-items: center; justify-content: center; background-color:#fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);}
   .wizardWrap{float:left; width:100%; display:flex; align-items: center; justify-content: center; margin-bottom:20px; background-color: #fffbfb; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-    a{float: left; width: 25%; color: #999;  padding: 0 30px; height: 100px; display: flex; position: relative; align-items: center; justify-content: center; text-decoration: none; font-size: 16px; flex-wrap: wrap; border-right: 1px solid #e8e8e8; flex-direction:column; margin:20px 0;
+    a{float: left; width: 20%; color: #999;  padding: 0 30px; height: 100px; display: flex; position: relative; align-items: center; justify-content: center; text-decoration: none; font-size: 16px; flex-wrap: wrap; border-right: 1px solid #e8e8e8; flex-direction:column; margin:20px 0;
       &:nth-last-child(1){border-right:0;}
       i{margin-right: 10px; font-size: 26px; height: 60px; width: 60px; display: flex; align-items: center; justify-content: center; background-color: #ddd; border-radius: 50%; color: #fff; margin-bottom:10px;}
       &.active{color: #222; 
         i{background-color: #007bff; }
-        &:after{content: "\f101"; font-family: fontAwesome; position: absolute; font-size: 60px; right: 63px; top:-11px; color: #007bff;}
+        &:after{content: "\f101"; font-family: fontAwesome; position: absolute; font-size: 60px; right: 38px; top:-11px; color: #007bff;}
       }
       &.success{color: #222;
         i{background-color: #28a745;}
-				&:after{content: "\f00c"; font-family: fontAwesome; position: absolute; font-size: 30px; right: 60px; top: 20px; color:#28a745;}
+				&:after{content: "\f00c"; font-family: fontAwesome; position: absolute; font-size: 30px; right: 39px; top: 20px; color:#28a745;}
       }
       &:nth-last-child(1){
         &.active{
@@ -2277,10 +2277,10 @@ $badge-max-size: 9px;
 .inviteCompanyWatch .rpList li span:nth-child(1){width:40%;}
 .inviteCompanyWatch .rpList li span:nth-child(2){width:60%;}
 
-.header{float:left; width:100%; display:flex; align-items:center; justify-content:center; height:90px; padding:0 40px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+.header{float:left; width:100%; display:flex; align-items:center; justify-content:center; height:60px; padding:0 40px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
 	.headLeft{float:left;
-		.inviteLogo{float:left; max-width:150px; width:100%;
-			img{width:100%;}
+		.inviteLogo{float:left; max-width:180px; width:100%;
+			img{width:100%; display: block;}
 		}
 	}
 }
