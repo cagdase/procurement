@@ -16,6 +16,106 @@
 
 <body>
   <a href="#" id="backToTop"><i class="fas fa-chevron-up"></i></a>
+  <div class="modalWrap companyInviteListModal">
+    <div class="mdContent">
+      <a class="mdCloseBtn companyInviteListModalCloseBtn" href="#"><i class="fas fa-times-circle"></i></a>
+      <div class="mdHead">
+        <span><i class="fas fa-address-card"></i> Tedarikçi davet</span>
+      </div>
+      <div class="mdMiddle marB0">
+        <div class="modalDesc">
+          <span><strong>Açıklama :</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel ipsum dignissim.</span>
+          <span class="modalDescRight">
+            <span class="text">Seçtiğiniz tedarikçiler davet listenize eklenmiştir.</span>
+            <button class="primaryBtn">Ekle <i class="fas fa-plus"></i></button>
+          </span>
+        </div>
+        <div class="catalogHead" style="display:none">
+          <div class="treeGlobalSwitch">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" /><i class="helper"></i>Genele Aç
+              </label>
+            </div>
+          </div>
+          <div class="selectedCategory" style="display: none;">
+            <span><i class="fas fa-check"></i> Kırtasiye</span>
+            <span><i class="fas fa-check"></i> Ahşap</span>
+            <span><i class="fas fa-check"></i> Beyaz eşya</span>
+            <span><i class="fas fa-check"></i> Mobilya</span>
+          </div>
+          <div class="selectedCategory" style="display: none;">
+            <span><i class="fas fa-check"></i> Teknoloji</span>
+            <span><i class="fas fa-check"></i> Bahçe ürünleri</span>
+          </div>
+        </div>
+        <div class="rpList bwHeadInfo categoryWrap">
+          <div class="categoryTree">
+            <img src="assets/images/categoryTreeTable.png" alt=""  style="margin-top: -70px;">
+          </div>
+          <div class="supplierCol">
+            <ul>
+              <li class="head">Kayıtlı tedarikçilerim <a href="javascript:;" class="selectAll">Tümünü seç</a></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input checked type="checkbox" /><i class="helper"></i>Tedarikçi 1
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input checked type="checkbox" /><i class="helper"></i>Tedarikçi 2
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" /><i class="helper"></i>Tedarikçi 3
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" /><i class="helper"></i>Tedarikçi 4
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="inpromaxCol">
+            <ul>
+              <li class="head">Inpromax Ortak Satın Alma Platformu <a href="javascript:;" class="selectAll">Tümünü seç</a></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" /><i class="helper"></i>Tedarikçi 1
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" /><i class="helper"></i>Tedarikçi 2
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" /><i class="helper"></i>Diğer tedarikçiler (38)
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="modalWrap modalLong tcoModal">
     <div class="mdContent">
       <a class="mdCloseBtn tcoBtnCloseModal" href="#"><i class="fas fa-times-circle"></i></a>
@@ -857,6 +957,7 @@
                   <label for="input" class="control-label">Tedarikçi ara..</label><i class="bar"></i>
                 </div>
                 <button class="primaryBtn">Tedarikçi ekle <i class="fas fa-plus"></i></button>
+                <button class="secondaryBtn companyInviteListModalBtn">Kategoriden seç <i class="fas fa-address-card"></i></button>
               </div>
               <div class="rpList suppliers preBid">
                 <div class="rpCardSubHead"><strong>Eklenen tedarikçi listesi</strong></div>

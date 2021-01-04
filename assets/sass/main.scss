@@ -398,10 +398,13 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			}
 		}
 		.suppliersSearch{margin-bottom:40px; margin-top:20px;
-			.form-group{width:calc(100% - 160px); height:40px;
+			.form-group{width:calc(100% - 360px); height:40px;
 				input{height:31px;}
 			}
-			button{width:160px; margin:0;}
+			button{width:160px; margin:0;
+				&.primaryBtn{margin-right:20px;}
+				&.companyInviteListModalBtn{width:180px;}
+			}
 		}
 		.productBox{float:left; width:100%; margin-bottom:30px;
 			table{float:left; width:100%;
@@ -609,7 +612,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 	ul{float:left; width:100%; font-size:13px; 
 		li{float:left; width:100%; padding:15px; border-bottom:1px solid #f3f3f3; display:flex; align-items:center;
 			span{float:left;}
-			&:hover{background-color:#e8e8e8;}
+			&:hover{background-color:#f5f5f5;}
 		}
 		&.rpListHead{border:none; border-top:2px solid #f3f3f3;
 			li{font-weight:600; border-bottom:2px solid #eee; font-size:14px;}
@@ -1204,6 +1207,15 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		}
 		.filterHead{border-top:0;
 			input{outline:0; font-size:13px; padding:5px 10px; width:100%;}
+		}
+	}
+	&.companyInviteList{
+		li{
+			span{padding-right:20px;
+				&:nth-child(1){width:33.3%;}
+				&:nth-child(2){width:33.3%;}
+				&:nth-child(3){width:33.3%;}
+			}
 		}
 	}
 }
@@ -2058,16 +2070,16 @@ footer{float:left; width:100%; background-color:#efefef; padding:30px; display:f
   .contentWidth{max-width:1000px; width:100%; display:flex; align-items: center; justify-content: center; flex-direction:column; padding-bottom:40px;}
   .formWrap{float:left; width:100%; display:flex; align-items: center; justify-content: center; background-color:#fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);}
   .wizardWrap{float:left; width:100%; display:flex; align-items: center; justify-content: center; margin-bottom:20px; background-color: #fffbfb; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-    a{float: left; width: 20%; color: #999;  padding: 0 30px; height: 100px; display: flex; position: relative; align-items: center; justify-content: center; text-decoration: none; font-size: 16px; flex-wrap: wrap; border-right: 1px solid #e8e8e8; flex-direction:column; margin:20px 0;
+    a{float: left; width: 20%; color: #999;  padding: 0 30px; height: 100px; display: flex; position: relative; align-items: flex-start; justify-content: center; text-decoration: none; font-size: 14px; line-height: 18px; flex-wrap: wrap; border-right: 1px solid #e8e8e8; text-align:center; margin:20px 0;
       &:nth-last-child(1){border-right:0;}
-      i{margin-right: 10px; font-size: 26px; height: 60px; width: 60px; display: flex; align-items: center; justify-content: center; background-color: #ddd; border-radius: 50%; color: #fff; margin-bottom:10px;}
+      i{margin-right: 10px; font-size: 24px; height: 55px; width: 55px; display: flex; align-items: center; justify-content: center; background-color: #ddd; border-radius: 50%; color: #fff; margin-bottom:10px;}
       &.active{color: #222; 
         i{background-color: #007bff; }
-        &:after{content: "\f101"; font-family: fontAwesome; position: absolute; font-size: 60px; right: 38px; top:-11px; color: #007bff;}
+        &:after{content: "\f101"; font-family: fontAwesome; position: absolute; font-size: 55px; right: 44px; top:19px; color: #007bff;}
       }
       &.success{color: #222;
         i{background-color: #28a745;}
-				&:after{content: "\f00c"; font-family: fontAwesome; position: absolute; font-size: 30px; right: 39px; top: 20px; color:#28a745;}
+				&:after{content: "\f00c"; font-family: fontAwesome; position: absolute; font-size: 30px; right: 40px; top: 19px; color:#28a745;}
       }
       &:nth-last-child(1){
         &.active{
@@ -2281,6 +2293,36 @@ $badge-max-size: 9px;
 	.headLeft{float:left;
 		.inviteLogo{float:left; max-width:180px; width:100%;
 			img{width:100%; display: block;}
+		}
+	}
+}
+
+.companyInviteListModal{
+	.mdContent{width: 100%; height: 100%; max-height: 100%;}
+	.catalogHead{float:left; width:100%; margin-bottom:10px;
+		.treeGlobalSwitch{float:left; width:33.3%; font-weight:600;
+			.checkbox .helper{top:2px;}	
+		}
+		.selectedCategory{float:left; width:33.3%;
+			span{float:left; padding:5px; font-size:13px;
+				i{color:$colorSuccess; font-size:15px;}
+				&:nth-child(1){padding-left:0;}
+			}
+		}
+	}
+	.categoryWrap{display:flex; width:100%; margin-bottom: 40px;
+		.head{font-weight:600; display:flex; align-items: center; justify-content: space-between;
+			.selectAll{font-size:12px; text-decoration:underline; font-weight:normal;}
+		}
+		.categoryTree{float:left; width:33.3%; border-right:1px solid #f1f1f1; padding:15px 15px 15px 0; overflow:hidden;}
+		.supplierCol{float:left; width:33.3%; border-right:1px solid #f1f1f1; padding:0 15px;}
+		.inpromaxCol{float:left; width:33.3%; padding:0 15px;}
+		.checkbox .helper{top:1px;}
+	}
+	.modalDesc{display: flex; align-items: center; justify-content: space-between;
+		.modalDescRight{display: flex; align-items: center;
+			.text{float:left; margin-right:10px; font-size:13px;}
+			button{margin:0;}
 		}
 	}
 }

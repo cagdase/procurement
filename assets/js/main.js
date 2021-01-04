@@ -132,6 +132,15 @@ $(document).ready(function () {
     $('.inviteCompanyWatch').hide()
   });
 
+  $('.companyInviteListModalBtn').click(function () {
+    $('.companyInviteListModal').css({ display: 'flex' })
+  })
+  $('.companyInviteListModalCloseBtn').click(function () {
+    $('.companyInviteListModal').hide()
+  });
+
+  
+
   $("#backToTop").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 1000);
   });

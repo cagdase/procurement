@@ -1799,7 +1799,7 @@ button.errorBtn:hover {
 }
 
 .rightPanel .content .suppliersSearch .form-group {
-  width: calc(100% - 160px);
+  width: calc(100% - 360px);
   height: 40px;
 }
 
@@ -1810,6 +1810,14 @@ button.errorBtn:hover {
 .rightPanel .content .suppliersSearch button {
   width: 160px;
   margin: 0;
+}
+
+.rightPanel .content .suppliersSearch button.primaryBtn {
+  margin-right: 20px;
+}
+
+.rightPanel .content .suppliersSearch button.companyInviteListModalBtn {
+  width: 180px;
 }
 
 .rightPanel .content .productBox {
@@ -2658,7 +2666,7 @@ button.errorBtn:hover {
 }
 
 .rpList ul li:hover {
-  background-color: #e8e8e8;
+  background-color: #f5f5f5;
 }
 
 .rpList ul.rpListHead {
@@ -4128,6 +4136,22 @@ button.errorBtn:hover {
   font-size: 13px;
   padding: 5px 10px;
   width: 100%;
+}
+
+.rpList.companyInviteList li span {
+  padding-right: 20px;
+}
+
+.rpList.companyInviteList li span:nth-child(1) {
+  width: 33.3%;
+}
+
+.rpList.companyInviteList li span:nth-child(2) {
+  width: 33.3%;
+}
+
+.rpList.companyInviteList li span:nth-child(3) {
+  width: 33.3%;
 }
 
 .deleteModal {
@@ -6414,21 +6438,19 @@ footer .fContent .fCol ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 18px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-right: 1px solid #e8e8e8;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  text-align: center;
   margin: 20px 0;
 }
 
@@ -6438,9 +6460,9 @@ footer .fContent .fCol ul li a:hover {
 
 .inviteCompanyWrap .wizardWrap a i {
   margin-right: 10px;
-  font-size: 26px;
-  height: 60px;
-  width: 60px;
+  font-size: 24px;
+  height: 55px;
+  width: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6468,9 +6490,9 @@ footer .fContent .fCol ul li a:hover {
   content: "\f101";
   font-family: fontAwesome;
   position: absolute;
-  font-size: 60px;
-  right: 38px;
-  top: -11px;
+  font-size: 55px;
+  right: 44px;
+  top: 19px;
   color: #007bff;
 }
 
@@ -6487,8 +6509,8 @@ footer .fContent .fCol ul li a:hover {
   font-family: fontAwesome;
   position: absolute;
   font-size: 30px;
-  right: 39px;
-  top: 20px;
+  right: 40px;
+  top: 19px;
   color: #28a745;
 }
 
@@ -7088,6 +7110,131 @@ footer .fContent .fCol ul li a:hover {
 .header .headLeft .inviteLogo img {
   width: 100%;
   display: block;
+}
+
+.companyInviteListModal .mdContent {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+.companyInviteListModal .catalogHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.companyInviteListModal .catalogHead .treeGlobalSwitch {
+  float: left;
+  width: 33.3%;
+  font-weight: 600;
+}
+
+.companyInviteListModal .catalogHead .treeGlobalSwitch .checkbox .helper {
+  top: 2px;
+}
+
+.companyInviteListModal .catalogHead .selectedCategory {
+  float: left;
+  width: 33.3%;
+}
+
+.companyInviteListModal .catalogHead .selectedCategory span {
+  float: left;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.companyInviteListModal .catalogHead .selectedCategory span i {
+  color: #28a745;
+  font-size: 15px;
+}
+
+.companyInviteListModal .catalogHead .selectedCategory span:nth-child(1) {
+  padding-left: 0;
+}
+
+.companyInviteListModal .categoryWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.companyInviteListModal .categoryWrap .head {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.companyInviteListModal .categoryWrap .head .selectAll {
+  font-size: 12px;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.companyInviteListModal .categoryWrap .categoryTree {
+  float: left;
+  width: 33.3%;
+  border-right: 1px solid #f1f1f1;
+  padding: 15px 15px 15px 0;
+  overflow: hidden;
+}
+
+.companyInviteListModal .categoryWrap .supplierCol {
+  float: left;
+  width: 33.3%;
+  border-right: 1px solid #f1f1f1;
+  padding: 0 15px;
+}
+
+.companyInviteListModal .categoryWrap .inpromaxCol {
+  float: left;
+  width: 33.3%;
+  padding: 0 15px;
+}
+
+.companyInviteListModal .categoryWrap .checkbox .helper {
+  top: 1px;
+}
+
+.companyInviteListModal .modalDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.companyInviteListModal .modalDesc .modalDescRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.companyInviteListModal .modalDesc .modalDescRight .text {
+  float: left;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.companyInviteListModal .modalDesc .modalDescRight button {
+  margin: 0;
 }
 
 @media (max-width: 1375px) {
