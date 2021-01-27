@@ -2810,6 +2810,113 @@ button.errorBtn:hover {
   width: 30%;
 }
 
+.rpList.additionalInfoModalTable li span:nth-child(1) {
+  width: 30%;
+}
+
+.rpList.additionalInfoModalTable li span:nth-child(2) {
+  width: 50%;
+}
+
+.rpList.additionalInfoModalTable li span:nth-child(3) {
+  width: 10%;
+  text-align: center;
+}
+
+.rpList.additionalInfoModalTable li span:nth-child(4) {
+  width: 10%;
+  text-align: center;
+}
+
+.rpList.additionalInfoModalTable li span:nth-child(4) a {
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.rpList.additionalInfoModalTable .additionalInfoModalSaveBtn {
+  margin-right: 0;
+  margin-top: 20px;
+  float: right;
+}
+
+.rpList.additionalInfoModalTable .contentInfoTypeHeadline {
+  padding-right: 10px;
+}
+
+.rpList.additionalInfoModalTable .contentInfoTypeHeadline input {
+  float: left;
+  width: 100%;
+  outline: 0;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ddd;
+  height: 30px;
+}
+
+.rpList.bidderAdditionalInfoModalTable li span:nth-child(1) {
+  width: 30%;
+}
+
+.rpList.bidderAdditionalInfoModalTable li span:nth-child(2) {
+  width: 70%;
+}
+
+.rpList.bidderAdditionalInfoModalTable .bidderAdditionalInfoModalSaveBtn {
+  margin-right: 0;
+  margin-top: 20px;
+  float: right;
+}
+
+.rpList.bidderAdditionalInfoModalTable .baiEditableContent {
+  padding: 10px;
+  border: 1px solid #ddd;
+  outline: 0;
+}
+
+.rpList.ownerWatchAdditionalInfoModalTable table {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+}
+
+.rpList.ownerWatchAdditionalInfoModalTable table .tableHead {
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+}
+
+.rpList.ownerWatchAdditionalInfoModalTable table tr {
+  width: 100%;
+}
+
+.rpList.ownerWatchAdditionalInfoModalTable table tr td {
+  padding: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.rpList.ownerWatchAdditionalInfoModalTable .moreBtn {
+  display: inline-block;
+  font-size: 16px;
+  color: #007bff;
+  position: relative;
+}
+
+.rpList.ownerWatchAdditionalInfoModalTable .moreBtn .moreInfo {
+  position: absolute;
+  background: #f5f5f5;
+  padding: 15px;
+  right: 0;
+  top: 0;
+  font-size: 12px;
+  width: 200px;
+  color: #222;
+  line-height: 16px;
+  display: none;
+}
+
+.rpList.ownerWatchAdditionalInfoModalTable .moreBtn:hover .moreInfo {
+  display: block;
+}
+
 .rpList.bwSummary li span:nth-child(1) {
   width: 5%;
   text-align: left;
@@ -2894,6 +3001,9 @@ button.errorBtn:hover {
 
 .rpList.comparisonCol li.totalPrice {
   border-top: 1px solid #ddd;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .rpList.comparisonCol li.totalPrice span {
@@ -4885,6 +4995,25 @@ button.errorBtn:hover {
   margin: 20px 0;
 }
 
+.bidderAdditionalInfoModalText {
+  float: left;
+  text-align: right;
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  color: #cc0000;
+  margin-top: 10px;
+}
+
+.bidderAdditionalInfoModalText .bidderAdditionalInfoModalBtn {
+  float: none;
+  margin-left: 0;
+  background: none;
+  color: #007bff;
+  padding: 0;
+  font-size: 15px;
+}
+
 .subCategoryInfo {
   float: left;
   width: 100%;
@@ -4942,7 +5071,7 @@ button.errorBtn:hover {
 
 .chatWrap {
   max-width: 800px;
-  max-height: 800px;
+  max-height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4951,7 +5080,7 @@ button.errorBtn:hover {
           align-items: center;
   position: fixed;
   right: 0;
-  top: calc(50% - 400px);
+  top: calc(50% - 300px);
   z-index: 99;
   margin-right: -750px;
   height: 100%;
@@ -4998,7 +5127,7 @@ button.errorBtn:hover {
 
 .chatWrap .chatContent {
   max-width: 750px;
-  max-height: 800px;
+  max-height: 600px;
   height: 100%;
   background: #313542;
   margin: 0 auto;
@@ -5012,7 +5141,6 @@ button.errorBtn:hover {
 
 .chatWrap .chatLeft {
   width: 260px;
-  max-height: 800px;
   background-color: #3b3e49;
   display: inline-block;
   font-size: 15px;
@@ -5021,7 +5149,6 @@ button.errorBtn:hover {
 
 .chatWrap .chatRight {
   max-width: 490px;
-  max-height: 800px;
   display: inline-block;
   font-size: 15px;
   vertical-align: top;
@@ -5155,6 +5282,9 @@ button.errorBtn:hover {
 
 .chatWrap .chatRight .chatTop {
   padding: 20px;
+  height: 10%;
+  float: left;
+  width: 100%;
 }
 
 .chatWrap .chatRight .chatTop h2 {
@@ -5171,7 +5301,9 @@ button.errorBtn:hover {
   margin: 0;
   list-style-type: none;
   overflow-y: auto;
-  height: 72%;
+  height: 65%;
+  float: left;
+  width: 100%;
   border-top: 1px solid #464954;
   border-bottom: 1px solid #464954;
 }
@@ -5235,7 +5367,9 @@ button.errorBtn:hover {
 }
 
 .chatWrap .chatRight .chatBottom {
-  height: 153px;
+  height: 25%;
+  float: left;
+  width: 100%;
   padding: 20px;
 }
 
@@ -7237,6 +7371,186 @@ footer .fContent .fCol ul li a:hover {
   margin: 0;
 }
 
+.additionalInfoModalBtn {
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.additionalInfoModal .mdContent {
+  width: 100% !important;
+  max-width: 1000px !important;
+}
+
+.additionalInfoModal .modalDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.additionalInfoModal .contentInfoType {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelect {
+  float: left;
+  width: 100%;
+  position: relative;
+  height: 30px;
+  border: 1px solid #ddd;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelect .cInfoTypeDefaultText {
+  float: left;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelect .cInfoTypeSelectDDmenuBtn {
+  position: absolute;
+  right: 10px;
+  top: 1px;
+  font-size: 18px;
+  color: #222;
+  line-height: 0;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelect .cInfoTypeSelectDDmenu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background: #f5f5f5;
+  padding: 10px;
+  z-index: 2;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelect .cInfoTypeSelectDDmenu .menuItem {
+  display: block;
+  padding: 5px 10px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelect .cInfoTypeSelectDDmenu .menuItem:hover {
+  text-decoration: underline;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelect .cInfoTypeSelectDDmenu .menuItem:nth-last-child(1) {
+  border-bottom: 0;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelect .cInfoTypeSelectDDmenu .cInfoTypeSelectDDmenuCloseBtn {
+  position: absolute;
+  right: -1px;
+  top: -10px;
+  color: #222;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelected {
+  float: left;
+  width: calc(100% - 32px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelected .cInfoTypeSelectedInput {
+  display: none;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelected .cInfoTypeSelectedInput input {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  outline: 0;
+  height: 30px;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelected .cInfoTypeSelectedDatePicker {
+  display: none;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelected .cInfoTypeSelectedDatePicker .c-datepicker-data-input {
+  background: transparent !important;
+  width: 100%;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelected .cInfoTypeSelectedDatePicker .c-datepicker-date-editor {
+  height: 30px;
+  border-radius: 0;
+}
+
+.additionalInfoModal .contentInfoType .cInfoTypeSelected .cInfoTypeSelectedDatePicker .c-datepicker-range__icon {
+  line-height: 0;
+}
+
+.bidderAdditionalInfoModalBtn {
+  float: left;
+  color: #007bff;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.ownerWatchAdditionalInfoModal .mdContent {
+  width: 100% !important;
+  max-width: 900px !important;
+}
+
+.ownerWatchAdditionalInfo {
+  position: relative;
+}
+
+.ownerWatchAdditionalInfo .ownerWatchAdditionalInfoModalBtn {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #167bff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.additionalInfoModalNewLineAdd {
+  float: right;
+  margin: 0;
+}
+
 @media (max-width: 1375px) {
   .rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(1) {
     padding: 0;
@@ -8039,17 +8353,5 @@ footer .fContent .fCol ul li a:hover {
   }
   .resultWrap table tr td:nth-child(3) {
     width: 25%;
-  }
-}
-
-@media (max-height: 800px) {
-  .chatWrap {
-    top: 0;
-  }
-}
-
-@media (max-height: 767px) {
-  .chatWrap {
-    display: none;
   }
 }

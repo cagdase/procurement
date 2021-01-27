@@ -139,7 +139,53 @@ $(document).ready(function () {
     $('.companyInviteListModal').hide()
   });
 
-  
+  $('.additionalInfoModalBtn').click(function () {
+    $('.additionalInfoModal').css({ display: 'flex' })
+  })
+  $('.additionalInfoModalCloseBtn').click(function () {
+    $('.additionalInfoModal').hide()
+  });
+
+  $('.cInfoTypeSelectDDmenuBtn').click(function () {
+    $('.cInfoTypeSelectDDmenu').css({ display: 'block' })
+  })
+  $('.cInfoTypeSelectDDmenuCloseBtn').click(function () {
+    $('.cInfoTypeSelectDDmenu').hide()
+  });
+
+  $('.additionalInfoIypeSelect').click(function() {
+    if($(this).attr('value') == 'freeText') {
+      $('.cInfoTypeSelected').show();
+      $('.cInfoTypeSelectedInput').show();
+      $('.cInfoTypeSelectedDatePicker').hide();            
+      $('.cInfoTypeSelectDDmenu').hide();            
+      $('.cInfoTypeDefaultText').hide();            
+    } else if($(this).attr('value') == 'datepicker') {
+      $('.cInfoTypeSelected').show();
+      $('.cInfoTypeSelectedDatePicker').show();
+      $('.cInfoTypeSelectedInput').hide();
+      $('.cInfoTypeSelectDDmenu').hide();
+      $('.cInfoTypeDefaultText').hide();
+    } else {
+      $('.cInfoTypeSelected').hide();
+      $('.cInfoTypeSelectedDatePicker').hide();
+      $('.cInfoTypeSelectedInput').hide();
+    }
+  });
+
+  $('.bidderAdditionalInfoModalBtn').click(function () {
+    $('.bidderAdditionalInfoModal').css({ display: 'flex' })
+  })
+  $('.bidderAdditionalInfoModalCloseBtn').click(function () {
+    $('.bidderAdditionalInfoModal').hide()
+  });
+
+  $('.ownerWatchAdditionalInfoModalBtn').click(function () {
+    $('.ownerWatchAdditionalInfoModal').css({ display: 'flex' })
+  })
+  $('.ownerWatchAdditionalInfoModalCloseBtn').click(function () {
+    $('.ownerWatchAdditionalInfoModal').hide()
+  });
 
   $("#backToTop").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 1000);
