@@ -487,7 +487,7 @@ button.errorBtn:hover {
 
 .rightPanel .header .headLeft .logo {
   float: left;
-  max-width: 180px;
+  max-width: 110px;
 }
 
 .rightPanel .header .headLeft .logo img {
@@ -7551,6 +7551,275 @@ footer .fContent .fCol ul li a:hover {
   margin: 0;
 }
 
+.raporCard {
+  float: left;
+  width: 200px;
+  background-color: #fff;
+  margin-right: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.raporCard span {
+  font-size: 15px;
+  padding: 15px;
+  float: left;
+  color: #4e5361;
+  height: 100px;
+  width: 100%;
+  line-height: 18px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+}
+
+.raporCard span p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #007bff;
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.raporCard span:hover {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+}
+
+.raporCard.customRapor {
+  background-color: #007bff;
+  border-radius: 0;
+  border: none;
+}
+
+.raporCard.customRapor a {
+  color: #fff;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.raporCard.customRapor a:hover {
+  background-color: #1c5ca0;
+}
+
+.raporCard.customRapor i {
+  margin-left: 10px;
+}
+
+.raporCard:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.raporCard:nth-child(even) {
+  margin-right: 0;
+}
+
+.reportHeadInfo {
+  float: left;
+  width: 100%;
+  height: 310px;
+  max-width: 1000px;
+  margin-bottom: 70px;
+}
+
+.reportHeadInfo .rpCardContent {
+  margin-bottom: 0;
+}
+
+.reportInpromaxInfo {
+  float: left;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 40px;
+}
+
+.reportInpromaxInfo .raporCard {
+  position: relative;
+}
+
+.reportInpromaxInfo .raporCard a {
+  display: block;
+  color: #64666d;
+}
+
+.reportInpromaxInfo .reportEditBtn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 15px;
+  color: #007bff;
+}
+
+.reportChart {
+  width: 55% !important;
+  padding-left: 30px;
+  clear: none !important;
+  margin-top: -30px;
+}
+
+.reportChart .rpChart canvas {
+  height: 263px !important;
+}
+
+.reportCompany {
+  width: 45% !important;
+  clear: none !important;
+}
+
+.reportsWrap .rpCardContent {
+  margin-bottom: 40px;
+}
+
+.reportFilterModalBtn, .reportFilterInrpomaxModalBtn {
+  float: right !important;
+  margin: 0 !important;
+}
+
+.reportFilterInrpomaxModalBtn i {
+  width: 100%;
+  float: left;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.reportFilterModal .filterStep, .reportFilterInrpomaxModal .filterStep {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.reportFilterModal .filterStep .spContent, .reportFilterInrpomaxModal .filterStep .spContent {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.reportFilterModal .filterStep .spContent.money, .reportFilterInrpomaxModal .filterStep .spContent.money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reportFilterModal .filterStep .spContent.money span, .reportFilterInrpomaxModal .filterStep .spContent.money span {
+  float: left;
+  margin-right: 10px;
+}
+
+.reportFilterModal .filterStep .spContent.money select, .reportFilterInrpomaxModal .filterStep .spContent.money select {
+  outline: 0;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  height: 30px;
+}
+
+.reportFilterModal .filterStep.filterDatepicker .c-datepicker-date-editor, .reportFilterInrpomaxModal .filterStep.filterDatepicker .c-datepicker-date-editor {
+  max-width: 400px;
+}
+
+.reportFilterModal .filterStep:nth-last-child(1), .reportFilterInrpomaxModal .filterStep:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.reportFilterModal .bottomBtns, .reportFilterInrpomaxModal .bottomBtns {
+  float: left;
+  width: 100%;
+}
+
+.reportFilterModal .bottomBtns button, .reportFilterInrpomaxModal .bottomBtns button {
+  margin: 0;
+}
+
+.customReportModal .customReportLine, .companyReportModal .customReportLine {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.customReportModal .customReportLine .crcText, .companyReportModal .customReportLine .crcText {
+  float: left;
+  padding-right: 10px;
+  width: 120px;
+}
+
+.customReportModal .customReportLine input, .companyReportModal .customReportLine input {
+  float: left;
+  border: 1px solid #ddd;
+  outline: 0;
+  padding: 5px 10px;
+  width: 300px;
+  height: 38px;
+}
+
+.customReportModal .customReportLine select, .companyReportModal .customReportLine select {
+  outline: 0;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  height: 38px;
+}
+
+.customReportModal .customReportLine .multiselect, .companyReportModal .customReportLine .multiselect {
+  float: left;
+  width: 100%;
+}
+
+.customReportModal .mdMiddle, .companyReportModal .mdMiddle {
+  margin-bottom: 0 !important;
+}
+
+.companyReportWrap .raporCard:nth-child(even) {
+  margin-right: 20px;
+}
+
+.companyReportWrap .createCustomReportBtn {
+  background-color: #007bff;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.companyReportWrap .createCustomReportBtn .customReportModalBtn {
+  color: #fff;
+}
+
+.companyReportWrap .createCustomReportBtn span:hover {
+  background-color: #18589c;
+}
+
 @media (max-width: 1375px) {
   .rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(1) {
     padding: 0;
@@ -7559,6 +7828,19 @@ footer .fContent .fCol ul li a:hover {
   }
   .rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(2) {
     padding: 0;
+  }
+  .reportsWrap .rpCardContent {
+    width: 100% !important;
+    padding-left: 0;
+  }
+  .reportHeadInfo {
+    height: auto;
+  }
+  .rightPanel .content .rpChart {
+    width: 500px;
+  }
+  .raporCard:nth-child(even) {
+    margin-right: 20px;
   }
 }
 

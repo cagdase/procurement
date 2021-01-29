@@ -187,6 +187,35 @@ $(document).ready(function () {
     $('.ownerWatchAdditionalInfoModal').hide()
   });
 
+  $('.reportFilterModalBtn').click(function () {
+    $('.reportFilterModal').css({ display: 'flex' })
+  })
+  $('.reportFilterModalCloseBtn').click(function () {
+    $('.reportFilterModal').hide()
+  });
+
+  $('.reportFilterInrpomaxModalBtn').click(function () {
+    $('.reportFilterInrpomaxModal').css({ display: 'flex' })
+  })
+  $('.reportFilterInrpomaxModalCloseBtn').click(function () {
+    $('.reportFilterInrpomaxModal').hide()
+  });
+
+  $('.customReportModalBtn').click(function () {
+    $('.customReportModal').css({ display: 'flex' })
+  })
+  $('.customReportModalCloseBtn').click(function () {
+    $('.customReportModal').hide()
+  });
+
+  $('.companyReportModalBtn').click(function () {
+    $('.companyReportModal').css({ display: 'flex' })
+  })
+  $('.companyReportModalCloseBtn').click(function () {
+    $('.companyReportModal').hide()
+  });
+
+
   $("#backToTop").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 1000);
   });

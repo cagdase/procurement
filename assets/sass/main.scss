@@ -121,7 +121,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 .rightPanel{float:left; width:calc(100% - 250px); background: #f1f2f7; margin-left: 250px; margin-top: 55px;
 	.header{display:flex; align-items:center; justify-content:flex-start; background: #fff; border-bottom: 1px solid #e8e9ed; padding:0; height: 55px; position: fixed; left: 0; right: 0; top: 0; z-index:11;
 		.headLeft{float:left; width:250px; padding-left:30px;
-			.logo{float:left; max-width:180px;
+			.logo{float:left; max-width:110px;
 				img{display:block; width:100%;}
 			}
 			.mobileMenuBtn{font-size:22px; color:$color1; display:none;
@@ -2417,11 +2417,88 @@ $badge-max-size: 9px;
 
 .additionalInfoModalNewLineAdd{float:right; margin:0;}
 
+.raporCard{float:left; width:200px; background-color:#fff; margin-right:20px; overflow: hidden; margin-bottom:20px;
+	span{font-size:15px; padding:15px; float:left; color:#4e5361; height:100px; width:100%; line-height: 18px; text-align:center; display: flex; align-items: center; justify-content: center; flex-direction: column; border:1px solid #f1f1f1; border-radius:10px; 
+		p{font-size:20px; font-weight:600; color:$linkColor; float:left; width:100%; padding: 10px 0; text-align: center; margin-top: 5px;}
+		&:hover{background-color:#f1f1f1; border:1px solid #f1f1f1;}
+	}
+	&.customRapor{background-color:$linkColor; border-radius:0; border:none;
+		a{color:#fff; font-weight:600; display:flex; align-items:center; justify-content:center; text-align: center; padding:10px;
+			&:hover{background-color:#1c5ca0;}
+		}
+		i{margin-left:10px;}
+	}
+	&:nth-last-child(1){margin-right:0;}
+	&:nth-child(even){margin-right:0;}
+}
+
+.reportHeadInfo{float:left; width:100%; height:310px; max-width:1000px; margin-bottom:70px;
+	.rpCardContent{margin-bottom:0;}
+}
+.reportInpromaxInfo{float:left; width:100%; max-width:1000px; margin-bottom:40px;
+	.raporCard{position:relative;
+		a{display:block; color:#64666d;}
+	}
+	.reportEditBtn{position:absolute; right:5px; top:5px; font-size:15px; color:$linkColor;}
+}
+.reportChart{width:55%!important; padding-left:30px; clear:none!important; margin-top:-30px;
+	.rpChart canvas{height:263px!important;}
+}
+.reportCompany{width:45%!important; clear:none!important;}
+.reportsWrap{
+	.rpCardContent{margin-bottom:40px;}
+}
+.reportFilterModalBtn, .reportFilterInrpomaxModalBtn{float:right!important; margin:0!important;}
+.reportFilterInrpomaxModalBtn{
+	i{width:100%; float:left; font-size:20px;  margin-bottom: 10px;}
+}
+.reportFilterModal, .reportFilterInrpomaxModal{
+	.filterStep{float:left; width:100%; margin-bottom:30px;
+		.spContent{float:left; width:100%; margin-bottom:5px;
+			&.money{display: flex; align-items: center;
+				span{float:left; margin-right:10px;}
+				select{outline: 0; padding: 5px 10px; border: 1px solid #ddd; height:30px;}
+			}
+		}
+		&.filterDatepicker{
+			.c-datepicker-date-editor{max-width:400px;}
+		}
+		&:nth-last-child(1){margin-bottom:0;}
+	}
+	.bottomBtns{float:left; width:100%;
+		button{margin:0;}
+	}
+}
+
+.customReportModal, .companyReportModal{
+	.customReportLine{float:left; width:100%; display: flex; align-items: center; margin-bottom:20px;
+		.crcText{float:left; padding-right:10px; width: 120px;}
+		input{float:left; border:1px solid #ddd; outline:0; padding:5px 10px; width:300px; height:38px;}
+		select{outline: 0; padding: 5px 10px; border: 1px solid #ddd; height:38px;}
+		.multiselect{float:left; width:100%;}
+	}
+	.mdMiddle{margin-bottom:0!important;}
+}
+
+.companyReportWrap{
+	.raporCard:nth-child(even){margin-right:20px;}
+	.createCustomReportBtn{background-color:$linkColor; color:#fff; overflow: hidden; border-radius: 10px;
+		.customReportModalBtn{color:#fff;}
+		span{
+			&:hover{background-color:#18589c;}
+		}
+	}
+}
+
 // Media queries start
 
 @media (max-width: 1375px){
 	.rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(1){padding:0; margin-bottom:40px; border-right:0;}
 	.rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(2){padding:0;}
+	.reportsWrap .rpCardContent{width:100%!important; padding-left:0;}
+	.reportHeadInfo{height:auto;}
+	.rightPanel .content .rpChart{width:500px;}
+	.raporCard:nth-child(even){margin-right:20px;}
 }
 
 @media (max-width: 1366px){

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>INTENGO - SATIN ALMA</title>
+  <meta charset=utf-8>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/plugins/datepicker.css">
+</head>
+
+<body>
+  <a href="#" id="backToTop"><i class="fas fa-chevron-up"></i></a>
+
+  <div class="modalWrap modalLong reportFilterModal">
+    <div class="mdContent">
+      <a class="mdCloseBtn reportFilterModalCloseBtn" href="#"><i class="fas fa-times-circle"></i></a>
+      <div class="mdHead"><span><i class="fas fa-sort-alpha-down"></i> {{Firmaadı}} rapor: filtrele</span></div>
+      <div class="mdMiddle">
+        <div class="filterStep">
+          <span class="spContent">Kullanıcı seçiniz :</span>
+          <span class="spContent">Primefaces Multiselect</span>
+        </div>
+        <div class="filterStep filterDatepicker">
+          <span class="spContent">Tarih aralığı seçiniz :</span>
+          <span class="spContent">
+            <div class="c-datepicker-date-editor J-datepicker-range">
+              <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+              <input placeholder="Tarih seçiniz" name="" class="c-datepicker-data-input" placeholder="Seçiniz">
+              <span class="c-datepicker-range-separator">-</span>
+              <input placeholder="Tarih seçiniz" name="" class="c-datepicker-data-input">
+            </div>
+          </span>
+        </div>
+        <div class="filterStep">
+          <span class="spContent money">
+            <span>Para birimi</span>
+            <select>
+              <option>TRY</option>
+              <option>USD</option>
+              <option>EUR</option>
+            </select>
+          </span>
+        </div>
+        <div class="bottomBtns">
+          <button class="primaryBtn">Filtrele</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modalWrap modalLong reportFilterInrpomaxModal">
+    <div class="mdContent">
+      <a class="mdCloseBtn reportFilterInrpomaxModalCloseBtn" href="#"><i class="fas fa-times-circle"></i></a>
+      <div class="mdHead"><span><i class="fas fa-file-download"></i> Inpromax rapor: Filtrele ve indir</span></div>
+      <div class="mdMiddle">
+        <div class="filterStep">
+          <span class="spContent">Kullanıcı seçiniz :</span>
+          <span class="spContent">Primefaces Multiselect</span>
+        </div>
+        <div class="filterStep filterDatepicker">
+          <span class="spContent">Tarih aralığı seçiniz :</span>
+          <span class="spContent">
+            <div class="c-datepicker-date-editor J-datepicker-range">
+              <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+              <input placeholder="Tarih seçiniz" name="" class="c-datepicker-data-input" placeholder="Seçiniz">
+              <span class="c-datepicker-range-separator">-</span>
+              <input placeholder="Tarih seçiniz" name="" class="c-datepicker-data-input">
+            </div>
+          </span>
+        </div>
+        <div class="filterStep">
+          <span class="spContent money">
+            <span>Para birimi</span>
+            <select>
+              <option>TRY</option>
+              <option>USD</option>
+              <option>EUR</option>
+            </select>
+          </span>
+        </div>
+        <div class="bottomBtns">
+          <button class="primaryBtn">İndir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modalWrap modalLong customReportModal">
+    <div class="mdContent">
+      <a class="mdCloseBtn customReportModalCloseBtn" href="#"><i class="fas fa-times-circle"></i></a>
+      <div class="mdHead"><span><i class="fas fa-file-alt"></i> Rapor oluştur</span></div>
+      <div class="mdMiddle">
+        <div class="customReportLine">
+          <span class="crcText">Rapor ismi</span>
+          <input type="text" placeholder="Rapor ismi giriniz..">
+        </div>
+        <div class="customReportLine">
+          <span class="crcText">Rapor tipi</span>
+          <select>
+            <option>Teklif toplama</option>
+            <option>İhale</option>
+          </select>
+        </div>
+        <div class="customReportLine">
+          <span class="crcText">Herkese açık</span>
+          <a href="#" class="toggleBtnWrap">
+            <span class="toggleBtn allBidsToggle">
+              <span></span>
+            </span>
+          </a>
+        </div>
+        <div class="customReportLine">
+          <span class="multiselect">
+            PrimeFaces Multiselect
+          </span>
+        </div>
+        
+        <div class="bottomBtns">
+          <button class="primaryBtn">Kaydet</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modalWrap modalLong companyReportModal">
+    <div class="mdContent">
+      <a class="mdCloseBtn companyReportModalCloseBtn" href="#"><i class="fas fa-times-circle"></i></a>
+      <div class="mdHead"><span><i class="fas fa-file-alt"></i> Firma Raporları</span></div>
+      <div class="mdMiddle">
+        <div class="customReportLine">
+          <span class="crcText">Rapor ismi</span>
+          <input type="text" placeholder="Rapor ismi giriniz..">
+        </div>
+        <div class="customReportLine">
+          <span class="crcText">Rapor tipi</span>
+          <select>
+            <option>Teklif toplama</option>
+            <option>İhale</option>
+          </select>
+        </div>
+        <div class="customReportLine">
+          <span class="crcText">Herkese açık</span>
+          <a href="#" class="toggleBtnWrap">
+            <span class="toggleBtn allBidsToggle">
+              <span></span>
+            </span>
+          </a>
+        </div>
+        <div class="customReportLine">
+          <span class="multiselect">
+            PrimeFaces Multiselect
+          </span>
+        </div>
+        
+        <div class="bottomBtns">
+          <button class="primaryBtn">Kaydet</button>
+          <button class="secondaryBtn">Raporu sil</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="containerAll">
+    <aside class="sideMenu">
+      <nav class="navbar">
+        <div class="mainMenu">
+          <ul class="navbarNav">
+            <li class="menuItem menuTitle">MENU</li>
+            <li class="menuItem">
+              <a href="#" class="menuCategory"><i class="menuIcon far fa-copy"></i> <span>Yeni proje</span></a>
+              <ul class="subMenu">
+                <li><i class="fas fa-angle-right"></i><a href="#">Teklif toplama</a></li>
+                <li><i class="fas fa-angle-right"></i><a href="#">İhale</a></li>
+              </ul>
+            </li>
+            <li class="menuItem">
+              <a href="#" class="menuCategory"><i class="menuIcon fas fa-tv"></i> <span>Dashboard</span></a>
+              <ul class="subMenu">
+                <li><i class="fas fa-angle-right"></i><a href="#">Devam eden</a></li>
+                <li><i class="fas fa-angle-right"></i><a href="#">Planlama</a></li>
+                <li><i class="fas fa-angle-right"></i><a href="#">Tamamlandı</a></li>
+                <li class="active"><i class="fas fa-angle-right"></i><a href="#">Tüm projeler</a></li>
+              </ul>
+            </li>
+            <li class="menuItem">
+              <a href="#" class="menuCategory"><i class="menuIcon fas fa-cog"></i> <span>Yönetim</span></a>
+              <ul class="subMenu">
+                <li><i class="fas fa-angle-right"></i><a href="#">Kullanıcılar</a></li>
+                <li><i class="fas fa-angle-right"></i><a href="#">Sayfalar</a></li>
+                <li><i class="fas fa-angle-right"></i><a href="#">Yetkiler</a></li>
+                <li><i class="fas fa-angle-right"></i><a href="#">Firmalar</a></li>
+              </ul>
+            </li>
+            <li class="menuItem">
+              <a href="#" class="menuCategory"><i class="menuIcon fas fa-user-circle"></i> <span>Hesap</span></a>
+              <ul class="subMenu">
+                <li><i class="fas fa-pen"></i><a href="#">Bilgilerim</a></li>
+                <li><i class="fas fa-sign-out-alt"></i><a href="#">Çıkış</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+    <div class="rightPanel">
+      <header class="header">
+        <div class="headLeft">
+          <a href="#" class="logo"><img src="assets/images/logo.png"></a>
+          <a href="#" class="mobileMenuBtn">
+            <div class="navIcon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+          <div class="mobileMenuWrap">
+            <ul class="navbarNav">
+              <li class="menuItem">
+                <a href="#" class="menuCategory"><i class="menuIcon far fa-copy"></i> <span>Yeni proje</span></a>
+                <ul class="subMenu">
+                  <li><i class="fas fa-angle-right"></i><a href="#">Teklif toplama</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">İhale</a></li>
+                </ul>
+              </li>
+              <li class="menuItem">
+                <a href="#" class="menuCategory"><i class="menuIcon fas fa-tv"></i> <span>Dashboard</span></a>
+                <ul class="subMenu">
+                  <li><i class="fas fa-angle-right"></i><a href="#">Devam eden</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">Planlama</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">Tamamlandı</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">Tüm projeler</a></li>
+                </ul>
+              </li>
+              <li class="menuItem">
+                <a href="#" class="menuCategory"><i class="menuIcon fas fa-cog"></i> <span>Yönetim</span></a>
+                <ul class="subMenu">
+                  <li><i class="fas fa-angle-right"></i><a href="#">Kullanıcılar</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">Sayfalar</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">Yetkiler</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">Firmalar</a></li>
+                </ul>
+              </li>
+              <li class="menuItem">
+                <a href="#" class="menuCategory"><i class="menuIcon fas fa-user-circle"></i> <span>Hesap</span></a>
+                <ul class="subMenu">
+                  <li><i class="fas fa-pen"></i><a href="#">Bilgilerim</a></li>
+                  <li><i class="fas fa-sign-out-alt"></i><a href="#">Çıkış</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="headRight">
+          <div class="headMenuWrap">
+            <div class="sideBarToggle">
+              <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="headDDmenu">
+              <a href="#" class="hddMbtn">
+                <div class="navIcon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+              <ul class="hddMList">
+                <li><a href="#"><i class="fas fa-angle-right"></i> Devam eden</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Tamamlandı</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Hesabım</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Çıkış</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accountWrap">
+            <div id="dateTime">
+              <span id="currentDate"></span>
+              <span id="currentTime"></span>
+            </div>
+            <a href="#" class="account">
+              <img src="assets/images/profilePicture.jpg">
+              <span class="infos">
+                <span class="name">Erdal Yenigül</span>
+              </span>
+            </a>
+            <div class="selectLanguage">
+              <select>
+                <option>TR</option>
+                <option>EN</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="middleHead">
+        <div class="headline">Raporlar</div>
+        <div class="breadcrumb">
+          <ul>
+            <li><a href="#">Ana sayfa</a></li>
+            <li><a href="#">Raporlar</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="bidWatch reportsWrap">
+
+          <div class="rpCard wideContent">
+            <div class="reportHeadInfo">
+              <div class="rpCardHead">Rakamlarla {{firmaadı}}
+                <button class="primaryBtn reportFilterModalBtn">Filtrele</button>
+              </div>
+              <div class="rpCardContent reportCompany">
+                <div class="raporCard">
+                  <span>
+                    İhale
+                    <p>50</p>
+                  </span>
+                </div>
+                <div class="raporCard">
+                  <span>
+                    Teklif toplama
+                    <p>538</p>
+                  </span>
+                </div>
+                <div class="raporCard">
+                  <span>
+                    Ortalama tasarruf
+                    <p>%13.7</p>
+                  </span>
+                </div>
+                <div class="raporCard">
+                  <span>
+                    Ortalama tasarruf
+                    <p>50.000.000 TRY</p>
+                  </span>
+                </div>
+              </div>
+
+              <div class="rpCardContent reportChart">
+                <div class="rpChart">
+                  <canvas id="canvas"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="reportInpromaxInfo">
+              <div class="rpCardHead">Inpromax raporlar
+              </div>
+              <div class="rpCardContent">
+                <div class="raporCard">
+                  <span>
+                    <a href="javascript:;" class="reportFilterInrpomaxModalBtn"><i class="fas fa-envelope-square"></i> Teklif toplama</a>
+                  </span>
+                </div>
+                <div class="raporCard">
+                  <span>
+                    <a href="javascript:;" class="reportFilterInrpomaxModalBtn"><i class="fas fa-gavel"></i> İhale</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="reportInpromaxInfo companyReportWrap">
+              <div class="rpCardHead">Firma raporları
+              </div>
+              <div class="rpCardContent">
+                <div class="raporCard">
+                  <span>
+                    <a href="javascript:;" class="reportFilterInrpomaxModalBtn"><i class="fas fa-envelope-square"></i> Firma raporu 1</a>
+                    <a href="javascript:;" class="companyReportModalBtn reportEditBtn"><i class="far fa-edit"></i></a>
+                  </span>
+                </div>
+                <div class="raporCard">
+                  <span>
+                    <a href="javascript:;" class="reportFilterInrpomaxModalBtn"><i class="fas fa-gavel"></i> Firma raporu 2</a>
+                    <a href="javascript:;" class="companyReportModalBtn reportEditBtn"><i class="far fa-edit"></i></a>
+                  </span>
+                </div>
+                <div class="raporCard createCustomReportBtn">
+                  <span>
+                    <a href="javascript:;" class="customReportModalBtn"><i class="fas fa-plus"></i> Rapor  oluştur</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="rpCardContent">
+              <div class="raporCard customRapor">
+                <a href="javascript:;" class="customReportModalBtn">Rapor oluştur <i class="fas fa-plus"></i></a>
+              </div>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="assets/js/plugins/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/plugins/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="assets/js/plugins/chosen.jquery.js"></script>
+  <script type="text/javascript" src="assets/js/plugins/moment.min.js"></script>
+  <script type="text/javascript" src="assets/js/plugins/Chart.min.js"></script>
+  <script type="text/javascript" src="assets/js/plugins/ChartJs.utils.js"></script>
+  <script type="text/javascript" src="assets/js/plugins/datepicker.all.js"></script>
+  <script type="text/javascript" src="assets/js/plugins/datepicker.en.js"></script>
+  <script src="https://kit.fontawesome.com/65dc611de3.js" crossorigin="anonymous"></script>
+  <!-- chartJs Start -->
+  <script>
+    var timeFormat = 'MM/DD/YYYY HH:mm';
+
+    function newDate(days) {
+      return moment().add(days, 'd').toDate();
+    }
+
+    function newDateString(days) {
+      return moment().add(days, 'd').format(timeFormat);
+    }
+
+    var color = Chart.helpers.color;
+    var config = {
+      type: 'bar',
+      data: {
+        datasets: [{
+          barPercentage: 0.5,
+          barThickness: 6,
+          maxBarThickness: 8,
+          minBarLength: 2,
+          data: [10, 20, 30, 40, 50, 60, 70]
+        }]
+      },
+      options: {
+        title: {
+          text: 'Tedarikçi Karşılaştırma - ChartJS'
+        },
+        scales: {
+        xAxes: [{
+            gridLines: {
+              offsetGridLines: true
+            }
+          }]
+        }
+      }
+    };
+
+    window.onload = function () {
+      var ctx = document.getElementById('canvas').getContext('2d');
+      window.myLine = new Chart(ctx, config);
+    };
+  </script>
+  
+  <script type="text/javascript">
+    $(function () {
+      $('.J-datepicker-range').datePicker({
+        format: 'MM-DD-YYYY HH:mm:ss',
+        language: 'en',
+        isRange: true,
+        hide: function (type) { }
+      });
+    });
+  </script>
+</body>
+
+</html>
