@@ -349,7 +349,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 					&:nth-child(2){padding-left:20px;}
 				}
 			}
-			.rpCardHead{float:left; width:100%; font-size:22px; font-weight:500; margin-bottom:30px; padding-bottom:10px; border-bottom:1px solid #e6e6e6; position:relative; 
+			.rpCardHead{float:left; width:100%; font-size:18px; font-weight:500; margin-bottom:30px; padding-bottom:10px; border-bottom:1px solid #e6e6e6; position:relative; 
 				span{position: absolute; left: 0; top: calc(50% - 18px); width: 25px; height: 25px; background-color:$linkColor; color: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 12px; font-weight: 600;}
 			}
 			.rpCardSubHead{float:left; width:100%; font-size:14px; font-weight:400; margin-bottom:10px;
@@ -2473,8 +2473,9 @@ $badge-max-size: 9px;
 .customReportModal, .companyReportModal{
 	.customReportLine{float:left; width:100%; display: flex; align-items: center; margin-bottom:20px;
 		.crcText{float:left; padding-right:10px; width: 120px;}
-		input{float:left; border:1px solid #ddd; outline:0; padding:5px 10px; width:300px; height:38px;}
-		select{outline: 0; padding: 5px 10px; border: 1px solid #ddd; height:38px;}
+		.crcTextInside{float:left; padding-right:10px; padding-left:20px; width: 120px;}
+		input{float:left; border:1px solid #ddd; outline:0; padding:5px 10px; width:500px; height:38px;}
+		select{outline: 0; padding: 5px 10px; border: 1px solid #ddd; height:38px; width:200px;}
 		.multiselect{float:left; width:100%;}
 	}
 	.mdMiddle{margin-bottom:0!important;}
@@ -2486,6 +2487,27 @@ $badge-max-size: 9px;
 		.customReportModalBtn{color:#fff;}
 		span{
 			&:hover{background-color:#18589c;}
+		}
+	}
+}
+
+.intengoAdminHeader {float:left; width: 100%; background-color: #fff; text-align: center; display: flex; align-items: center; justify-content: center; height:100px; box-shadow: 1px 1px 5px #ddd; z-index: 2; position: relative;}
+.intengoAdminHeader img{max-width:300px;}
+
+.intengoAdminWrap{float:left; width:100%; display:flex; align-items:flex-start; justify-content:center; padding:50px; position:relative; height: calc(100vh - 100px); overflow-y: auto; background-color: #eff0f6;
+	.content{float:left; width:100%; max-width:900px;
+		.subHeadline{float: left; width: 100%; text-align: center; font-size: 26px; padding: 0 20px; display: flex; align-items: center; justify-content:space-between;
+			input{float: left; width: 500px; border: none; outline: 0; padding: 10px 20px; border-radius: 30px;}
+		}
+		.customersList{float:left;
+			li{float:left; width:20%; padding:20px; text-align:center;
+				a{display:block; width:100%;
+					span{float: left; width: 100%; font-size: 13px; height: 50px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 10px; color: #222;}
+					img{max-width:100%; border-bottom:5px solid #fff; border-radius:20px;
+						&:hover{border-bottom:5px solid #ddd;}
+					}
+				}
+			}
 		}
 	}
 }

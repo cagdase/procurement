@@ -1578,7 +1578,7 @@ button.errorBtn:hover {
 .rightPanel .content .rpCard .rpCardHead {
   float: left;
   width: 100%;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 30px;
   padding-bottom: 10px;
@@ -7776,12 +7776,19 @@ footer .fContent .fCol ul li a:hover {
   width: 120px;
 }
 
+.customReportModal .customReportLine .crcTextInside, .companyReportModal .customReportLine .crcTextInside {
+  float: left;
+  padding-right: 10px;
+  padding-left: 20px;
+  width: 120px;
+}
+
 .customReportModal .customReportLine input, .companyReportModal .customReportLine input {
   float: left;
   border: 1px solid #ddd;
   outline: 0;
   padding: 5px 10px;
-  width: 300px;
+  width: 500px;
   height: 38px;
 }
 
@@ -7790,6 +7797,7 @@ footer .fContent .fCol ul li a:hover {
   padding: 5px 10px;
   border: 1px solid #ddd;
   height: 38px;
+  width: 200px;
 }
 
 .customReportModal .customReportLine .multiselect, .companyReportModal .customReportLine .multiselect {
@@ -7818,6 +7826,126 @@ footer .fContent .fCol ul li a:hover {
 
 .companyReportWrap .createCustomReportBtn span:hover {
   background-color: #18589c;
+}
+
+.intengoAdminHeader {
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  -webkit-box-shadow: 1px 1px 5px #ddd;
+          box-shadow: 1px 1px 5px #ddd;
+  z-index: 2;
+  position: relative;
+}
+
+.intengoAdminHeader img {
+  max-width: 300px;
+}
+
+.intengoAdminWrap {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+  position: relative;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+  background-color: #eff0f6;
+}
+
+.intengoAdminWrap .content {
+  float: left;
+  width: 100%;
+  max-width: 900px;
+}
+
+.intengoAdminWrap .content .subHeadline {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intengoAdminWrap .content .subHeadline input {
+  float: left;
+  width: 500px;
+  border: none;
+  outline: 0;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.intengoAdminWrap .content .customersList {
+  float: left;
+}
+
+.intengoAdminWrap .content .customersList li {
+  float: left;
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+}
+
+.intengoAdminWrap .content .customersList li a {
+  display: block;
+  width: 100%;
+}
+
+.intengoAdminWrap .content .customersList li a span {
+  float: left;
+  width: 100%;
+  font-size: 13px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+  color: #222;
+}
+
+.intengoAdminWrap .content .customersList li a img {
+  max-width: 100%;
+  border-bottom: 5px solid #fff;
+  border-radius: 20px;
+}
+
+.intengoAdminWrap .content .customersList li a img:hover {
+  border-bottom: 5px solid #ddd;
 }
 
 @media (max-width: 1375px) {
