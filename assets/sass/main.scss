@@ -2737,4 +2737,14 @@ $badge-max-size: 9px;
 	.resultWrap table tr td:nth-child(1){width:50%;}
 	.resultWrap table tr td:nth-child(2){width:25%;}
 	.resultWrap table tr td:nth-child(3){width:25%;}
+	.intengoAdminWrap{padding:30px;}
+	.intengoAdminHeader{height:60px;
+		img{max-width:120px;}
+	}
+	.intengoAdminWrap .content .subHeadline{flex-direction: column; padding: 0;}
+	.intengoAdminWrap .content .subHeadline input{width: 100%; margin-top: 10px;}
+	.intengoAdminWrap .content .customersList li{width:50%;
+		&:nth-child(odd){padding:5px 15px 5px 0;}
+		&:nth-child(even){padding:5px 0 5px 15px;}
+	}
 }
