@@ -7906,11 +7906,12 @@ footer .fContent .fCol ul li a:hover {
 
 .intengoAdminWrap .content .customersList {
   float: left;
+  width: 100%;
 }
 
 .intengoAdminWrap .content .customersList li {
   float: left;
-  width: 20%;
+  width: 25%;
   padding: 20px;
   text-align: center;
 }
@@ -7918,6 +7919,10 @@ footer .fContent .fCol ul li a:hover {
 .intengoAdminWrap .content .customersList li a {
   display: block;
   width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 2px solid #fff;
 }
 
 .intengoAdminWrap .content .customersList li a span {
@@ -7934,18 +7939,32 @@ footer .fContent .fCol ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 10px;
+  padding: 5px;
   color: #222;
 }
 
-.intengoAdminWrap .content .customersList li a img {
-  max-width: 100%;
-  border-bottom: 5px solid #fff;
-  border-radius: 20px;
+.intengoAdminWrap .content .customersList li a .img {
+  float: left;
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
 }
 
-.intengoAdminWrap .content .customersList li a img:hover {
-  border-bottom: 5px solid #ddd;
+.intengoAdminWrap .content .customersList li a .img img {
+  width: 120px;
+}
+
+.intengoAdminWrap .content .customersList li a:hover {
+  border: 2px solid #aaa;
 }
 
 @media (max-width: 1375px) {
@@ -8766,6 +8785,7 @@ footer .fContent .fCol ul li a:hover {
   }
   .intengoAdminWrap {
     padding: 30px;
+    height: calc(100vh - 60px);
   }
   .intengoAdminHeader {
     height: 60px;
@@ -8779,6 +8799,7 @@ footer .fContent .fCol ul li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0;
+    margin-bottom: 20px;
   }
   .intengoAdminWrap .content .subHeadline input {
     width: 100%;
@@ -8788,9 +8809,9 @@ footer .fContent .fCol ul li a:hover {
     width: 50%;
   }
   .intengoAdminWrap .content .customersList li:nth-child(odd) {
-    padding: 5px 15px 5px 0;
+    padding: 5px 15px 15px 0;
   }
   .intengoAdminWrap .content .customersList li:nth-child(even) {
-    padding: 5px 0 5px 15px;
+    padding: 5px 0 15px 15px;
   }
 }
