@@ -29,11 +29,13 @@
 		.limiter {
 			width: 100%;
 			margin: 0 auto;
+			background:url(assets/images/loginBg.png) no-repeat center center;
+			background-size: cover;
 		}
 
 		.container-login100 {
 			width: 100%;
-			min-height: 100vh;
+			min-height: calc(100vh - 102px);
 			display: -webkit-box;
 			display: -webkit-flex;
 			display: -moz-box;
@@ -43,7 +45,6 @@
 			justify-content: center;
 			align-items: center;
 			padding: 15px;
-			background: #f2f2f2;
 			flex-direction:column;
 		}
 
@@ -266,9 +267,10 @@
 		.logo {
       float: left;
       width: 100%;
-      background-color: #c70b0f;
+      background-color: #fff;
       text-align: center;
       padding: 20px;
+			box-shadow: 1px 1px 5px #ddd;
     }
 
     .logo img{
@@ -328,7 +330,7 @@
 </head>
 
 <body>
-	<div class="logo"><img src="assets/images/thylogo.png" alt=""></div>
+	<div class="logo"><img src="assets/images/logo.png" alt=""></div>
 	<div class="limiter">
 		<div class="container-login100">
 
@@ -360,7 +362,7 @@
 			</div>
 
 			<!-- sms giris -->
-			<div class="wrap-login100">
+			<!-- <div class="wrap-login100">
 				<form class="login100-form validate-form">
 					<div class="wrap-input100">
 						<input class="input100 smsInput" type="text" name="sms" placeholder="SMS kodunu giriniz" required autocomplete="off">
@@ -375,10 +377,10 @@
 						</div>
 					</div>
 				</form>
-			</div>
+			</div> -->
 
 			<!-- şifremi unutum mail giriş -->
-			<div class="wrap-login100">
+			<!-- <div class="wrap-login100">
 				<form class="login100-form validate-form">
 					<span class="login100-form-title"><i class="fas fa-lock"></i> Şifremi unuttum</span>
 					<div class="wrap-input100">
@@ -391,10 +393,10 @@
 						</div>
 					</div>
 				</form>
-			</div>
+			</div> -->
 
 			<!-- mailden gelen linkden şifremi yenile ekranı -->
-			<div class="wrap-login100">
+			<!-- <div class="wrap-login100">
 				<form class="login100-form validate-form">
 					<span class="login100-form-title"><i class="fas fa-lock"></i> Yeni şifre</span>
 					<div class="wrap-input100">
@@ -419,7 +421,7 @@
 						</div>
 					</div>
 				</form>
-			</div>
+			</div> -->
 		</div>
 	</div>
 

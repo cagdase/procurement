@@ -7967,6 +7967,334 @@ footer .fContent .fCol ul li a:hover {
   border: 2px solid #aaa;
 }
 
+.rulesModal .mdContent {
+  width: 1200px;
+}
+
+.rulesModal .mdContent .mdMiddle {
+  margin-bottom: 0;
+}
+
+.rulesModal .bottomBtns {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.rulesModal .bottomBtns button {
+  margin: 0;
+}
+
+.rulesModal .toggleBtnWrap {
+  cursor: default;
+}
+
+.rulesModal .toggleBtnWrap .toggleBtn {
+  width: 40px !important;
+  height: 20px;
+  cursor: pointer;
+}
+
+.rulesModal .toggleBtnWrap .toggleBtn span {
+  width: 12px !important;
+  height: 12px;
+  left: 4px;
+  top: 4px;
+}
+
+.rulesModal .toggleBtnWrap .toggleBtn.open span {
+  left: 25px;
+}
+
+.rulesModal .toggleBtnWrap .toogleText {
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.rulesModal .toggleBtnWrap .toogleText .securityInput {
+  width: 60px;
+  outline: 0;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+}
+
+.rulesModal .toggleBtnWrap .toogleText .tableHeadTooltip {
+  position: relative;
+  margin-right: 5px;
+}
+
+.rulesModal .toggleBtnWrap .toogleText .tableHeadTooltip i {
+  color: #007bff;
+  font-size: 16px;
+}
+
+.rulesModal .toggleBtnWrap .toogleText .tableHeadTooltip .tableHeadTooltip {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  z-index: 1;
+  font-weight: 300;
+  display: none;
+}
+
+.rulesModal .toggleBtnWrap .toogleText .tableHeadTooltip:hover .tableHeadTooltip {
+  display: block;
+}
+
+.rulesModal .headSwitch {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rulesModal .headSwitch a {
+  margin-right: 20px;
+}
+
+.rulesTable {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+}
+
+.rulesTable .tableHead {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.rulesTable .tableHead td {
+  height: 95px;
+  display: block;
+}
+
+.rulesTable .productsHead {
+  font-size: 18px;
+  font-weight: 600;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f1f1f1;
+}
+
+.rulesTable .rulesCategoryColor:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 5px;
+}
+
+.rulesTable tr {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.rulesTable tr td {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rulesTable tr td .tdHeadBottom {
+  float: left;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+.rulesTable tr td .tdHeadBottom .tdHeadBottomText {
+  float: left;
+  width: 100%;
+}
+
+.rulesTable tr td .tdHeadBottom .minChangeRadio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.rulesTable tr td .tdHeadBottom .minChangeRadio input {
+  margin: 0;
+  margin-right: 5px;
+}
+
+.rulesTable tr td .tdHeadBottom .minChangeRadio label {
+  margin-right: 5px;
+}
+
+.rulesTable tr td:nth-child(1) {
+  width: 40%;
+}
+
+.rulesTable tr td:nth-child(2) {
+  width: 20%;
+}
+
+.rulesTable tr td:nth-child(3) {
+  width: 20%;
+}
+
+.rulesTable tr td:nth-child(4) {
+  width: 20%;
+}
+
+.rulesTable .customInput input {
+  float: left;
+  width: calc(100% - 70px);
+  outline: 0;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  height: 40px;
+}
+
+.rulesTable .customInput select {
+  float: left;
+  width: 70px;
+  height: 40px;
+  outline: 0;
+  border: 1px solid #ddd;
+  border-left: 0;
+  padding: 0 5px;
+}
+
+.rulesTable .customInput2 input {
+  float: left;
+  width: 100%;
+  outline: 0;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  height: 40px;
+}
+
+.categoryColorDefination {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.categoryColorDefination .ccdItem {
+  float: left;
+  margin-right: 10px;
+}
+
+.categoryColorDefination .ccdItem .colorBox {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  float: left;
+}
+
+.categoryColorDefination .ccdItem .colorBox:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+}
+
+.categoryColorDefination .ccdItem .categoryName {
+  float: left;
+  padding-left: 5px;
+  font-size: 14px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.color1:before {
+  background-color: #007bff;
+}
+
+.color2:before {
+  background-color: #28a745;
+}
+
+.color3:before {
+  background-color: #6c757d;
+}
+
+.color4:before {
+  background-color: #CC0000;
+}
+
+.color5:before {
+  background-color: #99FF00;
+}
+
+.color6:before {
+  background-color: #CA278C;
+}
+
+.color7:before {
+  background-color: #CCCCFF;
+}
+
+.color8:before {
+  background-color: #003366;
+}
+
+.color9:before {
+  background-color: #0099CC;
+}
+
+.color10:before {
+  background-color: #C87533;
+}
+
 @media (max-width: 1375px) {
   .rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(1) {
     padding: 0;
@@ -8176,6 +8504,7 @@ footer .fContent .fCol ul li a:hover {
   }
   .rightPanel .header .headRight {
     width: 0;
+    display: none;
   }
   .rightPanel .content .reportDL button {
     width: calc(50% - 10px);
@@ -8813,5 +9142,195 @@ footer .fContent .fCol ul li a:hover {
   }
   .intengoAdminWrap .content .customersList li:nth-child(even) {
     padding: 5px 0 15px 15px;
+  }
+}
+
+/* Responsive alanlar */
+/*  .rightPanel .middleHead .dbSearch{display:block; padding:0; margin-right:0; width:100%;} yukarda var */
+.rightPanel .header .headLeft .logo {
+  max-width: 120px !important;
+}
+
+.rightPanel .header .headRight .accountWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+}
+
+.rightPanel .header .headRight .headMenuWrap {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .rightPanel .middleHead .dateRange {
+    display: none !important;
+  }
+  .rightPanel .dbSearch input {
+    width: calc(100% - 35px) !important;
+  }
+  .rightPanel .content .rpChart {
+    display: none;
+  }
+  .companyInviteListModalBtn {
+    display: none;
+  }
+  .rightPanel .content .suppliersSearch .form-group {
+    width: 100%;
+  }
+  .rpTable table {
+    width: 1000px !important;
+  }
+  .content .reportCompany {
+    width: 100% !important;
+  }
+  .content .reportCard {
+    width: 45%;
+  }
+  .content .reportHeadInfo {
+    height: auto;
+  }
+  .content .reportsWrap .rpChart {
+    display: block !important;
+  }
+  .content .reportChart {
+    width: 100% !important;
+    padding-left: 0;
+    margin-top: 0;
+  }
+  .companyReportWrap .createCustomReportBtn {
+    display: none;
+  }
+  .chatWrap {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    right: 0;
+  }
+  .ui-picklist {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    width: 100%;
+  }
+  ul.ui-picklist-list {
+    width: 100% !important;
+  }
+  .ui-picklist .ui-picklist-buttons {
+    height: auto !important;
+  }
+  .ui-picklist-buttons-cell {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    margin: 10px 0;
+  }
+  .rightPanel .middleHead .dbSearch {
+    display: block !important;
+    padding: 0;
+    margin-right: 0;
+  }
+  .bidTypeSelect .ui-selectmanycheckbox.ui-widget td, .ui-selectoneradio.ui-widget td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0;
+  }
+  .bidTypeSelect .ui-selectmanycheckbox.ui-widget td, .ui-selectoneradio.ui-widget td .ui-radiobutton {
+    margin-right: 5px;
+  }
+  .rightPanel .content .currencyUnit {
+    width: 100% !important;
+    margin-top: 30px !important;
+  }
+  .rightPanel .content .currencyUnit:nth-child(2) {
+    margin-top: 0px !important;
+  }
+  .documents ul {
+    width: 800px !important;
+  }
+  .additionalInfoModal .modalDesc {
+    padding: 20px !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .additionalInfoModal .modalDesc span {
+    text-align: center !important;
+  }
+  .additionalInfoModal .modalDesc .additionalInfoModalNewLineAdd {
+    margin-top: 20px !important;
+  }
+  .rightPanel .content .groupTagsWrap .groupTag {
+    padding: 5px 10px !important;
+  }
+  .rightPanel .content .groupTagsWrap .groupTag > span {
+    font-size: 12px !important;
+    text-shadow: none !important;
+    font-weight: 500 !important;
+  }
+  .rightPanel .header .headLeft .logo img {
+    max-width: 110px !important;
+  }
+  .blockDiv button {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+  .rightPanel .dbSearch {
+    padding: 0 !important;
+    width: 100%;
+  }
+  .modalWrap.reportFilterModal .mdContent {
+    overflow-y: auto;
+  }
+  .checkbox label, .form-radio label {
+    font-size: 13px;
+  }
+  .checkbox .helper {
+    top: 3px !important;
+  }
+  .rightPanel .middleHead .mhRight form {
+    float: left;
+    width: 100%;
+  }
+  .ui-button .ui-button-text {
+    display: block !important;
+  }
+  .formWrap .ui-fileupload-buttonbar {
+    padding: 0 !important;
+  }
+  .rightPanel .content .bottomBtns button {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .rightPanel .content .rpCard {
+    padding-top: 40px !important;
+  }
+  .rightPanel .content .suppliersSearch .form-group {
+    width: 100% !important;
+  }
+  .rightPanel .content .suppliersSearch button.companyInviteListModalBtn {
+    display: none !important;
+  }
+  .rightPanel .content .suppliersSearch button {
+    width: 100% !important;
+  }
+  .rightPanel .header .headRight {
+    display: none !important;
   }
 }

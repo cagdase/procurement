@@ -215,6 +215,15 @@ $(document).ready(function () {
     $('.companyReportModal').hide()
   });
 
+  $('.rulesModalBtn').click(function () {
+    $('.rulesModal').css({ display: 'flex' })
+  })
+  $('.rulesModalCloseBtn').click(function () {
+    $('.rulesModal').hide()
+  });
+
+  
+
 
   $("#backToTop").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 1000);
