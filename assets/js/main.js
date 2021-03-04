@@ -222,7 +222,9 @@ $(document).ready(function () {
     $('.rulesModal').hide()
   });
 
-  
+  $('.targetPriceBtn').click(function () {
+    $('.comparisonTableTarget').toggleClass('targetPriceVisible');
+  });
 
 
   $("#backToTop").click(function () {
@@ -253,8 +255,13 @@ $(document).ready(function () {
   });
 
   $(".chatBtn").click(function() {
-    $(".chatWrap").toggleClass("chatWrapOpen")
+    $(".chatWrap").toggleClass("chatWrapOpen");
   });
+  $(".mobileChatCloseBtn").click(function() {
+    $(".chatWrap").toggleClass("chatWrapOpen");
+  });
+
+  
 })
 
 

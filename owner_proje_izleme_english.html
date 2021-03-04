@@ -19,6 +19,7 @@
   <a href="#" id="backToTop"><i class="fas fa-chevron-up"></i></a>
 
   <div class="chatWrap chatSlim">
+    <a href="javascript:;" class="mobileChatCloseBtn"><i class="fas fa-times"></i></a>
     <a href="javascript:;" class="chatBtn">
       <span class="newMsg"><i class="fas fa-exclamation"></i></span>
       <i class="fas fa-comments"></i>
@@ -74,6 +75,7 @@
       </div>
       <div class="chatRight">
         <div class="chatTop">
+          <a href="javascript:;" class="mobileBackToChatListBtn"><i class="fas fa-arrow-left"></i></a>
           <h2>Tüm Tedarikçiler</h2>
         </div>
         <ul id="chat">
@@ -583,27 +585,22 @@
               </div>
             </div>
           </div>
-          <div class="rpCard fullContent" id="comparisonTable">
+          <div class="rpCard fullContent comparisonTableTarget" id="comparisonTable">
             <div class="rpCardContent">
-              <div class="rpCardSubHead"><strong>Karşılaştırma tablosu</strong></div>
               <div class="comparisonHead">
-                <div class="comparisonSelect">
-                  <select data-placeholder="Tedarikçi karşılaştır" class="chosen-select" multiple tabindex="4">
-                    <option value=""></option>
-                    <option value="tedarikci1">Tedarikçi 1</option>
-                    <option value="tedarikci2">Tedarikçi 2</option>
-                    <option value="tedarikci3">Tedarikçi 3</option>
-                    <option value="tedarikci4">Tedarikçi 4</option>
-                    <option value="tedarikci5">Tedarikçi 5</option>
-                  </select>
-                  <a href="#" class="comparisonSelectBtn"><i class="fas fa-search"></i></a>
-                </div>
+                <strong>Karşılaştırma tablosu</strong>
                 <div class="comparisonPrice">
                   <a href="#" class="toggleBtnWrap">
                     <span class="toggleBtn">
                       <span></span>
                     </span>
                     <span class="toogleText">Orjinal fiyat göster</span>
+                  </a>
+                  <a href="#" class="toggleBtnWrap targetPriceBtn">
+                    <span class="toggleBtn">
+                      <span></span>
+                    </span>
+                    <span class="toogleText">Hedef fiyat göster</span>
                   </a>
                 </div>
               </div>
@@ -650,6 +647,40 @@
                     </li>
                     <li class="plColBottom">
                       <span>Eklenen dosyalar :</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="rpList productList targetPrice">
+                  <ul class="rpListHead">
+                    <li>
+                      <span>Hedef fiyat</span>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li title="Temizlik ürünleri">
+                      50.000 TRY <span class="arrow down">%20<i class="fas fa-caret-down"></i></span>
+                    </li>
+                    <li title="Temizlik ürünleri">
+                      50.000 TRY <span class="arrow up">%20<i class="fas fa-caret-up"></i></span>
+                    </li>
+                    <li title="Temizlik ürünleri">
+                      50.000 TRY <span class="arrow up">%20<i class="fas fa-caret-up"></i></span>
+                    </li>
+                    <li class="groupTotal" title="Temizlik ürünleri">
+                      <span></span>
+                      <span></span>
+                    </li>
+                    <li>
+                      50.000 TRY <span class="arrow up">%20<i class="fas fa-caret-up"></i></span>
+                    </li>
+                    <li>
+                      50.000 TRY <span class="arrow down">%20<i class="fas fa-caret-up"></i></span>
+                    </li>
+                    <li class="plColBottom">
+                      <span></span>
+                    </li>
+                    <li class="plColBottom">
+                      <span></span>
                     </li>
                   </ul>
                 </div>

@@ -533,7 +533,9 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			.chosen-container{width:calc(100% - 35px)!important; min-height:35px;}
 			.comparisonSelectBtn{position: absolute; top:0; right:0; font-size:15px; width:35px; height:35px; background-color:$linkColor; color:#fff; display:flex; align-items:center; justify-content: center;}
 		}
-		.comparisonPrice{width: 40%; float: left; padding-left: 20px; height: 35px; display: flex; justify-content: flex-end;}
+		.comparisonPrice{float: right; padding-left: 20px; height: 35px; display: flex; justify-content: flex-end;
+			.toggleBtnWrap{margin-left:10px;}
+		}
 		.groupWinfo{float: left; width: 100%; font-size: 13px; margin-bottom: 10px; color: red;}
 		.comparisonColProducts{float:left; width:300px; background-color:#f3f3f3;}
 		.comparisonTableSlider{float:left; width:calc(100% - 300px); margin-bottom:20px; padding-left:5px;
@@ -553,6 +555,27 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 						}
 					}		
 				}
+			}
+		}
+		.comparisonTableTarget{
+			.targetPrice{display:none;}
+			&.targetPriceVisible{
+				.comparisonColProducts{width:450px;}
+				.productList{width:300px;}
+				.targetPrice{display:block; width:150px; border-left: 1px solid #ececec;
+					.rpListHead span{text-align: center; font-size: 13px;}
+					li{padding:0 10px; justify-content: space-between;}
+					.arrow{font-size:13px; display: flex; align-items: center; justify-content: space-between;
+						i{font-size:22px; padding-left:5px;}
+						&.down{
+							i{color:$colorError;}
+						}
+						&.up{
+							i{color:$colorSuccess;}
+						}
+					}
+				}
+				.comparisonTableSlider{width:calc(100% - 450px);}
 			}
 		}
 		.dbwBidderCardWrap{float:left; width:100%; margin-top:20px; margin-left:-20px; margin-right:-20px;
@@ -1443,6 +1466,8 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 .inviteCompanySendBtn{float: right; height:35px; margin-right:0; margin-bottom:0;}
 
 .chatWrap{max-width:800px; max-height:600px; display:flex; align-items:center; position:fixed; right:0; top:calc(50% - 300px); z-index: 99; margin-right:-750px; height:100%;
+	.mobileBackToChatListBtn{display:none;}
+	.mobileChatCloseBtn{display:none;}
 	.chatBtn{background-color:#167bff; width:50px; height:50px; position:relative; color:#fff; font-size:28px; display:flex; align-items:center; justify-content: center;
 		.newMsg{position:absolute; top:-8px; left:-8px; background-color:#cc0000; color:#fff; font-size:11px; border-radius:50%; display:flex; align-items:center; justify-content:center; width: 20px; height: 20px;}
 	}
@@ -2612,6 +2637,7 @@ $badge-max-size: 9px;
 	&:before{background-color:#C87533}
 }
 
+
 // Media queries start
 
 @media (max-width: 1375px){
@@ -2869,7 +2895,6 @@ $badge-max-size: 9px;
 	.content .reportsWrap .rpChart{display:block!important;}
 	.content .reportChart{width:100%!important; padding-left:0; margin-top:0;}
 	.companyReportWrap .createCustomReportBtn{display:none;}
-	.chatWrap{width: 100%; height: 100vh; max-width: 100%; max-height: 100%; top: 0; right: 0;}
 	.ui-picklist{display: flex!important; flex-direction: column!important; width: 100%;}
 	ul.ui-picklist-list{width:100%!important;}
 	.ui-picklist .ui-picklist-buttons{height:auto!important;}
@@ -2900,4 +2925,21 @@ $badge-max-size: 9px;
 	.rightPanel .content .suppliersSearch button.companyInviteListModalBtn{display:none!important;}
 	.rightPanel .content .suppliersSearch button{width:100%!important;}
 	.rightPanel .header .headRight{display:none!important}
+	.chatWrap{width: 100%; height: 100vh; max-width: 100%; max-height: 100%; top: 0; right: -500px;}
+	.chatWrap.chatWrapOpen{right:0;}
+	.chatWrap .chatBtn{position: fixed; top: 80px; right: 10px; border-radius: 50%; z-index:2; box-shadow: 1px 1px 20px rgba(119, 119, 119, 0.80);}
+	.chatWrap .chatContent{width: 100%;height: 100vh;max-width: 100%;max-height: none;border-radius: 0; z-index:3;}
+	.chatWrap .chatLeft{width: 100%; height:100vh; position: absolute;}
+	.chatWrap .chatRight{width:100%; max-width: 100%;}
+	.chatWrap #chat {height: calc(100vh - 220px);}
+	.chatWrap #chat .triangle{display:none;}
+	.chatWrap .chatRight .chatBottom{height:160px;}
+	.chatWrap .chatRight .chatTop{height:60px;}
+	.chatWrap .chatBtn .newMsg{top:-5px; left:0;}
+	.chatWrap .mobileBackToChatListBtn {float: left; padding-right: 15px; color: #fff; display:inline-block;}
+	.chatSlim .mobileBackToChatListBtn {display:none;}
+	.chatWrap .chatLeft li.active{background: none;}
+	.chatWrap .mobileChatCloseBtn{position: absolute; top: 13px; right: 20px; color: #fff; font-size: 24px; z-index: 4; display: inline-block;}
+	.chatWrap .chatLeft .chatTop{display:none;}
+	.chatWrap .chatLeft ul{height:100vh; padding-top: 50px;}
 }
