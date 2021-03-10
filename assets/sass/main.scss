@@ -300,6 +300,11 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				.dcBottom{float:left; width:100%; display:flex; align-items:center; justify-content:space-between; border-top: 1px solid #ddd; padding:10px 0px 10px 25px; position: absolute; bottom: 0; left: 0; right: 0; height:45px;
 					.dcProjectType{font-size:12px; color:$color1; font-weight:500;}
 					.dcBottomBtns{
+						.dcGlobal{padding:0 10px; border-left: 1px solid #ddd;
+							&:hover{
+								i{color:$color1;}
+							}
+						}
 						.dcDetail{padding:0 10px; border-left: 1px solid #ddd;
 							&:hover{
 								i{color:$color1;}
@@ -2634,8 +2639,8 @@ $badge-max-size: 9px;
 	&:before{background-color:#C87533}
 }
 
-.showPublicProjects{margin-right:10px;
-	.sppText{font-size:13px; padding-right:10px;}
+.showPublicProjects{margin-right:10px; height:35px;
+	.sppText{font-size:13px; padding-left:10px;}
 }
 
 .standardMemberWrap{

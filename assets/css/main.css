@@ -1457,6 +1457,15 @@ button.errorBtn:hover {
   font-weight: 500;
 }
 
+.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcGlobal {
+  padding: 0 10px;
+  border-left: 1px solid #ddd;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcGlobal:hover i {
+  color: #242526;
+}
+
 .rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcDetail {
   padding: 0 10px;
   border-left: 1px solid #ddd;
@@ -8368,11 +8377,12 @@ footer .fContent .fCol ul li a:hover {
 
 .showPublicProjects {
   margin-right: 10px;
+  height: 35px;
 }
 
 .showPublicProjects .sppText {
   font-size: 13px;
-  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .standardMemberWrap .smText {
