@@ -8366,6 +8366,15 @@ footer .fContent .fCol ul li a:hover {
   background-color: #C87533;
 }
 
+.showPublicProjects {
+  margin-right: 10px;
+}
+
+.showPublicProjects .sppText {
+  font-size: 13px;
+  padding-right: 10px;
+}
+
 @media (max-width: 1375px) {
   .rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(1) {
     padding: 0;
