@@ -732,9 +732,9 @@ button.errorBtn:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .rightPanel .header .headRight .headMenuWrap .sideBarToggle {
@@ -8375,6 +8375,20 @@ footer .fContent .fCol ul li a:hover {
   padding-right: 10px;
 }
 
+.standardMemberWrap .smText {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.standardMemberWrap .smText p {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+
 @media (max-width: 1375px) {
   .rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(1) {
     padding: 0;
@@ -9459,7 +9473,6 @@ footer .fContent .fCol ul li a:hover {
     left: 0;
   }
   .chatWrap .mobileBackToChatListBtn {
-    float: left;
     padding-right: 15px;
     color: #fff;
     display: inline-block;

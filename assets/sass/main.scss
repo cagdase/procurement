@@ -172,7 +172,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			}
 		}
 		.headRight{float:left; width:calc(100% - 250px); display:flex; align-items:center; justify-content:space-between; position:relative; padding-right:30px;
-			.headMenuWrap{float: left; height: 55px; display: flex; align-items: center; justify-content: center;
+			.headMenuWrap{float: left; height: 55px; display: flex; align-items: center; justify-content: flex-start;
 				.sideBarToggle{float: left; background-color:#fff;
 					a{float:left; font-size:24px; border-left: 1px solid #ddd; border-bottom: 1px solid #ddd; color:$color1; width:55px; height: 55px; font-weight: 600; display: flex; align-items: center; justify-content: center;}
 				}
@@ -508,7 +508,6 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			}
 			&.open{display:block;}
 		}
-		.btEnglish{}
 		.btDutch{
 			.btHead{margin-bottom:40px;}
 		}
@@ -623,7 +622,6 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		li{float:left; padding-right:20px; margin-bottom:10px; display:flex; justify-content: center; align-items:center;
 			span{float:left;
 				&:nth-child(1){width:15px; height: 15px; margin-right:5px;}
-				&:nth-child(2){}
 			}
 		}
 	}
@@ -851,7 +849,6 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			&.plColBottom{font-weight:600; justify-content:flex-start; border-top: 1px solid #ddd;}
 			&.groupTotal{background-color:#fff;
 				span{
-					&:nth-child(1){}
 					&:nth-child(2){width:100%; text-align:left; font-weight:500;}
 				}
 			}
@@ -2641,6 +2638,12 @@ $badge-max-size: 9px;
 	.sppText{font-size:13px; padding-right:10px;}
 }
 
+.standardMemberWrap{
+	.smText{float:left; width:100%; margin-bottom:20px;
+		p{float:left; width:100%; font-size:14px; line-height:22px; margin-bottom:5px;}
+	}
+}
+
 
 // Media queries start
 
@@ -2715,7 +2718,7 @@ $badge-max-size: 9px;
   .rpList.dutchBidderList .rpListHead li span:nth-child(3){display:none;}
 	.rpList.dutchBidderList .rpListHead li span:nth-child(2){width:30%;}
 	.rightPanel .header .headRight{width:0; display:none}
-	.rightPanel .content .reportDL button{width:calc(50% - 10px;); margin-bottom:10px; margin-right:0;
+	.rightPanel .content .reportDL button{width:calc(50% - 10px); margin-bottom:10px; margin-right:0;
 		&:nth-child(1){margin-right:10px;}
 		&:nth-child(2){width:50%;}
 	}
@@ -2810,11 +2813,6 @@ $badge-max-size: 9px;
 	}
 	.allBids{overflow-x:scroll; position:relative; padding-bottom:30px;
 		ul{width:100%;}
-		// &:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top:2px; right: 0px; width: 50px; height:calc(100% - 33px); display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
-		// &:before{content:'*Tabloyu yatayda kaydırarak inceyebilirsiniz.'; position:absolute; bottom:8px; left:0; font-size:11px; color:$color2; font-style: italic;}
-		// &:hover{
-		// 	&:after{opacity:0;}
-		// }
 	}
 	.userList{overflow-x:scroll; position:relative; padding-bottom:30px; margin-bottom:10px;
 		ul{width:1000px;}
@@ -2940,7 +2938,7 @@ $badge-max-size: 9px;
 	.chatWrap .chatRight .chatBottom{height:160px;}
 	.chatWrap .chatRight .chatTop{height:60px;}
 	.chatWrap .chatBtn .newMsg{top:-5px; left:0;}
-	.chatWrap .mobileBackToChatListBtn {float: left; padding-right: 15px; color: #fff; display:inline-block;}
+	.chatWrap .mobileBackToChatListBtn {padding-right: 15px; color: #fff; display:inline-block;}
 	.chatSlim .mobileBackToChatListBtn {display:none;}
 	.chatWrap .chatLeft li.active{background: none;}
 	.chatWrap .mobileChatCloseBtn{position: absolute; top: 13px; right: 20px; color: #fff; font-size: 24px; z-index: 4; display: inline-block;}
