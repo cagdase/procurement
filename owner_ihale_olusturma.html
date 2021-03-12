@@ -708,6 +708,35 @@
       </div>
     </div>
   </div>
+  <div class="modalWrap modalLong privateBidModal">
+    <div class="mdContent">
+      <a class="mdCloseBtn privateBidModalCloseBtn" href="#"><i class="fas fa-times-circle"></i></a>
+      <div class="mdHead"><span><i class="fas fa-info-circle"></i> Kapalı zarf ihalesi oluşturma</span></div>
+      <div class="mdMiddle">
+        <div class="pbUserSelectList">
+          <span class="pbLineHead">Yetkili kişiler</span>
+          <img src="assets/images/multiselectPreview.jpg" alt="">
+        </div>
+        <div class="pbDatepickerWrap">
+          <div class="pbLineHead">Zarf açılış tarih/saat</div>
+          <div class="c-datepicker-date-editor J-datepicker-range">
+            <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+            <input placeholder="Tarih saat seçiniz" name="" class="c-datepicker-data-input">
+          </div>
+        </div>
+        <div class="pbAuthSelect">
+          <span class="pbLineHead">Açma yetkisi</span>
+          <div class="radioBtns">
+            <input type="radio" id="auth1" name="auth">
+            <label for="auth1">Listedekinden herhangi biri</label>
+            <input type="radio" id="auth2" name="auth">
+            <label for="auth2">Listedeki herkes</label>
+          </div>
+        </div>
+        <button class="primaryBtn">Kaydet</button>
+      </div>
+    </div>
+  </div>
 
   <div class="containerAll">
     <aside class="sideMenu">
@@ -912,6 +941,9 @@
                 </div>
               </div>
               <div class="bidType btEnglish">
+                <div class="privateBidModalBtnWrap">
+                  <a href="javascript:;" class="privateBidModalBtn">Kapalı zarf ihalesi oluştur</a>
+                </div>
                 <div class="btHead">İngiliz usulü ihale</div>
                 <div class="bidManagement">
                   <div class="btSubHead">İhale yönetimi</div>

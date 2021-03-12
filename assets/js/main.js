@@ -174,52 +174,52 @@ $(document).ready(function () {
   });
 
   $('.bidderAdditionalInfoModalBtn').click(function () {
-    $('.bidderAdditionalInfoModal').css({ display: 'flex' })
+    $('.bidderAdditionalInfoModal').css({ display: 'flex' });
   })
   $('.bidderAdditionalInfoModalCloseBtn').click(function () {
-    $('.bidderAdditionalInfoModal').hide()
+    $('.bidderAdditionalInfoModal').hide();
   });
 
   $('.ownerWatchAdditionalInfoModalBtn').click(function () {
-    $('.ownerWatchAdditionalInfoModal').css({ display: 'flex' })
+    $('.ownerWatchAdditionalInfoModal').css({ display: 'flex' });
   })
   $('.ownerWatchAdditionalInfoModalCloseBtn').click(function () {
-    $('.ownerWatchAdditionalInfoModal').hide()
+    $('.ownerWatchAdditionalInfoModal').hide();
   });
 
   $('.reportFilterModalBtn').click(function () {
-    $('.reportFilterModal').css({ display: 'flex' })
+    $('.reportFilterModal').css({ display: 'flex' });
   })
   $('.reportFilterModalCloseBtn').click(function () {
-    $('.reportFilterModal').hide()
+    $('.reportFilterModal').hide();
   });
 
   $('.reportFilterInrpomaxModalBtn').click(function () {
-    $('.reportFilterInrpomaxModal').css({ display: 'flex' })
+    $('.reportFilterInrpomaxModal').css({ display: 'flex' });
   })
   $('.reportFilterInrpomaxModalCloseBtn').click(function () {
-    $('.reportFilterInrpomaxModal').hide()
+    $('.reportFilterInrpomaxModal').hide();
   });
 
   $('.customReportModalBtn').click(function () {
-    $('.customReportModal').css({ display: 'flex' })
+    $('.customReportModal').css({ display: 'flex' });
   })
   $('.customReportModalCloseBtn').click(function () {
-    $('.customReportModal').hide()
+    $('.customReportModal').hide();
   });
 
   $('.companyReportModalBtn').click(function () {
     $('.companyReportModal').css({ display: 'flex' })
   })
   $('.companyReportModalCloseBtn').click(function () {
-    $('.companyReportModal').hide()
+    $('.companyReportModal').hide();
   });
 
   $('.rulesModalBtn').click(function () {
-    $('.rulesModal').css({ display: 'flex' })
+    $('.rulesModal').css({ display: 'flex' });
   })
   $('.rulesModalCloseBtn').click(function () {
-    $('.rulesModal').hide()
+    $('.rulesModal').hide();
   });
 
   $('.targetPriceBtn').click(function () {
@@ -261,7 +261,13 @@ $(document).ready(function () {
     $(".chatWrap").toggleClass("chatWrapOpen");
   });
 
-  
+  $(".privateBidModalBtn").click(function() {
+    $(".privateBidModal").css({ display: 'flex' });
+  });
+  $(".privateBidModalCloseBtn").click(function() {
+    $(".privateBidModal").css({ display: 'none' });
+  });
+
 })
 
 

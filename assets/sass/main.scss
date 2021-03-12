@@ -26,7 +26,7 @@ input[type=number] { -moz-appearance: textfield; }
 .containerAll{float:left; width:100%;}
 
 button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0; border: 0; cursor:pointer; margin-bottom:20px; margin-right:20px; height: 40px; display:flex; align-items:center; justify-content: space-between;
-	i{margin-left:10px; font-size:18px;}
+	i{margin-right:10px; font-size:18px;}
 	&.primaryBtn{background-color: $linkColor; color: #fff;
 		&:hover{background-color:#1c5ca0;}
 	}
@@ -300,17 +300,17 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				.dcBottom{float:left; width:100%; display:flex; align-items:center; justify-content:space-between; border-top: 1px solid #ddd; padding:10px 0px 10px 25px; position: absolute; bottom: 0; left: 0; right: 0; height:45px;
 					.dcProjectType{font-size:12px; color:$color1; font-weight:500;}
 					.dcBottomBtns{
-						.dcGlobal{padding:0 10px; border-left: 1px solid #ddd;
+						.dcGlobal{float:left; padding:0 10px; border-left: 1px solid #ddd;
 							&:hover{
 								i{color:$color1;}
 							}
 						}
-						.dcDetail{padding:0 10px; border-left: 1px solid #ddd;
+						.dcDetail{float:left; padding:0 10px; border-left: 1px solid #ddd;
 							&:hover{
 								i{color:$color1;}
 							}
 						}
-						.dcEdit{padding:0 15px; border-left: 1px solid #ddd;
+						.dcEdit{float:left; padding:0 15px; border-left: 1px solid #ddd;
 							&:hover{
 								i{color:$color1;}
 							}
@@ -664,6 +664,18 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 							i{color:#1c5ca0;}
 						}
 					}
+				}
+			}
+		}
+	}
+	&.privateBidUsers{
+		li{
+			span{					
+				&:nth-child(1){width:80%;}
+				&:nth-child(2){width:20%; text-align: center; display: flex; align-items: center; justify-content:center;}
+				i{width:20px; height:20px; border-radius:50%; color:#fff; font-size:11px; display:flex; align-items:center; justify-content:center;
+					&.success{background-color:$colorSuccess;}
+					&.error{background-color:$colorError;}
 				}
 			}
 		}
@@ -2643,12 +2655,45 @@ $badge-max-size: 9px;
 	.sppText{font-size:13px; padding-left:10px;}
 }
 
-.standardMemberWrap{
-	.smText{float:left; width:100%; margin-bottom:20px;
-		p{float:left; width:100%; font-size:14px; line-height:22px; margin-bottom:5px;}
+.standardMemberWrap{display:flex; align-items:center; justify-content:center; flex-direction:column;
+	.smIcon{font-size:56px; color:#888;}
+	.smText{width:100%; margin-bottom:20px; text-align:center; max-width:600px;
+		p{float:left; width:100%; text-align:center; font-size:14px; line-height:22px; margin-bottom:5px;
+			&.smtHead{font-size:20px; font-weight:600; margin-bottom:20px;}
+		}
+	}
+	.smButtons{
+		button{font-size:16px;}
 	}
 }
+.standartMemberTable{max-width: 1000px; float: none; margin: 0 auto;}
 
+.privateBidModalBtnWrap{float:left; width:100%; margin-bottom:30px;
+	a{font-size:14px; background-color:#28a745; padding:10px 20px; color:#fff;}
+}
+
+.privateBidModal{
+	.mdMiddle{margin-bottom:0;}
+	.pbLineHead{float:left; width:100%; margin-bottom:3px; font-weight:600;}
+	.pbUserSelectList{float:left; width:100%; margin-bottom:20px;}
+	.pbDatepickerWrap{float:left; width:100%; margin-bottom:30px; max-width: 450px;}
+	.pbAuthSelect{float:left; width:100%; margin-bottom:30px;
+		.radioBtns{float:left; width:100%; display: flex; align-items: center;
+			input{margin:0 5px 0 0;}
+			label{margin-right:10px; cursor:pointer;}
+		}
+	}
+	button{margin:0;}
+}
+
+.privateBidUsersWrap{margin-top:30px;}
+.pbDetailBottom{
+	.pbTextLine{margin-bottom:10px; float:left; width:100%; font-size:13px;
+		span{font-weight:600; margin-right:5px;}
+	}
+	.pbUnlockMsg{float:left; width:100%; color:$colorSuccess; font-size:600;}
+	.primaryBtn{margin:20px 0 30px;}
+}
 
 // Media queries start
 

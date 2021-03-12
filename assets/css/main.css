@@ -89,7 +89,7 @@ button {
 }
 
 button i {
-  margin-left: 10px;
+  margin-right: 10px;
   font-size: 18px;
 }
 
@@ -1458,6 +1458,7 @@ button.errorBtn:hover {
 }
 
 .rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcGlobal {
+  float: left;
   padding: 0 10px;
   border-left: 1px solid #ddd;
 }
@@ -1467,6 +1468,7 @@ button.errorBtn:hover {
 }
 
 .rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcDetail {
+  float: left;
   padding: 0 10px;
   border-left: 1px solid #ddd;
 }
@@ -1476,6 +1478,7 @@ button.errorBtn:hover {
 }
 
 .rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcEdit {
+  float: left;
   padding: 0 15px;
   border-left: 1px solid #ddd;
 }
@@ -2784,6 +2787,49 @@ button.errorBtn:hover {
 
 .rpList.documentsBidder li span:nth-child(2) a:hover i {
   color: #1c5ca0;
+}
+
+.rpList.privateBidUsers li span:nth-child(1) {
+  width: 80%;
+}
+
+.rpList.privateBidUsers li span:nth-child(2) {
+  width: 20%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rpList.privateBidUsers li span i {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rpList.privateBidUsers li span i.success {
+  background-color: #28a745;
+}
+
+.rpList.privateBidUsers li span i.error {
+  background-color: #cc0000;
 }
 
 .rpList.suppliers li span:nth-child(1) {
@@ -8385,18 +8431,151 @@ footer .fContent .fCol ul li a:hover {
   padding-left: 10px;
 }
 
+.standardMemberWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.standardMemberWrap .smIcon {
+  font-size: 56px;
+  color: #888;
+}
+
 .standardMemberWrap .smText {
-  float: left;
   width: 100%;
   margin-bottom: 20px;
+  text-align: center;
+  max-width: 600px;
 }
 
 .standardMemberWrap .smText p {
   float: left;
   width: 100%;
+  text-align: center;
   font-size: 14px;
   line-height: 22px;
   margin-bottom: 5px;
+}
+
+.standardMemberWrap .smText p.smtHead {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.standardMemberWrap .smButtons button {
+  font-size: 16px;
+}
+
+.standartMemberTable {
+  max-width: 1000px;
+  float: none;
+  margin: 0 auto;
+}
+
+.privateBidModalBtnWrap {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.privateBidModalBtnWrap a {
+  font-size: 14px;
+  background-color: #28a745;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.privateBidModal .mdMiddle {
+  margin-bottom: 0;
+}
+
+.privateBidModal .pbLineHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+.privateBidModal .pbUserSelectList {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.privateBidModal .pbDatepickerWrap {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+
+.privateBidModal .pbAuthSelect {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.privateBidModal .pbAuthSelect .radioBtns {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.privateBidModal .pbAuthSelect .radioBtns input {
+  margin: 0 5px 0 0;
+}
+
+.privateBidModal .pbAuthSelect .radioBtns label {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.privateBidModal button {
+  margin: 0;
+}
+
+.privateBidUsersWrap {
+  margin-top: 30px;
+}
+
+.pbDetailBottom .pbTextLine {
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+  font-size: 13px;
+}
+
+.pbDetailBottom .pbTextLine span {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.pbDetailBottom .pbUnlockMsg {
+  float: left;
+  width: 100%;
+  color: #28a745;
+  font-size: 600;
+}
+
+.pbDetailBottom .primaryBtn {
+  margin: 20px 0 30px;
 }
 
 @media (max-width: 1375px) {
