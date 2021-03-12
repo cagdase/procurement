@@ -2405,6 +2405,11 @@ $badge-max-size: 9px;
 		.supplierCol{float:left; width:33.3%; border-right:1px solid #f1f1f1; padding:0 15px;}
 		.inpromaxCol{float:left; width:33.3%; padding:0 15px;}
 		.checkbox .helper{top:1px;}
+		&.set2col{
+			.supplierCol{display:none;}
+			.categoryTree{width:50%;}
+			.inpromaxCol{width:50%;}
+		}
 	}
 	.modalDesc{display: flex; align-items: center; justify-content: space-between;
 		.modalDescRight{display: flex; align-items: center;

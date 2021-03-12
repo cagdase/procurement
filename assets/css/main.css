@@ -7466,6 +7466,18 @@ footer .fContent .fCol ul li a:hover {
   top: 1px;
 }
 
+.companyInviteListModal .categoryWrap.set2col .supplierCol {
+  display: none;
+}
+
+.companyInviteListModal .categoryWrap.set2col .categoryTree {
+  width: 50%;
+}
+
+.companyInviteListModal .categoryWrap.set2col .inpromaxCol {
+  width: 50%;
+}
+
 .companyInviteListModal .modalDesc {
   display: -webkit-box;
   display: -ms-flexbox;
