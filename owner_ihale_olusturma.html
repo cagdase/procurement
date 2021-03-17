@@ -717,6 +717,9 @@
           <img src="assets/images/multiselectPreview.jpg" alt="">
         </div>
         <div class="pbDatepickerWrap">
+          primefaces switch
+        </div>
+        <div class="pbDatepickerWrap">
           <div class="pbLineHead">Zarf açılış tarih/saat</div>
           <div class="c-datepicker-date-editor J-datepicker-range">
             <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
@@ -732,6 +735,7 @@
             <label for="auth2">Listedeki herkes</label>
           </div>
         </div>
+        <button class="secondaryBtn">İptal</button>
         <button class="primaryBtn">Kaydet</button>
       </div>
     </div>
@@ -940,9 +944,9 @@
                 </div>
               </div>
               <div class="bidType btEnglish">
-                <div class="privateBidModalBtnWrap">
+                <!-- <div class="privateBidModalBtnWrap">
                   <a href="javascript:;" class="privateBidModalBtn">Kapalı zarf ihalesi oluştur</a>
-                </div>
+                </div> -->
                 <div class="btHead">İngiliz usulü ihale</div>
                 <div class="bidManagement">
                   <div class="btSubHead">İhale yönetimi</div>
@@ -955,6 +959,21 @@
                     <div class="radio">
                       <label>
                         <input type="radio" name="radio" /><i class="helper"></i> En yüksek teklif kazanır
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="bidManagement">
+                  <div class="btSubHead">Kapalı zarf <a href="#" class="privateBidEditBtn">Düzenle</a></div>
+                  <div class="form-radio">
+                    <div class="radio">
+                      <label>
+                        <input class="privateBidModalBtn" type="radio" name="privateBidRadio" /><i class="helper"></i> Aktif
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input checked type="radio" name="privateBidRadio" /><i class="helper"></i> Pasif
                       </label>
                     </div>
                   </div>

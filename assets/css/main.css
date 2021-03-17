@@ -8561,6 +8561,7 @@ footer .fContent .fCol ul li a:hover {
 
 .privateBidModal button {
   margin: 0;
+  margin-right: 20px;
 }
 
 .privateBidUsersWrap {
@@ -8588,6 +8589,12 @@ footer .fContent .fCol ul li a:hover {
 
 .pbDetailBottom .primaryBtn {
   margin: 20px 0 30px;
+}
+
+.privateBidEditBtn {
+  text-decoration: underline;
+  font-size: 12px;
+  padding: 0 3px;
 }
 
 @media (max-width: 1375px) {
