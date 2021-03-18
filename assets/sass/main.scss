@@ -480,11 +480,11 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				}
 			}
 		}
-		.bidType{float: left; width: 100%; display:none;
+		.bidType{float: left; width: 100%;
 			.btHead{float:left; width:100%; margin-bottom:20px; border-bottom:1px solid #ddd; padding-bottom:10px; font-weight:600;}
 			.btSubHead{float:left; width:100%; margin-bottom:20px; font-size:16px; border-bottom:1px solid #ddd; padding-bottom:5px; font-weight:600;}
 			.btSubLine{float:left; width:100%; margin-bottom:10px;}
-			.bidManagement{float:left; width:100%; display:flex; align-items:flex-end; justify-content: flex-start; flex-direction: column; margin-bottom:35px; font-size:14px;
+			.bidManagement{float:left; width:100%; display:flex; align-items:flex-end; justify-content: flex-start; flex-direction: column; margin-bottom:15px; font-size:14px;
 				.radio{float:left; margin-right:10px;}
 				.btSubHead{border-bottom:0; padding-bottom:0; margin-bottom:5px; font-weight:400; font-size:14px;}
 			}

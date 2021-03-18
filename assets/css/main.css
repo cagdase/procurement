@@ -2136,7 +2136,6 @@ button.errorBtn:hover {
 .rightPanel .content .bidType {
   float: left;
   width: 100%;
-  display: none;
 }
 
 .rightPanel .content .bidType .btHead {
@@ -2180,7 +2179,7 @@ button.errorBtn:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   font-size: 14px;
 }
 
