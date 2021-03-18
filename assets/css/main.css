@@ -2136,9 +2136,14 @@ button.errorBtn:hover {
 .rightPanel .content .bidType {
   float: left;
   width: 100%;
+  display: none;
 }
 
-.rightPanel .content .bidType .btHead {
+.rightPanel .content .bidType.open {
+  display: block;
+}
+
+.rightPanel .content .btHead {
   float: left;
   width: 100%;
   margin-bottom: 20px;
@@ -2147,7 +2152,7 @@ button.errorBtn:hover {
   font-weight: 600;
 }
 
-.rightPanel .content .bidType .btSubHead {
+.rightPanel .content .btSubHead {
   float: left;
   width: 100%;
   margin-bottom: 20px;
@@ -2157,13 +2162,13 @@ button.errorBtn:hover {
   font-weight: 600;
 }
 
-.rightPanel .content .bidType .btSubLine {
+.rightPanel .content .btSubLine {
   float: left;
   width: 100%;
   margin-bottom: 10px;
 }
 
-.rightPanel .content .bidType .bidManagement {
+.rightPanel .content .bidManagement {
   float: left;
   width: 100%;
   display: -webkit-box;
@@ -2183,12 +2188,12 @@ button.errorBtn:hover {
   font-size: 14px;
 }
 
-.rightPanel .content .bidType .bidManagement .radio {
+.rightPanel .content .bidManagement .radio {
   float: left;
   margin-right: 10px;
 }
 
-.rightPanel .content .bidType .bidManagement .btSubHead {
+.rightPanel .content .bidManagement .btSubHead {
   border-bottom: 0;
   padding-bottom: 0;
   margin-bottom: 5px;
@@ -2196,111 +2201,76 @@ button.errorBtn:hover {
   font-size: 14px;
 }
 
-.rightPanel .content .bidType .privateBidLine {
-  float: left;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 35px;
-  font-size: 14px;
-}
-
-.rightPanel .content .bidType .privateBidLine .radio {
-  float: left;
-  margin-right: 10px;
-}
-
-.rightPanel .content .bidType .privateBidLine .pBSubHead {
-  float: left;
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.rightPanel .content .bidType .timeOptions {
+.rightPanel .content .timeOptions {
   float: left;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.rightPanel .content .bidType .timeOptions .formInput {
+.rightPanel .content .timeOptions .formInput {
   width: 33.3%;
   padding-right: 20px;
 }
 
-.rightPanel .content .bidType .timeOptions .formInput:nth-last-child(1) {
+.rightPanel .content .timeOptions .formInput:nth-last-child(1) {
   padding-right: 0;
 }
 
-.rightPanel .content .bidType .timeOptions .btSubHead {
+.rightPanel .content .timeOptions .btSubHead {
   margin-bottom: 20px;
 }
 
-.rightPanel .content .bidType .bidChangeOptions {
+.rightPanel .content .bidChangeOptions {
   float: left;
   width: 100%;
 }
 
-.rightPanel .content .bidType .bidChangeOptions .formInput {
+.rightPanel .content .bidChangeOptions .formInput {
   width: 50%;
   padding-right: 20px;
   margin-bottom: 40px;
 }
 
-.rightPanel .content .bidType .bidChangeOptions .formInput:nth-child(2) {
+.rightPanel .content .bidChangeOptions .formInput:nth-child(2) {
   padding-right: 0;
 }
 
-.rightPanel .content .bidType .bidChangeOptions .btSubHead {
+.rightPanel .content .bidChangeOptions .btSubHead {
   margin-bottom: 40px;
 }
 
-.rightPanel .content .bidType .competitionInfo {
+.rightPanel .content .competitionInfo {
   float: left;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.rightPanel .content .bidType .competitionInfo .formInput {
+.rightPanel .content .competitionInfo .formInput {
   width: 33.3%;
   padding-right: 20px;
 }
 
-.rightPanel .content .bidType .competitionInfo .formInput:nth-last-child(1) {
+.rightPanel .content .competitionInfo .formInput:nth-last-child(1) {
   padding-right: 0;
 }
 
-.rightPanel .content .bidType .competitionInfo .btSubHead {
+.rightPanel .content .competitionInfo .btSubHead {
   margin-bottom: 50px;
 }
 
-.rightPanel .content .bidType .dutchBottomInputs {
+.rightPanel .content .dutchBottomInputs {
   float: left;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.rightPanel .content .bidType .dutchBottomInputs .formInput {
+.rightPanel .content .dutchBottomInputs .formInput {
   width: 50%;
   padding-right: 20px;
 }
 
-.rightPanel .content .bidType .dutchBottomInputs .formInput:nth-last-child(1) {
+.rightPanel .content .dutchBottomInputs .formInput:nth-last-child(1) {
   padding-right: 0;
-}
-
-.rightPanel .content .bidType.open {
-  display: block;
 }
 
 .rightPanel .content .btDutch .btHead {
