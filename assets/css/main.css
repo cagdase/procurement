@@ -2197,6 +2197,37 @@ button.errorBtn:hover {
   font-size: 14px;
 }
 
+.rightPanel .content .bidType .privateBidLine {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 35px;
+  font-size: 14px;
+}
+
+.rightPanel .content .bidType .privateBidLine .radio {
+  float: left;
+  margin-right: 10px;
+}
+
+.rightPanel .content .bidType .privateBidLine .pBSubHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
 .rightPanel .content .bidType .timeOptions {
   float: left;
   width: 100%;
