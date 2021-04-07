@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>INTENGO - SATIN ALMA</title>
+  <meta charset=utf-8>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+  <a href="#" id="backToTop"><i class="fas fa-chevron-up"></i></a>
+
+  <div class="modalWrap modalLong companyOrderModal">
+    <div class="mdContent">
+      <a class="mdCloseBtn companyOrderModalCloseBtn" href="#"><i class="fas fa-times-circle"></i></a>
+      <div class="mdHead"><span>Kazandır: {{ Firmaadı }}</span></div>
+      <div class="mdMiddle">
+        <table>
+          <tr class="head">
+            <td>Ürün ismi</td>
+            <td>Talep miktarı</td>
+            <td>Sipariş miktarı</td>
+            <td>Birim fiyat</td>
+            <td>Toplam fiyat</td>
+          </tr>
+          <tr>
+            <td>Ürün ismi</td>
+            <td>000</td>
+            <td>000</td>
+            <td>000</td>
+            <td>000</td>
+          </tr>
+        </table>
+        <input class="orderPrice" type="text" placeholder="Sipariş edilecek tutar">
+      </div>
+      <div class="bottomBtns">
+        <button class="primaryBtn">Kaydet</button>
+        <button class="secondaryBtn companyOrderModalCloseBtn">İptal</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modalWrap modalLong orderCompleteModal">
+    <div class="mdContent">
+      <a class="mdCloseBtn orderCompleteModalCloseBtn" href="#"><i class="fas fa-times-circle"></i></a>
+      <div class="mdHead"><span>Siparişler</span></div>
+      <div class="mdMiddle">
+        <table>
+          <tr class="head">
+            <td>Ürün</td>
+            <td>Tedarikçi</td>
+            <td>Talep miktarı</td>
+            <td>Sipariş miktarı</td>
+            <td>Birim fiyat</td>
+            <td>Toplam fiyat</td>
+            <td>Termin tarihi</td>
+          </tr>
+          <tr>
+            <td>Ürün ismi</td>
+            <td>Tedarikçi Lorem
+              <span class="tableHeadTooltip">
+                ..
+                <span class="tableHeadTooltip">
+                  Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+              </span>
+            </td>
+            <td>000</td>
+            <td>000</td>
+            <td>000</td>
+            <td>000</td>
+            <td>Datepicker</td>
+          </tr>
+          <tr>
+            <td>Ürün ismi</td>
+            <td>Tedarikçi Lorem
+              <span class="tableHeadTooltip">
+                ..
+                <span class="tableHeadTooltip">
+                  Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+              </span>
+            </td>
+            <td>000</td>
+            <td>000</td>
+            <td>000</td>
+            <td>000</td>
+            <td>Datepicker</td>
+          </tr>
+          <tr>
+            <td>Ürün ismi</td>
+            <td>Tedarikçi Lorem
+              <span class="tableHeadTooltip">
+                ..
+                <span class="tableHeadTooltip">
+                  Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+              </span>
+            </td>
+            <td>000</td>
+            <td>000</td>
+            <td>000</td>
+            <td>000</td>
+            <td>Datepicker</td>
+          </tr>          
+        </table>
+        <div class="noteWrap">
+          <label><input type="checkbox"> Kazanana not :</label>
+          <textarea class="note" placeholder="Kazanana not yaz"></textarea>
+        </div>
+        <div class="noteWrap">
+          <label><input type="checkbox"> Kaybedene not :</label>
+          <textarea class="note" placeholder="Kaybedene not yaz"></textarea>
+        </div>
+      </div>
+      <div class="bottomBtns">
+        <button class="primaryBtn"><i class="fas fa-shipping-fast"></i> Sipariş ver</button>
+        <button class="secondaryBtn orderCompleteModalCloseBtn">İptal</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modalWrap modalLong orderLogModal">
+    <div class="mdContent">
+      <a class="mdCloseBtn orderLogModalCloseBtn" href="#"><i class="fas fa-times-circle"></i></a>
+      <div class="mdHead"><span>İşlem Takibi</span></div>
+      <div class="mdMiddle">
+        <div class="orderLogText"><i class="fas fa-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="orderLogText"><i class="fas fa-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="orderLogText"><i class="fas fa-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="orderLogText"><i class="fas fa-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <div class="containerAll">
+    <aside class="sideMenu">
+      <nav class="navbar">
+        <div class="mainMenu">
+          <ul class="navbarNav">
+            <li class="menuItem menuTitle">MENU</li>
+            <li class="menuItem">
+              <a href="#" class="menuCategory"><i class="menuIcon far fa-copy"></i> <span>Yeni proje</span></a>
+              <ul class="subMenu">
+                <li><i class="fas fa-angle-right"></i><a href="#">Teklif toplama</a></li>
+                <li><i class="fas fa-angle-right"></i><a href="#">İhale</a></li>
+              </ul>
+            </li>
+            <li class="menuItem">
+              <a href="#" class="menuCategory"><i class="menuIcon fas fa-tv"></i> <span>Dashboard</span></a>
+              <ul class="subMenu">
+                <li><i class="fas fa-angle-right"></i><a href="#">Devam eden</a></li>
+                <li><i class="fas fa-angle-right"></i><a href="#">Planlama</a></li>
+                <li><i class="fas fa-angle-right"></i><a href="#">Tamamlandı</a></li>
+                <li class="active"><i class="fas fa-angle-right"></i><a href="#">Tüm projeler</a></li>
+              </ul>
+            </li>
+            <li class="menuItem">
+              <a href="#" class="menuCategory"><i class="menuIcon fas fa-cog"></i> <span>Yönetim</span></a>
+              <ul class="subMenu">
+                <li><i class="fas fa-angle-right"></i><a href="#">Kullanıcılar</a></li>
+                <li><i class="fas fa-angle-right"></i><a href="#">Sayfalar</a></li>
+                <li><i class="fas fa-angle-right"></i><a href="#">Yetkiler</a></li>
+                <li><i class="fas fa-angle-right"></i><a href="#">Firmalar</a></li>
+              </ul>
+            </li>
+            <li class="menuItem">
+              <a href="#" class="menuCategory"><i class="menuIcon fas fa-user-circle"></i> <span>Hesap</span></a>
+              <ul class="subMenu">
+                <li><i class="fas fa-pen"></i><a href="#">Bilgilerim</a></li>
+                <li><i class="fas fa-sign-out-alt"></i><a href="#">Çıkış</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+    <div class="rightPanel">
+      <header class="header">
+        <div class="headLeft">
+          <a href="#" class="logo"><img src="assets/images/logo.png"></a>
+          <a href="#" class="mobileMenuBtn">
+            <div class="navIcon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+          <div class="mobileMenuWrap">
+            <ul class="navbarNav">
+              <li class="menuItem">
+                <a href="#" class="menuCategory"><i class="menuIcon far fa-copy"></i> <span>Yeni proje</span></a>
+                <ul class="subMenu">
+                  <li><i class="fas fa-angle-right"></i><a href="#">Teklif toplama</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">İhale</a></li>
+                </ul>
+              </li>
+              <li class="menuItem">
+                <a href="#" class="menuCategory"><i class="menuIcon fas fa-tv"></i> <span>Dashboard</span></a>
+                <ul class="subMenu">
+                  <li><i class="fas fa-angle-right"></i><a href="#">Devam eden</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">Planlama</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">Tamamlandı</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">Tüm projeler</a></li>
+                </ul>
+              </li>
+              <li class="menuItem">
+                <a href="#" class="menuCategory"><i class="menuIcon fas fa-cog"></i> <span>Yönetim</span></a>
+                <ul class="subMenu">
+                  <li><i class="fas fa-angle-right"></i><a href="#">Kullanıcılar</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">Sayfalar</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">Yetkiler</a></li>
+                  <li><i class="fas fa-angle-right"></i><a href="#">Firmalar</a></li>
+                </ul>
+              </li>
+              <li class="menuItem">
+                <a href="#" class="menuCategory"><i class="menuIcon fas fa-user-circle"></i> <span>Hesap</span></a>
+                <ul class="subMenu">
+                  <li><i class="fas fa-pen"></i><a href="#">Bilgilerim</a></li>
+                  <li><i class="fas fa-sign-out-alt"></i><a href="#">Çıkış</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="headRight">
+          <div class="headMenuWrap">
+            <div class="sideBarToggle">
+              <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="headDDmenu">
+              <a href="#" class="hddMbtn">
+                <div class="navIcon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+              <ul class="hddMList">
+                <li><a href="#"><i class="fas fa-angle-right"></i> Devam eden</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Tamamlandı</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Hesabım</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Çıkış</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accountWrap">
+            <div id="dateTime">
+              <span id="currentDate"></span>
+              <span id="currentTime"></span>
+            </div>
+            <a href="#" class="account">
+              <img src="assets/images/profilePicture.jpg">
+              <span class="infos">
+                <span class="name">Erdal Yenigül</span>
+              </span>
+            </a>
+            <div class="selectLanguage">
+              <select>
+                <option>TR</option>
+                <option>EN</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="middleHead">
+        <div class="headline">Kazananlar</div>
+        <div class="breadcrumb">
+          <ul>
+            <li><a href="#">Ana sayfa</a></li>
+            <li><a href="#">Kazananlar</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="rpCard winners">
+          <div class="wHeadLine">
+            <a href="#" class="toggleBtnWrap">
+              <span class="toggleBtn">
+                <span></span>
+              </span>
+              <span class="toogleText">En iyi teklifler</span>
+            </a>
+          </div>
+          <table>
+            
+          </table>
+          <table>
+            <!-- <tr class="changeBidder">
+              <td colspan="2" class="btns">
+                <button class="primaryBtn orderCompleteModalBtn">Siparişi tamamla</button>
+                <button class="thirdBtn orderLogModalBtn">işlem takibi</button>
+                <button class="secondaryBtn">Seçilenleri sıfırla</button>
+              </td>
+              <td>
+                <select class="changeBidderSelect">
+                  <option>Tedarikçi değiştir</option>
+                  <option>Tedarikçi 4</option>
+                  <option>Tedarikçi 5</option>
+                  <option>Tedarikçi 6</option>
+                </select>
+              </td>
+              <td>
+                <select class="changeBidderSelect">
+                  <option>Tedarikçi değiştir</option>
+                  <option>Tedarikçi 4</option>
+                  <option>Tedarikçi 5</option>
+                  <option>Tedarikçi 6</option>
+                </select>
+              </td>
+              <td></td>
+            </tr> -->
+            <tr class="head">
+              <td>Ürünler</td>
+              <td>En iyi teklifler</td>
+              <td>Tedarikçi 1 Lorem ips..
+                <span class="tableHeadTooltip">
+                  <i class="fas fa-info-circle"></i>
+                  <span class="tableHeadTooltip">
+                    Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+                </span>
+              </td>
+              <td>Tedarikçi 2 Lorem ips..
+                <span class="tableHeadTooltip">
+                  <i class="fas fa-info-circle"></i>
+                  <span class="tableHeadTooltip">
+                    Tedarikçi 2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+                </span>
+              </td>
+              <td>Sipariş iptal</td>
+            </tr>
+            <tr class="subHead">
+              <td></td>
+              <td>
+                <a href="javascript:;" class="bidderWinBtn">
+                  <label><i class="fas fa-trophy"></i> En iyi teklifleri kazandır</label>
+                </a>
+              </td>
+              <td><a class="bidderWinBtn" href="javascript:;"><i class="fas fa-trophy"></i> Bu tedarikçiyi kazandır</a></td>
+              <td><a class="bidderWinBtn" href="javascript:;"><i class="fas fa-trophy"></i> Bu tedarikçiyi kazandır</a></td>
+              <td><a href="javascript:;">Tümü</a></td>
+            </tr>
+            <tr>
+              <td>Ürün lorem ipsum dolor sit (150 Adet)</td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn">
+                    <label><input type="checkbox"><i class="fas fa-trophy"></i> Tedarikçi ismi
+                      <span class="tableHeadTooltip">
+                        ..
+                        <span class="tableHeadTooltip">
+                          Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </span>
+                      </span>
+                    </label>
+                  </a>
+                </span>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn"><label><input type="checkbox"><i class="fas fa-trophy"></i></label></a>
+                </span>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn"><label><input type="checkbox"><i class="fas fa-trophy"></i></label></a>
+                </span>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td><label><input type="checkbox"></label></td>            
+            </tr>
+            <tr>
+              <td>Ürün lorem ipsum dolor sit (150 Adet)</td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn">
+                    <label><input type="checkbox"><i class="fas fa-trophy"></i> Tedarikçi ismi
+                      <span class="tableHeadTooltip">
+                        ..
+                        <span class="tableHeadTooltip">
+                          Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </span>
+                      </span>
+                    </label>
+                  </a>
+                </span>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn"><label><input type="checkbox"><i class="fas fa-trophy"></i></label></a>
+                </span>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn"><label><input type="checkbox"><i class="fas fa-trophy"></i></label></a>
+                </span>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td><label><input type="checkbox"></label></td>            
+            </tr>
+            <tr class="groupLine">
+              <td>
+                <span class="categoryColor group1"></span>
+                Ürün lorem (150 Adet)</td>
+              <td>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td></td>            
+            </tr>
+            <tr class="groupLine">
+              <td>
+                <span class="categoryColor group1"></span>
+                Ürün lorem ipsum dolor sit (150 Adet)</td>
+              <td>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td></td>            
+            </tr>
+            <tr class="groupLine">
+              <td>
+                <span class="categoryColor group1"></span>
+                Mağaza dekorasyon işleri</td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn">
+                    <label><input type="checkbox"><i class="fas fa-trophy"></i> Tedarikçi ismi
+                      <span class="tableHeadTooltip">
+                        ..
+                        <span class="tableHeadTooltip">
+                          Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </span>
+                      </span>
+                    </label>
+                  </a>
+                </span>
+                Toplam fiyat : 5.000.000.000 TRY
+              </td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn">
+                    <label><input type="checkbox"><i class="fas fa-trophy"></i> Tedarikçi ismi
+                      <span class="tableHeadTooltip">
+                        ..
+                        <span class="tableHeadTooltip">
+                          Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </span>
+                      </span>
+                    </label>
+                  </a>
+                </span>
+                Toplam fiyat : 5.000.000.000 TRY
+              </td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn">
+                    <label><input type="checkbox"><i class="fas fa-trophy"></i> Tedarikçi ismi
+                      <span class="tableHeadTooltip">
+                        ..
+                        <span class="tableHeadTooltip">
+                          Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </span>
+                      </span>
+                    </label>
+                  </a>
+                </span>
+                Toplam fiyat : 5.000.000.000 TRY
+              </td>
+              <td><label><input type="checkbox"></label></td>            
+            </tr>
+            <tr class="groupLine">
+              <td>
+                <span class="categoryColor group2"></span>
+                Ürün lorem (150 Adet)</td>
+              <td>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td></td>            
+            </tr>
+            <tr class="groupLine">
+              <td>
+                <span class="categoryColor group2"></span>
+                Ürün lorem ipsum dolor sit (150 Adet)</td>
+              <td>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td></td>            
+            </tr>
+            <tr class="groupLine">
+              <td>
+                <span class="categoryColor group2"></span>
+                Hizmetler</td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn">
+                    <label><input type="checkbox"><i class="fas fa-trophy"></i> Tedarikçi ismi
+                      <span class="tableHeadTooltip">
+                        ..
+                        <span class="tableHeadTooltip">
+                          Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </span>
+                      </span>
+                    </label>
+                  </a>
+                </span>
+                Toplam fiyat : 5.000.000.000 TRY
+              </td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn">
+                    <label><input type="checkbox"><i class="fas fa-trophy"></i> Tedarikçi ismi
+                      <span class="tableHeadTooltip">
+                       ..
+                        <span class="tableHeadTooltip">
+                          Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </span>
+                      </span>
+                    </label>
+                  </a>
+                </span>
+                Toplam fiyat : 5.000.000.000 TRY
+              </td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn">
+                    <label><input type="checkbox"><i class="fas fa-trophy"></i> Tedarikçi ismi
+                      <span class="tableHeadTooltip">
+                        ..
+                        <span class="tableHeadTooltip">
+                          Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </span>
+                      </span>
+                    </label>
+                  </a>
+                </span>
+                Toplam fiyat : 5.000.000.000 TRY
+              </td>
+              <td><label><input type="checkbox"></label></td>            
+            </tr>
+            <tr>
+              <td>Ürün lorem ipsum dolor sit (150 Adet)</td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn">
+                    <label><input type="checkbox"><i class="fas fa-trophy"></i> Tedarikçi ismi
+                      <span class="tableHeadTooltip">
+                        ..
+                        <span class="tableHeadTooltip">
+                          Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </span>
+                      </span>
+                    </label>
+                  </a>
+                </span>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn"><label><input type="checkbox"><i class="fas fa-trophy"></i></label></a>
+                </span>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td>
+                <span class="companyName">
+                  <a href="javascript:;" class="companyOrderModalBtn"><label><input type="checkbox"><i class="fas fa-trophy"></i></label></a>
+                </span>
+                <div class="tdContent">
+                  <span class="unit">Birim: 5.000.00 TL</span>
+                  <span class="total">Toplam: 25.000.00 TL</span>
+                  <span class="piece">Adet: -</span>
+                </div>
+              </td>
+              <td><label><input type="checkbox"></label></td>            
+            </tr>
+          </table>
+          <div class="categoryGropusInfo">
+            <ul class="cgiList">
+              <li>
+                <span class="group1"></span>
+                <span>Mağaza dekorasyon işleri</span>
+              </li>
+              <li>
+                <span class="group2"></span>
+                <span>Hizmetler</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="assets/js/plugins/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/plugins/owl.carousel.min.js"></script>
+  <script src="https://kit.fontawesome.com/65dc611de3.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

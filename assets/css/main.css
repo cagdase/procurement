@@ -1457,6 +1457,15 @@ button.errorBtn:hover {
   font-weight: 500;
 }
 
+.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcWinners {
+  float: left;
+  padding: 0 8px 0 7px;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcWinners:hover i {
+  color: #242526;
+}
+
 .rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcGlobal {
   float: left;
   padding: 0 10px;
@@ -2769,24 +2778,42 @@ button.errorBtn:hover {
 }
 
 .rpList.documentsBidder li span:nth-child(1) {
-  width: 80%;
+  width: 30%;
+  position: relative;
+}
+
+.rpList.documentsBidder li span:nth-child(1) .required {
+  color: #cc0000;
+  font-size: 18px;
+  position: absolute;
+  left: -14px;
+  top: -1px;
 }
 
 .rpList.documentsBidder li span:nth-child(2) {
-  width: 20%;
-  text-align: center;
+  width: 58%;
 }
 
 .rpList.documentsBidder li span:nth-child(2) a {
-  padding: 0 10px;
+  text-decoration: underline;
 }
 
-.rpList.documentsBidder li span:nth-child(2) a i {
-  font-size: 16px;
+.rpList.documentsBidder li span:nth-child(3) {
+  width: 7%;
+  text-align: center;
 }
 
-.rpList.documentsBidder li span:nth-child(2) a:hover i {
-  color: #1c5ca0;
+.rpList.documentsBidder li span:nth-child(4) {
+  width: 5%;
+  text-align: center;
+}
+
+.rpList.documentsBidder .requiredInfo {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 20px;
 }
 
 .rpList.privateBidUsers li span:nth-child(1) {
@@ -6634,6 +6661,11 @@ footer .fContent .fCol ul li a:hover {
           justify-content: flex-start;
 }
 
+.inviteCompanyWrap form {
+  width: 100%;
+  float: left;
+}
+
 .inviteCompanyWrap .contentWidth {
   max-width: 1000px;
   width: 100%;
@@ -8161,34 +8193,6 @@ footer .fContent .fCol ul li a:hover {
   padding: 5px 10px;
 }
 
-.rulesModal .toggleBtnWrap .toogleText .tableHeadTooltip {
-  position: relative;
-  margin-right: 5px;
-}
-
-.rulesModal .toggleBtnWrap .toogleText .tableHeadTooltip i {
-  color: #007bff;
-  font-size: 16px;
-}
-
-.rulesModal .toggleBtnWrap .toogleText .tableHeadTooltip .tableHeadTooltip {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 200px;
-  background-color: #fff;
-  -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
-  padding: 15px;
-  z-index: 1;
-  font-weight: 300;
-  display: none;
-}
-
-.rulesModal .toggleBtnWrap .toogleText .tableHeadTooltip:hover .tableHeadTooltip {
-  display: block;
-}
-
 .rulesModal .headSwitch {
   float: left;
   width: 100%;
@@ -8205,6 +8209,34 @@ footer .fContent .fCol ul li a:hover {
 
 .rulesModal .headSwitch a {
   margin-right: 20px;
+}
+
+.tableHeadTooltip {
+  position: relative;
+  margin-right: 5px;
+}
+
+.tableHeadTooltip i {
+  color: #007bff;
+  font-size: 16px;
+}
+
+.tableHeadTooltip .tableHeadTooltip {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  z-index: 1;
+  font-weight: 300;
+  display: none;
+}
+
+.tableHeadTooltip:hover .tableHeadTooltip {
+  display: block;
 }
 
 .rulesTable {
@@ -8597,6 +8629,436 @@ footer .fContent .fCol ul li a:hover {
   padding: 0 3px;
 }
 
+.rightPanel .header .headLeft .logo {
+  max-width: 120px !important;
+}
+
+.rightPanel .header .headRight .accountWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+}
+
+.rightPanel .header .headRight .headMenuWrap {
+  width: 50%;
+}
+
+.winners .wHeadLine {
+  float: left;
+  width: 100%;
+}
+
+.winners .wHeadLine .toggleBtnWrap {
+  float: right;
+}
+
+.winners table {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.winners table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.winners table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.winners table tr:hover td:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.winners table td {
+  padding: 15px;
+  vertical-align: middle;
+  width: 24%;
+}
+
+.winners table td .bidderWinBtn {
+  color: #007bff;
+  display: inline-block;
+}
+
+.winners table td .bidderWinBtn i {
+  margin-right: 5px;
+  margin-top: 4px;
+}
+
+.winners table td .bidderWinBtn input {
+  margin-right: 5px;
+}
+
+.winners table td label {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.winners table td .companyName {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.winners table td .companyName input {
+  margin-right: 5px;
+}
+
+.winners table td .tdContent {
+  float: left;
+  width: 100%;
+}
+
+.winners table td .tdContent span {
+  float: left;
+  width: auto;
+}
+
+.winners table td .tdContent span:after {
+  content: '';
+  padding: 0 5px;
+  color: #999;
+}
+
+.winners table td .tdContent span:nth-last-child(1):after {
+  display: none;
+}
+
+.winners table td:nth-child(1) {
+  font-weight: 600;
+}
+
+.winners table td:nth-child(even) {
+  background-color: #fbfbfb;
+}
+
+.winners table td:nth-last-child(1) {
+  width: 4%;
+  text-align: center;
+  padding: 5px;
+}
+
+.winners table td:nth-last-child(1) label {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.winners table .head {
+  border-bottom: 1px solid #ddd;
+  background-color: #f7f5f5;
+}
+
+.winners table .head td {
+  font-weight: 600;
+}
+
+.winners table .head td:nth-child(even) {
+  background-color: transparent;
+}
+
+.winners table .head td:nth-last-child(1) {
+  font-weight: normal;
+}
+
+.winners table .subHead td {
+  padding: 10px 15px;
+}
+
+.winners table .changeBidder {
+  background-color: #fbfbfb;
+}
+
+.winners table .changeBidder .changeBidderSelect {
+  float: left;
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+  outline: 0;
+}
+
+.winners table .changeBidder tr {
+  padding: 5px 15px;
+}
+
+.winners table .changeBidder tr td:nth-child(even) {
+  background-color: transparent;
+}
+
+.winners table .changeBidder .btns button {
+  margin-bottom: 0;
+  margin-right: 10px;
+  padding: 0 10px;
+  font-size: 13px;
+}
+
+.winners .companyOrderModalBtn {
+  color: #222;
+  float: left;
+  width: 100%;
+  color: #007bff;
+}
+
+.winners .companyOrderModalBtn label {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.winners .companyOrderModalBtn label i {
+  margin-right: 5px;
+}
+
+.winners .companyOrderModalBtn .tableHeadTooltip {
+  margin-left: 5px;
+  margin-right: 0;
+  color: #007bff;
+}
+
+.winners .groupLine td:nth-child(1) {
+  position: relative;
+}
+
+.winners .groupLine td:nth-child(1) .categoryColor {
+  position: absolute;
+  left: -5px;
+  top: 0;
+  height: 100%;
+  width: 5px !important;
+}
+
+.companyOrderModal table {
+  float: left;
+  width: 100%;
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+.companyOrderModal table tr {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.companyOrderModal table tr td {
+  float: left;
+  width: 20%;
+  padding: 10px 5px;
+}
+
+.companyOrderModal table tr td:nth-child(1) {
+  width: 40%;
+}
+
+.companyOrderModal table tr td:nth-child(2) {
+  width: 15%;
+}
+
+.companyOrderModal table tr td:nth-child(3) {
+  width: 15%;
+}
+
+.companyOrderModal table tr td:nth-child(4) {
+  width: 15%;
+}
+
+.companyOrderModal table tr td:nth-child(5) {
+  width: 15%;
+}
+
+.companyOrderModal table tr:nth-child(odd) {
+  background-color: #fbfbfb;
+}
+
+.companyOrderModal table .head {
+  border-bottom: 1px solid #ddd;
+  background-color: #f7f5f5;
+}
+
+.companyOrderModal table .head td {
+  font-weight: 600;
+}
+
+.companyOrderModal .orderPrice {
+  float: left;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #ddd;
+}
+
+.orderCompleteModal .mdContent {
+  max-width: 1100px;
+  width: 100% !important;
+}
+
+.orderCompleteModal table {
+  float: left;
+  width: 100%;
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+.orderCompleteModal table tr {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.orderCompleteModal table tr td {
+  float: left;
+  width: 20%;
+  padding: 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.orderCompleteModal table tr td:nth-child(1) {
+  width: 30%;
+}
+
+.orderCompleteModal table tr td:nth-child(2) {
+  width: 20%;
+}
+
+.orderCompleteModal table tr td:nth-child(3) {
+  width: 10%;
+}
+
+.orderCompleteModal table tr td:nth-child(4) {
+  width: 10%;
+}
+
+.orderCompleteModal table tr td:nth-child(5) {
+  width: 10%;
+}
+
+.orderCompleteModal table tr td:nth-child(6) {
+  width: 10%;
+}
+
+.orderCompleteModal table tr td:nth-child(7) {
+  width: 10%;
+}
+
+.orderCompleteModal table tr:nth-child(odd) {
+  background-color: #fbfbfb;
+}
+
+.orderCompleteModal table .head {
+  border-bottom: 1px solid #ddd;
+  background-color: #f7f5f5;
+}
+
+.orderCompleteModal table .head td {
+  font-weight: 600;
+}
+
+.orderCompleteModal .noteWrap {
+  float: left;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.orderCompleteModal .noteWrap label {
+  margin-bottom: 10px;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.orderCompleteModal .noteWrap .note {
+  float: left;
+  width: 100%;
+  max-width: 400px;
+  font-family: "Roboto", sans-serif;
+  height: 120px;
+  padding: 10px;
+  font-size: 13px;
+  margin-bottom: 20px;
+  resize: none;
+  outline: 0;
+  border: 1px solid #ddd;
+}
+
+.orderCompleteModal .bottomBtns {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.orderCompleteModal .tableHeadTooltip {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+.orderCompleteModal .tableHeadTooltip i {
+  font-size: 13px;
+}
+
+.orderLogModal .mdMiddle {
+  margin-bottom: 0 !important;
+}
+
+.orderLogModal .orderLogText {
+  float: left;
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.orderLogModal .orderLogText i {
+  margin-right: 5px;
+  font-size: 6px;
+}
+
+.orderLogModal .orderLogText:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
 @media (max-width: 1375px) {
   .rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(1) {
     padding: 0;
@@ -8785,9 +9247,18 @@ footer .fContent .fCol ul li a:hover {
   .rightPanel .content .dashboardContent {
     margin: 0;
   }
+  .rightPanel .content .winners {
+    overflow-y: scroll;
+  }
+  .rightPanel .content .winners table {
+    width: 1000px;
+  }
 }
 
 @media (max-width: 767px) {
+  .inviteCompanyWrap .wizardWrap {
+    display: none;
+  }
   .rpList.dutchBidderList li .status.online:before {
     left: 0;
   }
@@ -9445,29 +9916,6 @@ footer .fContent .fCol ul li a:hover {
   .intengoAdminWrap .content .customersList li:nth-child(even) {
     padding: 5px 0 15px 15px;
   }
-}
-
-/* Responsive alanlar */
-/*  .rightPanel .middleHead .dbSearch{display:block; padding:0; margin-right:0; width:100%;} yukarda var */
-.rightPanel .header .headLeft .logo {
-  max-width: 120px !important;
-}
-
-.rightPanel .header .headRight .accountWrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 50%;
-}
-
-.rightPanel .header .headRight .headMenuWrap {
-  width: 50%;
-}
-
-@media (max-width: 767px) {
   .rightPanel .middleHead .dateRange {
     display: none !important;
   }

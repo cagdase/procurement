@@ -268,6 +268,25 @@ $(document).ready(function () {
     $(".privateBidModal").css({ display: 'none' });
   });
 
+  $(".companyOrderModalBtn").click(function() {
+    $(".companyOrderModal").css({ display: 'flex' });
+  });
+  $(".companyOrderModalCloseBtn").click(function() {
+    $(".companyOrderModal").css({ display: 'none' });
+  });
+
+  $(".orderCompleteModalBtn").click(function() {
+    $(".orderCompleteModal").css({ display: 'flex' });
+  });
+  $(".orderCompleteModalCloseBtn").click(function() {
+    $(".orderCompleteModal").css({ display: 'none' });
+  });
+
+  $(".orderLogModalBtn").click(function() {
+    $(".orderLogModal").css({ display: 'flex' });
+  });
+  $(".orderLogModalCloseBtn").click(function() {
+    $(".orderLogModal").css({ display: 'none' });
+  });
+
 })
-
-

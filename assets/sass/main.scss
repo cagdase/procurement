@@ -300,6 +300,11 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				.dcBottom{float:left; width:100%; display:flex; align-items:center; justify-content:space-between; border-top: 1px solid #ddd; padding:10px 0px 10px 25px; position: absolute; bottom: 0; left: 0; right: 0; height:45px;
 					.dcProjectType{font-size:12px; color:$color1; font-weight:500;}
 					.dcBottomBtns{
+						.dcWinners{float:left; padding:0 8px 0 7px;
+							&:hover{
+								i{color:$color1;}
+							}
+						}
 						.dcGlobal{float:left; padding:0 10px; border-left: 1px solid #ddd;
 							&:hover{
 								i{color:$color1;}
@@ -657,17 +662,17 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 	&.documentsBidder{
 		li{
 			span{					
-				&:nth-child(1){width:80%;}
-				&:nth-child(2){width:20%; text-align: center;
-					a{padding:0 10px;
-						i{font-size:16px;}
-						&:hover{
-							i{color:#1c5ca0;}
-						}
-					}
+				&:nth-child(1){width:30%; position:relative;
+					.required{color:$colorError; font-size:18px; position: absolute; left: -14px; top: -1px;}
 				}
+				&:nth-child(2){width:58%;
+					a{text-decoration:underline;}
+				}
+				&:nth-child(3){width:7%; text-align:center;}
+				&:nth-child(4){width:5%; text-align:center;}
 			}
 		}
+		.requiredInfo{float:left; width:100%; font-size:12px; font-style:italic; margin-top:20px;}
 	}
 	&.privateBidUsers{
 		li{
@@ -2155,6 +2160,7 @@ footer{float:left; width:100%; background-color:#efefef; padding:30px; display:f
 .width1000{max-width:1000px;}
 
 .inviteCompanyWrap{min-height:calc(100vh - 100px); padding: 40px 15px; justify-content: flex-start;
+	form{width:100%; float:left;}
   .contentWidth{max-width:1000px; width:100%; display:flex; align-items: center; justify-content: center; flex-direction:column; padding-bottom:40px;}
   .formWrap{float:left; width:100%; display:flex; align-items: center; justify-content: center; background-color:#fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);}
   .wizardWrap{float:left; width:100%; display:flex; align-items: center; justify-content: center; margin-bottom:20px; background-color: #fffbfb; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
@@ -2572,17 +2578,19 @@ $badge-max-size: 9px;
 		}
 		.toogleText{font-size:13px; padding-left:5px;
 			.securityInput{width:60px; outline: 0; border: 1px solid #ddd; padding: 5px 10px;}
-			.tableHeadTooltip{position:relative; margin-right:5px;
-				i{color:$linkColor; font-size:16px;}
-				.tableHeadTooltip{position:absolute; right:0; top:0; width:200px; background-color:#fff; box-shadow:1px 1px 20px rgba(0, 0, 0, 0.2); padding: 15px; z-index: 1; font-weight: 300; display:none;}
-				&:hover{
-					.tableHeadTooltip{display:block;}
-				}
-			}
+			
 		}
 	}
 	.headSwitch{float:left; width:100%; margin-bottom:20px; background-color: #f1f1f1; padding: 20px; display:flex; align-items:center;
 		a{margin-right:20px;} 
+	}
+}
+
+.tableHeadTooltip{position:relative; margin-right:5px;
+	i{color:$linkColor; font-size:16px;}
+	.tableHeadTooltip{position:absolute; right:0; top:0; width:200px; background-color:#fff; box-shadow:1px 1px 20px rgba(0, 0, 0, 0.2); padding: 15px; z-index: 1; font-weight: 300; display:none;}
+	&:hover{
+		.tableHeadTooltip{display:block;}
 	}
 }
 
@@ -2703,6 +2711,142 @@ $badge-max-size: 9px;
 
 .privateBidEditBtn{text-decoration:underline; font-size:12px; padding:0 3px;}
 
+.rightPanel .header .headLeft .logo{max-width:120px!important;}
+.rightPanel .header .headRight .accountWrap{display: flex;justify-content: flex-end; width:50%;}
+.rightPanel .header .headRight .headMenuWrap{width:50%;}
+
+.winners{
+	.wHeadLine{float:left; width:100%;
+		.toggleBtnWrap{float:right;}
+	}
+	table{float:left; width:100%; font-size:12px; margin-bottom:20px;
+		tr{border-bottom: 1px solid #eee;
+			&:hover{background-color:#f1f1f1;
+				td{
+					&:nth-child(even){background-color:#f1f1f1;}
+				}
+			}
+		}
+		td{padding:15px; vertical-align: middle; width:24%;
+			.bidderWinBtn{color: #007bff;display: inline-block;
+				i{margin-right:5px; margin-top: 4px;}
+				input{margin-right:5px;}
+			}
+			label{cursor:pointer; display:flex; align-items:flex-start; justify-content:flex-start;}
+			.companyName{float:left; width:100%; margin-bottom:5px;
+				input{margin-right:5px;}
+			}
+			.tdContent{float:left; width:100%;
+				span{float:left; width:auto;
+					&:after{content:''; padding:0 5px; color:#999;}
+					&:nth-last-child(1){
+						&:after{display:none;}
+					}
+				}
+				.piece{}
+				.unit{}
+				.total{}
+			}
+			&:nth-child(1){font-weight:600}
+			&:nth-child(even){background-color:#fbfbfb;}
+			&:nth-last-child(1){width:4%; text-align: center; padding: 5px;
+				label{justify-content:center;}
+			}
+		}
+		.head{border-bottom: 1px solid #ddd; background-color: #f7f5f5;
+			td{font-weight:600;
+				&:nth-child(even){background-color:transparent;}
+				&:nth-last-child(1){font-weight:normal;}
+			}
+		}
+		.subHead{
+			td{padding:10px 15px;}
+		}
+		.changeBidder{background-color:#fbfbfb;
+			.changeBidderSelect{float:left; width:100%; border:1px solid #f1f1f1; padding:10px; outline:0;}
+			tr{padding:5px 15px;
+				td{
+					&:nth-child(even){background-color:transparent;}
+				}
+			}
+			.btns{
+				button{margin-bottom:0; margin-right:10px; padding: 0 10px; font-size:13px;}
+			}
+		}
+	}
+	.companyOrderModalBtn{color:#222; float:left; width:100%; color:#007bff;
+		label{align-items: center;
+			i{margin-right:5px;}
+		}
+		.tableHeadTooltip{margin-left:5px; margin-right:0; color:#007bff;}
+	}
+	.groupLine{
+		td{
+			&:nth-child(1){position:relative;
+				.categoryColor{position: absolute; left: -5px; top: 0; height: 100%; width: 5px!important;}
+			}
+		}
+	}
+}
+
+.companyOrderModal{
+	table{float:left; width:100%; font-size:11px; margin-bottom:20px;
+		tr{float:left; width:100%; border-bottom: 1px solid #eee;
+			td{float:left; width:20%; padding:10px 5px;
+				&:nth-child(1){width:40%;}
+				&:nth-child(2){width:15%;}
+				&:nth-child(3){width:15%;}
+				&:nth-child(4){width:15%;}
+				&:nth-child(5){width:15%;}
+			}
+			&:nth-child(odd){background-color:#fbfbfb;}
+		}
+		.head{border-bottom: 1px solid #ddd; background-color: #f7f5f5;
+			td{font-weight:600;}
+		}
+	}
+	.orderPrice{float: left; width: 100%; max-width: 300px; padding: 10px; outline: 0; border: 1px solid #ddd;}
+}
+
+.orderCompleteModal{
+	.mdContent{max-width:1100px; width:100%!important;}
+	table{float:left; width:100%; font-size:11px; margin-bottom:20px;
+		tr{float:left; width:100%; border-bottom: 1px solid #eee; display:flex;
+			td{float:left; width:20%; padding:10px 5px; display:flex; align-items:center;
+				&:nth-child(1){width:30%;}
+				&:nth-child(2){width:20%;}
+				&:nth-child(3){width:10%;}
+				&:nth-child(4){width:10%;}
+				&:nth-child(5){width:10%;}
+				&:nth-child(6){width:10%;}
+				&:nth-child(7){width:10%;}
+			}
+			&:nth-child(odd){background-color:#fbfbfb;}
+		}
+		.head{border-bottom: 1px solid #ddd; background-color: #f7f5f5;
+			td{font-weight:600;}
+		}
+	}
+	.noteWrap{float: left; width: 50%; display: flex; flex-direction: column;
+		label{margin-bottom: 10px; font-size: 13px; display: flex; align-items: center; justify-content: flex-start; margin-bottom:10px; font-size:13px;}
+		.note{float:left; width:100%; max-width:400px; font-family:$fontStack2; height:120px; padding:10px; font-size:13px; margin-bottom:20px; resize:none; outline:0; border:1px solid #ddd;}
+	}
+	.bottomBtns{float:left; width:100%; margin-bottom:20px;}
+	.tableHeadTooltip{margin-left:5px; margin-right:0;
+		i{font-size:13px;}
+	}
+}
+
+.orderLogModal{
+	.mdMiddle{margin-bottom:0!important;}
+	.orderLogText{float:left; width:100%; font-size:13px; margin-bottom:10px; display:flex; align-items:center;
+		i{margin-right:5px; font-size:6px;}
+		&:nth-last-child(1){margin-bottom:0;}
+	}
+}
+
+
+
 // Media queries start
 
 @media (max-width: 1375px){
@@ -2767,9 +2911,13 @@ $badge-max-size: 9px;
 	.dutchBidResults ul{width:100%;}
 	.rightPanel.bigRightPanel{width:100%; margin-left:0;}
 	.rightPanel .content .dashboardContent{margin:0;}
+	.rightPanel .content .winners{overflow-y: scroll;
+		table{width:1000px;}
+	}
 }
 
 @media (max-width: 767px) {
+	.inviteCompanyWrap .wizardWrap{display:none;}
 	.rpList.dutchBidderList li .status.online:before{left:0;}
 	.rpList.dutchBidderList li span:nth-child(1){width:70%; padding-left:15px;}
 	.rpList.dutchBidderList li span:nth-child(2), .rpList.dutchBidderList li span:nth-child(3){width:15%;}
@@ -2933,16 +3081,7 @@ $badge-max-size: 9px;
 		&:nth-child(odd){padding:5px 15px 15px 0;}
 		&:nth-child(even){padding:5px 0 15px 15px;}
 	}
-}
 
-/* Responsive alanlar */
-/*  .rightPanel .middleHead .dbSearch{display:block; padding:0; margin-right:0; width:100%;} yukarda var */
-
-.rightPanel .header .headLeft .logo{max-width:120px!important;}
-.rightPanel .header .headRight .accountWrap{display: flex;justify-content: flex-end; width:50%;}
-.rightPanel .header .headRight .headMenuWrap{width:50%;}
-
-@media (max-width: 767px) {
 	.rightPanel .middleHead .dateRange{display:none!important}
 	.rightPanel .dbSearch input{width: calc(100% - 35px)!important;}
 	.rightPanel .content .rpChart{display:none;}
