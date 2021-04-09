@@ -8211,17 +8211,17 @@ footer .fContent .fCol ul li a:hover {
   margin-right: 20px;
 }
 
-.tableHeadTooltip {
+.tableHeadTooltipWrap {
   position: relative;
   margin-right: 5px;
 }
 
-.tableHeadTooltip i {
+.tableHeadTooltipWrap i {
   color: #007bff;
   font-size: 16px;
 }
 
-.tableHeadTooltip .tableHeadTooltip {
+.tableHeadTooltipWrap .tableHeadTooltip {
   position: absolute;
   right: 0;
   top: 0;
@@ -8235,7 +8235,7 @@ footer .fContent .fCol ul li a:hover {
   display: none;
 }
 
-.tableHeadTooltip:hover .tableHeadTooltip {
+.tableHeadTooltipWrap:hover .tableHeadTooltip {
   display: block;
 }
 
@@ -8656,6 +8656,39 @@ footer .fContent .fCol ul li a:hover {
   float: right;
 }
 
+.winners .headBtnsWrap {
+  float: left;
+  width: 100%;
+  background-color: #fbfbfb;
+  padding: 15px;
+}
+
+.winners .headBtnsWrap .btns {
+  float: left;
+}
+
+.winners .headBtnsWrap .btns button {
+  margin-bottom: 0;
+  margin-right: 10px;
+  padding: 0 10px;
+  font-size: 13px;
+}
+
+.winners .headBtnsWrap .btns .resetDataBtn {
+  float: left;
+  position: relative;
+}
+
+.winners .headBtnsWrap .btns .resetDataBtn .deleteModal {
+  right: 0;
+  top: 0px;
+  font-size: 14px;
+}
+
+.winners .headBtnsWrap .toggleBtnWrap {
+  float: right;
+}
+
 .winners table {
   float: left;
   width: 100%;
@@ -8667,18 +8700,11 @@ footer .fContent .fCol ul li a:hover {
   border-bottom: 1px solid #eee;
 }
 
-.winners table tr:hover {
-  background-color: #f1f1f1;
-}
-
-.winners table tr:hover td:nth-child(even) {
-  background-color: #f1f1f1;
-}
-
 .winners table td {
   padding: 15px;
   vertical-align: middle;
   width: 24%;
+  position: relative;
 }
 
 .winners table td .bidderWinBtn {
@@ -8740,10 +8766,7 @@ footer .fContent .fCol ul li a:hover {
 
 .winners table td:nth-child(1) {
   font-weight: 600;
-}
-
-.winners table td:nth-child(even) {
-  background-color: #fbfbfb;
+  padding-left: 15px !important;
 }
 
 .winners table td:nth-last-child(1) {
@@ -8758,6 +8781,18 @@ footer .fContent .fCol ul li a:hover {
           justify-content: center;
 }
 
+.winners table .changeBidderSelect {
+  background-color: #f1f1f1;
+}
+
+.winners table .changeBidderSelect select {
+  float: left;
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+  outline: 0;
+}
+
 .winners table .head {
   border-bottom: 1px solid #ddd;
   background-color: #f7f5f5;
@@ -8767,78 +8802,133 @@ footer .fContent .fCol ul li a:hover {
   font-weight: 600;
 }
 
-.winners table .head td:nth-child(even) {
-  background-color: transparent;
+.winners table .head td .trophy {
+  float: right;
+  text-align: center;
+  font-size: 12px;
+}
+
+.winners table .head td .tableHeadTooltip i {
+  font-size: 12px;
 }
 
 .winners table .head td:nth-last-child(1) {
   font-weight: normal;
 }
 
-.winners table .subHead td {
-  padding: 10px 15px;
+.winners table .productLine td {
+  padding: 0;
 }
 
-.winners table .changeBidder {
-  background-color: #fbfbfb;
+.winners table .groupLine td {
+  padding: 0;
 }
 
-.winners table .changeBidder .changeBidderSelect {
-  float: left;
-  width: 100%;
-  border: 1px solid #f1f1f1;
-  padding: 10px;
-  outline: 0;
-}
-
-.winners table .changeBidder tr {
-  padding: 5px 15px;
-}
-
-.winners table .changeBidder tr td:nth-child(even) {
-  background-color: transparent;
-}
-
-.winners table .changeBidder .btns button {
-  margin-bottom: 0;
-  margin-right: 10px;
-  padding: 0 10px;
-  font-size: 13px;
-}
-
-.winners .companyOrderModalBtn {
-  color: #222;
-  float: left;
-  width: 100%;
-  color: #007bff;
-}
-
-.winners .companyOrderModalBtn label {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.winners .companyOrderModalBtn label i {
-  margin-right: 5px;
-}
-
-.winners .companyOrderModalBtn .tableHeadTooltip {
-  margin-left: 5px;
-  margin-right: 0;
-  color: #007bff;
-}
-
-.winners .groupLine td:nth-child(1) {
+.winners table .groupLine td:nth-child(1) {
   position: relative;
 }
 
-.winners .groupLine td:nth-child(1) .categoryColor {
+.winners table .groupLine td:nth-child(1) .categoryColor {
   position: absolute;
   left: -5px;
   top: 0;
   height: 100%;
   width: 5px !important;
+}
+
+.winners table .groupLine.total td:nth-child(2) {
+  padding: 0;
+}
+
+.winners table .cellLink {
+  float: left;
+  width: 100%;
+  color: #222;
+  padding: 15px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.winners table .cellLink.selected {
+  background-color: #f1f1f1;
+}
+
+.winners table .noSelect {
+  float: left;
+  width: 100%;
+  color: #222;
+  padding: 15px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.winners table .removeCheckbox {
+  position: relative;
+}
+
+.winners table .removedLine {
+  background-color: #dcd9d9;
+  color: #999;
+}
+
+.winners table .removedLine .cellLink {
+  color: #999;
+}
+
+.winners table .removedLine td {
+  pointer-events: none;
+}
+
+.winners table .removedLine td:nth-last-child(1) {
+  background-color: #fff;
+  pointer-events: auto;
+}
+
+.winners table .productSold {
+  background-color: #f1f1f1;
+}
+
+.winners table .productCount {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #a5a5a5;
+  color: #fff;
+  padding: 1px 3px;
+  font-size: 11px;
+  line-height: 12px;
+}
+
+.winners .supplier3 td:nth-child(2) {
+  display: none;
+}
+
+.winners .tWinner td:nth-child(5) {
+  display: none;
 }
 
 .companyOrderModal table {
@@ -8852,16 +8942,24 @@ footer .fContent .fCol ul li a:hover {
   float: left;
   width: 100%;
   border-bottom: 1px solid #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .companyOrderModal table tr td {
   float: left;
   width: 20%;
   padding: 10px 5px;
+  text-align: center;
 }
 
 .companyOrderModal table tr td:nth-child(1) {
   width: 40%;
+  text-align: left;
 }
 
 .companyOrderModal table tr td:nth-child(2) {
@@ -8893,13 +8991,20 @@ footer .fContent .fCol ul li a:hover {
   font-weight: 600;
 }
 
-.companyOrderModal .orderPrice {
+.companyOrderModal .orderQuantity {
+  width: 100%;
+  border: 1px solid #ddd;
+  outline: 0;
+  font-size: 13px;
+  padding: 5px;
+  text-align: center;
+}
+
+.companyOrderModal .quantityErrorMsg {
   float: left;
   width: 100%;
-  max-width: 300px;
-  padding: 10px;
-  outline: 0;
-  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #cc0000;
 }
 
 .orderCompleteModal .mdContent {
@@ -8907,101 +9012,155 @@ footer .fContent .fCol ul li a:hover {
   width: 100% !important;
 }
 
-.orderCompleteModal table {
+.orderCompleteModal .supplierCard {
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.orderCompleteModal .supplierCard .spHead {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.orderCompleteModal .supplierCard table {
   float: left;
   width: 100%;
   font-size: 11px;
   margin-bottom: 20px;
 }
 
-.orderCompleteModal table tr {
+.orderCompleteModal .supplierCard table tr {
   float: left;
   width: 100%;
   border-bottom: 1px solid #eee;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-.orderCompleteModal table tr td {
+.orderCompleteModal .supplierCard table tr td {
   float: left;
-  width: 20%;
-  padding: 10px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 10px;
+  text-align: center;
 }
 
-.orderCompleteModal table tr td:nth-child(1) {
-  width: 30%;
+.orderCompleteModal .supplierCard table tr td:nth-child(1) {
+  width: 50%;
+  text-align: left;
 }
 
-.orderCompleteModal table tr td:nth-child(2) {
-  width: 20%;
+.orderCompleteModal .supplierCard table tr td:nth-child(2) {
+  width: 12%;
 }
 
-.orderCompleteModal table tr td:nth-child(3) {
-  width: 10%;
+.orderCompleteModal .supplierCard table tr td:nth-child(3) {
+  width: 14%;
 }
 
-.orderCompleteModal table tr td:nth-child(4) {
-  width: 10%;
+.orderCompleteModal .supplierCard table tr td:nth-child(4) {
+  width: 12%;
 }
 
-.orderCompleteModal table tr td:nth-child(5) {
-  width: 10%;
+.orderCompleteModal .supplierCard table tr td:nth-child(5) {
+  width: 12%;
 }
 
-.orderCompleteModal table tr td:nth-child(6) {
-  width: 10%;
-}
-
-.orderCompleteModal table tr td:nth-child(7) {
-  width: 10%;
-}
-
-.orderCompleteModal table tr:nth-child(odd) {
+.orderCompleteModal .supplierCard table tr:nth-child(odd) {
   background-color: #fbfbfb;
 }
 
-.orderCompleteModal table .head {
+.orderCompleteModal .supplierCard table .head {
   border-bottom: 1px solid #ddd;
   background-color: #f7f5f5;
 }
 
-.orderCompleteModal table .head td {
+.orderCompleteModal .supplierCard table .head td {
+  font-weight: 600;
+}
+
+.orderCompleteModal .supplierCard .noteWrap {
+  float: left;
+  width: 50%;
+}
+
+.orderCompleteModal .supplierCard .noteWrap .showNoteBtn {
+  float: left;
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+  color: #222;
+  font-size: 13px;
+}
+
+.orderCompleteModal .supplierCard .noteWrap .note {
+  float: left;
+  width: 100%;
+  max-width: 400px;
+  font-family: "Roboto", sans-serif;
+  height: 120px;
+  padding: 10px;
+  font-size: 13px;
+  margin-bottom: 20px;
+  resize: none;
+  outline: 0;
+  border: 1px solid #ddd;
+  display: none;
+}
+
+.orderCompleteModal .supplierCard .noteWrap .note.noteOpen {
+  display: block;
+}
+
+.orderCompleteModal .supplierCard .supplierTotalPrice {
+  float: left;
+  width: 50%;
+  text-align: right;
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+.orderCompleteModal .supplierCard.lost table tr td:nth-child(1) {
+  width: 80%;
+  text-align: left;
+}
+
+.orderCompleteModal .supplierCard.lost table tr td:nth-child(2) {
+  width: 20%;
+  text-align: center;
+}
+
+.orderCompleteModal .supplierCard.lost .supplierTotalPrice {
+  width: 100%;
+}
+
+.orderCompleteModal .supplierLosts {
+  float: left;
+  width: 100%;
+  margin: 40px 0 20px;
+  font-size: 15px;
   font-weight: 600;
 }
 
 .orderCompleteModal .noteWrap {
   float: left;
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-.orderCompleteModal .noteWrap label {
+.orderCompleteModal .noteWrap .noteHead {
+  float: left;
+  width: 100%;
   margin-bottom: 10px;
-  font-size: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-bottom: 10px;
-  font-size: 13px;
+}
+
+.orderCompleteModal .noteWrap .noteHead .tableHeadTooltip {
+  left: 0;
+  right: auto;
+  font-size: 12px;
 }
 
 .orderCompleteModal .noteWrap .note {
@@ -9018,19 +9177,18 @@ footer .fContent .fCol ul li a:hover {
   border: 1px solid #ddd;
 }
 
+.orderCompleteModal .priceAll {
+  float: left;
+  width: 50%;
+  text-align: right;
+  font-size: 18px;
+  padding: 40px 10px 0 0;
+}
+
 .orderCompleteModal .bottomBtns {
   float: left;
   width: 100%;
   margin-bottom: 20px;
-}
-
-.orderCompleteModal .tableHeadTooltip {
-  margin-left: 5px;
-  margin-right: 0;
-}
-
-.orderCompleteModal .tableHeadTooltip i {
-  font-size: 13px;
 }
 
 .orderLogModal .mdMiddle {

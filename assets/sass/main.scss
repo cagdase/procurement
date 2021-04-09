@@ -2586,7 +2586,7 @@ $badge-max-size: 9px;
 	}
 }
 
-.tableHeadTooltip{position:relative; margin-right:5px;
+.tableHeadTooltipWrap{position:relative; margin-right:5px;
 	i{color:$linkColor; font-size:16px;}
 	.tableHeadTooltip{position:absolute; right:0; top:0; width:200px; background-color:#fff; box-shadow:1px 1px 20px rgba(0, 0, 0, 0.2); padding: 15px; z-index: 1; font-weight: 300; display:none;}
 	&:hover{
@@ -2719,15 +2719,18 @@ $badge-max-size: 9px;
 	.wHeadLine{float:left; width:100%;
 		.toggleBtnWrap{float:right;}
 	}
-	table{float:left; width:100%; font-size:12px; margin-bottom:20px;
-		tr{border-bottom: 1px solid #eee;
-			&:hover{background-color:#f1f1f1;
-				td{
-					&:nth-child(even){background-color:#f1f1f1;}
-				}
+	.headBtnsWrap{float:left; width:100%; background-color:#fbfbfb; padding:15px;
+		.btns{float:left;
+			button{margin-bottom:0; margin-right:10px; padding: 0 10px; font-size:13px;}
+			.resetDataBtn{float:left; position:relative;
+				.deleteModal{right: 0; top: 0px; font-size: 14px;}
 			}
 		}
-		td{padding:15px; vertical-align: middle; width:24%;
+		.toggleBtnWrap{float:right;}
+	}
+	table{float:left; width:100%; font-size:12px; margin-bottom:20px;
+		tr{border-bottom: 1px solid #eee;}
+		td{padding:15px; vertical-align: middle; width:24%; position:relative;
 			.bidderWinBtn{color: #007bff;display: inline-block;
 				i{margin-right:5px; margin-top: 4px;}
 				input{margin-right:5px;}
@@ -2743,57 +2746,68 @@ $badge-max-size: 9px;
 						&:after{display:none;}
 					}
 				}
-				.piece{}
-				.unit{}
-				.total{}
 			}
-			&:nth-child(1){font-weight:600}
-			&:nth-child(even){background-color:#fbfbfb;}
+			&:nth-child(1){font-weight:600; padding-left:15px!important;}
 			&:nth-last-child(1){width:4%; text-align: center; padding: 5px;
 				label{justify-content:center;}
 			}
 		}
+		.changeBidderSelect{background-color: #f1f1f1;
+			select{float:left; width:100%; border:1px solid #f1f1f1; padding:10px; outline:0;}
+		}
 		.head{border-bottom: 1px solid #ddd; background-color: #f7f5f5;
 			td{font-weight:600;
-				&:nth-child(even){background-color:transparent;}
+				.trophy{float:right; text-align:center; font-size:12px;}
+				.tableHeadTooltip i{font-size:12px;}
 				&:nth-last-child(1){font-weight:normal;}
 			}
 		}
-		.subHead{
-			td{padding:10px 15px;}
+		.productLine{
+			td{padding:0;}
 		}
-		.changeBidder{background-color:#fbfbfb;
-			.changeBidderSelect{float:left; width:100%; border:1px solid #f1f1f1; padding:10px; outline:0;}
-			tr{padding:5px 15px;
-				td{
-					&:nth-child(even){background-color:transparent;}
+		.groupLine{
+			td{padding:0;
+				&:nth-child(1){position:relative;
+					.categoryColor{position: absolute; left: -5px; top: 0; height: 100%; width: 5px!important;}
 				}
 			}
-			.btns{
-				button{margin-bottom:0; margin-right:10px; padding: 0 10px; font-size:13px;}
+			&.total{
+				td{
+					&:nth-child(2){padding:0;}
+				}
 			}
 		}
-	}
-	.companyOrderModalBtn{color:#222; float:left; width:100%; color:#007bff;
-		label{align-items: center;
-			i{margin-right:5px;}
+		.cellLink{float: left; width: 100%; color: #222; padding: 15px; height: 75px; display: flex; align-items: flex-start; flex-direction: column; justify-content: center;
+			&.selected{background-color:#f1f1f1;}
 		}
-		.tableHeadTooltip{margin-left:5px; margin-right:0; color:#007bff;}
+		.noSelect{float: left; width: 100%; color: #222; padding: 15px; height: 75px; display: flex; align-items: center; flex-direction: column; justify-content: center;}
+		.removeCheckbox{position:relative;}
+		.removedLine{background-color:#dcd9d9; color:#999;
+			.cellLink{color:#999;}
+			td{pointer-events: none;
+				&:nth-last-child(1){background-color:#fff; pointer-events:auto;}
+			}
+		}
+		.productSold{background-color:#f1f1f1;}
+		.productCount{position:absolute; right:0; top:0; background-color:#a5a5a5; color:#fff; padding:1px 3px; font-size:11px; line-height: 12px;}
 	}
-	.groupLine{
+	.supplier3 {
 		td{
-			&:nth-child(1){position:relative;
-				.categoryColor{position: absolute; left: -5px; top: 0; height: 100%; width: 5px!important;}
-			}
+			&:nth-child(2){display:none;}
+		}
+	}
+	.tWinner {
+		td{
+			&:nth-child(5){display:none;}
 		}
 	}
 }
 
 .companyOrderModal{
 	table{float:left; width:100%; font-size:11px; margin-bottom:20px;
-		tr{float:left; width:100%; border-bottom: 1px solid #eee;
-			td{float:left; width:20%; padding:10px 5px;
-				&:nth-child(1){width:40%;}
+		tr{float:left; width:100%; border-bottom: 1px solid #eee; display: flex; align-items: center;
+			td{float:left; width:20%; padding:10px 5px; text-align:center;
+				&:nth-child(1){width:40%; text-align:left;}
 				&:nth-child(2){width:15%;}
 				&:nth-child(3){width:15%;}
 				&:nth-child(4){width:15%;}
@@ -2805,36 +2819,57 @@ $badge-max-size: 9px;
 			td{font-weight:600;}
 		}
 	}
-	.orderPrice{float: left; width: 100%; max-width: 300px; padding: 10px; outline: 0; border: 1px solid #ddd;}
+	.orderQuantity{width: 100%; border: 1px solid #ddd; outline: 0; font-size: 13px; padding: 5px; text-align:center;}
+	.quantityErrorMsg{float:left; width:100%; font-size:14px; color:#cc0000;}
 }
 
 .orderCompleteModal{
 	.mdContent{max-width:1100px; width:100%!important;}
-	table{float:left; width:100%; font-size:11px; margin-bottom:20px;
-		tr{float:left; width:100%; border-bottom: 1px solid #eee; display:flex;
-			td{float:left; width:20%; padding:10px 5px; display:flex; align-items:center;
-				&:nth-child(1){width:30%;}
-				&:nth-child(2){width:20%;}
-				&:nth-child(3){width:10%;}
-				&:nth-child(4){width:10%;}
-				&:nth-child(5){width:10%;}
-				&:nth-child(6){width:10%;}
-				&:nth-child(7){width:10%;}
+	.supplierCard{float:left; width:100%; background-color:#fff; box-shadow:1px 1px 20px rgba(0, 0, 0, 0.08); padding:15px; border-radius:10px; margin-bottom:20px;
+		.spHead{float:left; width:100%; margin-bottom:10px; font-size:14px; font-weight:600;}
+		table{float:left; width:100%; font-size:11px; margin-bottom:20px;
+			tr{float:left; width:100%; border-bottom: 1px solid #eee;
+				td{float:left; padding:10px; text-align:center;
+					&:nth-child(1){width:50%; text-align:left;}
+					&:nth-child(2){width:12%;}
+					&:nth-child(3){width:14%;}
+					&:nth-child(4){width:12%;}
+					&:nth-child(5){width:12%;}
+				}
+				&:nth-child(odd){background-color:#fbfbfb;}
 			}
-			&:nth-child(odd){background-color:#fbfbfb;}
+			.head{border-bottom: 1px solid #ddd; background-color: #f7f5f5;
+				td{font-weight:600;}
+			}
 		}
-		.head{border-bottom: 1px solid #ddd; background-color: #f7f5f5;
-			td{font-weight:600;}
+		.noteWrap{float: left; width: 50%;
+			.showNoteBtn{float:left; background-color: #f1f1f1; padding: 5px 10px; color: #222; font-size: 13px;}
+			.note{float:left; width:100%; max-width:400px; font-family:$fontStack2; height:120px; padding:10px; font-size:13px; margin-bottom:20px; resize:none; outline:0; border:1px solid #ddd; display:none;
+				&.noteOpen{display:block;}
+			}
+		}
+		.supplierTotalPrice{float:left; width:50%; text-align:right; font-size:14px; padding-right:5px;}
+		&.lost{
+			table{
+				tr{
+					td{
+						&:nth-child(1){width:80%; text-align:left;}
+						&:nth-child(2){width:20%; text-align:center;}
+					}
+				}
+			}
+			.supplierTotalPrice{width:100%;}
 		}
 	}
-	.noteWrap{float: left; width: 50%; display: flex; flex-direction: column;
-		label{margin-bottom: 10px; font-size: 13px; display: flex; align-items: center; justify-content: flex-start; margin-bottom:10px; font-size:13px;}
+	.supplierLosts{float:left; width:100%; margin:40px 0 20px; font-size:15px; font-weight:600;}
+	.noteWrap{float: left; width: 50%;
+		.noteHead{float:left; width:100%; margin-bottom:10px;
+			.tableHeadTooltip{left:0; right:auto; font-size:12px;}
+		}
 		.note{float:left; width:100%; max-width:400px; font-family:$fontStack2; height:120px; padding:10px; font-size:13px; margin-bottom:20px; resize:none; outline:0; border:1px solid #ddd;}
 	}
+	.priceAll{float: left; width: 50%; text-align:right; font-size:18px; padding: 40px 10px 0 0;}
 	.bottomBtns{float:left; width:100%; margin-bottom:20px;}
-	.tableHeadTooltip{margin-left:5px; margin-right:0;
-		i{font-size:13px;}
-	}
 }
 
 .orderLogModal{

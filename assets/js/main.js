@@ -268,13 +268,6 @@ $(document).ready(function () {
     $(".privateBidModal").css({ display: 'none' });
   });
 
-  $(".companyOrderModalBtn").click(function() {
-    $(".companyOrderModal").css({ display: 'flex' });
-  });
-  $(".companyOrderModalCloseBtn").click(function() {
-    $(".companyOrderModal").css({ display: 'none' });
-  });
-
   $(".orderCompleteModalBtn").click(function() {
     $(".orderCompleteModal").css({ display: 'flex' });
   });
@@ -288,5 +281,29 @@ $(document).ready(function () {
   $(".orderLogModalCloseBtn").click(function() {
     $(".orderLogModal").css({ display: 'none' });
   });
+
+  $('.changeTableCols').click(function() {
+    $('.tContent').toggleClass('supplier3');
+    $('.tContent').toggleClass('tWinner');
+  });
+  
+  $(".companyOrderModalCloseBtn").click(function() {
+    $(".companyOrderModal").css({ display: 'none' });
+  });
+
+  $('.winners table .cellLink').click(function() {
+    $(this).toggleClass('selected');
+    $(".companyOrderModal").css({ display: 'flex' });
+  });
+
+  $('.removeLineCheck').click('change', function(){
+    if($(this).is(':checked')){
+      $(this).next('.deleteModal').show();
+    }
+  });
+
+  $('.showNoteBtn').click(function() {
+    $(this).next('.note').toggleClass('noteOpen');
+  })
 
 })
