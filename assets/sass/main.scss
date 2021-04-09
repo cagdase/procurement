@@ -2757,9 +2757,19 @@ $badge-max-size: 9px;
 		}
 		.head{border-bottom: 1px solid #ddd; background-color: #f7f5f5;
 			td{font-weight:600;
-				.trophy{float:right; text-align:center; font-size:12px;}
+				.trophy{float:right; text-align:center; font-size:12px; cursor:pointer;
+					.tableHeadTooltip{left: 22px; right: auto; top: 20px; width: 170px; padding: 7px;}
+				}
 				.tableHeadTooltip i{font-size:12px;}
 				&:nth-last-child(1){font-weight:normal;}
+			}
+		}
+		.winLine{background-color:#f1f1f1;
+			td{padding:5px 15px;
+				a{display: flex; align-items: center; justify-content: flex-start;
+					span{text-decoration:underline;}
+					i{font-size:18px; margin-left:5px;}
+				}
 			}
 		}
 		.productLine{
@@ -2842,9 +2852,9 @@ $badge-max-size: 9px;
 				td{font-weight:600;}
 			}
 		}
-		.noteWrap{float: left; width: 50%;
+		.noteWrap{
 			.showNoteBtn{float:left; background-color: #f1f1f1; padding: 5px 10px; color: #222; font-size: 13px;}
-			.note{float:left; width:100%; max-width:400px; font-family:$fontStack2; height:120px; padding:10px; font-size:13px; margin-bottom:20px; resize:none; outline:0; border:1px solid #ddd; display:none;
+			.note{display:none;
 				&.noteOpen{display:block;}
 			}
 		}

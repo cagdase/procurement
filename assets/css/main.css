@@ -8806,6 +8806,15 @@ footer .fContent .fCol ul li a:hover {
   float: right;
   text-align: center;
   font-size: 12px;
+  cursor: pointer;
+}
+
+.winners table .head td .trophy .tableHeadTooltip {
+  left: 22px;
+  right: auto;
+  top: 20px;
+  width: 170px;
+  padding: 7px;
 }
 
 .winners table .head td .tableHeadTooltip i {
@@ -8814,6 +8823,35 @@ footer .fContent .fCol ul li a:hover {
 
 .winners table .head td:nth-last-child(1) {
   font-weight: normal;
+}
+
+.winners table .winLine {
+  background-color: #f1f1f1;
+}
+
+.winners table .winLine td {
+  padding: 5px 15px;
+}
+
+.winners table .winLine td a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.winners table .winLine td a span {
+  text-decoration: underline;
+}
+
+.winners table .winLine td a i {
+  font-size: 18px;
+  margin-left: 5px;
 }
 
 .winners table .productLine td {
@@ -9084,11 +9122,6 @@ footer .fContent .fCol ul li a:hover {
   font-weight: 600;
 }
 
-.orderCompleteModal .supplierCard .noteWrap {
-  float: left;
-  width: 50%;
-}
-
 .orderCompleteModal .supplierCard .noteWrap .showNoteBtn {
   float: left;
   background-color: #f1f1f1;
@@ -9098,17 +9131,6 @@ footer .fContent .fCol ul li a:hover {
 }
 
 .orderCompleteModal .supplierCard .noteWrap .note {
-  float: left;
-  width: 100%;
-  max-width: 400px;
-  font-family: "Roboto", sans-serif;
-  height: 120px;
-  padding: 10px;
-  font-size: 13px;
-  margin-bottom: 20px;
-  resize: none;
-  outline: 0;
-  border: 1px solid #ddd;
   display: none;
 }
 
