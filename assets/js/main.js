@@ -286,14 +286,23 @@ $(document).ready(function () {
     $('.tContent').toggleClass('supplier3');
     $('.tContent').toggleClass('tWinner');
   });
+
+  $('.winners table .cellLink').click(function() {
+    $(this).toggleClass('selected');
+    $(".companyOrderModal").css({ display: 'flex' });
+  });
   
   $(".companyOrderModalCloseBtn").click(function() {
     $(".companyOrderModal").css({ display: 'none' });
   });
 
-  $('.winners table .cellLink').click(function() {
+  $('.winners table .groupCellLink').click(function() {
     $(this).toggleClass('selected');
-    $(".companyOrderModal").css({ display: 'flex' });
+    $(".groupCompanyOrderModal").css({ display: 'flex' });
+  });
+
+  $(".groupCompanyOrderModalCloseBtn").click(function() {
+    $(".groupCompanyOrderModal").css({ display: 'none' });
   });
 
   $('.removeLineCheck').click('change', function(){

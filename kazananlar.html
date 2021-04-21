@@ -45,6 +45,31 @@
     </div>
   </div>
 
+  <div class="modalWrap modalLong groupCompanyOrderModal">
+    <div class="mdContent">
+      <a class="mdCloseBtn groupCompanyOrderModalCloseBtn" href="#"><i class="fas fa-times-circle"></i></a>
+      <div class="mdHead"><span>Kazandır: {{ Grupadı }}</span></div>
+      <div class="mdMiddle">
+        <table>
+          <tr class="head">
+            <td>Tedarikçi</td>
+            <td>Toplam fiyat</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Tedarikçi ismi</td>
+            <td>000</td>
+            <td><input type="checkbox"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="bottomBtns">
+        <button class="primaryBtn">Kaydet</button>
+        <button class="secondaryBtn groupCompanyOrderModalCloseBtn">İptal</button>
+      </div>
+    </div>
+  </div>
+
   <div class="modalWrap modalLong orderCompleteModal">
     <div class="mdContent">
       <a class="mdCloseBtn orderCompleteModalCloseBtn" href="#"><i class="fas fa-times-circle"></i></a>
@@ -541,14 +566,7 @@
               <td>
                 <a href="javascript:;" class="cellLink">
                   <span class="companyName">
-                    <label> Tedarikçi ismi
-                      <span class="tableHeadTooltipWrap">
-                        ..
-                        <span class="tableHeadTooltip">
-                          Tedarikçi 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </span>
-                      </span>
-                    </label>
+                    <label><strong>Kazananları göster</strong></label>
                   </span>
                   <div class="tdContent">
                     <span class="unit">Birim: 5.000.00 TL</span>
@@ -558,11 +576,11 @@
                 </a>
               </td>
               <td>
-                <a href="javascript:;" class="cellLink">
+                <a href="javascript:;" class="cellLink selected">
                   <div class="tdContent">
                     <span class="unit">Birim: 5.000.00 TL</span>
                     <span class="total">Toplam: 25.000.00 TL</span>
-                    <span class="piece">Adet: -</span>
+                    <span class="piece">Adet: 150</span>
                   </div>
                 </a>
               </td>
@@ -700,7 +718,7 @@
                 Mağaza dekorasyon işleri
               </td>
               <td>
-                <a href="javascript:;" class="cellLink">
+                <a href="javascript:;" class="groupCellLink">
                   <span class="companyName">
                     <label> Tedarikçi ismi
                       <span class="tableHeadTooltipWrap">

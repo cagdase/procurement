@@ -89,7 +89,7 @@ button {
 }
 
 button i {
-  margin-right: 10px;
+  margin-left: 10px;
   font-size: 18px;
 }
 
@@ -118,6 +118,15 @@ button.thirdBtn {
 
 button.thirdBtn:hover {
   background-color: #218838;
+}
+
+button.fourthBtn {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+button.fourthBtn:hover {
+  background-color: #e0a800;
 }
 
 button.errorBtn {
@@ -8858,6 +8867,10 @@ footer .fContent .fCol ul li a:hover {
   padding: 0;
 }
 
+.winners table .productLine td:hover {
+  background-color: #fbfbd3;
+}
+
 .winners table .groupLine td {
   padding: 0;
 }
@@ -8903,6 +8916,31 @@ footer .fContent .fCol ul li a:hover {
   background-color: #f1f1f1;
 }
 
+.winners table .groupCellLink {
+  float: left;
+  width: 100%;
+  color: #222;
+  padding: 15px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.winners table .groupCellLink.selected {
+  background-color: #f1f1f1;
+}
+
 .winners table .noSelect {
   float: left;
   width: 100%;
@@ -8929,12 +8967,11 @@ footer .fContent .fCol ul li a:hover {
 }
 
 .winners table .removedLine {
-  background-color: #dcd9d9;
-  color: #999;
+  color: #c5c5c5;
 }
 
 .winners table .removedLine .cellLink {
-  color: #999;
+  color: #c5c5c5;
 }
 
 .winners table .removedLine td {
@@ -9045,6 +9082,58 @@ footer .fContent .fCol ul li a:hover {
   color: #cc0000;
 }
 
+.groupCompanyOrderModal table {
+  float: left;
+  width: 100%;
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+.groupCompanyOrderModal table tr {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.groupCompanyOrderModal table tr td {
+  float: left;
+  width: 20%;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.groupCompanyOrderModal table tr td:nth-child(1) {
+  width: 75%;
+  text-align: left;
+}
+
+.groupCompanyOrderModal table tr td:nth-child(2) {
+  width: 15%;
+}
+
+.groupCompanyOrderModal table tr td:nth-child(3) {
+  width: 10%;
+}
+
+.groupCompanyOrderModal table tr:nth-child(odd) {
+  background-color: #fbfbfb;
+}
+
+.groupCompanyOrderModal table .head {
+  border-bottom: 1px solid #ddd;
+  background-color: #f7f5f5;
+}
+
+.groupCompanyOrderModal table .head td {
+  font-weight: 600;
+}
+
 .orderCompleteModal .mdContent {
   max-width: 1100px;
   width: 100% !important;
@@ -9136,6 +9225,26 @@ footer .fContent .fCol ul li a:hover {
 
 .orderCompleteModal .supplierCard .noteWrap .note.noteOpen {
   display: block;
+}
+
+.orderCompleteModal .supplierCard .noteOpen {
+  float: left;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.orderCompleteModal .supplierCard .noteOpen .head {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.orderCompleteModal .supplierCard .noteOpen .note {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .orderCompleteModal .supplierCard .supplierTotalPrice {
