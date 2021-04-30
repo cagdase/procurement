@@ -36,6 +36,10 @@ body {
   margin-bottom: 50px !important;
 }
 
+.marB20 {
+  margin-bottom: 20px !important;
+}
+
 .marB0 {
   margin-bottom: 0 !important;
 }
@@ -3290,8 +3294,14 @@ button.errorBtn:hover {
   width: 100%;
 }
 
+.rpList.dutchProducts {
+  margin-bottom: 20px;
+}
+
 .rpList.dutchProducts li span:nth-child(1) {
   width: 60%;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .rpList.dutchProducts li span:nth-child(2) {
@@ -3302,6 +3312,11 @@ button.errorBtn:hover {
 .rpList.dutchProducts li span:nth-child(3) {
   width: 20%;
   text-align: center;
+}
+
+.rpList.dutchProducts .rpListHead {
+  background-color: #f1f1f1;
+  border-radius: 10px 10px 0 0;
 }
 
 .rpList.dutchBidderList li {
@@ -4416,6 +4431,136 @@ button.errorBtn:hover {
 
 .rpList.companyInviteList li span:nth-child(3) {
   width: 33.3%;
+}
+
+.rpList.japaneseBidderOrderList li {
+  height: 50px;
+}
+
+.rpList.japaneseBidderOrderList li span {
+  padding: 0 5px;
+}
+
+.rpList.japaneseBidderOrderList li span:nth-child(1) {
+  width: 70%;
+  text-align: left;
+}
+
+.rpList.japaneseBidderOrderList li span:nth-child(1) i.fa-circle {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.rpList.japaneseBidderOrderList li span:nth-child(1) i.online {
+  color: #28a745;
+}
+
+.rpList.japaneseBidderOrderList li span:nth-child(1) i.offline {
+  color: #cc0000;
+}
+
+.rpList.japaneseBidderOrderList li span:nth-child(2) {
+  width: 25%;
+  text-align: center;
+}
+
+.rpList.japaneseBidderOrderList li span:nth-child(2) i {
+  color: #28a745;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.rpList.japaneseBidderOrderList .rpListHead li span:nth-child(1) {
+  text-align: left;
+}
+
+.rpList.japaneseBidderOrderList .rpListHead li span:nth-child(2) {
+  text-align: center;
+}
+
+.rpList.japaneseBidderOrderList .dropped {
+  opacity: 0.4;
+}
+
+.rpList.japaneseOwnerAllList li {
+  height: 50px;
+}
+
+.rpList.japaneseOwnerAllList li span {
+  padding: 0 5px;
+}
+
+.rpList.japaneseOwnerAllList li span:nth-child(1) {
+  width: 20%;
+  text-align: left;
+}
+
+.rpList.japaneseOwnerAllList li span:nth-child(2) {
+  width: 55%;
+  text-align: left;
+}
+
+.rpList.japaneseOwnerAllList li span:nth-child(3) {
+  width: 15%;
+  text-align: center;
+}
+
+.rpList.japaneseOwnerAllList li span:nth-child(4) {
+  width: 15%;
+  text-align: center;
+}
+
+.rpList.japaneseOwnerAllList ul {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.rpList.japaneseBidderAllList li {
+  height: 50px;
+}
+
+.rpList.japaneseBidderAllList li span {
+  padding: 0 5px;
+}
+
+.rpList.japaneseBidderAllList li span:nth-child(1) {
+  width: 20%;
+  text-align: left;
+}
+
+.rpList.japaneseBidderAllList li span:nth-child(2) {
+  width: 40%;
+  text-align: left;
+}
+
+.rpList.japaneseBidderAllList li span:nth-child(3) {
+  width: 20%;
+  text-align: center;
+}
+
+.rpList.japaneseBidderAllList li span:nth-child(4) {
+  width: 20%;
+  text-align: center;
+}
+
+.rpList.japaneseBidderAllList ul {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.rpList.japaneseBidderAllList.bidderSelf li span:nth-child(1) {
+  width: 20%;
+  text-align: left;
+}
+
+.rpList.japaneseBidderAllList.bidderSelf li span:nth-child(2) {
+  width: 40%;
+  text-align: center;
+}
+
+.rpList.japaneseBidderAllList.bidderSelf li span:nth-child(3) {
+  width: 40%;
+  text-align: center;
 }
 
 .deleteModal {
@@ -8832,35 +8977,6 @@ footer .fContent .fCol ul li a:hover {
 
 .winners table .head td:nth-last-child(1) {
   font-weight: normal;
-}
-
-.winners table .winLine {
-  background-color: #f1f1f1;
-}
-
-.winners table .winLine td {
-  padding: 5px 15px;
-}
-
-.winners table .winLine td a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.winners table .winLine td a span {
-  text-decoration: underline;
-}
-
-.winners table .winLine td a i {
-  font-size: 18px;
-  margin-left: 5px;
 }
 
 .winners table .productLine td {

@@ -16,6 +16,7 @@ a{text-decoration: none; color:$linkColor;}
 ::after, ::before {box-sizing: border-box;}
 body{font-family: $fontStack; font-weight: 400; line-height: 1.5; color:$color1; text-align: left; background-color: #fff;}
 .marB50{margin-bottom:50px!important;}
+.marB20{margin-bottom:20px!important;}
 .marB0{margin-bottom:0!important;}
 .w50{width:50%!important;}
 .padR10{padding-right:10px!important;}
@@ -883,14 +884,15 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			span{width:100%;}
 		}
 	}
-	&.dutchProducts{
+	&.dutchProducts{margin-bottom:20px;
 		li{
 			span{
-				&:nth-child(1){width:60%;}
-				&:nth-child(2){width:20%; text-align: center;}
+				&:nth-child(1){width:60%; font-size:16px; font-weight:600}
+				&:nth-child(2){width:20%; text-align: center;;}
 				&:nth-child(3){width:20%; text-align: center;}
 			}
 		}
+		.rpListHead{background-color:#f1f1f1; border-radius: 10px 10px 0 0;}
 	}
 	&.dutchBidderList{
 		li{height:50px;
@@ -1301,6 +1303,60 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				&:nth-child(1){width:33.3%;}
 				&:nth-child(2){width:33.3%;}
 				&:nth-child(3){width:33.3%;}
+			}
+		}
+	}
+	&.japaneseBidderOrderList{
+		li{height:50px;
+			span{padding:0 5px;
+				&:nth-child(1){width:70%; text-align:left;
+					i.fa-circle{margin-right:5px; font-size:14px;}
+					i.online{color:$colorSuccess;}
+					i.offline{color:$colorError;}
+				}
+				&:nth-child(2){width:25%; text-align:center;
+					i{color:$colorSuccess; font-size:16px; margin-left:5px;}
+				}
+			}
+		}
+		.rpListHead{
+			li{
+				span{
+					&:nth-child(1){text-align:left;}
+					&:nth-child(2){text-align:center;}
+				}
+			}		
+		}
+		.dropped{opacity:0.4;}
+	}
+	&.japaneseOwnerAllList{
+		li{height:50px;
+			span{padding:0 5px;
+				&:nth-child(1){width:20%; text-align:left;}
+				&:nth-child(2){width:55%; text-align:left;}
+				&:nth-child(3){width:15%; text-align:center;}
+				&:nth-child(4){width:15%; text-align:center;}
+			}
+		}
+		ul{max-height: 300px; overflow-y:scroll;}
+	}
+	&.japaneseBidderAllList{
+		li{height:50px;
+			span{padding:0 5px;
+				&:nth-child(1){width:20%; text-align:left;}
+				&:nth-child(2){width:40%; text-align:left;}
+				&:nth-child(3){width:20%; text-align:center;}
+				&:nth-child(4){width:20%; text-align:center;}
+			}
+		}
+		ul{max-height: 300px; overflow-y: scroll;}
+		&.bidderSelf{
+			li{
+				span{
+					&:nth-child(1){width:20%; text-align:left;}
+					&:nth-child(2){width:40%; text-align:center;}
+					&:nth-child(3){width:40%; text-align:center;}
+				}
 			}
 		}
 	}
@@ -2767,14 +2823,6 @@ $badge-max-size: 9px;
 				&:nth-last-child(1){font-weight:normal;}
 			}
 		}
-		.winLine{background-color:#f1f1f1;
-			td{padding:5px 15px;
-				a{display: flex; align-items: center; justify-content: flex-start;
-					span{text-decoration:underline;}
-					i{font-size:18px; margin-left:5px;}
-				}
-			}
-		}
 		.productLine{
 			td{padding:0;
 				&:hover{background-color:#fbfbd3;}
@@ -2917,8 +2965,6 @@ $badge-max-size: 9px;
 		&:nth-last-child(1){margin-bottom:0;}
 	}
 }
-
-
 
 // Media queries start
 
