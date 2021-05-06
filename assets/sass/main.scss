@@ -1447,8 +1447,8 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				&:nth-last-child(1){margin-left:15px;}
 			}
 		}
-		.addLapMiddleWrap{float:left; width:100%;
-			.alBox{float:left; width:25%; padding-right:20px; 
+		.addLapMiddleWrap{float:left; width:100%; display: flex; align-items: center; justify-content: center;
+			.alBox{float:left; padding-right:20px; 
 				.alBoxContent{float:left; width:100%; border:1px solid #ededed; padding:15px; height:350px; position: relative; border-top:5px solid #ededed;
 					.alBoxHead{float:left; width:100%; margin-bottom:10px; font-size:13px; border-bottom:1px solid #ececec; padding-bottom:5px; font-weight:600;}
 					.alBoxText{float:left; width:100%; margin-bottom:20px; font-size:12px;
@@ -2907,12 +2907,12 @@ $badge-max-size: 9px;
 
 .orderCompleteModal{
 	.mdContent{max-width:1100px; width:100%!important;}
-	.supplierCard{float:left; width:100%; background-color:#fff; box-shadow:1px 1px 20px rgba(0, 0, 0, 0.08); padding:15px; border-radius:10px; margin-bottom:20px;
+	.supplierCard{float:left; width:100%; background-color:#fff; box-shadow:1px 1px 20px rgba(0, 0, 0, 0.08); padding:15px; border-radius:10px; margin-bottom:20px; 
 		.spHead{float:left; width:100%; margin-bottom:10px; font-size:14px; font-weight:600;}
 		table{float:left; width:100%; font-size:11px; margin-bottom:20px;
 			tr{float:left; width:100%; border-bottom: 1px solid #eee;
-				td{float:left; padding:10px; text-align:center;
-					&:nth-child(1){width:50%; text-align:left;}
+				td{float:left; padding:10px; text-align:center; display: flex; align-items: center; justify-content: center; min-height: 55px;
+					&:nth-child(1){width:50%; text-align:left; justify-content:flex-start; padding-right:10px;}
 					&:nth-child(2){width:12%;}
 					&:nth-child(3){width:14%;}
 					&:nth-child(4){width:12%;}
@@ -2921,7 +2921,7 @@ $badge-max-size: 9px;
 				&:nth-child(odd){background-color:#fbfbfb;}
 			}
 			.head{border-bottom: 1px solid #ddd; background-color: #f7f5f5;
-				td{font-weight:600;}
+				td{font-weight:600; height:auto;}
 			}
 		}
 		.noteWrap{

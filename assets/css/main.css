@@ -4994,11 +4994,19 @@ button.errorBtn:hover {
 .modalWrap .mdContent .addLapMiddleWrap {
   float: left;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .modalWrap .mdContent .addLapMiddleWrap .alBox {
   float: left;
-  width: 25%;
   padding-right: 20px;
 }
 
@@ -9291,11 +9299,25 @@ footer .fContent .fCol ul li a:hover {
   float: left;
   padding: 10px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 55px;
 }
 
 .orderCompleteModal .supplierCard table tr td:nth-child(1) {
   width: 50%;
   text-align: left;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 10px;
 }
 
 .orderCompleteModal .supplierCard table tr td:nth-child(2) {
@@ -9325,6 +9347,7 @@ footer .fContent .fCol ul li a:hover {
 
 .orderCompleteModal .supplierCard table .head td {
   font-weight: 600;
+  height: auto;
 }
 
 .orderCompleteModal .supplierCard .noteWrap .showNoteBtn {
