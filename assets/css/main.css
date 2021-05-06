@@ -9458,7 +9458,7 @@ footer .fContent .fCol ul li a:hover {
 .orderCompleteModal .bottomBtns {
   float: left;
   width: 100%;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .orderLogModal .mdMiddle {
@@ -9485,6 +9485,56 @@ footer .fContent .fCol ul li a:hover {
 
 .orderLogModal .orderLogText:nth-last-child(1) {
   margin-bottom: 0;
+}
+
+.rpCardContentLong {
+  max-width: 1000px !important;
+}
+
+.rpCardContentLong .left {
+  max-width: 600px;
+  float: left;
+}
+
+.rpCardContentLong .right {
+  max-width: 400px;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #dcdcdc;
+  padding: 20px;
+  margin-left: 50px;
+  margin-top: 22px;
+  border-radius: 10px;
+  color: #444;
+}
+
+.rpCardContentLong .right span {
+  float: left;
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.rpCardContentLong .right span:nth-child(1) {
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.rpCardContentLong .right span:nth-child(2) {
+  font-size: 34px;
 }
 
 @media (max-width: 1375px) {
@@ -9549,6 +9599,9 @@ footer .fContent .fCol ul li a:hover {
 }
 
 @media (max-width: 1023px) {
+  .rpCardContentLong .right {
+    margin-left: 10px;
+  }
   .sideMenu, .rightPanel .header .headRight .headMenuWrap .sideBarToggle, .rightPanel.bidderSide .header .headRight .headMenuWrap .headDDmenu {
     display: none;
   }

@@ -361,48 +361,56 @@
                   </ul>
                 </div>
               </div>
-              <div class="rpCardContent" id="bidTables">
-                <div class="rpList dutchActiveNextBid">
-                  <div class="rpCardSubHead">
-                    <strong>
-                      <i class="fas fa-chevron-circle-right"></i>
-                      Aktif teklif
-                    </strong>
+              <div class="rpCardContent rpCardContentLong" id="bidTables">
+
+                <div class="left">
+                  <div class="rpList dutchActiveNextBid">
+                    <div class="rpCardSubHead">
+                      <strong>
+                        <i class="fas fa-chevron-circle-right"></i>
+                        Aktif teklif
+                      </strong>
+                    </div>
+                    <ul class="rpListHead">
+                      <li>
+                        <span>Birim fiyat</span>
+                        <span>Toplam fiyat</span>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <span id="unitPrice">500 TRY</span>
+                        <span id="totalPrice"></span>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="rpListHead">
-                    <li>
-                      <span>Birim fiyat</span>
-                      <span>Toplam fiyat</span>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <span id="unitPrice">500 TRY</span>
-                      <span id="totalPrice"></span>
-                    </li>
-                  </ul>
+                  <div class="rpList dutchActiveNextBid">
+                    <div class="rpCardSubHead">
+                      <strong>
+                        <i class="fas fa-chevron-circle-right"></i>
+                        Sonraki teklif
+                      </strong>
+                    </div>
+                    <ul class="rpListHead">
+                      <li>
+                        <span>Birim fiyat</span>
+                        <span>Toplam fiyat</span>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <span id="nextBidUnitPrice"></span>
+                        <span id="nextBidTotalPrice"></span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="rpList dutchActiveNextBid">
-                  <div class="rpCardSubHead">
-                    <strong>
-                      <i class="fas fa-chevron-circle-right"></i>
-                      Sonraki teklif
-                    </strong>
-                  </div>
-                  <ul class="rpListHead">
-                    <li>
-                      <span>Birim fiyat</span>
-                      <span>Toplam fiyat</span>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <span id="nextBidUnitPrice"></span>
-                      <span id="nextBidTotalPrice"></span>
-                    </li>
-                  </ul>
+                <div class="right">
+                  <span>Aktif katılımcılar</span>
+                  <span>99</span>
                 </div>
               </div>
+
               <div class="newBidBtn" id="newBidBtn">
                 <button class="primaryBtn confirmBidBtn">
                   Onayla ve Devam Et
@@ -633,7 +641,7 @@
         "changeTime": 30,
         "currency":"TRY",
         "quantity":5,
-        "startDate": "04/30/2021 17:23"
+        "startDate": "05/6/2021 14:56"
       }      
 
       var changeTime = bidData.changeTime;
