@@ -1466,6 +1466,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 					}
 					&:hover{border-top:5px solid #222;}
 				}
+				&:nth-last-child(1){padding-right:0;}
 			}
 		}
 	}
@@ -2624,7 +2625,7 @@ $badge-max-size: 9px;
 }
 
 .rulesModal{
-	.mdContent{width:1200px;
+	.mdContent{width:100%; max-width:1400px;
 		.mdMiddle{margin-bottom:0;}
 	}
 	.bottomBtns{float:left; width:100%; display:flex; justify-content:flex-end;
@@ -2976,6 +2977,12 @@ $badge-max-size: 9px;
 	}
 }
 
+.tableMobileScroll{overflow-x: auto; float: left; width: 100%;
+	table{width:1000px;
+		&.rulesTable{width:1200px;}
+	}
+}
+
 // Media queries start
 
 @media (max-width: 1375px){
@@ -3158,6 +3165,33 @@ $badge-max-size: 9px;
 			&:after{opacity:0;}
 		}
 	}
+	
+	.tableMobileScroll{overflow-x:scroll; position:relative; padding-bottom:30px; margin-bottom:10px;
+		ul{width:1000px;}
+		&:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top:2px; right: 0px; width: 50px; height:calc(100% - 33px); display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
+		&:before{content:'*Tabloyu yatayda kaydırarak inceyebilirsiniz.'; position:absolute; bottom:8px; left:0; font-size:11px; color:$color2; font-style: italic;}
+		&:hover{
+			&:after{opacity:0;}
+		}
+	}
+	.rulesModal .headSwitch{flex-direction: column; align-items: flex-start;
+		a{margin-bottom:15px; margin-right:0;}
+	}
+
+	.tcoModalList{overflow-x:scroll; position:relative; padding-bottom:30px; margin-bottom:10px;
+		ul{width:1000px;}
+		&:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top:2px; right: 0px; width: 50px; height:calc(100% - 33px); display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
+		&:before{content:'*Tabloyu yatayda kaydırarak inceyebilirsiniz.'; position:absolute; bottom:8px; left:0; font-size:11px; color:$color2; font-style: italic;}
+		&:hover{
+			&:after{opacity:0;}
+		}
+	}
+
+	.addTCObtn{margin:0; margin-bottom:20px;}
+
+	
+
+
 	.dutchBidResultsDesktop{display:none;}
 	.dutchBidResults{padding-bottom:0!important;}
 	.rightPanel .dutchBidResultsMobile{display:block; width:100%!important;

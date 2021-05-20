@@ -5111,6 +5111,10 @@ button.errorBtn:hover {
   border-top: 5px solid #222;
 }
 
+.modalWrap .mdContent .addLapMiddleWrap .alBox:nth-last-child(1) {
+  padding-right: 0;
+}
+
 .modalWrap.addLapModal .mdContent {
   max-height: none;
   width: 1200px;
@@ -8300,7 +8304,8 @@ footer .fContent .fCol ul li a:hover {
 }
 
 .rulesModal .mdContent {
-  width: 1200px;
+  width: 100%;
+  max-width: 1400px;
 }
 
 .rulesModal .mdContent .mdMiddle {
@@ -9537,6 +9542,20 @@ footer .fContent .fCol ul li a:hover {
   font-size: 34px;
 }
 
+.tableMobileScroll {
+  overflow-x: auto;
+  float: left;
+  width: 100%;
+}
+
+.tableMobileScroll table {
+  width: 1000px;
+}
+
+.tableMobileScroll table.rulesTable {
+  width: 1200px;
+}
+
 @media (max-width: 1375px) {
   .rightPanel .content .rpCard.noClearFix .rpCardContent:nth-child(1) {
     padding: 0;
@@ -10233,6 +10252,109 @@ footer .fContent .fCol ul li a:hover {
   }
   .userList:hover:after {
     opacity: 0;
+  }
+  .tableMobileScroll {
+    overflow-x: scroll;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .tableMobileScroll ul {
+    width: 1000px;
+  }
+  .tableMobileScroll:after {
+    content: '\f054';
+    font-family: 'fontAwesome';
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    width: 50px;
+    height: calc(100% - 33px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    color: #242526;
+    font-size: 26px;
+  }
+  .tableMobileScroll:before {
+    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    font-size: 11px;
+    color: #64666d;
+    font-style: italic;
+  }
+  .tableMobileScroll:hover:after {
+    opacity: 0;
+  }
+  .rulesModal .headSwitch {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .rulesModal .headSwitch a {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  .tcoModalList {
+    overflow-x: scroll;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .tcoModalList ul {
+    width: 1000px;
+  }
+  .tcoModalList:after {
+    content: '\f054';
+    font-family: 'fontAwesome';
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    width: 50px;
+    height: calc(100% - 33px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    color: #242526;
+    font-size: 26px;
+  }
+  .tcoModalList:before {
+    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    font-size: 11px;
+    color: #64666d;
+    font-style: italic;
+  }
+  .tcoModalList:hover:after {
+    opacity: 0;
+  }
+  .addTCObtn {
+    margin: 0;
+    margin-bottom: 20px;
   }
   .dutchBidResultsDesktop {
     display: none;
