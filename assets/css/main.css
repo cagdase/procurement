@@ -273,6 +273,10 @@ button.errorBtn:hover {
   width: 250px;
 }
 
+.sideMenu .navbar .mainMenu .sideMenuArrow {
+  display: none;
+}
+
 .sideMenu .navbar .mainMenu .navbarNav {
   float: none;
   position: relative;
@@ -403,6 +407,22 @@ button.errorBtn:hover {
 .sideMenu.smallMenu {
   width: 60px;
   overflow: hidden;
+}
+
+.sideMenu.smallMenu .sideMenuArrow {
+  background-color: #f1f1f1;
+  width: 60px;
+  height: 30px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
 }
 
 .sideMenu.smallMenu .navbar .mainMenu .navbarNav .menuItem {
