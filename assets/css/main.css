@@ -4958,7 +4958,7 @@ button.errorBtn:hover {
 .modalWrap .mdContent .mdMiddle .documentList .docLine .docName {
   background-color: #007bff;
   padding: 10px;
-  width: calc(100% - 120px);
+  width: calc(100% - 100px);
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4971,10 +4971,15 @@ button.errorBtn:hover {
           align-items: center;
 }
 
+.modalWrap .mdContent .mdMiddle .documentList .docLine .docName i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
 .modalWrap .mdContent .mdMiddle .documentList .docLine .docConfirmBtn {
   background-color: #28a745;
   padding: 10px;
-  width: 120px;
+  width: 100px;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4986,6 +4991,15 @@ button.errorBtn:hover {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 600;
+}
+
+.modalWrap .mdContent .mdMiddle .documentList .docLine .docConfirmBtn.confirmed {
+  background-color: #fff;
+}
+
+.modalWrap .mdContent .mdMiddle .documentList .docLine .docConfirmBtn.confirmed i {
+  color: #222;
+  font-size: 18px;
 }
 
 .modalWrap .mdContent .mdMiddle .documentList .docLine.head {
@@ -5002,6 +5016,10 @@ button.errorBtn:hover {
 .modalWrap .mdContent .mdMiddle .documentList .docLine.head .docConfirmBtn {
   background-color: #fff;
   color: #242526;
+}
+
+.modalWrap .mdContent .mdMiddle .documentList .docLine.noConfirm .docName {
+  width: 100%;
 }
 
 .modalWrap .mdContent .mdMiddle .documentList table {
