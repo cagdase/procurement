@@ -14,6 +14,22 @@
 </head>
 
 <body>
+  <div class="modalWrap templateCopyConfirmModal">
+    <div class="mdContent">
+      <a class="mdCloseBtn templateCopyConfirmModalCloseBtn" href="#"><i class="fas fa-times-circle"></i></a>
+      <div class="mdHead">
+        <span><i class="far fa-copy"></i> Şablon kopyala</span>
+      </div>
+      <div class="mdMiddle">
+        XXX isimli ihale veya teklif toplama şablonlara kopyalanacaktır. <br> Devam etmek istiyor musunuz?
+      </div>
+      <div class="mdBottom marB0">
+        <button class="secondaryBtn templateCopyConfirmModalCloseBtn">Hayır</button>
+        <button class="primaryBtn">Evet</button>
+      </div>
+    </div>
+  </div>
+
   <a href="#" id="backToTop"><i class="fas fa-chevron-up"></i></a>
   <div class="containerAll">
     <aside class="sideMenu smallMenu">
@@ -191,6 +207,13 @@
               <div class="dcBottom type1">
                 <span class="dcProjectType">Proje ürü: Teklif toplama <i class="fas fa-lock"></i></span>
                 <div class="dcBottomBtns">
+                  <a href="#" class="dcTemplate templateCopyConfirmModalBtn">
+                    <div class="tooltip">
+                      <span class="tooltipBtn"><i class="far fa-copy"></i>
+                        <span class="tooltipText">Şablon olarak kopyala</span>
+                      </span>
+                    </div>
+                  </a>
                   <a href="#" class="dcWinners" title="Kazananlar"><i class="fas fa-trophy"></i></a>
                   <a href="#" class="dcGlobal" title="Genele Açık"><i class="fas fa-globe"></i></a>
                   <a href="#" class="dcDetail" title="Detaya git"><i class="far fa-eye"></i></a>
@@ -199,6 +222,36 @@
               </div>
             </div>
           </div>
+
+          <!-- Şablonlar kart yapısı -->
+          <div class="dashboardCard">
+            <div class="dcContent">
+              <div class="dcHead">
+                <div class="dcHeadLeft">
+                  <i class="fas fa-envelope-square"></i>
+                  <a href="#">Mağaza Dekorasyon İşleri</a>
+                </div>
+                <span class="status addTemplateBtn">
+                  <a href="javascript:;" class="tooltip">
+                    <span class="tooltipBtn"><i class="fas fa-plus"></i>
+                      <span class="tooltipText">Şablondan ihale veya teklif toplama oluştur.</span>
+                    </span>
+                  </a>
+              </div>
+              <div class="dcBody">
+                <span>Oluşturan: Erdal Yenigül</span>
+                <span>Oluşturma tarihi: 13/04/2020 15:21</span>
+              </div>
+              <div class="dcBottom type1">
+                <span class="dcProjectType">Proje ürü: Teklif toplama</span>
+                <div class="dcBottomBtns">
+                  <a href="#" class="dcEdit" title="Düzenle"><i class="far fa-edit"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Şablonlar kart yapısı -->
+
           <div class="dashboardCard">
             <div class="dcContent">
               <div class="dcHead">

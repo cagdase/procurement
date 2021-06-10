@@ -1403,7 +1403,6 @@ button.errorBtn:hover {
   padding-bottom: 10px;
   padding: 15px 15px 15px 25px;
   max-height: 70px;
-  overflow: hidden;
 }
 
 .rightPanel .content .dashboardCard .dcContent .dcHead .dcHeadLeft {
@@ -1441,11 +1440,30 @@ button.errorBtn:hover {
   padding-left: 10px;
   margin-left: 10px;
   width: 60px;
+  text-align: center;
 }
 
 .rightPanel .content .dashboardCard .dcContent .dcHead .status i {
   font-size: 16px;
   color: #28a745;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcHead .status.addTemplateBtn {
+  width: 30px;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcHead .status.addTemplateBtn .tooltip {
+  margin: 0;
+  cursor: pointer;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcHead .status.addTemplateBtn .tooltip .tooltipBtn {
+  background-color: #fff;
+  padding: 0 5px;
+}
+
+.rightPanel .content .dashboardCard .dcContent .dcHead .status.addTemplateBtn .tooltip .tooltipBtn .tooltipText {
+  left: -78px !important;
 }
 
 .rightPanel .content .dashboardCard .dcContent .dcBody {
@@ -1507,43 +1525,26 @@ button.errorBtn:hover {
   font-weight: 500;
 }
 
-.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcWinners {
+.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns a {
   float: left;
-  padding: 0 8px 0 7px;
-}
-
-.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcWinners:hover i {
-  color: #242526;
-}
-
-.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcGlobal {
-  float: left;
-  padding: 0 10px;
+  padding: 0 6px;
   border-left: 1px solid #ddd;
 }
 
-.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcGlobal:hover i {
-  color: #242526;
+.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns a:nth-child(1) {
+  border-left: 0;
 }
 
-.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcDetail {
-  float: left;
-  padding: 0 10px;
-  border-left: 1px solid #ddd;
+.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .tooltip .tooltipBtn {
+  background-color: #fff;
+  padding: 0;
+  color: #007bff;
+  font-size: 16px;
 }
 
-.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcDetail:hover i {
-  color: #242526;
-}
-
-.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcEdit {
-  float: left;
-  padding: 0 15px;
-  border-left: 1px solid #ddd;
-}
-
-.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .dcEdit:hover i {
-  color: #242526;
+.rightPanel .content .dashboardCard .dcContent .dcBottom .dcBottomBtns .tooltip .tooltipBtn .tooltipText {
+  font-size: 13px;
+  left: -84px !important;
 }
 
 .rightPanel .content .dashboardCard .dcContent .dcBottom:before {

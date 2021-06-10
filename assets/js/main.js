@@ -313,6 +313,13 @@ $(document).ready(function () {
 
   $('.showNoteBtn').click(function() {
     $(this).next('.note').toggleClass('noteOpen');
-  })
+  });
+
+  $(".templateCopyConfirmModalBtn").click(function() {
+    $(".templateCopyConfirmModal").css({ display: 'flex' });
+  });
+  $(".templateCopyConfirmModalCloseBtn").click(function() {
+    $(".templateCopyConfirmModal").css({ display: 'none' });
+  });
 
 })
