@@ -8542,6 +8542,7 @@ footer .fContent .fCol ul li a:hover {
   -webkit-box-shadow: 1px 1px 5px rgba(204, 204, 204, 0.4);
           box-shadow: 1px 1px 5px rgba(204, 204, 204, 0.4);
   border-left: 2px solid rgba(0, 123, 255, 0.4);
+  position: relative;
 }
 
 .intengoAdminWrap .content .projectCalenderCards .projectList li .company {
@@ -8618,6 +8619,14 @@ footer .fContent .fCol ul li a:hover {
   -webkit-box-shadow: 1px 1px 10px rgba(204, 204, 204, 0.9);
           box-shadow: 1px 1px 10px rgba(204, 204, 204, 0.9);
   width: 102%;
+}
+
+.intengoAdminWrap .content .projectCalenderCards .projectList li .globalIco {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 16px;
+  color: #675d5d;
 }
 
 .rulesModal .mdContent {
