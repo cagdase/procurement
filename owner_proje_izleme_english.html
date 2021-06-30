@@ -18,7 +18,8 @@
 <body>
   <a href="#" id="backToTop"><i class="fas fa-chevron-up"></i></a>
 
-  <div class="chatWrap chatSlim">
+  <!-- .chatWrap sınıfının yanına .chatSlim sınıfı eklendiğinde, tedarikçi listesi sütünü gizlenir -->
+  <div class="chatWrap">
     <a href="javascript:;" class="mobileChatCloseBtn"><i class="fas fa-times"></i></a>
     <a href="javascript:;" class="chatBtn">
       <span class="newMsg"><i class="fas fa-exclamation"></i></span>
@@ -32,7 +33,7 @@
         </div>
         <ul>
           <li class="active">
-            <div>
+            <div class="bidder">
               <h2>Tüm Tedarikçiler</h2>
               <h3>
                 15:17
@@ -42,7 +43,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="bidder">
               <h2 class="newMsg">Ak Ofis <i class="far fa-envelope"></i></h2>
               <h3>
                 16:35
@@ -52,7 +53,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="bidder">
               <h2>Atılgan Pazarlama</h2>
               <h3>
                 10:16
@@ -62,7 +63,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="bidder">
               <h2>Avansas</h2>
               <h3>
                 18:52
@@ -76,7 +77,7 @@
       <div class="chatRight">
         <div class="chatTop">
           <a href="javascript:;" class="mobileBackToChatListBtn"><i class="fas fa-arrow-left"></i></a>
-          <h2>Tüm Tedarikçiler</h2>
+          <h2>Ak Ofis</h2>
         </div>
         <ul id="chat">
           <li class="me">
@@ -103,6 +104,26 @@
             <div class="entete">
               <h2>Atılgan Pazarlama</h2>
               <h3>10:17, Bugün</h3>
+            </div>
+            <div class="triangle"></div>
+            <div class="message">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            </div>
+          </li>
+          <li class="me">
+            <div class="entete">
+              <h2>Admin</h2>
+              <h3>10:20, Bugün</h3>
+            </div>
+            <div class="triangle"></div>
+            <div class="message">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            </div>
+          </li>
+          <li class="you">
+            <div class="entete">
+              <h2>Ak Ofis</h2>
+              <h3>10:22, Bugün</h3>
             </div>
             <div class="triangle"></div>
             <div class="message">

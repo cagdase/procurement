@@ -1581,7 +1581,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 
 .chatWrap{max-width:800px; max-height:600px; display:flex; align-items:center; position:fixed; right:0; top:calc(50% - 300px); z-index: 12; margin-right:-750px; height:100%;
 	.mobileBackToChatListBtn{display:none;}
-	.mobileChatCloseBtn{display:none;}
+	.mobileChatCloseBtn{position: absolute; top: 16px; right: 20px; color: #fff; font-size: 20px; z-index: 4; display:none;}
 	.chatBtn{background-color:#167bff; width:50px; height:50px; position:relative; color:#fff; font-size:28px; display:flex; align-items:center; justify-content: center;
 		.newMsg{position:absolute; top:-8px; left:-8px; background-color:#cc0000; color:#fff; font-size:11px; border-radius:50%; display:flex; align-items:center; justify-content:center; width: 20px; height: 20px;}
 	}
@@ -1602,6 +1602,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		display:inline-block;
 		font-size:15px;
 		vertical-align:top;
+		right:0;
 	}
 	.chatRight{
 		max-width:490px;
@@ -1650,7 +1651,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		border-bottom: 1px solid #4c4e54;
 	}
 	.chatLeft li:hover{
-		background-color:#4c4f5a;
+		background-color:#262935;
 	}
 	.chatLeft li .newMsg{
 		font-weight:600;
@@ -1672,7 +1673,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		margin-right:8px;
 	}
 	.chatLeft li div{
-		display:inline-block;
+		display:block;
 		vertical-align:top;
 	}
 	.chatLeft li h2{
@@ -1709,6 +1710,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		height: 10%;
 		float: left;
 		width: 100%;
+		display:flex;
 	}
 
 	.chatRight .chatTop h2{
@@ -1792,8 +1794,8 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		width:100%;
 		height:80px;
 		border-radius:3px;
-		padding:20px;
-		font-size:13px;
+		padding:15px;
+		font-size:14px;
 		margin-bottom:13px;
 		background-color: #262935;
 		outline:0;
@@ -1809,7 +1811,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		color:#fff;
 	}
 	&.chatSlim{margin-right: -490px;
-		.chatLeft{display:none;}
+		.chatLeft{right:-1000px;}
 	}
 	&.chatWrapOpen{margin-right:0;}
 }
@@ -3396,7 +3398,7 @@ $badge-max-size: 9px;
 	.chatWrap.chatWrapOpen{right:0;}
 	.chatWrap .chatBtn{position: fixed; top: 80px; right: 10px; border-radius: 50%; z-index:2; box-shadow: 1px 1px 20px rgba(119, 119, 119, 0.80);}
 	.chatWrap .chatContent{width: 100%;height: 100vh;max-width: 100%;max-height: none;border-radius: 0; z-index:3;}
-	.chatWrap .chatLeft{width: 100%; height:100vh; position: absolute;}
+	.chatWrap .chatLeft{width: 100%; height:100vh; position: absolute; right:0; padding-top: 60px; background-color: #313542;}
 	.chatWrap .chatRight{width:100%; max-width: 100%;}
 	.chatWrap #chat {height: calc(100vh - 220px);}
 	.chatWrap #chat .triangle{display:none;}
@@ -3404,11 +3406,10 @@ $badge-max-size: 9px;
 	.chatWrap .chatRight .chatTop{height:60px;}
 	.chatWrap .chatBtn .newMsg{top:-5px; left:0;}
 	.chatWrap .mobileBackToChatListBtn {padding-right: 15px; color: #fff; display:inline-block;}
-	.chatSlim .mobileBackToChatListBtn {display:none;}
 	.chatWrap .chatLeft li.active{background: none;}
-	.chatWrap .mobileChatCloseBtn{position: absolute; top: 13px; right: 20px; color: #fff; font-size: 24px; z-index: 4; display: inline-block;}
+	.chatWrap .mobileChatCloseBtn{display: inline-block;}
 	.chatWrap .chatLeft .chatTop{display:none;}
-	.chatWrap .chatLeft ul{height:100vh; padding-top: 50px;}
+	.chatWrap .chatLeft ul{min-height:100vh; border-top:1px solid #464954;}
 	.intengoAdminWrap .content .projectCalenderCards .projectList li{flex-direction:column;}
 	.intengoAdminWrap .content .projectCalenderCards .projectList li .company, .intengoAdminWrap .content .projectCalenderCards .projectList li .projectPeriods, .intengoAdminWrap .content .projectCalenderCards .projectList li .participationStatus{width:100%; margin-bottom:10px;}
 	.intengoAdminWrap .content .projectCalenderCards .projectCalenderHead{display:none;}

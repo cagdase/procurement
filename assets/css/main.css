@@ -5550,6 +5550,12 @@ button.errorBtn:hover {
 }
 
 .chatWrap .mobileChatCloseBtn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  color: #fff;
+  font-size: 20px;
+  z-index: 4;
   display: none;
 }
 
@@ -5612,6 +5618,7 @@ button.errorBtn:hover {
   display: inline-block;
   font-size: 15px;
   vertical-align: top;
+  right: 0;
 }
 
 .chatWrap .chatRight {
@@ -5679,7 +5686,7 @@ button.errorBtn:hover {
 }
 
 .chatWrap .chatLeft li:hover {
-  background-color: #4c4f5a;
+  background-color: #262935;
 }
 
 .chatWrap .chatLeft li .newMsg {
@@ -5707,7 +5714,7 @@ button.errorBtn:hover {
 }
 
 .chatWrap .chatLeft li div {
-  display: inline-block;
+  display: block;
   vertical-align: top;
 }
 
@@ -5752,6 +5759,9 @@ button.errorBtn:hover {
   height: 10%;
   float: left;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .chatWrap .chatRight .chatTop h2 {
@@ -5847,8 +5857,8 @@ button.errorBtn:hover {
   width: 100%;
   height: 80px;
   border-radius: 3px;
-  padding: 20px;
-  font-size: 13px;
+  padding: 15px;
+  font-size: 14px;
   margin-bottom: 13px;
   background-color: #262935;
   outline: 0;
@@ -5883,7 +5893,7 @@ button.errorBtn:hover {
 }
 
 .chatWrap.chatSlim .chatLeft {
-  display: none;
+  right: -1000px;
 }
 
 .chatWrap.chatWrapOpen {
@@ -11199,6 +11209,9 @@ footer .fContent .fCol ul li a:hover {
     width: 100%;
     height: 100vh;
     position: absolute;
+    right: 0;
+    padding-top: 60px;
+    background-color: #313542;
   }
   .chatWrap .chatRight {
     width: 100%;
@@ -11225,27 +11238,18 @@ footer .fContent .fCol ul li a:hover {
     color: #fff;
     display: inline-block;
   }
-  .chatSlim .mobileBackToChatListBtn {
-    display: none;
-  }
   .chatWrap .chatLeft li.active {
     background: none;
   }
   .chatWrap .mobileChatCloseBtn {
-    position: absolute;
-    top: 13px;
-    right: 20px;
-    color: #fff;
-    font-size: 24px;
-    z-index: 4;
     display: inline-block;
   }
   .chatWrap .chatLeft .chatTop {
     display: none;
   }
   .chatWrap .chatLeft ul {
-    height: 100vh;
-    padding-top: 50px;
+    min-height: 100vh;
+    border-top: 1px solid #464954;
   }
   .intengoAdminWrap .content .projectCalenderCards .projectList li {
     -webkit-box-orient: vertical;

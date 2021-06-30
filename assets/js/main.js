@@ -322,4 +322,21 @@ $(document).ready(function () {
     $(".templateCopyConfirmModal").css({ display: 'none' });
   });
 
+
+  $(window).bind('resize load', function() {
+    if( $(this).width() < 768 ) {
+      $('.chatWrap .chatLeft li .bidder').click(function() {
+        $('.chatWrap').addClass('chatSlim');
+      });
+      $('.chatWrap .mobileBackToChatListBtn').click(function() {
+        $('.chatWrap').removeClass('chatSlim');
+      });
+    }
+  });
+
+  $('.chatWrap .chatLeft li').click(function() {
+    $('.chatWrap .chatLeft li').removeClass('active');
+    $(this).addClass('active');
+  });
+
 })
