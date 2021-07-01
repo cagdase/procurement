@@ -2641,14 +2641,14 @@ $badge-max-size: 9px;
 .intengoAdminHeader {float:left; width: 100%; background-color: #fff; text-align: center; display: flex; align-items: center; justify-content: center; height:100px; box-shadow: 1px 1px 5px #ddd; z-index: 2; position: relative;}
 .intengoAdminHeader img{max-width:300px;}
 
-.intengoAdminWrap{float:left; width:100%; display:flex; align-items:flex-start; justify-content:center; padding:20px; position:relative; height: calc(100vh - 100px); overflow-y: auto; background-color: #eff0f6;
+.intengoAdminWrap{float:left; width:100%; display:flex; justify-content:flex-start; align-items:center; flex-direction:column; padding:20px; position:relative; height: calc(100vh - 100px); overflow-y: auto; background-color: #eff0f6;
 	.content{float:left; width:100%; max-width:900px;
 		.subHeadline{float: left; width: 100%; text-align: center; font-size: 26px; padding: 0 20px; display: flex; align-items: center; justify-content:space-between;
-			.shRight{
+			.shRight{display: flex; align-items: center;
 				.projectCalenderBtn{float: left; padding: 5px 30px 5px 25px; margin-right: 10px; font-size: 13px; background-color: #fff; border-radius: 18px; height: 35px; display: flex; align-items: center; justify-content: center; font-weight:600;
 					i{margin-right:5px;}
 				}
-				input{float: left; width: 300px; border: none; outline: 0; padding: 10px 20px; border-radius: 30px;}
+				input{float: left; width: 150px; border: none; outline: 0; padding: 10px 20px; border-radius: 30px;}
 			}
 		}
 		.customersList{float:left; width:100%;
@@ -2688,7 +2688,58 @@ $badge-max-size: 9px;
 			}
 		}
 	}
+	.adminBidderList{display:flex; width:90%; padding:35px; margin-top:20px; flex-wrap:wrap; background-color:#fff;
+		.adminBidderListHeadline{display:flex; width:100%; margin-bottom:20px; justify-content:space-between;
+			.text{font-size:18px; font-weight:600;}
+			.projectCalenderBtn{float: left; padding: 5px 30px 5px 25px; margin-right: 10px; font-size: 14px; background-color: #fff; border-radius: 18px; height: 35px; display: flex; align-items: center; justify-content: center; font-weight:600; border:1px solid #ddd;
+				i{margin-right:5px;}
+			}
+		}
+		.bidderSummary{display:flex; width:100%; margin-bottom:40px; position:relative; flex-wrap:wrap;
+			div{border:1px solid #ddd; border-radius:6px; margin-right:20px; font-size:14px; padding:10px 20px; color:$color1; display:flex; align-items:center; justify-content:center; height: 48px; font-weight:600; margin-bottom:10px;
+				i{font-size:16px; margin-right:5px;}
+			}
+		}
+		.categories{display:flex; width:500px; border-right:1px solid #f1f1f1;
+			.previewImg{max-width:100%;}
+		}
+		.selectedBidderList{display:flex; width:calc(100% - 500px); padding:30px; flex-direction:column;
+			.selectedBidderListHead{display:flex; width:100%; margin-bottom:10px; font-size:16px; font-weight:600;}
+			ul{display:flex; width:100%; flex-direction: column;
+				li{display:flex; width:100%;
+					a{display:flex; width:100%; font-size:14px; padding:10px; align-items:center; border-bottom:1px solid #f1f1f1; color:$color1;
+						i{margin-right:5px;}
+						&:hover{background-color:#fbfbfb; color:$linkColor;}
+					}
+					&:nth-last-child(1){
+						a{border-bottom:none;}
+					}
+				}
+			}
+		}
+		.maximumMember{color:#854dff!important;}
+		.standardMember{color:#cece20!important;}
+		.nonMember{color:#FF0000!important;}
+	}
 }
+
+.selectedBidderListModal{
+	ul{display:flex; width:100%; flex-direction: column;
+		li{display:flex; width:100%;
+			a{display:flex; width:100%; font-size:14px; padding:10px; align-items:center; border-bottom:1px solid #f1f1f1; color:$color1;
+				i{margin-right:5px;}
+				&:hover{background-color:#fbfbfb; color:$linkColor;}
+			}
+			&:nth-last-child(1){
+				a{border-bottom:none;}
+			}
+		}
+	}
+	.maximumMember{color:#854dff!important;}
+	.standardMember{color:#cece20!important;}
+	.nonMember{color:#FF0000!important;}
+}
+.mobileBidderListModalPreview{display:flex; width:100%; font-size:13px; margin-bottom:10px; display:none;}
 
 .rulesModal{
 	.mdContent{width:100%; max-width:1400px;
@@ -3084,6 +3135,8 @@ $badge-max-size: 9px;
 
 @media (max-width:1200px) {
 	.rightPanel .header .headRight .accountWrap #dateTime{display:none;}
+	.intengoAdminWrap .adminBidderList .bidderSummary div{padding:10px; font-size:12px; margin-right:10px;}
+	.intengoAdminWrap .adminBidderList .bidderSummary div i{font-size:14px;}
 }
 
 @media (max-width: 1023px){
@@ -3148,6 +3201,13 @@ $badge-max-size: 9px;
 	.rightPanel .content .comparisonTableSlider .productSlider .owlComparison .owl-stage-outer .owl-stage .owl-item:nth-child(even){background-color:#fff;}
 	.rpList.ownerWatchAdditionalInfoModalTable table{width:1000px;}
 	.ownerWatchAdditionalInfo .ownerWatchAdditionalInfoModalBtn{right:45px;}
+	.intengoAdminWrap .adminBidderList .selectedBidderList{display:none;}
+	.intengoAdminWrap .adminBidderList .categories{width:100%; border-right:0;}
+	.intengoAdminWrap .adminBidderList{width:100%; padding:15px;}
+	.intengoAdminWrap .adminBidderList{margin-top:0;}
+	.mobileBidderListModalPreview{display:flex;}
+	.intengoAdminWrap .content .subHeadline{flex-direction: column;}
+	.intengoAdminWrap .content .subHeadline > strong{font-size:18px; margin-bottom:10px;}
 }
 
 @media (max-width: 767px) {
@@ -3416,4 +3476,12 @@ $badge-max-size: 9px;
 	.intengoAdminWrap .content .projectCalenderCards{padding:0;}
 	.intengoAdminWrap .content .projectCalenderCards .projectList li .participationStatus {align-items: flex-start; flex-direction: row; justify-content: flex-start; font-size:12px;}
 	.intengoAdminWrap .content .projectCalenderCards .projectList li .participationStatus .pStatusMobile{display:inline-block;}
+
+	.intengoAdminWrap .adminBidderList .bidderSummary{flex-direction:column; align-items:center;}
+	.intengoAdminWrap .adminBidderList .adminBidderListHeadline{flex-direction:column; justify-content:center; align-items:center;}
+	.intengoAdminWrap .adminBidderList .adminBidderListHeadline .text{text-align:center; width:100%; margin-bottom:10px; font-size:15px;}
+	.intengoAdminWrap .adminBidderList .bidderSummary div{margin-right:0; width: 100%;}
+	.intengoAdminWrap .content .subHeadline .shRight {flex-direction:column; width:100%;}
+	.intengoAdminWrap .content .subHeadline .shRight input {width:100%;}
+	.intengoAdminWrap .content .subHeadline .shRight .projectCalenderBtn{margin-bottom:10px;}
 }

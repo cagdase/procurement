@@ -8353,12 +8353,16 @@ footer .fContent .fCol ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 20px;
   position: relative;
   height: calc(100vh - 100px);
@@ -8389,6 +8393,15 @@ footer .fContent .fCol ul li a:hover {
           justify-content: space-between;
 }
 
+.intengoAdminWrap .content .subHeadline .shRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .intengoAdminWrap .content .subHeadline .shRight .projectCalenderBtn {
   float: left;
   padding: 5px 30px 5px 25px;
@@ -8415,7 +8428,7 @@ footer .fContent .fCol ul li a:hover {
 
 .intengoAdminWrap .content .subHeadline .shRight input {
   float: left;
-  width: 300px;
+  width: 150px;
   border: none;
   outline: 0;
   padding: 10px 20px;
@@ -8637,6 +8650,254 @@ footer .fContent .fCol ul li a:hover {
   top: 10px;
   font-size: 16px;
   color: #675d5d;
+}
+
+.intengoAdminWrap .adminBidderList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding: 35px;
+  margin-top: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.intengoAdminWrap .adminBidderList .adminBidderListHeadline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intengoAdminWrap .adminBidderList .adminBidderListHeadline .text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.intengoAdminWrap .adminBidderList .adminBidderListHeadline .projectCalenderBtn {
+  float: left;
+  padding: 5px 30px 5px 25px;
+  margin-right: 10px;
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 18px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+  border: 1px solid #ddd;
+}
+
+.intengoAdminWrap .adminBidderList .adminBidderListHeadline .projectCalenderBtn i {
+  margin-right: 5px;
+}
+
+.intengoAdminWrap .adminBidderList .bidderSummary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.intengoAdminWrap .adminBidderList .bidderSummary div {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-right: 20px;
+  font-size: 14px;
+  padding: 10px 20px;
+  color: #242526;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 48px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.intengoAdminWrap .adminBidderList .bidderSummary div i {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.intengoAdminWrap .adminBidderList .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  border-right: 1px solid #f1f1f1;
+}
+
+.intengoAdminWrap .adminBidderList .categories .previewImg {
+  max-width: 100%;
+}
+
+.intengoAdminWrap .adminBidderList .selectedBidderList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 500px);
+  padding: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intengoAdminWrap .adminBidderList .selectedBidderList .selectedBidderListHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.intengoAdminWrap .adminBidderList .selectedBidderList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intengoAdminWrap .adminBidderList .selectedBidderList ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.intengoAdminWrap .adminBidderList .selectedBidderList ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+  color: #242526;
+}
+
+.intengoAdminWrap .adminBidderList .selectedBidderList ul li a i {
+  margin-right: 5px;
+}
+
+.intengoAdminWrap .adminBidderList .selectedBidderList ul li a:hover {
+  background-color: #fbfbfb;
+  color: #007bff;
+}
+
+.intengoAdminWrap .adminBidderList .selectedBidderList ul li:nth-last-child(1) a {
+  border-bottom: none;
+}
+
+.intengoAdminWrap .adminBidderList .maximumMember {
+  color: #854dff !important;
+}
+
+.intengoAdminWrap .adminBidderList .standardMember {
+  color: #cece20 !important;
+}
+
+.intengoAdminWrap .adminBidderList .nonMember {
+  color: #FF0000 !important;
+}
+
+.selectedBidderListModal ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.selectedBidderListModal ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.selectedBidderListModal ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+  color: #242526;
+}
+
+.selectedBidderListModal ul li a i {
+  margin-right: 5px;
+}
+
+.selectedBidderListModal ul li a:hover {
+  background-color: #fbfbfb;
+  color: #007bff;
+}
+
+.selectedBidderListModal ul li:nth-last-child(1) a {
+  border-bottom: none;
+}
+
+.selectedBidderListModal .maximumMember {
+  color: #854dff !important;
+}
+
+.selectedBidderListModal .standardMember {
+  color: #cece20 !important;
+}
+
+.selectedBidderListModal .nonMember {
+  color: #FF0000 !important;
+}
+
+.mobileBidderListModalPreview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: none;
 }
 
 .rulesModal .mdContent {
@@ -9984,6 +10245,14 @@ footer .fContent .fCol ul li a:hover {
   .rightPanel .header .headRight .accountWrap #dateTime {
     display: none;
   }
+  .intengoAdminWrap .adminBidderList .bidderSummary div {
+    padding: 10px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .intengoAdminWrap .adminBidderList .bidderSummary div i {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -10174,6 +10443,35 @@ footer .fContent .fCol ul li a:hover {
   }
   .ownerWatchAdditionalInfo .ownerWatchAdditionalInfoModalBtn {
     right: 45px;
+  }
+  .intengoAdminWrap .adminBidderList .selectedBidderList {
+    display: none;
+  }
+  .intengoAdminWrap .adminBidderList .categories {
+    width: 100%;
+    border-right: 0;
+  }
+  .intengoAdminWrap .adminBidderList {
+    width: 100%;
+    padding: 15px;
+  }
+  .intengoAdminWrap .adminBidderList {
+    margin-top: 0;
+  }
+  .mobileBidderListModalPreview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .intengoAdminWrap .content .subHeadline {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intengoAdminWrap .content .subHeadline > strong {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 }
 
@@ -11282,5 +11580,49 @@ footer .fContent .fCol ul li a:hover {
   }
   .intengoAdminWrap .content .projectCalenderCards .projectList li .participationStatus .pStatusMobile {
     display: inline-block;
+  }
+  .intengoAdminWrap .adminBidderList .bidderSummary {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intengoAdminWrap .adminBidderList .adminBidderListHeadline {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intengoAdminWrap .adminBidderList .adminBidderListHeadline .text {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .intengoAdminWrap .adminBidderList .bidderSummary div {
+    margin-right: 0;
+    width: 100%;
+  }
+  .intengoAdminWrap .content .subHeadline .shRight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .intengoAdminWrap .content .subHeadline .shRight input {
+    width: 100%;
+  }
+  .intengoAdminWrap .content .subHeadline .shRight .projectCalenderBtn {
+    margin-bottom: 10px;
   }
 }

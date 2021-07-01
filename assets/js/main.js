@@ -339,4 +339,11 @@ $(document).ready(function () {
     $(this).addClass('active');
   });
 
+  $(".selectedBidderListModalBtn").click(function() {
+    $(".selectedBidderListModal").css({ display: 'flex' });
+  });
+  $(".selectedBidderListModalCloseBtn").click(function() {
+    $(".selectedBidderListModal").css({ display: 'none' });
+  });
+
 })
