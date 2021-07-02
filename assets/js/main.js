@@ -346,4 +346,26 @@ $(document).ready(function () {
     $(".selectedBidderListModal").css({ display: 'none' });
   });
 
+  $(".whoBiddersModalBtn").click(function() {
+    $(".whoBiddersModal").css({ display: 'flex' });
+  });
+  $(".whoBiddersModalCloseBtn").click(function() {
+    $(".whoBiddersModal").css({ display: 'none' });
+  });
+
+  $('.participantListBtn').click(function() {
+    $(this).parent().next().next('.participantListWrap').toggle();
+  });
+
+  $(".participantStatusModalBtn").click(function() {
+    $(".participantStatusModal").css({ display: 'flex' });
+  });
+  $(".participantStatusModalCloseBtn").click(function() {
+    $(".participantStatusModal").css({ display: 'none' });
+  });
+
+  $('.participantStatusContent .statusReject').click(function() {
+    $('.statusRejectMessage').toggleClass('show');
+  })
+
 })

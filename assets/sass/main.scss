@@ -30,21 +30,24 @@ input[type=number] { -moz-appearance: textfield; }
 
 .containerAll{float:left; width:100%;}
 
-button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0; border: 0; cursor:pointer; margin-bottom:20px; margin-right:20px; height: 40px; display:flex; align-items:center; justify-content: space-between;
+button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0; border: 0; cursor:pointer; margin-bottom:20px; margin-right:20px; height: 40px; display:flex; align-items:center; justify-content: space-between; color: #fff;
 	i{margin-left:10px; font-size:18px;}
-	&.primaryBtn{background-color: $linkColor; color: #fff;
+	&.primaryBtn{background-color: $linkColor;
 		&:hover{background-color:#1c5ca0;}
 	}
-	&.secondaryBtn{background-color: #6c757d; color: #fff;
-		&:hover{background-color:#222;}
+	&.secondaryBtn{background-color: #6c757d;
+		&:hover{background-color:#222;}	
 	}
-	&.thirdBtn{background-color: #28a745; color: #fff;
+	&.thirdBtn{background-color: #28a745;
 		&:hover{background-color:#218838;}
 	}
-	&.fourthBtn{background-color: #ffc107; color: #fff;
+	&.fourthBtn{background-color: #ffc107;
 		&:hover{background-color:#e0a800;}
 	}
-	&.errorBtn{background-color: $colorError; color: #fff;
+	&.fifthBtn{background-color: #8214e6;
+		&:hover{background-color:#6310af;}
+	}
+	&.errorBtn{background-color: $colorError;
 		&:hover{background-color:#6b110c;}
 	}
 }
@@ -1376,6 +1379,35 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			}
 		}
 	}
+	&.whoBidders{
+		li{position:relative; display:flex; flex-wrap:wrap;
+			span{
+				&:nth-child(1){width:50%;}
+				&:nth-child(2){width:25%; text-align:center;
+					.participantListBtn{font-size:22px;}
+				}
+				&:nth-child(3){width:25%; text-align:center; display: flex; justify-content: center;
+					i{font-size:18px; margin-left:5px;
+						&.fa-check{color:$colorSuccess;}
+						&.fa-times{color:$colorError;}
+					}
+					.tableHeadTooltipWrap{width:auto;
+						.tableHeadTooltip{width:400px; top:-70px;}
+					}
+				}
+			}
+			.participantListWrap{float: left; background-color: #fff; width: 100%; padding: 15px; border: 1px solid #f1f1f1; margin-top: 10px;}
+		}
+	}
+	&.participantListWrap{display:none;
+		li{
+			span{
+				&:nth-child(1){width:40%;}
+				&:nth-child(2){width:30%; text-align:center;}
+				&:nth-child(3){width:30%; text-align:center;}
+			}
+		}
+	}
 }
 
 .deleteModal{position: absolute; background-color:$color1; padding:30px 20px 20px; width: 220px; border-radius: 10px; display: flex; align-items: center; justify-content: space-around; z-index: 2; top:-50px; right:10px; flex-direction:column; display:none;
@@ -1505,13 +1537,13 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		}
 	}
 	&.addLapModal{
-		.mdContent{max-height:none; width:1200px}
+		.mdContent{max-height:none; width:100%; max-width:1200px}
 	}
 	&.modalLong{
-		.mdContent{width:800px;}
+		.mdContent{width:100%; max-width:800px;}
 	}
 	&.tcoModal{
-		.mdContent{width:1000px;}
+		.mdContent{width:100%; max-width:1000px;}
 	}
 	.modalTableMobile{display:none;}
 	&.allBidsModal{
@@ -1531,6 +1563,9 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		button{margin-bottom:0;}
 		.mdMiddle{margin-bottom:0;}
 	}
+	&.whoBiddersModal{
+		.mdContent{max-height:100vh; width:100%; max-width:1000px;}
+	}
 }
 .tooltip{position:relative; margin-left:10px; float:left;
 	.tooltipBtn{float:left; background-color:#007bff; padding:2px 10px; font-size:13px; color:#fff;
@@ -1540,6 +1575,20 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		&:hover{
 			.tooltipText{display:block!important;}
 		}
+	}
+}
+
+.participantStatusContent{display:flex; width:100%; justify-content:space-evenly; flex-wrap:wrap;
+	.participantStatusBtn{padding:10px 30px; height:48px; display:flex; align-items:center; color:#fff; font-weight:600;
+		&.statusConfirm{background-color:$colorSuccess;}
+		&.statusReject{background-color:$colorError;}
+	}
+	.statusRejectMessage{display:flex; width:100%; margin-top:20px; flex-direction:column; align-items: flex-start; display:none;
+		.statusRejectMessageHeadline{width:100%; display:flex; margin-bottom:10px; font-size:16px; font-weight:600;}
+		textarea{border:1px solid #ececec; padding:15px; font-size:14px; border-radius:6px; font-family:$fontStack2; width:100%; resize:none; height:100px; outline:0; margin-bottom:30px;}
+		.rejectStatusInfo{display:flex; width:100%; margin-bottom:10px; font-size:12px; color:$colorError; font-style:italic;}
+		.rejectSubmitBtn{background-color:$linkColor; padding:10px 20px; color:#fff;}
+		&.show{display:flex;}
 	}
 }
 
@@ -3267,69 +3316,7 @@ $badge-max-size: 9px;
 	.ms-container{width:100%!important;}
 	.rightPanel{padding-bottom:100px;}
 	.rightPanel .content .productBox table td .addGroupWrap ul{width: 100%; height: 100%; left: 0; top: 55px; right: 0; bottom: 0;}
-	.rightPanel .content .bwSummary{position:relative;
-		&:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top: 45px; right: 0px; width: 50px; height: 68%; display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
-		&:before{content:'*Tabloyu yatayda kaydırarak inceyebilirsiniz.'; position:absolute; bottom:18px; left:0; font-size:11px; color:$color2; font-style: italic;}
-		&:hover{
-			&:after{opacity:0;}
-		}
-	}
-	.rightPanel .content .suppliers{position:relative;
-		&:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top:32px; right: 0px; width: 50px; height:calc(100% - 82px); display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
-		&:before{content:'*Tabloyu yatayda kaydırarak inceyebilirsiniz.'; position:absolute; bottom:18px; left:0; font-size:11px; color:$color2; font-style: italic;}
-		&:hover{
-			&:after{opacity:0;}
-		}
-	}
-	.rightPanel .content .productBox{overflow-x:scroll; position:relative; padding-bottom:30px; margin-bottom:10px;
-		&:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top: 0; right: 0px; width: 50px; height:calc(100% - 41px); display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
-		&:before{content:'*Tabloyu yatayda kaydırarak inceyebilirsiniz.'; position:absolute; bottom:8px; left:0; font-size:11px; color:$color2; font-style: italic;}
-		&:hover{
-			&:after{opacity:0;}
-		}
-	}
-	.rightPanel .content .bsBidForm{overflow-x:scroll; position:relative; padding-bottom:30px; margin-bottom:10px;
-		&:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top:47px; right: 0px; width: 50px; height:calc(100% - 137px); display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
-		&:before{content:'*Tabloyu yatayda kaydırarak inceyebilirsiniz.'; position:absolute; bottom:8px; left:0; font-size:11px; color:$color2; font-style: italic;}
-		&:hover{
-			&:after{opacity:0;}
-		}
-	}
-	.rightPanel .content .bidderWatchInfo{overflow-x:scroll; position:relative; padding-bottom:30px; margin-bottom:10px;
-		&:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top:38px; right: 0px; width: 50px; height:calc(100% - 69px); display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
-		&:before{content:'*Tabloyu yatayda kaydırarak inceyebilirsiniz.'; position:absolute; bottom:8px; left:0; font-size:11px; color:$color2; font-style: italic;}
-		&:hover{
-			&:after{opacity:0;}
-		}
-	}
-	.mdContent .bsBidForm{overflow-x:scroll; position:relative; padding-bottom:30px; margin-bottom:10px;
-		ul{width:600px;}
-		&:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top:57px; right: 0px; width: 50px; height:calc(100% - 87px); display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
-		&:before{content:'*Tabloyu yatayda kaydırarak inceyebilirsiniz.'; position:absolute; bottom:8px; left:0; font-size:11px; color:$color2; font-style: italic;}
-		&:hover{
-			&:after{opacity:0;}
-		}
-	}
-	.companyList{overflow-x:scroll; position:relative; padding-bottom:30px; margin-bottom:10px;
-		ul{width:1000px;}
-		&:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top:2px; right: 0px; width: 50px; height:calc(100% - 33px); display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
-		&:before{content:'*Tabloyu yatayda kaydırarak inceyebilirsiniz.'; position:absolute; bottom:8px; left:0; font-size:11px; color:$color2; font-style: italic;}
-		&:hover{
-			&:after{opacity:0;}
-		}
-	}
-	.allBids{overflow-x:scroll; position:relative; padding-bottom:30px;
-		ul{width:100%;}
-	}
-	.userList{overflow-x:scroll; position:relative; padding-bottom:30px; margin-bottom:10px;
-		ul{width:1000px;}
-		&:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top:2px; right: 0px; width: 50px; height:calc(100% - 33px); display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
-		&:before{content:'*Tabloyu yatayda kaydırarak inceyebilirsiniz.'; position:absolute; bottom:8px; left:0; font-size:11px; color:$color2; font-style: italic;}
-		&:hover{
-			&:after{opacity:0;}
-		}
-	}
-	
+
 	.tableMobileScroll{overflow-x:scroll; position:relative; padding-bottom:30px; margin-bottom:10px;
 		ul{width:1000px;}
 		&:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top:2px; right: 0px; width: 50px; height:calc(100% - 33px); display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
@@ -3338,24 +3325,19 @@ $badge-max-size: 9px;
 			&:after{opacity:0;}
 		}
 	}
-	.rulesModal .headSwitch{flex-direction: column; align-items: flex-start;
-		a{margin-bottom:15px; margin-right:0;}
-	}
 
-	.tcoModalList{overflow-x:scroll; position:relative; padding-bottom:30px; margin-bottom:10px;
-		ul{width:1000px;}
-		&:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top:2px; right: 0px; width: 50px; height:calc(100% - 33px); display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
-		&:before{content:'*Tabloyu yatayda kaydırarak inceyebilirsiniz.'; position:absolute; bottom:8px; left:0; font-size:11px; color:$color2; font-style: italic;}
-		&:hover{
-			&:after{opacity:0;}
-		}
-	}
 	.ownerWatchAdditionalInfoModalTable{position:relative;
 		&:after{content: '\f054'; font-family: 'fontAwesome'; position: absolute; top: 45px; right: 0px; width: 50px; height: 68%; display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%); color: $color1; font-size:26px;}
 		&:before{content:'*Tabloyu yatayda kaydırarak inceyebilirsiniz.'; position:absolute; bottom:18px; left:0; font-size:11px; color:$color2; font-style: italic;}
 		&:hover{
 			&:after{opacity:0;}
 		}
+	}
+	.rulesModal .headSwitch{flex-direction: column; align-items: flex-start;
+		a{margin-bottom:15px; margin-right:0;}
+	}
+	.allBids{overflow-x:scroll; position:relative; padding-bottom:30px;
+		ul{width:100%;}
 	}
 	.addTCObtn{margin:0; margin-bottom:20px;}
 	.dutchBidResultsDesktop{display:none;}

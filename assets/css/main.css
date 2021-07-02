@@ -106,6 +106,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #fff;
 }
 
 button i {
@@ -115,7 +116,6 @@ button i {
 
 button.primaryBtn {
   background-color: #007bff;
-  color: #fff;
 }
 
 button.primaryBtn:hover {
@@ -124,7 +124,6 @@ button.primaryBtn:hover {
 
 button.secondaryBtn {
   background-color: #6c757d;
-  color: #fff;
 }
 
 button.secondaryBtn:hover {
@@ -133,7 +132,6 @@ button.secondaryBtn:hover {
 
 button.thirdBtn {
   background-color: #28a745;
-  color: #fff;
 }
 
 button.thirdBtn:hover {
@@ -142,16 +140,22 @@ button.thirdBtn:hover {
 
 button.fourthBtn {
   background-color: #ffc107;
-  color: #fff;
 }
 
 button.fourthBtn:hover {
   background-color: #e0a800;
 }
 
+button.fifthBtn {
+  background-color: #8214e6;
+}
+
+button.fifthBtn:hover {
+  background-color: #6310af;
+}
+
 button.errorBtn {
   background-color: #cc0000;
-  color: #fff;
 }
 
 button.errorBtn:hover {
@@ -4636,6 +4640,88 @@ button.errorBtn:hover {
   text-align: center;
 }
 
+.rpList.whoBidders li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.rpList.whoBidders li span:nth-child(1) {
+  width: 50%;
+}
+
+.rpList.whoBidders li span:nth-child(2) {
+  width: 25%;
+  text-align: center;
+}
+
+.rpList.whoBidders li span:nth-child(2) .participantListBtn {
+  font-size: 22px;
+}
+
+.rpList.whoBidders li span:nth-child(3) {
+  width: 25%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rpList.whoBidders li span:nth-child(3) i {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.rpList.whoBidders li span:nth-child(3) i.fa-check {
+  color: #28a745;
+}
+
+.rpList.whoBidders li span:nth-child(3) i.fa-times {
+  color: #cc0000;
+}
+
+.rpList.whoBidders li span:nth-child(3) .tableHeadTooltipWrap {
+  width: auto;
+}
+
+.rpList.whoBidders li span:nth-child(3) .tableHeadTooltipWrap .tableHeadTooltip {
+  width: 400px;
+  top: -70px;
+}
+
+.rpList.whoBidders li .participantListWrap {
+  float: left;
+  background-color: #fff;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #f1f1f1;
+  margin-top: 10px;
+}
+
+.rpList.participantListWrap {
+  display: none;
+}
+
+.rpList.participantListWrap li span:nth-child(1) {
+  width: 40%;
+}
+
+.rpList.participantListWrap li span:nth-child(2) {
+  width: 30%;
+  text-align: center;
+}
+
+.rpList.participantListWrap li span:nth-child(3) {
+  width: 30%;
+  text-align: center;
+}
+
 .deleteModal {
   position: absolute;
   background-color: #242526;
@@ -5265,15 +5351,18 @@ button.errorBtn:hover {
 
 .modalWrap.addLapModal .mdContent {
   max-height: none;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .modalWrap.modalLong .mdContent {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
 }
 
 .modalWrap.tcoModal .mdContent {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .modalWrap .modalTableMobile {
@@ -5331,6 +5420,12 @@ button.errorBtn:hover {
   margin-bottom: 0;
 }
 
+.modalWrap.whoBiddersModal .mdContent {
+  max-height: 100vh;
+  width: 100%;
+  max-width: 1000px;
+}
+
 .tooltip {
   position: relative;
   margin-left: 10px;
@@ -5373,6 +5468,101 @@ button.errorBtn:hover {
 
 .tooltip .tooltipBtn:hover .tooltipText {
   display: block !important;
+}
+
+.participantStatusContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.participantStatusContent .participantStatusBtn {
+  padding: 10px 30px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.participantStatusContent .participantStatusBtn.statusConfirm {
+  background-color: #28a745;
+}
+
+.participantStatusContent .participantStatusBtn.statusReject {
+  background-color: #cc0000;
+}
+
+.participantStatusContent .statusRejectMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: none;
+}
+
+.participantStatusContent .statusRejectMessage .statusRejectMessageHeadline {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.participantStatusContent .statusRejectMessage textarea {
+  border: 1px solid #ececec;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  resize: none;
+  height: 100px;
+  outline: 0;
+  margin-bottom: 30px;
+}
+
+.participantStatusContent .statusRejectMessage .rejectStatusInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #cc0000;
+  font-style: italic;
+}
+
+.participantStatusContent .statusRejectMessage .rejectSubmitBtn {
+  background-color: #007bff;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.participantStatusContent .statusRejectMessage.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #bidResult {
@@ -10682,337 +10872,6 @@ footer .fContent .fCol ul li a:hover {
     right: 0;
     bottom: 0;
   }
-  .rightPanel .content .bwSummary {
-    position: relative;
-  }
-  .rightPanel .content .bwSummary:after {
-    content: '\f054';
-    font-family: 'fontAwesome';
-    position: absolute;
-    top: 45px;
-    right: 0px;
-    width: 50px;
-    height: 68%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    color: #242526;
-    font-size: 26px;
-  }
-  .rightPanel .content .bwSummary:before {
-    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
-    position: absolute;
-    bottom: 18px;
-    left: 0;
-    font-size: 11px;
-    color: #64666d;
-    font-style: italic;
-  }
-  .rightPanel .content .bwSummary:hover:after {
-    opacity: 0;
-  }
-  .rightPanel .content .suppliers {
-    position: relative;
-  }
-  .rightPanel .content .suppliers:after {
-    content: '\f054';
-    font-family: 'fontAwesome';
-    position: absolute;
-    top: 32px;
-    right: 0px;
-    width: 50px;
-    height: calc(100% - 82px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    color: #242526;
-    font-size: 26px;
-  }
-  .rightPanel .content .suppliers:before {
-    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
-    position: absolute;
-    bottom: 18px;
-    left: 0;
-    font-size: 11px;
-    color: #64666d;
-    font-style: italic;
-  }
-  .rightPanel .content .suppliers:hover:after {
-    opacity: 0;
-  }
-  .rightPanel .content .productBox {
-    overflow-x: scroll;
-    position: relative;
-    padding-bottom: 30px;
-    margin-bottom: 10px;
-  }
-  .rightPanel .content .productBox:after {
-    content: '\f054';
-    font-family: 'fontAwesome';
-    position: absolute;
-    top: 0;
-    right: 0px;
-    width: 50px;
-    height: calc(100% - 41px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    color: #242526;
-    font-size: 26px;
-  }
-  .rightPanel .content .productBox:before {
-    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    font-size: 11px;
-    color: #64666d;
-    font-style: italic;
-  }
-  .rightPanel .content .productBox:hover:after {
-    opacity: 0;
-  }
-  .rightPanel .content .bsBidForm {
-    overflow-x: scroll;
-    position: relative;
-    padding-bottom: 30px;
-    margin-bottom: 10px;
-  }
-  .rightPanel .content .bsBidForm:after {
-    content: '\f054';
-    font-family: 'fontAwesome';
-    position: absolute;
-    top: 47px;
-    right: 0px;
-    width: 50px;
-    height: calc(100% - 137px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    color: #242526;
-    font-size: 26px;
-  }
-  .rightPanel .content .bsBidForm:before {
-    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    font-size: 11px;
-    color: #64666d;
-    font-style: italic;
-  }
-  .rightPanel .content .bsBidForm:hover:after {
-    opacity: 0;
-  }
-  .rightPanel .content .bidderWatchInfo {
-    overflow-x: scroll;
-    position: relative;
-    padding-bottom: 30px;
-    margin-bottom: 10px;
-  }
-  .rightPanel .content .bidderWatchInfo:after {
-    content: '\f054';
-    font-family: 'fontAwesome';
-    position: absolute;
-    top: 38px;
-    right: 0px;
-    width: 50px;
-    height: calc(100% - 69px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    color: #242526;
-    font-size: 26px;
-  }
-  .rightPanel .content .bidderWatchInfo:before {
-    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    font-size: 11px;
-    color: #64666d;
-    font-style: italic;
-  }
-  .rightPanel .content .bidderWatchInfo:hover:after {
-    opacity: 0;
-  }
-  .mdContent .bsBidForm {
-    overflow-x: scroll;
-    position: relative;
-    padding-bottom: 30px;
-    margin-bottom: 10px;
-  }
-  .mdContent .bsBidForm ul {
-    width: 600px;
-  }
-  .mdContent .bsBidForm:after {
-    content: '\f054';
-    font-family: 'fontAwesome';
-    position: absolute;
-    top: 57px;
-    right: 0px;
-    width: 50px;
-    height: calc(100% - 87px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    color: #242526;
-    font-size: 26px;
-  }
-  .mdContent .bsBidForm:before {
-    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    font-size: 11px;
-    color: #64666d;
-    font-style: italic;
-  }
-  .mdContent .bsBidForm:hover:after {
-    opacity: 0;
-  }
-  .companyList {
-    overflow-x: scroll;
-    position: relative;
-    padding-bottom: 30px;
-    margin-bottom: 10px;
-  }
-  .companyList ul {
-    width: 1000px;
-  }
-  .companyList:after {
-    content: '\f054';
-    font-family: 'fontAwesome';
-    position: absolute;
-    top: 2px;
-    right: 0px;
-    width: 50px;
-    height: calc(100% - 33px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    color: #242526;
-    font-size: 26px;
-  }
-  .companyList:before {
-    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    font-size: 11px;
-    color: #64666d;
-    font-style: italic;
-  }
-  .companyList:hover:after {
-    opacity: 0;
-  }
-  .allBids {
-    overflow-x: scroll;
-    position: relative;
-    padding-bottom: 30px;
-  }
-  .allBids ul {
-    width: 100%;
-  }
-  .userList {
-    overflow-x: scroll;
-    position: relative;
-    padding-bottom: 30px;
-    margin-bottom: 10px;
-  }
-  .userList ul {
-    width: 1000px;
-  }
-  .userList:after {
-    content: '\f054';
-    font-family: 'fontAwesome';
-    position: absolute;
-    top: 2px;
-    right: 0px;
-    width: 50px;
-    height: calc(100% - 33px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    color: #242526;
-    font-size: 26px;
-  }
-  .userList:before {
-    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    font-size: 11px;
-    color: #64666d;
-    font-style: italic;
-  }
-  .userList:hover:after {
-    opacity: 0;
-  }
   .tableMobileScroll {
     overflow-x: scroll;
     position: relative;
@@ -11056,62 +10915,6 @@ footer .fContent .fCol ul li a:hover {
   .tableMobileScroll:hover:after {
     opacity: 0;
   }
-  .rulesModal .headSwitch {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .rulesModal .headSwitch a {
-    margin-bottom: 15px;
-    margin-right: 0;
-  }
-  .tcoModalList {
-    overflow-x: scroll;
-    position: relative;
-    padding-bottom: 30px;
-    margin-bottom: 10px;
-  }
-  .tcoModalList ul {
-    width: 1000px;
-  }
-  .tcoModalList:after {
-    content: '\f054';
-    font-family: 'fontAwesome';
-    position: absolute;
-    top: 2px;
-    right: 0px;
-    width: 50px;
-    height: calc(100% - 33px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    color: #242526;
-    font-size: 26px;
-  }
-  .tcoModalList:before {
-    content: '*Tabloyu yatayda kaydırarak inceyebilirsiniz.';
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    font-size: 11px;
-    color: #64666d;
-    font-style: italic;
-  }
-  .tcoModalList:hover:after {
-    opacity: 0;
-  }
   .ownerWatchAdditionalInfoModalTable {
     position: relative;
   }
@@ -11148,6 +10951,27 @@ footer .fContent .fCol ul li a:hover {
   }
   .ownerWatchAdditionalInfoModalTable:hover:after {
     opacity: 0;
+  }
+  .rulesModal .headSwitch {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .rulesModal .headSwitch a {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  .allBids {
+    overflow-x: scroll;
+    position: relative;
+    padding-bottom: 30px;
+  }
+  .allBids ul {
+    width: 100%;
   }
   .addTCObtn {
     margin: 0;
