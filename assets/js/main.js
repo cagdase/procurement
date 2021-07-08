@@ -366,6 +366,14 @@ $(document).ready(function () {
 
   $('.participantStatusContent .statusReject').click(function() {
     $('.statusRejectMessage').toggleClass('show');
-  })
+  });
+  $('.participantStatusContent .statusConfirm').click(function() {
+    $('.statusRejectMessage').removeClass('show');
+  });
+
+  $(".participantStatusBtn").click(function() {
+    $(".participantStatusBtn").removeClass('active');
+    $(this).addClass('active');
+  });
 
 })

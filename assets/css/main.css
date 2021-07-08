@@ -4671,10 +4671,13 @@ button.errorBtn:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .rpList.whoBidders li span:nth-child(3) i {
-  font-size: 18px;
+  font-size: 22px;
   margin-left: 5px;
 }
 
@@ -4693,6 +4696,16 @@ button.errorBtn:hover {
 .rpList.whoBidders li span:nth-child(3) .tableHeadTooltipWrap .tableHeadTooltip {
   width: 400px;
   top: -70px;
+}
+
+.rpList.whoBidders li span:nth-child(3) .tableHeadTooltipWrap .bgBlue {
+  background-color: #007bff;
+  padding: 2px 4px;
+  width: 100%;
+  color: #fff;
+  border-radius: 6px;
+  margin-left: 5px;
+  font-size: 12px;
 }
 
 .rpList.whoBidders li .participantListWrap {
@@ -5493,6 +5506,7 @@ button.errorBtn:hover {
           align-items: center;
   color: #fff;
   font-weight: 600;
+  border: 2px solid transparent;
 }
 
 .participantStatusContent .participantStatusBtn.statusConfirm {
@@ -5501,6 +5515,12 @@ button.errorBtn:hover {
 
 .participantStatusContent .participantStatusBtn.statusReject {
   background-color: #cc0000;
+}
+
+.participantStatusContent .participantStatusBtn.active {
+  border: 2px solid #232526;
+  -webkit-box-shadow: 0px 1px 4px #222;
+          box-shadow: 0px 1px 4px #222;
 }
 
 .participantStatusContent .statusRejectMessage {
@@ -10374,6 +10394,15 @@ footer .fContent .fCol ul li a:hover {
 
 .comparisonCompaniesList .mobileTotalLines {
   display: none;
+}
+
+.scrollYmax10 {
+  max-height: 640px;
+  overflow-y: auto;
+}
+
+.scrollYmax10 li {
+  min-height: 64px;
 }
 
 @media (max-width: 1375px) {
