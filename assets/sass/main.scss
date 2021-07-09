@@ -1584,6 +1584,7 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		&.statusConfirm{background-color:$colorSuccess;}
 		&.statusReject{background-color:$colorError;}
 		&.active{border: 2px solid #232526; box-shadow: 0px 1px 4px #222;}
+		&.noClick{cursor:no-drop;}
 	}
 	.statusRejectMessage{display:flex; width:100%; margin-top:20px; flex-direction:column; align-items: flex-start; display:none;
 		.statusRejectMessageHeadline{width:100%; display:flex; margin-bottom:10px; font-size:16px; font-weight:600;}
@@ -1591,6 +1592,9 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 		.rejectStatusInfo{display:flex; width:100%; margin-bottom:10px; font-size:12px; color:$colorError; font-style:italic;}
 		.rejectSubmitBtn{background-color:$linkColor; padding:10px 20px; color:#fff;}
 		&.show{display:flex;}
+	}
+	.statusConfirmMessage{display:flex; width:100%; align-items: center; justify-content: center; padding: 20px 0;
+		a{text-decoration:underline; padding:0 5px; display:inline-block;}
 	}
 }
 
