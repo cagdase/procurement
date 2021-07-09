@@ -14,7 +14,7 @@ strong{font-weight: 600;}
 a{text-decoration: none; color:$linkColor;}
 * {box-sizing: border-box; transition: all .3s ease; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 ::after, ::before {box-sizing: border-box;}
-body{font-family: $fontStack; font-weight: 400; line-height: 1.5; color:$color1; text-align: left; background-color: #fff;}
+body{font-family: $fontStack; font-weight: 400; line-height: 1.5; color:$color1; text-align: left; background-color: #fff; zoom:0.90;}
 .marB50{margin-bottom:50px!important;}
 .marB20{margin-bottom:20px!important;}
 .marB0{margin-bottom:0!important;}
