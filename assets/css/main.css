@@ -1789,23 +1789,6 @@ button.errorBtn:hover {
   width: calc(100% - 15px);
 }
 
-.rightPanel .content .uploadFile {
-  position: relative;
-  overflow: hidden;
-  float: left;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.rightPanel .content .uploadFile input {
-  font-size: 100px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  cursor: pointer;
-}
-
 .rightPanel .content .bidTypeSelect {
   float: left;
   width: 100%;
@@ -2723,6 +2706,23 @@ button.errorBtn:hover {
 
 .rightPanel .competitionOrder .line2.compColError {
   color: #cc0000;
+}
+
+.uploadFile {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.uploadFile input {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .categoryGropusInfo {
@@ -8109,6 +8109,8 @@ footer .fContent .fCol ul li a:hover {
 .additionalInfoModal .mdContent {
   width: 100% !important;
   max-width: 1000px !important;
+  max-height: 800px;
+  height: 100%;
 }
 
 .additionalInfoModal .modalDesc {
@@ -10428,6 +10430,18 @@ footer .fContent .fCol ul li a:hover {
 
 .scrollYmax10 li {
   min-height: 64px;
+}
+
+.addInfoDocuments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0;
 }
 
 @media (max-width: 1375px) {

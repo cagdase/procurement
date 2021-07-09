@@ -397,9 +397,6 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 				.c-datepicker-data-input{width:calc(100% - 15px);}
 			}
 		}
-		.uploadFile {position:relative; overflow:hidden; float:left; width:100%; margin-bottom:20px;
-			input{font-size: 100px; position: absolute; left: 0; top: 0; opacity: 0; cursor:pointer;}
-		}
 		.bidTypeSelect{float:left; width:100%; display:flex; align-items:flex-end; justify-content: flex-start; flex-direction: column; margin-bottom:20px; font-size:14px;
 			.rbHead{float:left; width:100%; margin-bottom:10px; font-size:14px; font-weight:600;}
 			.radio{float:left; margin-right:10px;}
@@ -633,6 +630,9 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			&.compColError{color:$colorError;}
 		}
 	}
+}
+.uploadFile {position:relative; overflow:hidden; float:left; width:100%; margin-bottom:20px;
+	input{font-size: 100px; position: absolute; left: 0; top: 0; opacity: 0; cursor:pointer;}
 }
 .categoryGropusInfo{float:left; width:100%; margin-bottom:10px;
 	.cgiHead{float:left; font-size:13px; font-weight:600; margin-right:10px;}
@@ -2580,7 +2580,7 @@ $badge-max-size: 9px;
 .additionalInfoModalBtn{color:$linkColor; font-size:14px; text-decoration:underline;}
 
 .additionalInfoModal{
-	.mdContent{width:100%!important; max-width:1000px!important;}
+	.mdContent{width:100%!important; max-width:1000px!important; max-height: 800px; height:100%;}
 	.modalDesc{display: flex; align-items: center; justify-content: space-between;}
 	.contentInfoType{display:flex; flex-direction:column; position: relative;
 		.cInfoTypeSelect{float: left; width: 100%; position: relative; height: 30px; border: 1px solid #ddd;
@@ -3169,6 +3169,8 @@ $badge-max-size: 9px;
 .scrollYmax10{max-height:640px; overflow-y:auto;
 	li{min-height:64px;}
 }
+
+.addInfoDocuments{display:flex; width:100%; flex-direction:column; padding:20px 0;}
 
 // Media queries start
 
