@@ -758,6 +758,14 @@ button{float:left; padding:0 20px; font-size: 14px; font-weight: 500; outline: 0
 			input{float:left; width:100%; outline:0; border:none; background:transparent; border-bottom:1px solid #ddd; height:30px;}
 		}
 	}
+	&.addInfoDocumentsList{
+		li{
+			span{					
+				&:nth-child(1){width:90%;}
+				&:nth-child(2){width:10%; text-align: center; font-size:18px;}
+			}
+		}
+	}
 	&.bidderAdditionalInfoModalTable{
 		li{
 			span{					
@@ -2618,6 +2626,7 @@ $badge-max-size: 9px;
 }
 
 .additionalInfoModalNewLineAdd{float:right; margin:0;}
+.additionalInfoModalNewDocumentAdd{float:right; margin:0; margin-left:10px;}
 
 .raporCard{float:left; width:200px; background-color:#fff; margin-right:20px; overflow: hidden; margin-bottom:20px;
 	span{font-size:15px; padding:15px; float:left; color:#4e5361; height:100px; width:100%; line-height: 18px; text-align:center; display: flex; align-items: center; justify-content: center; flex-direction: column; border:1px solid #f1f1f1; border-radius:10px; 
@@ -3170,7 +3179,10 @@ $badge-max-size: 9px;
 	li{min-height:64px;}
 }
 
-.addInfoDocuments{display:flex; width:100%; flex-direction:column; padding:20px 0;}
+.addInfoDocuments{display:flex; width:100%; flex-direction:column; padding:20px 0;
+	.uploadFile{display: flex; justify-content: flex-end;}
+	.addInfoDocumentsHead{display:flex; width:100%; margin-bottom:15px; margin-top:30px; font-weight:600; justify-content: space-between; align-items: center;}
+}
 
 // Media queries start
 

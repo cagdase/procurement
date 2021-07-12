@@ -3063,6 +3063,16 @@ button.errorBtn:hover {
   height: 30px;
 }
 
+.rpList.addInfoDocumentsList li span:nth-child(1) {
+  width: 90%;
+}
+
+.rpList.addInfoDocumentsList li span:nth-child(2) {
+  width: 10%;
+  text-align: center;
+  font-size: 18px;
+}
+
 .rpList.bidderAdditionalInfoModalTable li span:nth-child(1) {
   width: 30%;
 }
@@ -8282,6 +8292,12 @@ footer .fContent .fCol ul li a:hover {
   margin: 0;
 }
 
+.additionalInfoModalNewDocumentAdd {
+  float: right;
+  margin: 0;
+  margin-left: 10px;
+}
+
 .raporCard {
   float: left;
   width: 200px;
@@ -10442,6 +10458,31 @@ footer .fContent .fCol ul li a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px 0;
+}
+
+.addInfoDocuments .uploadFile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.addInfoDocuments .addInfoDocumentsHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  font-weight: 600;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1375px) {
